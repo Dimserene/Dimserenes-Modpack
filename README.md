@@ -9,7 +9,7 @@ Some mod files need to be altered to avoid compat issues, I will specify them in
 
 - [__Lovely__](https://github.com/ethangreen-dev/lovely-injector) 0.5.0-beta6 (latest release)
 
-  [Download](https://github.com/ethangreen-dev/lovely-injector/releases/tag/v0.5.0-beta6) [Discord](https://discord.com/channels/1116389027176787968/1214591552903716954)
+  [Download](https://github.com/ethangreen-dev/lovely-injector/releases/tag/v0.5.0-beta6) [Discord](https://discord.com/channels/1116389027176787968/1214591552903716954) [Authors](https://github.com/Steamopollys/Steamodded/graphs/contributors)
   
 - [__Steamodded__](https://github.com/Steamopollys/Steamodded?tab=readme-ov-file) 1.0.0-Alpha-0625a (latest main code)
 
@@ -107,6 +107,10 @@ Some mod files need to be altered to avoid compat issues, I will specify them in
   [Download]() [Discord]()
 
 - [__SDM_0's Stuff__]() version ()
+
+  [Download]() [Discord]()
+
+- [__Stupidity The Mod__]() version ()
 
   [Download]() [Discord]()
 
