@@ -42,6 +42,8 @@ Some mod files need to be altered to avoid compat issues, I will specify them in
     - D6 jokers
     - DX Tarots
   - Change all `SMODS.Tag(s)` and `SMODS.Booster(s)` instances into `CATag(s)` and `CABooster(s)`
+  - Need tweak for compat with the following mods:
+    - [Not Just Yet]
  
 - [__D6 Jokers__](https://github.com/GauntletGames-2086/D6-Jokers) 0.5.21 (latest main code)
 
