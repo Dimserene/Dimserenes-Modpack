@@ -45,7 +45,7 @@ Some mod files need to be altered to avoid compat issues, I will specify them in
   - Need tweak for compat with the following mods:
     - Not Just Yet
   - Delete this section
-    ![alt text](https://github.com/Dimserene/Balatro-Steammodded-1.0.0-Nightmare-Modpack/blob/Main/image.jpg?raw=true)
+    ![alt text](https://media.discordapp.net/attachments/1254814398476713994/1255174809122246666/image.png?ex=667cd4e2&is=667b8362&hm=41834b0f44b02933db6238cbd95861a86ddb142a8ab0e8e03d44433c1a3ded67&)
  
 - [__D6 Jokers__](https://github.com/GauntletGames-2086/D6-Jokers) 0.5.21 (latest main code)
 
