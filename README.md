@@ -23,5 +23,10 @@ Some mod files need to be altered to avoid compat issues, I will specify them in
   
 - [Codex Arcanum](https://github.com/itayfeder/Codex-Arcanum) 1.1.4 (latest release)
 
-  [Download](https://github.com/itayfeder/Codex-Arcanum/releases/tag/Release_1.1.4)
-- 
+  [Download](https://github.com/itayfeder/Codex-Arcanum/releases/tag/Release_1.1.4) [Discord](https://discord.com/channels/1116389027176787968/1221916334372290620)
+
+  - Need tweak for compat with the following mods:
+    - D6 jokers
+    - DX Tarots
+  - Change all `SMODS.Tag(s)` and `SMODS.Booster(s)` instances into `CATag(s)` and `CABooster(s)`
+ 
