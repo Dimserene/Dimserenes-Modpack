@@ -7,17 +7,22 @@ Some mod files need to be altered or you'll need an older build altogether to av
 
 ## The Prerequisites
 
-- [Lovely 0.5.0-beta6(Jun25)](https://github.com/ethangreen-dev/lovely-injector)
+- [Lovely](https://github.com/ethangreen-dev/lovely-injector)
 
-  [Download](https://github.com/ethangreen-dev/lovely-injector/releases/tag/v0.5.0-beta6) the latest release.
-- [Steammodded 1.0.0-Alpha-0625a](https://github.com/Steamopollys/Steamodded?tab=readme-ov-file)
+  [Download 0.5.0-beta6(Jun25)](https://github.com/ethangreen-dev/lovely-injector/releases/tag/v0.5.0-beta6)
+  Or download the latest release.
+  
+- [Steammodded 1.0.0-Alpha](https://github.com/Steamopollys/Steamodded?tab=readme-ov-file)
 
-  [Download](https://github.com/Steamopollys/Steamodded/archive/refs/heads/main.zip) the main code.
+  [Download 1.0.0-Alpha-0625a](https://github.com/Steamopollys/Steamodded/archive/refs/heads/main.zip)
+  Or download the main code.
 
 ## The List
 
-- [Bunco 4.2 May 26 build](https://github.com/Firch/Bunco/tree/a8287370fa87b1ffbff9e273c5a5159626b15cc6)
+- [Bunco](https://github.com/Firch/Bunco/tree/a8287370fa87b1ffbff9e273c5a5159626b15cc6)
 
-  Older build for compat with Codex Arcanum. If you don't use Codex Arcanum feel free to download newest main repo of Bunco.
+  [Download 4.2 May 26 build](https://github.com/Firch/Bunco/archive/a8287370fa87b1ffbff9e273c5a5159626b15cc6.zip)
+  Older build for compat with Codex Arcanum. If you don't use Codex Arcanum feel free to [download newest main code](https://github.com/Firch/Bunco/archive/refs/heads/main.zip).
+  
 - [Codex Arcanum](https://github.com/itayfeder/Codex-Arcanum)
 - 
