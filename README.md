@@ -1,4 +1,4 @@
-# Balatro-Steammodded-1.0.0-Nightmare-pack
+# Balatro-Steammodded-1.0.0-Nightmare-pack (WIP)
 A custom-made modpack that is hand-picked and put together by myself
 
 Due to license reasons, I can only list the mods, and you can put them together by yourself.
@@ -20,6 +20,7 @@ Some mod files need to be altered or you'll need an older build altogether to av
 - [Bunco](https://github.com/Firch/Bunco/tree/a8287370fa87b1ffbff9e273c5a5159626b15cc6)
 
   [Download](https://github.com/Firch/Bunco/archive/a8287370fa87b1ffbff9e273c5a5159626b15cc6.zip) 4.2 May 26 build
+
   Older build for compat with Codex Arcanum. If you don't use Codex Arcanum feel free to [download newest main code](https://github.com/Firch/Bunco/archive/refs/heads/main.zip).
   
 - [Codex Arcanum](https://github.com/itayfeder/Codex-Arcanum)
