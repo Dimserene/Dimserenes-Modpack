@@ -43,7 +43,9 @@ Some mod files need to be altered to avoid compat issues, I will specify them in
     - DX Tarots
   - Change all `SMODS.Tag(s)` and `SMODS.Booster(s)` instances into `CATag(s)` and `CABooster(s)`
   - Need tweak for compat with the following mods:
-    - [Not Just Yet]
+    - Not Just Yet
+  - Delete this section
+    ![alt text](https://github.com/Dimserene/Balatro-Steammodded-1.0.0-Nightmare-Modpack/blob/Main/image.jpg?raw=true)
  
 - [__D6 Jokers__](https://github.com/GauntletGames-2086/D6-Jokers) 0.5.21 (latest main code)
 
