@@ -42,7 +42,7 @@ Some mod files need to be altered to avoid compat issues, I will specify them in
     - Bunco
     - D6 jokers
     - DX Tarots
-  - Change all `SMODS.Tag(s)` and `SMODS.Booster(s)` instances into `CATag(s)` and `CABooster(s)`
+  - Change all `SMODS.Tag(s)` and `SMODS.Booster(s)` instances everywhere in files of this mod into `CATag(s)` and `CABooster(s)`
   - Needs tweak for compat with the following mods:
     - Not Just Yet
   - Find and delete this entire section:
@@ -60,7 +60,7 @@ Some mod files need to be altered to avoid compat issues, I will specify them in
    - Bunco
    - D6 Jokers
    - Codex Arcanum
- - Change all `SMODS.Booster(s)` instances into `CABooster(s)`
+ - Change all `SMODS.Booster(s)` instances everywhere in files of this mod into `CABooster(s)`
 
 - [__Escape Exit Button__](https://github.com/Steamopollys/Steamodded/blob/main/example_mods/Mods/EscapeExitButton.lua#L13) version ()
 
