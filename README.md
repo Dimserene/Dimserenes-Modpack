@@ -38,24 +38,31 @@ Some mod files need to be altered to avoid compat issues, I will specify them in
 
   [Download](https://github.com/itayfeder/Codex-Arcanum/releases/tag/Release_1.1.4) [Discord](https://discord.com/channels/1116389027176787968/1221916334372290620)
 
-  - Need tweak for compat with the following mods:
+  - Needs tweak for compat with the following mods:
+    - Bunco
     - D6 jokers
     - DX Tarots
   - Change all `SMODS.Tag(s)` and `SMODS.Booster(s)` instances into `CATag(s)` and `CABooster(s)`
-  - Need tweak for compat with the following mods:
+  - Needs tweak for compat with the following mods:
     - Not Just Yet
-  - Find and delete this section:
+  - Find and delete this entire section:
     ![alt text](https://media.discordapp.net/attachments/1254814398476713994/1255174809122246666/image.png?ex=667cd4e2&is=667b8362&hm=41834b0f44b02933db6238cbd95861a86ddb142a8ab0e8e03d44433c1a3ded67&)
  
 - [__D6 Jokers__](https://github.com/GauntletGames-2086/D6-Jokers) 0.5.21 (latest main code)
 
   [Download](https://github.com/GauntletGames-2086/D6-Jokers/archive/refs/heads/main.zip) [Discord](https://discord.com/channels/1116389027176787968/1249518446669074474)
 
-- [__DX Tarots__]() version ()
+- [__DX Tarots__](https://github.com/JeffVi/DX-Tarots) Eighth release (latest release)
 
-  [Download]() [Discord]()
+  [Download](https://github.com/JeffVi/DX-Tarots/releases) [Discord](https://discord.com/channels/1116389027176787968/1226210957253017691)
 
-- [__Escape Exit Button__]() version ()
+ - Needs tweak for compat with the following mods:
+   - Bunco
+   - D6 Jokers
+   - Codex Arcanum
+ - Change all `SMODS.Booster(s)` instances into `CABooster(s)`
+
+- [__Escape Exit Button__](https://github.com/Steamopollys/Steamodded/blob/main/example_mods/Mods/EscapeExitButton.lua#L13) version ()
 
   [Download]() [Discord]()
 
