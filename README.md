@@ -53,6 +53,10 @@ Some mod files need to be altered to avoid compat issues, I will specify them in
 
   [Download](https://github.com/GauntletGames-2086/D6-Jokers/archive/refs/heads/main.zip) [Discord](https://discord.com/channels/1116389027176787968/1249518446669074474) By ItsFlowwey
 
+- [__Deck Creator__]() version ()
+
+  [Download]() [Discord]()
+
 - [__DX Tarots__](https://github.com/JeffVi/DX-Tarots) Eighth release (latest release)
 
   [Download](https://github.com/JeffVi/DX-Tarots/releases) [Discord](https://discord.com/channels/1116389027176787968/1226210957253017691) By JeffVi
