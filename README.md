@@ -22,6 +22,14 @@ Some mod files need to be altered to avoid compat issues, I will specify them in
   [Discord](https://discord.com/channels/1116389027176787968/1210290099036885042)
   - One of the example mods by @STEAMO
 
+- [__Blank Joker__]() version ()
+
+  [Download]() [Discord]()
+
+- [__Bettma Series__]() version ()
+
+  [Download]() [Discord]()
+
 - [__Bunco__](https://github.com/Firch/Bunco/tree/main) 5.0 June 26 build (latest main code)
 
   [Download](https://github.com/Firch/Bunco/archive/refs/heads/main.zip) [Discord](https://discord.com/channels/1116389027176787968/1220084296346501201)
@@ -61,41 +69,45 @@ Some mod files need to be altered to avoid compat issues, I will specify them in
 
 - [__Lobotomy Corporation__]() version ()
 
-  [Download]() [Discord]()
+  [Download]() [Discord](https://discord.com/channels/1116389027176787968/1248249207526002698)
 
-- [____]() version ()
-
-  [Download]() [Discord]()
-
-- [____]() version ()
+- [__Loop__]() version ()
 
   [Download]() [Discord]()
 
-- [____]() version ()
+- [__Math Blinds__]() version ()
+
+  [Download]() [Discord]()
+  
+- [__Myst Blinds__]() version ()
 
   [Download]() [Discord]()
 
-- [____]() version ()
+- [__Neow Blessings__]() version ()
 
   [Download]() [Discord]()
 
-- [____]() version ()
+- [__Not Just Yet__]() version ()
 
   [Download]() [Discord]()
 
-- [____]() version ()
+- [__Ortalab__]() version ()
 
   [Download]() [Discord]()
 
-- [____]() version ()
+- [__SDM_0's Stuff__]() version ()
 
   [Download]() [Discord]()
 
-- [____]() version ()
+- [__Taikomochi__]() version ()
 
   [Download]() [Discord]()
 
-- [____]() version ()
+- [__The World Ends With Jimbo__]() version ()
+
+  [Download]() [Discord]()
+
+- [__Trance__]() version ()
 
   [Download]() [Discord]()
 
