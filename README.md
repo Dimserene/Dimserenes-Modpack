@@ -35,11 +35,70 @@ Some mod files need to be altered to avoid compat issues, I will specify them in
     - DX Tarots
   - Change all `SMODS.Tag(s)` and `SMODS.Booster(s)` instances into `CATag(s)` and `CABooster(s)`
  
-- [__D6 jokers__](https://github.com/GauntletGames-2086/D6-Jokers) 0.5.21 (latest main code)
+- [__D6 Jokers__](https://github.com/GauntletGames-2086/D6-Jokers) 0.5.21 (latest main code)
 
   [Download](https://github.com/GauntletGames-2086/D6-Jokers/archive/refs/heads/main.zip) [Discord](https://discord.com/channels/1116389027176787968/1249518446669074474)
 
+- [__DX Tarots__]() version ()
 
+  [Download]() [Discord]()
+
+- [__Escape Exit Button__]() version ()
+
+  [Download]() [Discord]()
+
+- [__House Rules__]() version ()
+
+  [Download]() [Discord]()
+
+- [__Jank Jonklers__]() version ()
+
+  [Download]() [Discord]()
+
+- [__Jimbo's Pack__]() version ()
+
+  [Download]() [Discord]()
+
+- [__Lobotomy Corporation__]() version ()
+
+  [Download]() [Discord]()
 
 - [____]() version ()
+
+  [Download]() [Discord]()
+
+- [____]() version ()
+
+  [Download]() [Discord]()
+
+- [____]() version ()
+
+  [Download]() [Discord]()
+
+- [____]() version ()
+
+  [Download]() [Discord]()
+
+- [____]() version ()
+
+  [Download]() [Discord]()
+
+- [____]() version ()
+
+  [Download]() [Discord]()
+
+- [____]() version ()
+
+  [Download]() [Discord]()
+
+- [____]() version ()
+
+  [Download]() [Discord]()
+
+- [____]() version ()
+
+  [Download]() [Discord]()
+
+- [____]() version ()
+
   [Download]() [Discord]()
