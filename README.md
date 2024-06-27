@@ -122,6 +122,10 @@ I repeat, this is not a full list of 1.0.0 compatible mods, this is a modpack th
 
   [Download](https://github.com/spikeof2010/JankJonklers/releases) [Discord](https://discord.com/channels/1116389027176787968/1214838383805997117)
 
+- [__Jestobiology__]() version ()
+
+  [Download]() [Discord](https://discord.com/channels/1116389027176787968/1231665856619086005)
+
 - [__Jimbo's Pack__](https://github.com/art-muncher/Jimbo-s-Pack) First update (latest release)
 
   By elial1
