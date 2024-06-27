@@ -20,12 +20,6 @@ I repeat, this is not a full list of 1.0.0 compatible mods, this is a modpack th
   
 ## The List
 
-- [__Achievements Enabler__](https://github.com/Steamopollys/Steamodded/blob/main/example_mods/Mods/AchievementsEnabler.lua) (latest build)
-
-  [Discord](https://discord.com/channels/1116389027176787968/1210290099036885042)
-  
-  - One of the example mods by Steamopollys
-
 - [__Ante Scaling Slower__](https://www.nexusmods.com/balatro/mods/7) 1.0.1 (latest release)
 
   By Infarctus
