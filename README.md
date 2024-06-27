@@ -108,6 +108,8 @@ I repeat, this is not a full list of 1.0.0 compatible mods, this is a modpack th
 
 - [__Fusion Jokers__](https://github.com/itayfeder/Fusion-Jokers) 1.0.2 (latest release)
 
+  By itayfeder
+
   [Download](https://github.com/itayfeder/Fusion-Jokers/releases) [Discord](https://discord.com/channels/1116389027176787968/1227317656131211284)
 
 - [__House Rules__](https://github.com/Mysthaps/BalatroMods) 1.4.2 (latest release)
@@ -122,9 +124,11 @@ I repeat, this is not a full list of 1.0.0 compatible mods, this is a modpack th
 
   [Download](https://github.com/spikeof2010/JankJonklers/releases) [Discord](https://discord.com/channels/1116389027176787968/1214838383805997117)
 
-- [__Jestobiology__]() version ()
+- [__Jestobiology__](https://github.com/spikeof2010/Jestobiology/tree/AlphaBeta) May 4 build (latest release)
 
-  [Download]() [Discord](https://discord.com/channels/1116389027176787968/1231665856619086005)
+  By Lyman
+
+  [Download](https://github.com/spikeof2010/Jestobiology/releases) [Discord](https://discord.com/channels/1116389027176787968/1231665856619086005)
 
 - [__Jimbo's Pack__](https://github.com/art-muncher/Jimbo-s-Pack) First update (latest release)
 
