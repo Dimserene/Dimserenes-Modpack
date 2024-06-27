@@ -136,6 +136,10 @@ I repeat, this is not a full list of 1.0.0 compatible mods, this is a modpack th
 
   [Download](https://github.com/Bazinga9000/MathBlinds/archive/refs/heads/main.zip) [Discord](https://discord.com/channels/1116389027176787968/1245962046235873301)
 
+- [__Mika's Balatro Mod Collection__](https://github.com/MikaSchoenmakers/MikasBalatro) May 7 build (latest main code)
+
+  [Download](https://github.com/MikaSchoenmakers/MikasBalatro/archive/refs/heads/main.zip) [Discord](https://discord.com/channels/1116389027176787968/1215775159638818826)
+
 - [__More Speeds__](https://github.com/Steamopollys/Steamodded/blob/main/example_mods/Mods/MoreSpeeds.lua) (latest build)
 
   [Discord](https://discord.com/channels/1116389027176787968/1210304870457020487)
