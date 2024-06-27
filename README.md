@@ -5,6 +5,8 @@ Due to license reasons, I can only list the mods, and you can put them together 
 
 Some mod files need to be altered to avoid compat issues, I will specify them in the list.
 
+I repeat, this is not a full list of 1.0.0 compatible mods, this is a modpack that when put together they should function with no problem.
+
 ## The Prerequisites
 
 - [__Lovely__](https://github.com/ethangreen-dev/lovely-injector) 0.5.0-beta6 (latest release)
