@@ -106,6 +106,10 @@ I repeat, this is not a full list of 1.0.0 compatible mods, this is a modpack th
 
   [Download](https://www.nexusmods.com/balatro/mods/43?tab=files)
 
+- [__Fusion Jokers__](https://github.com/itayfeder/Fusion-Jokers) 1.0.2 (latest release)
+
+  [Download](https://github.com/itayfeder/Fusion-Jokers/releases) [Discord](https://discord.com/channels/1116389027176787968/1227317656131211284)
+
 - [__House Rules__](https://github.com/Mysthaps/BalatroMods) 1.4.2 (latest release)
 
   By Myst
