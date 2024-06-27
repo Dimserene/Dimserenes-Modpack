@@ -23,6 +23,12 @@ Some mod files need to be altered to avoid compat issues, I will specify them in
   
   - One of the example mods by Steamopollys
 
+- [__Ante Scaling Slower__](https://www.nexusmods.com/balatro/mods/7) 1.0.1 (latest release)
+
+  By Infarctus
+
+  [Download](https://www.nexusmods.com/balatro/mods/7?tab=files) [Discord](https://discord.com/channels/1116389027176787968/1219418031546040351)
+
 - [__Blank Joker__](https://github.com/GitNether/nethers-jokers) 1.0.0 (latest release)
 
   By Nether
@@ -133,33 +139,44 @@ Some mod files need to be altered to avoid compat issues, I will specify them in
   
   [Download](https://github.com/kjossul/NeowBlessings/archive/refs/heads/main.zip) [Discord](https://discord.com/channels/1116389027176787968/1217892947119308933)
 
-- [__Not Just Yet__]() version ()
+- [__Not Just Yet__](https://github.com/Toneblock/balatro-NotJustYet/tree/v0.2.1) 0.2.1 (latest release)
 
-  [Download]() [Discord]()
+  By Toneblock
 
-- [__Ortalab__]() version ()
+  [Download](https://github.com/Toneblock/balatro-NotJustYet/releases) [Discord](https://discord.com/channels/1116389027176787968/1254814398476713994)
 
-  [Download]() [Discord]()
+- [__Ortalab__](https://github.com/GauntletGames-2086/Ortalab-DEMO/tree/test) test build 0.8.0 (latest branch code)
 
-- [__SDM_0's Stuff__]() version ()
+  By ItsFlowwey
 
-  [Download]() [Discord]()
+  [Download](https://github.com/GauntletGames-2086/Ortalab-DEMO/archive/refs/heads/test.zip) [Discord](https://discord.com/channels/1116389027176787968/1217704157574860810)
 
-- [__Stupidity The Mod__](https://github.com/Aigengoku/Stupidity-the-mod) 1.3.0 (latest release) By Aigengoku
+- [__SDM_0's Stuff__](https://github.com/SDM0/Balatro-Mods/tree/smods_1.0.0) 1.5.0 June 12 build (latest branch code)
+
+  By SDM_0
+
+  [Download](https://github.com/SDM0/Balatro-Mods/archive/refs/heads/smods_1.0.0.zip) [Discord](https://discord.com/channels/1116389027176787968/1228825966940393483)
+
+- [__Stupidity The Mod__](https://github.com/Aigengoku/Stupidity-the-mod) 1.3.0 (latest release)
+
+  By Aigengoku
 
   [Download](https://github.com/Aigengoku/Stupidity-the-mod/releases) [Discord](https://discord.com/channels/1116389027176787968/1248387108029202432)
 
-- [__Taikomochi__]() version ()
+- [__Taikomochi__](https://github.com/Amvoled/Taikomochi) 0.2.0 (latest main code)
 
-  [Download]() [Discord]()
+  By Amavoleda
 
-- [__The World Ends With Jimbo__]() version ()
+  [Download](https://github.com/Amvoled/Taikomochi/archive/refs/heads/main.zip) [Discord](https://discord.com/channels/1116389027176787968/1211425207080718416)
 
-  [Download]() [Discord]()
+- [__The World Ends With Jimbo__](https://github.com/parchmentEngineer/The-World-Ends-With-Jimbo) 0.3.2 (latest release)
 
-- [__Trance__]() version ()
+  By Parchment
 
-  [Download]() [Discord]()
+  [Download](https://github.com/parchmentEngineer/The-World-Ends-With-Jimbo/releases) [Discord](https://discord.com/channels/1116389027176787968/1252312295296733194)
 
-- [____]() version ()
-  [Download]() [Discord]()
+- [__Trance__](https://github.com/MathIsFun0/Trance/tree/v1.0.0) 1.0.0 (latest release)
+
+  By Mathisfun
+
+  [Download](https://github.com/MathIsFun0/Trance/releases) [Discord](https://discord.com/channels/1116389027176787968/1248865517112918016)
