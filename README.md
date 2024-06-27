@@ -14,7 +14,7 @@ I repeat, this is not a full list of 1.0.0 compatible mods, this is a modpack th
 
   [Download](https://github.com/ethangreen-dev/lovely-injector/releases/tag/v0.5.0-beta6) [Discord](https://discord.com/channels/1116389027176787968/1214591552903716954) [Authors](https://github.com/ethangreen-dev/lovely-injector/graphs/contributors?from=2024-03-03&to=2024-06-26&type=c)
   
-- [__Steamodded__](https://github.com/Steamopollys/Steamodded?tab=readme-ov-file) 1.0.0-Alpha-0625a (latest main code)
+- [__Steamodded__](https://github.com/Steamopollys/Steamodded?tab=readme-ov-file) 1.0.0-Alpha-0626a (latest main code)
 
   [Download](https://github.com/Steamopollys/Steamodded/archive/refs/heads/main.zip) [Discord](https://discord.com/channels/1116389027176787968/1209564621644505158) [Authors](https://github.com/Steamopollys/Steamodded/graphs/contributors)
   
