@@ -132,6 +132,12 @@ Some mod files need to be altered to avoid compat issues, I will specify them in
   By Bazinga_900
 
   [Download](https://github.com/Bazinga9000/MathBlinds/archive/refs/heads/main.zip) [Discord](https://discord.com/channels/1116389027176787968/1245962046235873301)
+
+- [__More Speeds__](https://github.com/Steamopollys/Steamodded/blob/main/example_mods/Mods/MoreSpeeds.lua) (latest build)
+
+  [Discord](https://discord.com/channels/1116389027176787968/1210304870457020487)
+
+  - One of the example mods by Steamopollys
   
 - [__Myst's Boss Blinds__](https://github.com/Mysthaps/MystBlinds) 1.2.5b (latest release)
 
