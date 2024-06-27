@@ -91,6 +91,12 @@ Some mod files need to be altered to avoid compat issues, I will specify them in
 
   - One of the example mods by Steamopollys
 
+- [__Faster planet card animation__](https://www.nexusmods.com/balatro/mods/43?tab=description) 1.0 (latest release)
+
+  By Boomer678
+
+  [Download](https://www.nexusmods.com/balatro/mods/43?tab=files)
+
 - [__House Rules__](https://github.com/Mysthaps/BalatroMods) 1.4.2 (latest release)
 
   By Myst
@@ -162,6 +168,12 @@ Some mod files need to be altered to avoid compat issues, I will specify them in
   By Aigengoku
 
   [Download](https://github.com/Aigengoku/Stupidity-the-mod/releases) [Discord](https://discord.com/channels/1116389027176787968/1248387108029202432)
+
+- [__Tags Preview__](https://github.com/JKd3vLD/BalatroTagPreview) 1.0.0 (latest release)
+
+  By JK
+
+  [Download](https://github.com/JKd3vLD/BalatroTagPreview/releases) [Discord](https://discord.com/channels/1116389027176787968/1233428772364095649)
 
 - [__Taikomochi__](https://github.com/Amvoled/Taikomochi) 0.2.0 (latest main code)
 
