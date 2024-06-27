@@ -124,6 +124,12 @@ I repeat, this is not a full list of 1.0.0 compatible mods, this is a modpack th
 
   [Download](https://github.com/art-muncher/Jimbo-s-Pack/releases) [Discord](https://discord.com/channels/1116389027176787968/1248287850512781452)
 
+- [__Joker Evolution__](https://github.com/SDM0/Joker-Evolution) 1.0.0f (latest release)
+
+  By SDM_0
+
+  [Download](https://github.com/SDM0/Joker-Evolution/releases) [Discord](https://discord.com/channels/1116389027176787968/1249450412143153266)
+
 - [__Lobotomy Corporation__](https://github.com/Mysthaps/LobotomyCorp) 0.5.4 (latest release)
 
   By Myst
