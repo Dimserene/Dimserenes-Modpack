@@ -1,4 +1,4 @@
-# Balatro Nightmare Modpack (for Steamodded-1.0.0 Balatro)
+# Dimserene's Modpack (for Steamodded-1.0.0 Balatro)
 (Updates frequently)
 A custom-made modpack that is hand-picked and put together by myself
 
