@@ -142,11 +142,11 @@ I repeat, this is not a full list of 1.0.0 compatible mods, this is a modpack th
 
   [Download](https://github.com/SDM0/Joker-Evolution/releases) [Discord](https://discord.com/channels/1116389027176787968/1249450412143153266)
 
-- [__Lobotomy Corporation__](https://github.com/Mysthaps/LobotomyCorp) 0.5.4 (latest release)
+- [__Lobotomy Corporation__](https://github.com/Mysthaps/LobotomyCorp) 0.6.0 June 27 build (latest main code)
 
   By Myst
 
-  [Download](https://github.com/Mysthaps/LobotomyCorp/releases) [Discord](https://discord.com/channels/1116389027176787968/1248249207526002698)
+  [Download](https://github.com/Mysthaps/LobotomyCorp/archive/refs/heads/main.zip) [Discord](https://discord.com/channels/1116389027176787968/1248249207526002698)
 
 - [__Loop__](https://discord.com/channels/1116389027176787968/1248431147784863840) 1.0.0 (latest release)
 
