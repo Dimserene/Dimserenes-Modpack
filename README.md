@@ -194,6 +194,12 @@ I repeat, this is not a full list of 1.0.0 compatible mods, this is a modpack th
 
   [Download](https://github.com/GauntletGames-2086/Ortalab-DEMO/archive/refs/heads/test.zip) [Discord](https://discord.com/channels/1116389027176787968/1217704157574860810)
 
+- [__RO-Balatro__](https://github.com/AlexZGreat/Ro-Balatro) 1.2.4 (latest release)
+
+  By AlexZGreat
+
+  [Download](https://github.com/AlexZGreat/Ro-Balatro/releases) [Discord](https://discord.com/channels/1116389027176787968/1247049217621360640)
+
 - [__SDM_0's Stuff__](https://github.com/SDM0/Balatro-Mods/tree/smods_1.0.0) 1.5.0 June 12 build (latest branch code)
 
   By SDM_0
