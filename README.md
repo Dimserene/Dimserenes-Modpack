@@ -32,6 +32,12 @@ I repeat, this is not a full list of 1.0.0 compatible mods, this is a modpack th
 
   [Download](https://www.nexusmods.com/balatro/mods/7?tab=files) [Discord](https://discord.com/channels/1116389027176787968/1219418031546040351)
 
+- [__Balatro Safety__](https://github.com/Zei33/balatro-safety-steamodded) 1.0.0 (latest release)
+
+  By Zei
+
+  [Download](https://github.com/Zei33/balatro-safety-steamodded/releases) [Discord](https://discord.com/channels/1116389027176787968/1249718085301178418)
+
 - [__Blank Joker__](https://github.com/GitNether/nethers-jokers) 1.0.0 (latest release)
 
   By Nether
