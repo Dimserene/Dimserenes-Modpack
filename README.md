@@ -44,7 +44,7 @@ I repeat, this is not a full list of 1.0.0 compatible mods, this is a modpack th
 
   [Download](https://github.com/betmma/my_balatro_mods/releases) [Discord](https://discord.com/channels/1116389027176787968/1225831216939536394)
 
-- [__Bunco__](https://github.com/Firch/Bunco/tree/main) 5.0 June 26 build (latest main code)
+- [__Bunco__](https://github.com/Firch/Bunco/tree/main) 5.0 (latest main code)
 
   By Firch
 
