@@ -96,6 +96,10 @@ I repeat, this is not a full list of 1.0.0 compatible mods, this is a modpack th
     - Codex Arcanum
   - Change all `SMODS.Booster(s)` instances everywhere in files of this mod into `CABooster(s)`
 
+- [__Enhanced Enhancements__](https://github.com/LunaAstraCassiopeia/LunasBalatroMods) (latest main code)
+
+  [Download](https://github.com/LunaAstraCassiopeia/LunasBalatroMods/archive/refs/heads/main.zip) [Discord](https://discord.com/channels/1116389027176787968/1216064295633289286)
+
 - [__Escape Exit Button__](https://github.com/Steamopollys/Steamodded/blob/main/example_mods/Mods/EscapeExitButton.lua#L13) (latest build)
 
   - One of the example mods by Steamopollys
