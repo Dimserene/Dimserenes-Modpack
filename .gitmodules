@@ -61,3 +61,6 @@
 [submodule "Mods/LobotomyCorp"]
 	path = Mods/LobotomyCorp
 	url = https://github.com/Mysthaps/LobotomyCorp
+[submodule "blank-jokers"]
+	path = blank-jokers
+	url = https://github.com/Dimserene/blank-jokers
