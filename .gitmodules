@@ -7,3 +7,6 @@
 [submodule "Mods/balatro-safety-steamodded"]
 	path = Mods/balatro-safety-steamodded
 	url = https://github.com/Zei33/balatro-safety-steamodded
+[submodule "Mods/blank-jokers"]
+	path = Mods/blank-jokers
+	url = https://github.com/Dimserene/blank-jokers
