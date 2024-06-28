@@ -19,3 +19,45 @@
 [submodule "Mods/Codex-Arcanum"]
 	path = Mods/Codex-Arcanum
 	url = https://github.com/Dimserene/Codex-Arcanum
+[submodule "Cryptid"]
+	path = Cryptid
+	url = https://github.com/MathIsFun0/Cryptid
+[submodule "Mods/Cryptid"]
+	path = Mods/Cryptid
+	url = https://github.com/MathIsFun0/Cryptid
+[submodule "Mods/D6-Jokers"]
+	path = Mods/D6-Jokers
+	url = https://github.com/GauntletGames-2086/D6-Jokers
+[submodule "Mods/Balatro-DeckCreator"]
+	path = Mods/Balatro-DeckCreator
+	url = https://github.com/adambennett/Balatro-DeckCreator
+[submodule "Mods/Betmma_mods"]
+	path = Mods/Betmma_mods
+	url = https://github.com/Dimserene/Betmma_mods
+[submodule "Mods/DX-Tarots"]
+	path = Mods/DX-Tarots
+	url = https://github.com/Dimserene/DX-Tarots
+[submodule "Mods/LunasBalatroMods"]
+	path = Mods/LunasBalatroMods
+	url = https://github.com/LunaAstraCassiopeia/LunasBalatroMods
+[submodule "Mods/Fusion-Jokers"]
+	path = Mods/Fusion-Jokers
+	url = https://github.com/itayfeder/Fusion-Jokers
+[submodule "Mods/MystMods"]
+	path = Mods/MystMods
+	url = https://github.com/Dimserene/MystMods
+[submodule "Mods/JankJonklers"]
+	path = Mods/JankJonklers
+	url = https://github.com/spikeof2010/JankJonklers
+[submodule "Mods/Jestobiology"]
+	path = Mods/Jestobiology
+	url = https://github.com/spikeof2010/Jestobiology
+[submodule "Mods/Jimbo-s-Pack"]
+	path = Mods/Jimbo-s-Pack
+	url = https://github.com/art-muncher/Jimbo-s-Pack
+[submodule "Mods/Joker-Evolution"]
+	path = Mods/Joker-Evolution
+	url = https://github.com/Dimserene/Joker-Evolution
+[submodule "Mods/LobotomyCorp"]
+	path = Mods/LobotomyCorp
+	url = https://github.com/Mysthaps/LobotomyCorp
