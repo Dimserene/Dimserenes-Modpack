@@ -65,6 +65,12 @@ I repeat, this is not a full list of 1.0.0 compatible mods, this is a modpack th
     - Not Just Yet
   - Find and delete this entire section:
     ![alt text](https://media.discordapp.net/attachments/1254814398476713994/1255174809122246666/image.png?ex=667cd4e2&is=667b8362&hm=41834b0f44b02933db6238cbd95861a86ddb142a8ab0e8e03d44433c1a3ded67&)
+
+- [__Cryptid__](https://github.com/MathIsFun0/Cryptid) 0.3.4c (latest main code)
+
+  By Mathisfun
+
+  [Download](https://github.com/MathIsFun0/Cryptid/archive/refs/heads/main.zip) [Discord](https://discord.com/channels/1116389027176787968/1219749193204371456)
  
 - [__D6 Jokers__](https://github.com/GauntletGames-2086/D6-Jokers) 0.5.21 (latest main code)
 
@@ -217,6 +223,12 @@ I repeat, this is not a full list of 1.0.0 compatible mods, this is a modpack th
   By Amavoleda
 
   [Download](https://github.com/Amvoled/Taikomochi/archive/refs/heads/main.zip) [Discord](https://discord.com/channels/1116389027176787968/1211425207080718416)
+
+- [__Talisman__](https://github.com/MathIsFun0/Talisman) 1.2.2 (latest release)
+
+  By Mathisfun
+
+  [Download](https://github.com/MathIsFun0/Talisman/releases) [Discord](https://discord.com/channels/1116389027176787968/1241172556849876993)
 
 - [__The World Ends With Jimbo__](https://github.com/parchmentEngineer/The-World-Ends-With-Jimbo) 0.3.2 (latest release)
 
