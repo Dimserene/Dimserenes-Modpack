@@ -8,7 +8,7 @@ Some mod files need to be altered to avoid compat issues, I will specify them in
 
 I repeat, this is not a full list of 1.0.0 compatible mods, this is a modpack that when put together they should function with no problem.
 
-## The Prerequisites
+## Prerequisites
 
 1. Install [__Git__](https://git-scm.com/)
 
@@ -17,6 +17,9 @@ I repeat, this is not a full list of 1.0.0 compatible mods, this is a modpack th
 2. Install [__Lovely__](https://github.com/ethangreen-dev/lovely-injector) (latest release)
 
     [Download](https://github.com/ethangreen-dev/lovely-injector/releases/tag/v0.5.0-beta6) [Discord](https://discord.com/channels/1116389027176787968/1214591552903716954) [Authors](https://github.com/ethangreen-dev/lovely-injector/graphs/contributors?from=2024-03-03&to=2024-06-26&type=c)
+
+## How to Install
+
 
 ## The List
 
