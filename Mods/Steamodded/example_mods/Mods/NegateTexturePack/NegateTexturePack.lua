@@ -1,0 +1,19 @@
+--- STEAMODDED HEADER
+--- MOD_NAME: Negate Texture Pack
+--- MOD_ID: NegateTexturePack
+--- MOD_AUTHOR: [Steamo]
+--- MOD_DESCRIPTION: Negated Balatro... THIS IS AN EXAMPLE MOD, FEEL FREE TO USE IT AS A BASE
+--- LOADER_VERSION_GEQ: 1.0.0
+
+----------------------------------------------
+------------MOD CODE -------------------------
+
+
+sendDebugMessage("Launching Negate Texture Pack!")
+
+SMODS.Atlas{key = "Joker", path = "Jokers-negate.png", px = 71, py = 95, raw_key = true}
+SMODS.Atlas{key = "Booster", path = "boosters-negate.png", px = 71, py = 95, raw_key = true}
+SMODS.Atlas{key = "blind_chips", path = "BlindChips-negate.png", px = 34, py = 34, raw_key = true, atlas_table = 'ANIMATION_ATLAS', frames = 21}
+
+----------------------------------------------
+------------MOD CODE END----------------------

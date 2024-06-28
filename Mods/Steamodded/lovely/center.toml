@@ -1,0 +1,501 @@
+[manifest]
+version = "1.0.0"
+dump_lua = true
+priority = 0
+
+### Center API
+
+# Card:set_ability()
+[[patches]]
+[patches.regex]
+target = "card.lua"
+pattern = "(?<indent>[\t ]*)if not G\\.OVERLAY_MENU then \n"
+position = 'before'
+payload = '''
+local obj = self.config.center
+if obj.set_ability and type(obj.set_ability) == 'function' then
+	obj:set_ability(self, initial, delay_sprites)
+end'''
+line_prepend = '$indent'
+[[patches]]
+[patches.pattern]
+target = "card.lua"
+pattern = "self.ability.bonus = (self.ability.bonus or 0) + (center.config.bonus or 0)"
+position = "after"
+payload = """
+for k, v in pairs(center.config) do
+	if k ~= 'bonus' then
+		if type(v) == 'table' then
+			self.ability[k] = copy_table(v)
+		else
+			self.ability[k] = v
+		end
+	end
+end"""
+match_indent = true
+
+# Card:calculate_joker()
+[[patches]]
+[patches.pattern]
+target = "card.lua"
+pattern = 'if self.ability.set == "Planet" and not self.debuff then'
+position = 'before'
+payload = '''
+local obj = self.config.center
+if obj.calculate and type(obj.calculate) == 'function' then
+	local o = obj:calculate(self, context)
+	if o then return o end
+end'''
+match_indent = true
+
+# Card:update()
+[[patches]]
+[patches.pattern]
+target = 'card.lua'
+pattern = 'if G.STAGE == G.STAGES.RUN then'
+position = 'before'
+match_indent = true
+payload = '''
+local obj = self.config.center
+if obj.update and type(obj.update) == 'function' then
+	obj:update(self, dt)
+end'''
+
+# Card:generate_UIBox_ability_table()
+[[patches]]
+[patches.regex]
+target = 'card.lua'
+pattern = "(?<else>else)\n[\t ]*if self.ability.name == 'Loyalty Card' then\n[\t ]*self.ability.loyalty_remaining"
+root_capture = 'else'
+position = 'at'
+payload = 'elseif context.joker_main then'
+
+
+[[patches]]
+[patches.pattern]
+target = 'card.lua'
+pattern = 'return generate_card_ui(self.config.center, nil, loc_vars, card_type, badges, hide_desc, main_start, main_end)'
+position = 'at'
+match_indent = true
+payload = 'return generate_card_ui(self.config.center, nil, loc_vars, card_type, badges, hide_desc, main_start, main_end, self)'
+
+# generate_card_ui()
+[[patches]]
+[patches.pattern]
+target = 'functions/common_events.lua'
+pattern = 'function generate_card_ui(_c, full_UI_table, specific_vars, card_type, badges, hide_desc, main_start, main_end)'
+position = 'at'
+match_indent = true
+payload = 'function generate_card_ui(_c, full_UI_table, specific_vars, card_type, badges, hide_desc, main_start, main_end, card)'
+
+[[patches]]
+[patches.pattern]
+target = 'functions/common_events.lua'
+pattern = "full_UI_table.name = localize{type = 'name', set = _c.set, key = _c.key, nodes = full_UI_table.name}"
+position = 'at'
+match_indent = true
+payload = '''
+if not _c.generate_ui or type(_c.generate_ui) ~= 'function' then
+	full_UI_table.name = localize{type = 'name', set = _c.set, key = _c.key, nodes = full_UI_table.name}
+end'''
+
+[[patches]]
+[patches.pattern]
+target = 'functions/common_events.lua'
+pattern = "elseif specific_vars and specific_vars.debuffed then"
+position = 'before'
+match_indent = true
+payload = '''
+elseif _c.generate_ui and type(_c.generate_ui) == 'function' then
+	_c:generate_ui(info_queue, card, desc_nodes, specific_vars, full_UI_table)
+	if specific_vars and specific_vars.pinned then info_queue[#info_queue+1] = {key = 'pinned_left', set = 'Other'} end
+    if specific_vars and specific_vars.sticker then info_queue[#info_queue+1] = {key = string.lower(specific_vars.sticker)..'_sticker', set = 'Other'} end'''
+
+[[patches]]
+[patches.regex]
+target = 'functions/common_events.lua'
+pattern = "(?<indent>[\t ]+)if (?<rest>_c.name == 'Golden Ticket' then)"
+line_prepend = '$indent'
+position = 'at'
+payload = '''
+if _c.locked_loc_vars and type(_c.locked_loc_vars) == 'function' then
+	local res = _c:locked_loc_vars(info_queue) or {}
+	loc_vars = res.vars or {}
+	specific_vars.not_hidden = res.not_hidden or specific_vars.not_hidden
+elseif $rest'''
+
+# check_for_unlock()
+[[patches]]
+[patches.regex]
+target = 'functions/common_events.lua'
+pattern = "(?<indent>[\t ]*)if not card.unlocked and card.unlock_condition and args.type == 'career_stat' then"
+line_prepend = '$indent'
+position = 'before'
+payload = '''
+
+local custom_check
+if not card.unlocked and card.check_for_unlock and type(card.check_for_unlock) == 'function' then
+	ret = card:check_for_unlock(args)
+	if ret then unlock_card(card) end
+	custom_check = true
+end'''
+
+[[patches]]
+[patches.regex]
+target = 'functions/common_events.lua'
+pattern = "(?<indent>[\t ]*)if(?<a> )not card.unlocked and card.unlock_condition and args.type == 'career_stat' then"
+position = 'at'
+root_capture = 'a'
+payload = ' not custom_check and '
+
+[[patches]]
+[patches.regex]
+target = 'functions/common_events.lua'
+pattern = "(?<indent>[\t ]*)if(?<a> )not card.unlocked and card.unlock_condition and card.unlock_condition.type == args.type then"
+position = 'at'
+root_capture = 'a'
+payload = ' not custom_check and '
+
+# Game:init_item_prototypes()
+[[patches]]
+[patches.pattern]
+target = 'game.lua'
+pattern = 'if TESTHELPER_unlocks then v.unlocked = true; v.discovered = true;v.alerted = true end --REMOVE THIS'
+position = 'before'
+match_indent = true
+payload = 'v._d, v._u = v.discovered, v.unlocked'
+
+#Card:use_consumable()
+[[patches]]
+[patches.regex]
+target = 'card.lua'
+pattern = "(?<indent>[\t ]*)if self.ability.consumeable.mod_conv or self.ability.consumeable.suit_conv then"
+line_prepend = '$indent'
+position = 'before'
+payload = '''
+local obj = self.config.center
+if obj.use and type(obj.use) == 'function' then
+	obj:use(self, area, copier)
+	return
+end'''
+
+# Card:can_use_consumable()
+[[patches]]
+[patches.regex]
+target = 'card.lua'
+pattern = "(?<indent>[\t ]*)if self.ability.name == 'The Hermit' or self.ability.consumeable.hand_type"
+line_prepend = '$indent'
+position = 'before'
+payload = '''
+local obj = self.config.center
+if obj.can_use and type(obj.can_use) == 'function' then
+	return obj:can_use(self)
+end'''
+
+# G.UIDEF.card_h_popup()
+[[patches]]
+[patches.regex]
+target = 'functions/UI_definitions.lua'
+pattern = "(?<indent>[\t ]*)(?<if>if AUT.badges.card_type or AUT.badges.force_rarity then)\n[\t ]*(?<rest>.*)\n[\t ]*end"
+line_prepend = '$indent'
+position = 'at'
+payload = '''
+local obj = card.config.center
+$if
+	if obj and (obj.set_card_type_badge or obj.type and obj.type.set_card_type_badge) then
+		if obj.type and type(obj.type.set_card_type_badge) == 'function' then
+			obj.type:set_card_type_badge(obj, card, badges)
+		end
+		if type(obj.set_card_type_badge) == 'function' then
+			obj:set_card_type_badge(card, badges)
+		end
+	else
+		$rest
+	end
+end
+if obj and obj.set_badges and type(obj.set_badges) == 'function' then
+	obj:set_badges(card, badges)
+end'''
+
+[[patches]]
+[patches.regex]
+target = 'functions/UI_definitions.lua'
+pattern = "(?<indent>[\t ]*)if AUT.badges then\n([\t ]*.*\n){4}[\t ]*end"
+line_prepend = '$indent'
+position = 'after'
+payload = '''
+if AUT.card_type ~= 'Locked' and AUT.card_type ~= 'Undiscovered' then
+	SMODS.create_mod_badges(card.config.center, badges)
+	if card.base then
+		SMODS.create_mod_badges(SMODS.Ranks[card.base.value], badges)
+		SMODS.create_mod_badges(SMODS.Suits[card.base.suit], badges)
+	end
+	if card.config and card.config.tag then
+		SMODS.create_mod_badges(SMODS.Tags[card.config.tag.key], badges)
+	end
+	badges.mod_set = nil
+end'''
+
+# G.UIDEF.settings_tab()
+[[patches]]
+[patches.regex]
+target = 'functions/UI_definitions.lua'
+pattern = "(?<indent>[\t ]*)G.F_CRASH_REPORTS.*"
+line_prepend = '$indent'
+position = 'after'
+payload = '''
+create_toggle { label = 'Disable Mod Badges', ref_table = G.SETTINGS, ref_value = 'no_mod_badges' },'''
+
+# set_discover_tallies()
+[[patches]]
+[patches.regex]
+target = 'functions/misc_functions.lua'
+pattern = "(?<indent>[\t ]*)if v.set == 'Planet' then(\n[\t ]*.*){15}"
+line_prepend = '$indent'
+position = 'at'
+payload = '''
+local tally = G.DISCOVER_TALLIES[v.set:lower()..'s']
+if tally then
+	tally.of = tally.of + 1
+	if v.discovered then
+		tally.tally = tally.tally + 1
+	end
+end'''
+
+[[patches]]
+[patches.regex]
+target = 'functions/misc_functions.lua'
+pattern = "[\t ]*tarots = \\{tally = 0, of = 0\\},\n(.*\n){2}"
+line_prepend = '$indent'
+position = 'at'
+payload = ''
+
+[[patches]]
+[patches.regex]
+target = 'functions/misc_functions.lua'
+pattern = "(?<indent>[\t ]*)for _, v in pairs\\(G.DISCOVER_TALLIES\\) do"
+line_prepend = '$indent'
+position = 'before'
+payload = '''
+for _, v in ipairs(SMODS.ConsumableType.obj_buffer) do
+	G.DISCOVER_TALLIES[v:lower()..'s'] = {tally = 0, of = 0}
+end'''
+
+# create_UIBox_your_collection()
+[[patches]]
+[patches.regex]
+target = 'functions/UI_definitions.lua'
+pattern = "(?<indent>[\t ]*)local t = create_UIBox_generic_options\\(\\{ back_func = G.STAGE"
+line_prepend = '$indent'
+position = 'before'
+payload = '''
+local consumable_nodes = {}
+for _, key in ipairs(SMODS.ConsumableType.obj_buffer) do
+	local id = 'your_collection_'..key:lower()..'s'
+	consumable_nodes[#consumable_nodes+1] = UIBox_button({button = id, label = {localize('b_'..key:lower()..'_cards')}, count = G.DISCOVER_TALLIES[key:lower()..'s'], minw = 4, id = id, colour = G.C.SECONDARY_SET[key]})
+end'''
+
+[[patches]]
+[patches.regex]
+target = 'functions/UI_definitions.lua'
+pattern = "(?<indent>[\t ]*)nodes=\\{\n[\t ]*UIBox_button\\(\\{button = 'your_collection_tarots'(.*\n){3}[\t ]*}"
+line_prepend = '$indent'
+position = 'at'
+payload = 'nodes = consumable_nodes'
+
+# Card:apply_to_run()
+[[patches]]
+[patches.regex]
+target = 'card.lua'
+pattern = "(?<indent>[\t ]*)if center_table.name == 'Overstock'"
+line_prepend = '$indent'
+position = 'before'
+payload = '''
+local obj = center or self.config.center
+if obj.redeem and type(obj.redeem) == 'function' then
+	obj:redeem(self)
+	return
+end'''
+
+# create_card_for_shop()
+[[patches]]
+[patches.pattern]
+target = 'functions/UI_definitions.lua'
+pattern = "local total_rate = G.GAME.joker_rate + G.GAME.tarot_rate + G.GAME.planet_rate + G.GAME.playing_card_rate + G.GAME.spectral_rate"
+match_indent = true
+position = 'at'
+payload = '''
+local total_rate = G.GAME.joker_rate + G.GAME.playing_card_rate
+for _,v in ipairs(SMODS.ConsumableType.obj_buffer) do
+	total_rate = total_rate + G.GAME[v:lower()..'_rate']
+end'''
+
+[[patches]]
+[patches.regex]
+target = 'functions/UI_definitions.lua'
+pattern = '(?<indent>[\t ]*)for _, v in ipairs\((?<li>\{\n(.*\n){5}[\t ]*\})\) do'
+line_prepend = '$indent'
+position = 'at'
+payload = '''
+-- need to preserve order to leave RNG unchanged
+local rates = $li
+for _, v in ipairs(SMODS.ConsumableType.obj_buffer) do
+	if not (v == 'Tarot' or v == 'Planet' or v == 'Spectral') then
+		table.insert(rates, { type = v, val = G.GAME[v:lower()..'_rate'] })
+	end
+end
+for _, v in ipairs(rates) do'''
+
+# create_card()
+[[patches]]
+[patches.pattern]
+target = 'functions/common_events.lua'
+pattern = "if not forced_key and soulable and (not G.GAME.banned_keys['c_soul']) then"
+match_indent = true
+position = 'after'
+payload = '''
+	for _, v in ipairs(SMODS.Consumable.legendaries) do
+		if (_type == v.type.key or _type == v.soul_set) and not (G.GAME.used_jokers[v.key] and not next(find_joker("Showman")) and not v.can_repeat_soul) then
+			if pseudorandom('soul_'..v.key.._type..G.GAME.round_resets.ante) > (1 - v.soul_rate) then
+				forced_key = v.key
+			end
+		end
+	end'''
+
+# Card:add_to_deck()
+[[patches]]
+[patches.regex]
+target = 'card.lua'
+pattern = '(?<indent>[\t ]*)if self.ability.h_size ~= 0 then\n[\t ]*G\.hand:change_size\(self.ability.h_size\)'
+line_prepend = '$indent'
+position = 'before'
+payload = '''
+local obj = self.config.center
+if obj and obj.add_to_deck and type(obj.add_to_deck) == 'function' then
+	obj:add_to_deck(self, from_debuff)
+end'''
+
+# Card:remove_from_deck()
+[[patches]]
+[patches.regex]
+target = 'card.lua'
+pattern = '(?<indent>[\t ]*)if self.ability.h_size ~= 0 then\n[\t ]*G\.hand:change_size\(-self.ability.h_size\)'
+line_prepend = '$indent'
+position = 'before'
+payload = '''
+local obj = self.config.center
+if obj and obj.remove_from_deck and type(obj.remove_from_deck) == 'function' then
+	obj:remove_from_deck(self, from_debuff)
+end'''
+
+# G.FUNCS.use_card()
+[[patches]]
+[patches.pattern]
+target = 'functions/button_callbacks.lua'
+pattern = "if card.area then card.area:remove_card(card) end"
+match_indent = true
+position = 'at'
+payload = '''
+local nc
+if card.ability.consumeable then
+    local obj = card.config.center
+    	if obj.keep_on_use and type(obj.keep_on_use) == 'function' then
+        	nc = obj:keep_on_use(card)
+      	end
+    end
+if not nc and card.area then card.area:remove_card(card) end'''
+
+[[patches]]
+[patches.pattern]
+target = 'functions/button_callbacks.lua'
+pattern = "else draw_card(G.hand, G.play, 1, 'up', true, card, nil, mute) end"
+match_indent = true
+position = 'before'
+payload = '''
+elseif nc then
+    area:remove_from_highlighted(card)
+    play_sound('cardSlide2', nil, 0.3)
+    dont_dissolve = true'''
+
+# Card:set_sprites()
+[[patches]]
+[patches.pattern]
+target = 'card.lua'
+pattern = "if not self.children.back then"
+match_indent = true
+position = 'at'
+payload = '''
+if _center.set_sprites and type(_center.set_sprites) == 'function' then
+	_center:set_sprites(self, _front)
+end
+if true then'''
+
+# Card:load()
+[[patches]]
+[patches.pattern]
+target = 'card.lua'
+pattern = 'if self.config.center.name == "Half Joker" then'
+match_indent = true
+position = 'at'
+payload = '''
+local obj = self.config.center
+if obj.load and type(obj.load) == 'function' then
+	obj:load(self, cardTable, other_card)
+elseif self.config.center.name == "Half Joker" then'''
+
+# Card:calculate_dollar_bonus()
+[[patches]]
+[patches.pattern]
+target = "card.lua"
+pattern = "if self.ability.name == 'Cloud 9' and self.ability.nine_tally and self.ability.nine_tally > 0 then"
+position = "before"
+match_indent = true
+payload = '''
+--asdf
+local obj = self.config.center
+if obj.calc_dollar_bonus and type(obj.calc_dollar_bonus) == 'function' then
+    return obj:calc_dollar_bonus(self)
+end'''
+
+# end_round()
+[[patches]]
+[patches.regex]
+target = 'functions/state_events.lua'
+pattern = '''(?<indent>[\t ]*)reset_castle_card\(\)'''
+line_prepend = '$indent'
+position = 'after'
+payload = '''
+for _, mod in ipairs(SMODS.mod_list) do
+	if mod.reset_game_globals and type(mod.reset_game_globals) == 'function' then
+		mod.reset_game_globals(false)
+	end
+end'''
+
+# Game:start_run()
+[[patches]]
+[patches.regex]
+target = 'game.lua'
+pattern = '''(?<indent>[\t ]*)reset_castle_card\(\)'''
+line_prepend = '$indent'
+position = 'after'
+payload = '''
+for _, mod in ipairs(SMODS.mod_list) do
+	if mod.reset_game_globals and type(mod.reset_game_globals) == 'function' then
+		mod.reset_game_globals(true)
+	end
+end'''
+
+# Card:set_debuff()
+[[patches]]
+[patches.pattern]
+target = 'card.lua'
+pattern = "function Card:set_debuff(should_debuff)"
+position = 'after'
+match_indent = true
+payload = '''
+for _, mod in ipairs(SMODS.mod_list) do
+	if mod.set_debuff and type(mod.set_debuff) == 'function' then
+		local omit_base_debuff_check = mod.set_debuff(self, should_debuff)
+		if omit_base_debuff_check ~= nil then return end --return anything other than nil to stop the game's base logic for card debuffing
+	end
+end'''

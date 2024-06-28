@@ -1,0 +1,79 @@
+[manifest]
+version = "1.0.0"
+dump_lua = true
+priority = 0
+
+# change all " 0 " in eval_card to " TalismanCompat(0) "
+[[patches]]
+[patches.pattern]
+target = "functions/common_events.lua"
+pattern = "if chips > 0 then"
+position = "at"
+payload = "if TalismanCompat(chips) > TalismanCompat(0) then"
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = "functions/common_events.lua"
+pattern = "if mult > 0 then"
+position = "at"
+payload = "if TalismanCompat(mult) > TalismanCompat(0) then"
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = "functions/common_events.lua"
+pattern = "if x_mult > 0 then"
+position = "at"
+payload = "if TalismanCompat(x_mult) > TalismanCompat(0) then"
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = "functions/common_events.lua"
+pattern = "if p_dollars > 0 then"
+position = "at"
+payload = "if TalismanCompat(p_dollars) > TalismanCompat(0) then"
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = "functions/common_events.lua"
+pattern = "if h_mult > 0 then"
+position = "at"
+payload = "if TalismanCompat(h_mult) > TalismanCompat(0) then"
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = "functions/common_events.lua"
+pattern = "if h_x_mult > 0 then"
+position = "at"
+payload = "if TalismanCompat(h_x_mult) > TalismanCompat(0) then"
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = "functions/common_events.lua"
+pattern = "if amt > 0 or amt < 0 then"
+position = "at"
+payload = "if TalismanCompat(amt) > TalismanCompat(0) or TalismanCompat(amt) < TalismanCompat(0) then"
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = "functions/misc_functions.lua"
+pattern = "assembled_string = assembled_string..(type(subpart) == 'string' and subpart or args.vars[tonumber(subpart[1])])"
+position = "at"
+payload = "assembled_string = assembled_string..(type(subpart) == 'string' and subpart or tostring(args.vars[tonumber(subpart[1])]))"
+match_indent = true
+
+
+# Half-life changing displayed joker limit in CardArea:draw()
+[[patches]]
+[patches.pattern]
+target = "cardarea.lua"
+pattern = "{n=G.UIT.T, config={ref_table = self.config, ref_value = 'card_limit', scale = 0.3, colour = G.C.WHITE}},"
+position = "at"
+payload = "{n=G.UIT.T, config={ref_table = self.config, ref_value = self==G.jokers and used_voucher and used_voucher('half_life') and 'card_limit_ref' or 'card_limit', scale = 0.3, colour = G.C.WHITE}},"
+match_indent = true
