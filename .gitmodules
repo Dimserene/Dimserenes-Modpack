@@ -1,6 +1,3 @@
-[submodule "Steamodded"]
-	path = Steamodded
-	url = https://github.com/Steamopollys/Steamodded
 [submodule "Mods/Steamodded"]
 	path = Mods/Steamodded
 	url = https://github.com/Steamopollys/Steamodded
@@ -10,18 +7,12 @@
 [submodule "Mods/blank-jokers"]
 	path = Mods/blank-jokers
 	url = https://github.com/Dimserene/blank-jokers
-[submodule "Mods/Bettma_mods"]
-	path = Mods/Bettma_mods
-	url = https://github.com/Dimserene/Bettma_mods
 [submodule "Mods/Bunco"]
 	path = Mods/Bunco
 	url = https://github.com/Firch/Bunco
 [submodule "Mods/Codex-Arcanum"]
 	path = Mods/Codex-Arcanum
 	url = https://github.com/Dimserene/Codex-Arcanum
-[submodule "Cryptid"]
-	path = Cryptid
-	url = https://github.com/MathIsFun0/Cryptid
 [submodule "Mods/Cryptid"]
 	path = Mods/Cryptid
 	url = https://github.com/MathIsFun0/Cryptid
@@ -64,9 +55,6 @@
 [submodule "blank-jokers"]
 	path = blank-jokers
 	url = https://github.com/Dimserene/blank-jokers
-[submodule "Mods/-f"]
-	path = Mods/-f
-	url = https://github.com/Dimserene/blank-jokers
 [submodule "Mods/MathBlinds"]
 	path = Mods/MathBlinds
 	url = https://github.com/Bazinga9000/MathBlinds
@@ -89,10 +77,6 @@
 [submodule "Mods/Ro-Balatro"]
 	path = Mods/Ro-Balatro
 	url = https://github.com/AlexZGreat/Ro-Balatro
-[submodule "Mods/SDM0s_mods"]
-	path = Mods/SDM0s_mods
-	url = https://github.com/SDM0/Balatro-Mods
-	branch = smods_1.0.0
 [submodule "Mods/Stupidity-the-mod"]
 	path = Mods/Stupidity-the-mod
 	url = https://github.com/Aigengoku/Stupidity-the-mod
