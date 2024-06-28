@@ -98,7 +98,7 @@ I repeat, this is not a full list of 1.0.0 compatible mods, this is a modpack th
 
 - [__Enhanced Enhancements__](https://github.com/LunaAstraCassiopeia/LunasBalatroMods) (latest main code)
 
-By Luna
+  By Luna
 
   [Download](https://github.com/LunaAstraCassiopeia/LunasBalatroMods/archive/refs/heads/main.zip) [Discord](https://discord.com/channels/1116389027176787968/1216064295633289286)
 
