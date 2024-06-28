@@ -10,3 +10,12 @@
 [submodule "Mods/blank-jokers"]
 	path = Mods/blank-jokers
 	url = https://github.com/Dimserene/blank-jokers
+[submodule "Mods/Bettma_mods"]
+	path = Mods/Bettma_mods
+	url = https://github.com/Dimserene/Bettma_mods
+[submodule "Mods/Bunco"]
+	path = Mods/Bunco
+	url = https://github.com/Firch/Bunco
+[submodule "Mods/Codex-Arcanum"]
+	path = Mods/Codex-Arcanum
+	url = https://github.com/Dimserene/Codex-Arcanum
