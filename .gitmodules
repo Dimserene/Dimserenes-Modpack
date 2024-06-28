@@ -1,0 +1,6 @@
+[submodule "Steamodded"]
+	path = Steamodded
+	url = https://github.com/Steamopollys/Steamodded
+[submodule "Mods/Steamodded"]
+	path = Mods/Steamodded
+	url = https://github.com/Steamopollys/Steamodded
