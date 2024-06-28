@@ -67,3 +67,51 @@
 [submodule "Mods/-f"]
 	path = Mods/-f
 	url = https://github.com/Dimserene/blank-jokers
+[submodule "Mods/MathBlinds"]
+	path = Mods/MathBlinds
+	url = https://github.com/Bazinga9000/MathBlinds
+[submodule "Mods/MikasBalatro"]
+	path = Mods/MikasBalatro
+	url = https://github.com/MikaSchoenmakers/MikasBalatro
+[submodule "Mods/MystBlinds"]
+	path = Mods/MystBlinds
+	url = https://github.com/Mysthaps/MystBlinds
+[submodule "Mods/NeowBlessings"]
+	path = Mods/NeowBlessings
+	url = https://github.com/kjossul/NeowBlessings
+[submodule "Mods/balatro-NotJustYet"]
+	path = Mods/balatro-NotJustYet
+	url = https://github.com/Toneblock/balatro-NotJustYet
+[submodule "Mods/Ortalab-DEMO"]
+	path = Mods/Ortalab-DEMO
+	url = https://github.com/GauntletGames-2086/Ortalab-DEMO
+	branch = test
+[submodule "Mods/Ro-Balatro"]
+	path = Mods/Ro-Balatro
+	url = https://github.com/AlexZGreat/Ro-Balatro
+[submodule "Mods/SDM0s_mods"]
+	path = Mods/SDM0s_mods
+	url = https://github.com/SDM0/Balatro-Mods
+	branch = smods_1.0.0
+[submodule "Mods/Stupidity-the-mod"]
+	path = Mods/Stupidity-the-mod
+	url = https://github.com/Aigengoku/Stupidity-the-mod
+[submodule "Mods/BalatroTagPreview"]
+	path = Mods/BalatroTagPreview
+	url = https://github.com/JKd3vLD/BalatroTagPreview
+[submodule "Mods/Taikomochi"]
+	path = Mods/Taikomochi
+	url = https://github.com/Amvoled/Taikomochi
+[submodule "Mods/Talisman"]
+	path = Mods/Talisman
+	url = https://github.com/MathIsFun0/Talisman
+[submodule "Mods/The-World-Ends-With-Jimbo"]
+	path = Mods/The-World-Ends-With-Jimbo
+	url = https://github.com/parchmentEngineer/The-World-Ends-With-Jimbo
+[submodule "Mods/Trance"]
+	path = Mods/Trance
+	url = https://github.com/MathIsFun0/Trance
+[submodule "Mods/SDM0s_stuff"]
+	path = Mods/SDM0s_stuff
+	url = https://github.com/SDM0/Balatro-Mods
+	branch = smods_1.0.0
