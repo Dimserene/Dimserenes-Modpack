@@ -64,3 +64,6 @@
 [submodule "blank-jokers"]
 	path = blank-jokers
 	url = https://github.com/Dimserene/blank-jokers
+[submodule "Mods/-f"]
+	path = Mods/-f
+	url = https://github.com/Dimserene/blank-jokers
