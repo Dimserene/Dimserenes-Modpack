@@ -61,10 +61,13 @@ I repeat, this is not a full list of 1.0.0 compatible mods, this is a modpack th
     - D6 jokers
     - DX Tarots
   - Change all `SMODS.Tag(s)` and `SMODS.Booster(s)` instances everywhere in files of this mod into `CATag(s)` and `CABooster(s)`
+  - Thanks ejwu, Chromapie and Myst for this
+ 
   - Needs tweak for compat with the following mods:
     - Not Just Yet
   - Find and delete this entire section:
     ![alt text](https://media.discordapp.net/attachments/1254814398476713994/1255174809122246666/image.png?ex=667cd4e2&is=667b8362&hm=41834b0f44b02933db6238cbd95861a86ddb142a8ab0e8e03d44433c1a3ded67&)
+  - Thanks Toneblock for this
 
 - [__Cryptid__](https://github.com/MathIsFun0/Cryptid) 0.3.4c (latest main code)
 
@@ -95,6 +98,7 @@ I repeat, this is not a full list of 1.0.0 compatible mods, this is a modpack th
     - D6 Jokers
     - Codex Arcanum
   - Change all `SMODS.Booster(s)` instances everywhere in files of this mod into `CABooster(s)`
+  - Thanks Chromapie and Myst for this 
 
 - [__Enhanced Enhancements__](https://github.com/LunaAstraCassiopeia/LunasBalatroMods) (latest main code)
 
