@@ -1,6 +1,6 @@
 # (WIP)Dimserene's Modpack (for Steamodded-1.0.0 Balatro)
 
-#### Thank you all the mod authors, `@humplydinkle` & `@asgrich` on discord for helping and testing!
+#### Thank you all the mod authors, `@humplydinkle`, `@chromapie` & `@asgrich` on discord for helping and testing!
 (Updates frequently)
 A custom-made modpack that is hand-picked and put together by myself
 
