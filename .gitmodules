@@ -96,3 +96,9 @@
 	path = Mods/SDM0s_stuff
 	url = https://github.com/SDM0/Balatro-Mods
 	branch = smods_1.0.0
+[submodule "Mods/Balatro-Stickers-Always-Shown"]
+	path = Mods/Balatro-Stickers-Always-Shown
+	url = https://github.com/Dimserene/Balatro-Stickers-Always-Shown
+[submodule "Mods/BetterStakes"]
+	path = Mods/BetterStakes
+	url = https://github.com/kjossul/BetterStakes
