@@ -24,6 +24,12 @@ I repeat, this is not a full list of 1.0.0 compatible mods, this is a modpack th
   And copy the Mods folder into %Appdata%/Balatro
 
 
+## How to Update Modpack
+
+  ```
+  git submodule update --remote --merge
+  ```
+
 ## The List
 
 - [__Steamodded 1.0.0 Alpha__](https://github.com/Steamopollys/Steamodded?tab=readme-ov-file) (latest main code)
