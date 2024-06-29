@@ -4,7 +4,7 @@
 (Updates frequently)
 A custom-made modpack that is hand-picked and put together by myself
 
-Some mod files needs to be altered to avoid compat issues if you want to put the mods together, and I will specify them in the list.
+Some mod files needs to be altered to avoid compat issues if you want to put the mods together, and I will specify them in the list.（Note that i have applied all the below-mentioned modifications in the mod repo)
 
 I repeat, this is not a full list of 1.0.0 compatible mods, this is a modpack that when put together and my goal is they should function with no problem.
 
