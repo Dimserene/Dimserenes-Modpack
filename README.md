@@ -27,7 +27,8 @@ I repeat, this is not a full list of 1.0.0 compatible mods, this is a modpack th
 ## How to Update Modpack
 
   ```
-  git submodule update --remote --merge
+cd Dimserenes-Modpack/
+git submodule update --remote --merge
   ```
 
 ## The List
