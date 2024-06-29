@@ -2,10 +2,10 @@
 	path = Mods/Steamodded
 	url = https://github.com/Steamopollys/Steamodded
 [submodule "Mods/balatro-safety-steamodded"]
-	path = Mods/Balatro-Safety
+	path = Mods/balatro-safety-steamodded
 	url = https://github.com/Zei33/balatro-safety-steamodded
 [submodule "Mods/blank-jokers"]
-	path = Mods/Blank-Jokers
+	path = Mods/blank-jokers
 	url = https://github.com/Dimserene/blank-jokers
 [submodule "Mods/Bunco"]
 	path = Mods/Bunco
@@ -20,25 +20,25 @@
 	path = Mods/D6-Jokers
 	url = https://github.com/GauntletGames-2086/D6-Jokers
 [submodule "Mods/Balatro-DeckCreator"]
-	path = Mods/Deck-Creator
+	path = Mods/Balatro-DeckCreator
 	url = https://github.com/adambennett/Balatro-DeckCreator
 [submodule "Mods/Betmma_mods"]
-	path = Mods/Betmma-mods
+	path = Mods/Betmma_mods
 	url = https://github.com/Dimserene/Betmma_mods
 [submodule "Mods/DX-Tarots"]
 	path = Mods/DX-Tarots
 	url = https://github.com/Dimserene/DX-Tarots
 [submodule "Mods/LunasBalatroMods"]
-	path = Mods/Lunas-Balatro-Mods
+	path = Mods/LunasBalatroMods
 	url = https://github.com/LunaAstraCassiopeia/LunasBalatroMods
 [submodule "Mods/Fusion-Jokers"]
 	path = Mods/Fusion-Jokers
 	url = https://github.com/itayfeder/Fusion-Jokers
 [submodule "Mods/MystMods"]
-	path = Mods/Myst-Mods
+	path = Mods/MystMods
 	url = https://github.com/Dimserene/MystMods
 [submodule "Mods/JankJonklers"]
-	path = Mods/Jank-Jonklers
+	path = Mods/JankJonklers
 	url = https://github.com/spikeof2010/JankJonklers
 [submodule "Mods/Jestobiology"]
 	path = Mods/Jestobiology
@@ -50,22 +50,25 @@
 	path = Mods/Joker-Evolution
 	url = https://github.com/Dimserene/Joker-Evolution
 [submodule "Mods/LobotomyCorp"]
-	path = Mods/Lobotomy-Corp
+	path = Mods/LobotomyCorp
 	url = https://github.com/Mysthaps/LobotomyCorp
+[submodule "blank-jokers"]
+	path = blank-jokers
+	url = https://github.com/Dimserene/blank-jokers
 [submodule "Mods/MathBlinds"]
-	path = Mods/Math-Blinds
+	path = Mods/MathBlinds
 	url = https://github.com/Bazinga9000/MathBlinds
 [submodule "Mods/MikasBalatro"]
-	path = Mods/Mikas-Balatro
+	path = Mods/MikasBalatro
 	url = https://github.com/MikaSchoenmakers/MikasBalatro
 [submodule "Mods/MystBlinds"]
-	path = Mods/Myst-Blinds
+	path = Mods/MystBlinds
 	url = https://github.com/Mysthaps/MystBlinds
 [submodule "Mods/NeowBlessings"]
-	path = Mods/Neow-Blessings
+	path = Mods/NeowBlessings
 	url = https://github.com/kjossul/NeowBlessings
 [submodule "Mods/balatro-NotJustYet"]
-	path = Mods/Not-Just-Yet
+	path = Mods/balatro-NotJustYet
 	url = https://github.com/Toneblock/balatro-NotJustYet
 [submodule "Mods/Ortalab-DEMO"]
 	path = Mods/Ortalab-DEMO
@@ -74,6 +77,9 @@
 [submodule "Mods/Ro-Balatro"]
 	path = Mods/Ro-Balatro
 	url = https://github.com/AlexZGreat/Ro-Balatro
+[submodule "Mods/Stupidity-the-mod"]
+	path = Mods/Stupidity-the-mod
+	url = https://github.com/Aigengoku/Stupidity-the-mod
 [submodule "Mods/BalatroTagPreview"]
 	path = Mods/BalatroTagPreview
 	url = https://github.com/JKd3vLD/BalatroTagPreview
@@ -90,12 +96,6 @@
 	path = Mods/Trance
 	url = https://github.com/MathIsFun0/Trance
 [submodule "Mods/SDM0s_stuff"]
-	path = Mods/SDM0s-stuff
+	path = Mods/SDM0s_stuff
 	url = https://github.com/SDM0/Balatro-Mods
 	branch = smods_1.0.0
-[submodule "Mods/Balatro-Stickers-Always-Shown"]
-	path = Mods/Stickers-Always-Shown
-	url = https://github.com/Dimserene/Balatro-Stickers-Always-Shown
-[submodule "Mods/BetterStakes"]
-	path = Mods/Better-Stakes
-	url = https://github.com/kjossul/BetterStakes
