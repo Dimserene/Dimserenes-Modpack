@@ -77,6 +77,9 @@
 [submodule "Mods/Ro-Balatro"]
 	path = Mods/Ro-Balatro
 	url = https://github.com/AlexZGreat/Ro-Balatro
+[submodule "Mods/Stupidity-the-mod"]
+	path = Mods/Stupidity-the-mod
+	url = https://github.com/Aigengoku/Stupidity-the-mod
 [submodule "Mods/BalatroTagPreview"]
 	path = Mods/BalatroTagPreview
 	url = https://github.com/JKd3vLD/BalatroTagPreview
