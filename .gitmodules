@@ -57,7 +57,7 @@
 	url = https://github.com/Bazinga9000/MathBlinds
 [submodule "Mods/MikasBalatro"]
 	path = Mods/MikasBalatro
-	url = https://github.com/MikaSchoenmakers/MikasBalatro
+	url = https://github.com/Dimserene/MikasBalatro
 [submodule "Mods/MystBlinds"]
 	path = Mods/MystBlinds
 	url = https://github.com/Mysthaps/MystBlinds
