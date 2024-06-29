@@ -16,6 +16,16 @@ I repeat, this is not a full list of 1.0.0 compatible mods, this is a modpack th
 
     [Download](https://github.com/ethangreen-dev/lovely-injector/releases/tag/v0.5.0-beta6) [Discord](https://discord.com/channels/1116389027176787968/1214591552903716954) [Authors](https://github.com/ethangreen-dev/lovely-injector/graphs/contributors?from=2024-03-03&to=2024-06-26&type=c)
 
+
+## How to Install
+
+  ```
+  git clone --recurse-submodules --remote-submodules https://github.com/Dimserene/Dimserenes-Modpack
+  ```
+  
+  And copy the Mods folder into %Appdata%/Balatro
+
+
 ## The List
 
 - [__Steamodded 1.0.0 Alpha__](https://github.com/Steamopollys/Steamodded?tab=readme-ov-file) (latest main code)
