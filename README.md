@@ -20,6 +20,8 @@ I repeat, this is not a full list of 1.0.0 compatible mods, this is a modpack th
 
 ## How to Install
 
+  `git clone --recurse-submodules --remote-submodules https://github.com/Dimserene/Dimserenes-Modpack`
+  And copy the Mods folder into %Appdata%/Balatro
 
 ## The List
 
