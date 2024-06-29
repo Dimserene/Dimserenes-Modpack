@@ -100,6 +100,7 @@ I repeat, this is not a full list of 1.0.0 compatible mods, this is a modpack th
     - D6 Jokers
     - Codex Arcanum
   - Change all `SMODS.Booster(s)` instances everywhere in files of this mod into `CABooster(s)`
+  - Change all `love.filesystem` instances everywhere in files of this mod into `NFS`
     - Thanks Chromapie and Myst for this 
 
 - [__Enhanced Enhancements__](https://github.com/LunaAstraCassiopeia/LunasBalatroMods) (latest main code)
