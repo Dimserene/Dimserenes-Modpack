@@ -1,0 +1,101 @@
+[submodule "Mods/Steamodded"]
+	path = Mods/Steamodded
+	url = https://github.com/Steamopollys/Steamodded
+[submodule "Mods/Balatro-Safety"]
+	path = Mods/Balatro-Safety
+	url = https://github.com/Zei33/balatro-safety-steamodded
+[submodule "Mods/Blank-Jokers"]
+	path = Mods/Blank-Jokers
+	url = https://github.com/Dimserene/blank-jokers
+[submodule "Mods/Bunco"]
+	path = Mods/Bunco
+	url = https://github.com/Firch/Bunco
+[submodule "Mods/Codex-Arcanum"]
+	path = Mods/Codex-Arcanum
+	url = https://github.com/Dimserene/Codex-Arcanum
+[submodule "Mods/Cryptid"]
+	path = Mods/Cryptid
+	url = https://github.com/MathIsFun0/Cryptid
+[submodule "Mods/D6-Jokers"]
+	path = Mods/D6-Jokers
+	url = https://github.com/GauntletGames-2086/D6-Jokers
+[submodule "Mods/Deck-Creator"]
+	path = Mods/Deck-Creator
+	url = https://github.com/adambennett/Balatro-DeckCreator
+[submodule "Mods/Betmma-Mods"]
+	path = Mods/Betmma-Mods
+	url = https://github.com/Dimserene/Betmma_mods
+[submodule "Mods/DX-Tarots"]
+	path = Mods/DX-Tarots
+	url = https://github.com/Dimserene/DX-Tarots
+[submodule "Mods/Lunas-Balatro-Mods"]
+	path = Mods/Lunas-Balatro-Mods
+	url = https://github.com/LunaAstraCassiopeia/LunasBalatroMods
+[submodule "Mods/Fusion-Jokers"]
+	path = Mods/Fusion-Jokers
+	url = https://github.com/itayfeder/Fusion-Jokers
+[submodule "Mods/Myst-Mods"]
+	path = Mods/Myst-Mods
+	url = https://github.com/Dimserene/MystMods
+[submodule "Mods/Jank-Jonklers"]
+	path = Mods/Jank-Jonklers
+	url = https://github.com/spikeof2010/JankJonklers
+[submodule "Mods/Jestobiology"]
+	path = Mods/Jestobiology
+	url = https://github.com/spikeof2010/Jestobiology
+[submodule "Mods/Jimbo-s-Pack"]
+	path = Mods/Jimbo-s-Pack
+	url = https://github.com/art-muncher/Jimbo-s-Pack
+[submodule "Mods/Joker-Evolution"]
+	path = Mods/Joker-Evolution
+	url = https://github.com/Dimserene/Joker-Evolution
+[submodule "Mods/Lobotomy-Corp"]
+	path = Mods/Lobotomy-Corp
+	url = https://github.com/Mysthaps/LobotomyCorp
+[submodule "Mods/Math-Blinds"]
+	path = Mods/Math-Blinds
+	url = https://github.com/Bazinga9000/MathBlinds
+[submodule "Mods/Mikas-Balatro"]
+	path = Mods/Mikas-Balatro
+	url = https://github.com/MikaSchoenmakers/MikasBalatro
+[submodule "Mods/Myst-Blinds"]
+	path = Mods/Myst-Blinds
+	url = https://github.com/Mysthaps/MystBlinds
+[submodule "Mods/Neow-Blessings"]
+	path = Mods/Neow-Blessings
+	url = https://github.com/kjossul/NeowBlessings
+[submodule "Mods/Not-Just-Yet"]
+	path = Mods/Not-Just-Yet
+	url = https://github.com/Toneblock/balatro-NotJustYet
+[submodule "Mods/Ortalab-DEMO"]
+	path = Mods/Ortalab-DEMO
+	url = https://github.com/GauntletGames-2086/Ortalab-DEMO
+	branch = test
+[submodule "Mods/Ro-Balatro"]
+	path = Mods/Ro-Balatro
+	url = https://github.com/AlexZGreat/Ro-Balatro
+[submodule "Mods/Tag-Preview"]
+	path = Mods/Tag-Preview
+	url = https://github.com/JKd3vLD/BalatroTagPreview
+[submodule "Mods/Taikomochi"]
+	path = Mods/Taikomochi
+	url = https://github.com/Amvoled/Taikomochi
+[submodule "Mods/Talisman"]
+	path = Mods/Talisman
+	url = https://github.com/MathIsFun0/Talisman
+[submodule "Mods/The-World-Ends-With-Jimbo"]
+	path = Mods/The-World-Ends-With-Jimbo
+	url = https://github.com/parchmentEngineer/The-World-Ends-With-Jimbo
+[submodule "Mods/Trance"]
+	path = Mods/Trance
+	url = https://github.com/MathIsFun0/Trance
+[submodule "Mods/SDM0s-Stuff"]
+	path = Mods/SDM0s-Stuff
+	url = https://github.com/SDM0/Balatro-Mods
+	branch = smods_1.0.0
+[submodule "Mods/Stickers-Always-Shown"]
+	path = Mods/Stickers-Always-Shown
+	url = https://github.com/Dimserene/Balatro-Stickers-Always-Shown
+[submodule "Mods/Better-Stakes"]
+	path = Mods/Better-Stakes
+	url = https://github.com/kjossul/BetterStakes
