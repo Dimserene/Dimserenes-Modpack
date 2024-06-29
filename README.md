@@ -46,6 +46,12 @@ I repeat, this is not a full list of 1.0.0 compatible mods, this is a modpack th
 
   [Download](https://github.com/betmma/my_balatro_mods/releases) [Discord](https://discord.com/channels/1116389027176787968/1225831216939536394)
 
+- [__Better Stakes__](https://github.com/kjossul/BetterStakes) (latest main code)
+
+  By kjossul
+
+  [Download](https://github.com/kjossul/BetterStakes/archive/refs/heads/main.zip) [Discord](https://discord.com/channels/1116389027176787968/1217067932660666431)
+
 - [__Bunco__](https://github.com/Firch/Bunco/tree/main) (latest main code)
 
   By Firch
@@ -220,6 +226,8 @@ I repeat, this is not a full list of 1.0.0 compatible mods, this is a modpack th
   [Download](https://github.com/SDM0/Balatro-Mods/archive/refs/heads/smods_1.0.0.zip) [Discord](https://discord.com/channels/1116389027176787968/1228825966940393483)
 
 - [__Stickers Always Shown__](https://github.com/SirMaiquis/Balatro-Stickers-Always-Shown) (latest release)
+
+  By Sir Maiquis
 
   [Download](https://github.com/SirMaiquis/Balatro-Stickers-Always-Shown/releases) [Discord](https://discord.com/channels/1116389027176787968/1234224985032097792)
 
