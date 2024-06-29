@@ -224,7 +224,7 @@ I repeat, this is not a full list of 1.0.0 compatible mods, this is a modpack th
   [Download](https://github.com/SirMaiquis/Balatro-Stickers-Always-Shown/releases) [Discord](https://discord.com/channels/1116389027176787968/1234224985032097792)
 
   - Needs tweak for compat with SMODS 1.0.0
-  - Change `GetCenterKeyByJokerName(card.ability.name)` instance into `card.config.center`
+  - Change `local center = GetCenterKeyByJokerName(card.ability.name)` instance into `local center = card.config.center`
 
 - [__Stupidity The Mod__](https://github.com/Aigengoku/Stupidity-the-mod) (latest release)
 
