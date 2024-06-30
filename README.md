@@ -23,7 +23,7 @@ I repeat, this is not a full list of 1.0.0 compatible mods, this is a modpack th
 
 ## How to Install
 
-  (Windows) Download the setup.bat and put it wherever you want, and run it. the mods will be automatically downloaded and put into correct directory.
+  (Windows) Download the __setup.bat__ and put it wherever you want, and run it. the mods will be automatically downloaded and put into correct directory.
 
   Or
 
@@ -36,7 +36,7 @@ I repeat, this is not a full list of 1.0.0 compatible mods, this is a modpack th
 
 ## How to Update Modpack
 
-  (Windows) Run Update.bat which should be in the downloaded Dimserenes-Modpack folder.
+  (Windows) Run __Update.bat__ which should be in the downloaded Dimserenes-Modpack folder.
 
   Or
 
