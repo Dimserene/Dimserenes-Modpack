@@ -62,7 +62,7 @@ git submodule update --remote --recursive --merge
 
      - Feel free to join the [Discord](https://discord.com/channels/1116389027176787968/1255696773599592458) and talk about them!
      
-## The List
+## The List (WIP)
 
 - [__Steamodded 1.0.0 Alpha__](https://github.com/Steamopollys/Steamodded?tab=readme-ov-file) (latest main code)
 
