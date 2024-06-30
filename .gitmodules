@@ -22,8 +22,8 @@
 [submodule "Mods/Balatro-DeckCreator"]
 	path = Mods/Balatro-DeckCreator
 	url = https://github.com/adambennett/Balatro-DeckCreator
-[submodule "Mods/Betmma-mods"]
-	path = Mods/Betmma-mods
+[submodule "Mods/Betmma_mods"]
+	path = Mods/Betmma_mods
 	url = https://github.com/Dimserene/Betmma_mods
 [submodule "Mods/DX-Tarots"]
 	path = Mods/DX-Tarots
