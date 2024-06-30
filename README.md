@@ -30,7 +30,7 @@ I repeat, this is not a full list of 1.0.0 compatible mods, this is a modpack th
 
   ```
 cd Dimserenes-Modpack/
-git submodule update --remote --merge
+git submodule update --remote --recursive --merge
   ```
 
 ## The List
