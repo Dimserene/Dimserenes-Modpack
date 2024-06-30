@@ -43,7 +43,7 @@ I repeat, this is not a full list of 1.0.0 compatible mods, this is a modpack th
   Run following scripts in command prompt:
 
   ```
-cd Dimserenes-Modpack/
+git remote set-url origin https://github.com/Dimserene/Dimserenes-Modpack
 git submodule update --remote --recursive --merge
   ```
 
