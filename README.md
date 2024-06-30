@@ -23,7 +23,7 @@ I repeat, this is not a full list of 1.0.0 compatible mods, this is a modpack th
 
 ## How to Install
 
-  (Windows) Download the __setup.bat__ and put it wherever you want, and run it. the mods will be automatically downloaded and put into correct directory.
+  (Windows) Download the __setup.bat__ and put it wherever you want, and run it. The mods will be automatically downloaded and put into correct directory.
 
   Or
 
