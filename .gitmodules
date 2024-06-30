@@ -89,9 +89,9 @@
 [submodule "Mods/Trance"]
 	path = Mods/Trance
 	url = https://github.com/MathIsFun0/Trance
-[submodule "Mods/Balatro-Mods"]
-	path = Mods/Balatro-Mods
-	url = https://github.com/SDM0/Balatro-Mods
+[submodule "Mods/SDM0s-Stuff"]
+	path = Mods/SDM0s-Stuff
+	url = https://github.com/Dimserene/SDM0-s-Stuff
 	branch = smods_1.0.0
 [submodule "Mods/Balatro-Stickers-Always-Shown"]
 	path = Mods/Balatro-Stickers-Always-Shown
