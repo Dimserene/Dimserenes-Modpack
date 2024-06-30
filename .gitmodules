@@ -95,3 +95,6 @@
 [submodule "Mods/BetterStakes"]
 	path = Mods/BetterStakes
 	url = https://github.com/kjossul/BetterStakes
+[submodule "SDM0-s-Stuff"]
+	path = SDM0-s-Stuff
+	url = https://github.com/Dimserene/SDM0-s-Stuff
