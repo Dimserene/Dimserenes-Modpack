@@ -104,3 +104,9 @@
 [submodule "Mods/Bird-Jokers"]
 	path = Mods/Bird-Jokers
 	url = https://github.com/JustinBanzon/Bird-Jokers
+[submodule "Mods/BossJokers"]
+	path = Mods/BossJokers
+	url = https://github.com/KilledByLava/BossJokers
+[submodule "Mods/balatro-pampa-joker-pack"]
+	path = Mods/balatro-pampa-joker-pack
+	url = https://github.com/batabata3/balatro-pampa-joker-pack
