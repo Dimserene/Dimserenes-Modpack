@@ -92,12 +92,6 @@
 [submodule "Mods/Balatro-Stickers-Always-Shown"]
 	path = Mods/Balatro-Stickers-Always-Shown
 	url = https://github.com/Dimserene/Balatro-Stickers-Always-Shown
-[submodule "Mods/BetterStakes"]
-	path = Mods/BetterStakes
-	url = https://github.com/Dimserene/BetterStakes
 [submodule "Mods/SDM0-s-Stuff"]
 	path = Mods/SDM0-s-Stuff
 	url = https://github.com/Dimserene/SDM0-s-Stuff
-[submodule "Mods/Cruel-Blinds"]
-	path = Mods/Cruel-Blinds
-	url = https://github.com/Dimserene/Cruel-Blinds
