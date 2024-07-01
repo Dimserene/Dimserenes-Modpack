@@ -1,6 +1,3 @@
-[submodule "Mods/Steamodded"]
-	path = Mods/Steamodded
-	url = https://github.com/Steamopollys/Steamodded
 [submodule "Mods/balatro-safety-steamodded"]
 	path = Mods/balatro-safety-steamodded
 	url = https://github.com/Zei33/balatro-safety-steamodded
@@ -95,9 +92,12 @@
 [submodule "Mods/SDM0-s-Stuff"]
 	path = Mods/SDM0-s-Stuff
 	url = https://github.com/Dimserene/SDM0-s-Stuff
-[submodule "Mods/BetterStakes"]
-	path = Mods/BetterStakes
-	url = https://github.com/Dimserene/BetterStakes
 [submodule "Mods/Cruel-Blinds"]
 	path = Mods/Cruel-Blinds
 	url = https://github.com/Dimserene/Cruel-Blinds
+[submodule "Mods/BetterStakes"]
+	path = Mods/BetterStakes
+	url = https://github.com/Dimserene/BetterStakes
+[submodule "Mods/Steamodded"]
+	path = Mods/Steamodded
+	url = https://github.com/Steamopollys/Steamodded
