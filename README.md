@@ -80,6 +80,18 @@ git submodule update --remote --recursive --merge
 
   [Download](https://github.com/Zei33/balatro-safety-steamodded/releases) [Discord](https://discord.com/channels/1116389027176787968/1249718085301178418)
 
+- [__Betmma Series__](https://github.com/betmma/my_balatro_mods) (latest release)
+
+  By Betmma
+
+  [Download](https://github.com/betmma/my_balatro_mods/releases) [Discord](https://discord.com/channels/1116389027176787968/1225831216939536394)
+
+- [__Better Stakes (Disabled by default)__](https://github.com/kjossul/BetterStakes) (latest main code)
+
+  By kjossul
+
+  [Download](https://github.com/kjossul/BetterStakes/archive/refs/heads/main.zip) [Discord](https://discord.com/channels/1116389027176787968/1217067932660666431)
+
 - [__Bird Jokers__](https://github.com/JustinBanzon/Bird-Jokers) (latest main code)
 
   By Justin Crow-Person 
@@ -92,17 +104,11 @@ git submodule update --remote --recursive --merge
 
   [Download](https://github.com/GitNether/nethers-jokers/releases/tag/blank-joker-standalone) [Discord](https://discord.com/channels/1116389027176787968/1245432531852066897)
 
-- [__Betmma Series__](https://github.com/betmma/my_balatro_mods) (latest release)
+- [__Boss Blind Jokers__](https://github.com/KilledByLava/BossJokers) (latest main code)
 
-  By Betmma
+  By Lave
 
-  [Download](https://github.com/betmma/my_balatro_mods/releases) [Discord](https://discord.com/channels/1116389027176787968/1225831216939536394)
-
-- [__Better Stakes (Disabled by default)__](https://github.com/kjossul/BetterStakes) (latest main code)
-
-  By kjossul
-
-  [Download](https://github.com/kjossul/BetterStakes/archive/refs/heads/main.zip) [Discord](https://discord.com/channels/1116389027176787968/1217067932660666431)
+  [Download](https://github.com/KilledByLava/BossJokers/archive/refs/heads/main.zip) [Discord](https://discord.com/channels/1116389027176787968/1239704177584771080)
 
 - [__Bunco__](https://github.com/Firch/Bunco/tree/main) (latest main code)
 
