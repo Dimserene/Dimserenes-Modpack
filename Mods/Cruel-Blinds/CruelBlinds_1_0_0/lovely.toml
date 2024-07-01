@@ -1,0 +1,250 @@
+[manifest]
+version = "1.0.0"
+dump_lua = true
+priority = 0
+
+[[patches]]
+[patches.pattern]
+target = 'functions/state_events.lua'
+pattern = 'G.FUNCS.discard_cards_from_highlighted = function(e, hook)'
+position = 'after'
+payload = '''if G.GAME.blind and (G.GAME.blind.name == "The Sink") and not G.GAME.blind.disabled then
+        local hands = evaluate_poker_hand(G.hand.highlighted)
+         if next(hands["Flush"]) then
+             G.E_MANAGER:add_event(Event({trigger = 'immediate',func = function()
+                 G.GAME.blind:disable()
+                 return true
+            end}))
+         end
+    end'''
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = 'functions/state_events.lua'
+pattern = 'local hand_space = e or math.min(#G.deck.cards, G.hand.config.card_limit - #G.hand.cards)'
+position = 'after'
+payload = '''if G.GAME.blind and (G.GAME.blind.name == "The Jaw") and not G.GAME.blind.disabled and (G.GAME.current_round.hands_played > 0 or G.GAME.current_round.discards_used > 0) then
+        if ((G.GAME.dollars - G.GAME.bankrupt_at) < hand_space) then
+            hand_space = (G.GAME.dollars - G.GAME.bankrupt_at)
+            if ((G.GAME.dollars - G.GAME.bankrupt_at) ~= 0) then
+                ease_dollars(G.GAME.bankrupt_at-G.GAME.dollars)
+                delay(0.1)
+            end
+        else
+            if (hand_space ~= 0) then
+                ease_dollars(-hand_space)
+                delay(0.1)
+            end
+        end
+        if not (G.STATE == G.STATES.TAROT_PACK or G.STATE == G.STATES.SPECTRAL_PACK) and
+            (hand_space <= 0) and (#G.hand.cards == 0) then 
+            G.STATE = G.STATES.GAME_OVER; G.STATE_COMPLETE = false 
+            return true
+        end
+    end'''
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = 'functions/common_events.lua'
+pattern = 'if not v.boss then'
+position = 'after'
+payload = '''elseif G.GAME.modifiers["cruel_blinds"] and (G.GAME.round_resets.ante >= 2) and (v.boss.hardcore ~= true) then
+
+elseif v.boss.no_penultimate and (G.GAME.round_resets.ante == G.GAME.win_ante - 1) then'''
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = 'back.lua'
+pattern = '''if self.name == 'Plasma Deck' and args.context == 'final_scoring_step' then'''
+position = 'before'
+payload = '''if G.GAME.blind and (G.GAME.blind.name == 'Obscure Overshoot') and not (G.GAME.blind.disabled) and (args.context == 'final_scoring_step') then
+    local upper = math.floor(args.chips*args.mult)
+    local base = G.GAME.chips
+    local overshoot = math.floor((((base + upper)/G.GAME.blind.chips) - 1) * 20)
+    if (overshoot ~= 0) then
+        G.E_MANAGER:add_event(Event({
+            func = (function()
+                G.GAME.blind.chips = G.GAME.blind.chips * (1 + (0.08 * overshoot))
+                G.GAME.blind.chip_text = number_format(G.GAME.blind.chips)
+                G.GAME.blind:set_text()
+                G.GAME.blind:wiggle()
+                delay(0.4)
+                return true
+            end)
+        }))
+    end
+end'''
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = 'functions/misc_functions.lua'
+pattern = 'return results'
+position = 'before'
+payload = '''if G.GAME.blind and (G.GAME.blind.name == "The Steal") and not G.GAME.blind.disabled then
+        if G.GAME.current_round.most_played_poker_hand == "High Card" then
+
+        else
+            results[G.GAME.current_round.most_played_poker_hand] = {}
+        end
+    end'''
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = 'card.lua'
+pattern = 'function Card:sell_card()'
+position = 'after'
+payload = '''if self.ability.set == 'Joker' and G.GAME.blind and G.GAME.blind.name == 'Daring Group' then
+        G.GAME.blind.config.joker_sold = true
+        for _, v in ipairs(G.playing_cards) do
+            G.GAME.blind:debuff_card(v)
+        end
+    end'''
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = 'blind.lua'
+pattern = 'function Blind:load(blindTable)'
+position = 'after'
+payload = '''self.config.blinds = blindTable.blinds or {}
+
+    self.config.joker_sold = blindTable.didSell or false'''
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = 'blind.lua'
+pattern = 'return blindTable'
+position = 'before'
+payload = '''blindTable.blinds = self.config.blinds
+    blindTable.didSell = self.config.joker_sold'''
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = 'functions/common_events.lua'
+pattern = 'delay = delay*1.25'
+position = 'after'
+payload = '''if card.ability and card.ability.confused and (not extra or not extra.bypass_confused) then
+    return
+end'''
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = 'functions/state_events.lua'
+pattern = '''check_and_set_high_score('hand', hand_chips*mult)'''
+position = 'before'
+payload = '''G.E_MANAGER:add_event(Event({
+      trigger = 'after',
+      delay = 0.3,
+      func = (function() G.GAME.blind.show_confused = nil;return true end)
+    }))'''
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = 'functions/common_events.lua'
+pattern = 'if vals.chips and G.GAME.current_round.current_hand.chips ~= vals.chips then'
+position = 'after'
+payload = '''if G.GAME.blind.show_confused then
+    vals.chips = '?'
+end'''
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = 'functions/common_events.lua'
+pattern = 'if vals.mult and G.GAME.current_round.current_hand.mult ~= vals.mult then'
+position = 'after'
+payload = '''if G.GAME.blind.show_confused then
+    vals.mult = '?'
+end'''
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = 'functions/state_events.lua'
+pattern = 'for j=1,#reps do'
+position = 'after'
+payload = '''if scoring_hand[i].ability.confused then
+    card_eval_status_text(scoring_hand[i], 'jokers', 0, percent, nil, {colour = G.C.CHIPS, message = "Clouded!", bypass_confused = true})
+end'''
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = 'card.lua'
+pattern = '''if self.ability.name == 'The Soul' and (self.config.center.discovered or self.bypass_discovery_center) then'''
+position = 'before'
+payload = '''if self.ability and (self.ability.puzzled) then
+    G.shared_seals['Broken'].role.draw_major = self
+    G.shared_seals['Broken']:draw_shader('dissolve', nil, nil, nil, self.children.center)
+end'''
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = 'card.lua'
+pattern = '''if self.edition or self.seal or self.ability.eternal or self.ability.rental or self.ability.perishable or self.sticker or self.ability.set == 'Spectral' or self.debuff or self.greyed or self.ability.name == 'The Soul' or self.ability.set == 'Voucher' or self.ability.set == 'Booster' or self.config.center.soul_pos or self.config.center.demo then'''
+position = 'at'
+payload = '''if (self.ability and (self.ability.puzzled)) or self.edition or self.seal or self.ability.eternal or self.ability.rental or self.ability.perishable or self.sticker or self.ability.set == 'Spectral' or self.debuff or self.greyed or self.ability.name == 'The Soul' or self.ability.set == 'Voucher' or self.ability.set == 'Booster' or self.config.center.soul_pos or self.config.center.demo then'''
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = 'blind.lua'
+pattern = '''if self.name == "The Hook" then'''
+position = 'before'
+payload = '''G.E_MANAGER:add_event(Event({trigger = 'after', delay = 0.2, func = function()
+    for k, v in ipairs(G.play.cards) do
+        if v.ability.puzzled and not v.debuff then
+            local suits = {'H', 'D', 'S', 'C'}
+            local ranks = {'A', '2', '3', '4', '5', '6', '7', '8', '9', 'T', 'J', 'Q', 'K'}
+            local suit = pseudorandom_element(suits, pseudoseed('puzzle'))
+            local rank = pseudorandom_element(ranks, pseudoseed('puzzle'))
+            G.E_MANAGER:add_event(Event({func = function() play_sound('tarot1', math.random()*0.1 + 0.55, 0.42);v:set_base(G.P_CARDS[suit.."_"..rank]);v:juice_up(); return true end }))
+            delay(0.23)
+        end
+    end
+    for k, v in ipairs(G.hand.cards) do
+        if v.ability.puzzled and not v.debuff then
+            local suits = {'H', 'D', 'S', 'C'}
+            local ranks = {'A', '2', '3', '4', '5', '6', '7', '8', '9', 'T', 'J', 'Q', 'K'}
+            local suit = pseudorandom_element(suits, pseudoseed('puzzle'))
+            local rank = pseudorandom_element(ranks, pseudoseed('puzzle'))
+            G.E_MANAGER:add_event(Event({func = function() play_sound('tarot1', math.random()*0.1 + 0.55, 0.42);v:set_base(G.P_CARDS[suit.."_"..rank]);v:juice_up(); return true end }))
+            delay(0.23)
+        end
+    end
+return true end }))'''
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = 'card.lua'
+pattern = '''if self.pinned then badges[#badges + 1] = 'pinned_left' end'''
+position = 'after'
+payload = '''if (self.ability and (self.ability.puzzled)) then badges[#badges + 1] = 'puzzled' end'''
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = 'functions/common_events.lua'
+pattern = '''if v == 'pinned_left' then info_queue[#info_queue+1] = {key = 'pinned_left', set = 'Other'} end'''
+position = 'after'
+payload = '''if v == 'puzzled' then info_queue[#info_queue+1] = {key = 'puzzled', set = 'Other'} end'''
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = 'functions/UI_definitions.lua'
+pattern = '''pinned_left = G.C.ORANGE,'''
+position = 'after'
+payload = '''puzzled = G.C.PERISHABLE,'''
+match_indent = true
