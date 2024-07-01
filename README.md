@@ -82,6 +82,8 @@ git submodule update --remote --recursive --merge
 
 - [__Bird Jokers__](https://github.com/JustinBanzon/Bird-Jokers) (latest main code)
 
+  By Justin Crow-Person 
+
   [Download](https://github.com/JustinBanzon/Bird-Jokers/archive/refs/heads/main.zip) [Discord](https://discord.com/channels/1116389027176787968/1255003757213778002)
 
 - [__Blank Joker__](https://github.com/GitNether/nethers-jokers) (latest release)
@@ -136,9 +138,13 @@ if _c.set == "Alchemical" or (_c.set == 'Booster' and (_c.name and _c.name:find(
 
 - [__Crimson's Ultimate Card Kollection__](https://github.com/XenoCHeart/Crimsons-Ultimate-Card-Collection) (latest release)
 
+  By Crimson 
+
   [Download](https://github.com/XenoCHeart/Crimsons-Ultimate-Card-Collection/releases/tag/1.0.5) [Discord](https://discord.com/channels/1116389027176787968/1210976027036352582)
 
 - [__Cruel Blinds__](https://github.com/Mathguy23/Cruel-Blinds) (latest main code for 1.0.0)
+
+  By Mathguy
 
   [Download](https://github.com/Mathguy23/Cruel-Blinds/archive/refs/heads/main.zip) [Discord](https://discord.com/channels/1116389027176787968/1251538877156425738)
 
@@ -252,6 +258,8 @@ if _c.set == "Alchemical" or (_c.set == 'Booster' and (_c.name and _c.name:find(
 
 - [__Mika's Balatro Mod Collection__](https://github.com/MikaSchoenmakers/MikasBalatro) (latest main code)
 
+  By Mika Schoenmakers
+
   [Download](https://github.com/MikaSchoenmakers/MikasBalatro/archive/refs/heads/main.zip) [Discord](https://discord.com/channels/1116389027176787968/1215775159638818826)
 
 - [__More Speeds__](https://github.com/Steamopollys/Steamodded/blob/main/example_mods/Mods/MoreSpeeds.lua) (latest build)
@@ -283,6 +291,12 @@ if _c.set == "Alchemical" or (_c.set == 'Booster' and (_c.name and _c.name:find(
   By ItsFlowwey
 
   [Download](https://github.com/GauntletGames-2086/Ortalab-DEMO/archive/refs/heads/test.zip) [Discord](https://discord.com/channels/1116389027176787968/1217704157574860810)
+
+- [__Pampa Joker Pack__](https://batabata3.github.io/balatro-pampa-joker-pack/) (latest release)
+
+  By Matelote
+
+  [Download](https://github.com/batabata3/balatro-pampa-joker-pack/releases) [Discord](https://discord.com/channels/1116389027176787968/1224352378871087104)
 
 - [__Recast Contrast__](https://github.com/LunaAstraCassiopeia/LunasBalatroMods) (latest main code)
 
@@ -336,6 +350,8 @@ if _c.set == "Alchemical" or (_c.set == 'Booster' and (_c.name and _c.name:find(
   [Download](https://github.com/parchmentEngineer/The-World-Ends-With-Jimbo/releases) [Discord](https://discord.com/channels/1116389027176787968/1252312295296733194)
 
 - [__Tier 3 Vouchers Preview__](https://github.com/XenoCHeart/Crimsons-Ultimate-Card-Collection) (latest release)
+
+  By Crimson
 
   [Download](https://github.com/XenoCHeart/Crimsons-Ultimate-Card-Collection/releases/tag/1.0.5) [Discord](https://discord.com/channels/1116389027176787968/1210976027036352582)
 
