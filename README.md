@@ -92,7 +92,7 @@ git submodule update --remote --recursive --merge
 
   [Download](https://github.com/betmma/my_balatro_mods/releases) [Discord](https://discord.com/channels/1116389027176787968/1225831216939536394)
 
-- [__Better Stakes__](https://github.com/kjossul/BetterStakes) (latest main code)
+- [__Better Stakes (Disabled by default)__](https://github.com/kjossul/BetterStakes) (latest main code)
 
   By kjossul
 
@@ -129,6 +129,10 @@ if _c.set == "Alchemical" or (_c.set == 'Booster' and (_c.name and _c.name:find(
   - Find and delete this entire section:
     ![alt text](https://media.discordapp.net/attachments/1254814398476713994/1255174809122246666/image.png?ex=667cd4e2&is=667b8362&hm=41834b0f44b02933db6238cbd95861a86ddb142a8ab0e8e03d44433c1a3ded67&)
     Thanks Toneblock for this
+
+- [__Creul Blinds__](https://github.com/Mathguy23/Cruel-Blinds) (latest main code for 1.0.0)
+
+  [Download](https://github.com/Mathguy23/Cruel-Blinds/archive/refs/heads/main.zip) [Discord](https://discord.com/channels/1116389027176787968/1251538877156425738)
 
 - [__Cryptid__](https://github.com/MathIsFun0/Cryptid) (latest main code)
 
