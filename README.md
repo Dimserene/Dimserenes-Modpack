@@ -80,6 +80,10 @@ git submodule update --remote --recursive --merge
 
   [Download](https://github.com/Zei33/balatro-safety-steamodded/releases) [Discord](https://discord.com/channels/1116389027176787968/1249718085301178418)
 
+- [__Bird Jokers__](https://github.com/JustinBanzon/Bird-Jokers) (latest main code)
+
+  [Download](https://github.com/JustinBanzon/Bird-Jokers/archive/refs/heads/main.zip) [Discord](https://discord.com/channels/1116389027176787968/1255003757213778002)
+
 - [__Blank Joker__](https://github.com/GitNether/nethers-jokers) (latest release)
 
   By Nether
