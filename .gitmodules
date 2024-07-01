@@ -98,3 +98,6 @@
 [submodule "Mods/SDM0-s-Stuff"]
 	path = Mods/SDM0-s-Stuff
 	url = https://github.com/Dimserene/SDM0-s-Stuff
+[submodule "Cruel-Blinds"]
+	path = Cruel-Blinds
+	url = https://github.com/Dimserene/Cruel-Blinds
