@@ -6,9 +6,9 @@ A custom-made modpack that is hand-picked and put together by myself
 
 Some mod files needs to be altered to avoid compat issues if you want to put the mods together, and I will specify them in the list.（Note that i have applied all the below-mentioned modifications in the modpack repo)
 
-I repeat, this is not a full list of 1.0.0 compatible mods, this is a modpack that when put together and my goal is they should function with no problem.
+I repeat, this is not a full list of 1.0.0 compatible mods, this is a modpack that when put together and my goal is they should function with no problem.(at least i hope)
 
-(at least i hope, and if you wanna join us dealing with this nightmare beast, you can join our [Discord](https://discord.com/channels/1116389027176787968/1255696773599592458))
+If you wanna join us dealing with this nightmare beast, you can join our [Discord](https://discord.com/channels/1116389027176787968/1255696773599592458)
 
 ## Prerequisites
 
@@ -108,12 +108,6 @@ git submodule update --remote --recursive --merge
 
   [Download](https://github.com/JustinBanzon/Bird-Jokers/archive/refs/heads/main.zip) [Discord](https://discord.com/channels/1116389027176787968/1255003757213778002)
 
-- [__Blank Joker__](https://github.com/GitNether/nethers-jokers) (latest release)
-
-  By Nether
-
-  [Download](https://github.com/GitNether/nethers-jokers/releases/tag/blank-joker-standalone) [Discord](https://discord.com/channels/1116389027176787968/1245432531852066897)
-
 - [__Boss Blind Jokers__](https://github.com/KilledByLava/BossJokers) (latest main code)
 
   - Also come with: Boss Jokers Challenge
@@ -136,7 +130,7 @@ git submodule update --remote --recursive --merge
 
 - [__Crimson's Ultimate Card Kollection__](https://github.com/XenoCHeart/Crimsons-Ultimate-Card-Collection) (latest release)
 
-  By Crimson 
+  By Crimson Heart
 
   [Download](https://github.com/XenoCHeart/Crimsons-Ultimate-Card-Collection/releases/tag/1.0.5) [Discord](https://discord.com/channels/1116389027176787968/1210976027036352582)
 
@@ -148,7 +142,7 @@ git submodule update --remote --recursive --merge
 
 - [__Cryptid__](https://github.com/MathIsFun0/Cryptid) (latest main code)
 
-  By Mathisfun
+  By Mathisfun_
 
   [Download](https://github.com/MathIsFun0/Cryptid/archive/refs/heads/main.zip) [Discord](https://discord.com/channels/1116389027176787968/1219749193204371456)
  
@@ -170,12 +164,6 @@ git submodule update --remote --recursive --merge
 
   [Download](https://github.com/JeffVi/DX-Tarots/releases) [Discord](https://discord.com/channels/1116389027176787968/1226210957253017691)
 
-- [__Enhanced Enhancements__](https://github.com/LunaAstraCassiopeia/LunasBalatroMods) (latest main code)
-
-  By Luna
-
-  [Download](https://github.com/LunaAstraCassiopeia/LunasBalatroMods/archive/refs/heads/main.zip) [Discord](https://discord.com/channels/1116389027176787968/1216064295633289286)
-
 - [__Escape Exit Button__](https://github.com/Steamopollys/Steamodded/blob/main/example_mods/Mods/EscapeExitButton.lua#L13) (latest build)
 
   - One of the example mods by Steamopollys
@@ -194,13 +182,13 @@ git submodule update --remote --recursive --merge
 
 - [__House Rules__](https://github.com/Mysthaps/BalatroMods) (latest release)
 
-  By Myst
+  By Mysthaps
 
   [Download](https://github.com/Mysthaps/BalatroMods/releases) [Discord](https://discord.com/channels/1116389027176787968/1226224247677124719)
 
 - [__Inscrybed Jokers__](https://github.com/LunaAstraCassiopeia/LunasBalatroMods) (latest main code)
 
-  By Luna
+  By LunaAstraCassiopeia
 
   [Download](https://github.com/LunaAstraCassiopeia/LunasBalatroMods/archive/refs/heads/main.zip) [Discord](https://discord.com/channels/1116389027176787968/1216064295633289286)
   
@@ -230,7 +218,7 @@ git submodule update --remote --recursive --merge
 
 - [__Lobotomy Corporation__](https://github.com/Mysthaps/LobotomyCorp) (latest release)
 
-  By Myst
+  By Mysthaps
 
   [Download](https://github.com/Mysthaps/LobotomyCorp/releases) [Discord](https://discord.com/channels/1116389027176787968/1248249207526002698)
 
@@ -240,15 +228,27 @@ git submodule update --remote --recursive --merge
 
   [Download](https://discord.com/channels/1116389027176787968/1248431147784863840/1248431147784863840) [Discord](https://discord.com/channels/1116389027176787968/1248431147784863840)
 
+- [__Luna's Enhanced Enhancements__](https://github.com/LunaAstraCassiopeia/LunasBalatroMods) (latest main code)
+
+  By LunaAstraCassiopeia
+
+  [Download](https://github.com/LunaAstraCassiopeia/LunasBalatroMods/archive/refs/heads/main.zip) [Discord](https://discord.com/channels/1116389027176787968/1216064295633289286)
+
+- [__Luna's Recontrast__](https://github.com/LunaAstraCassiopeia/LunasBalatroMods) (latest main code)
+
+  By LunaAstraCassiopeia
+
+  [Download](https://github.com/LunaAstraCassiopeia/LunasBalatroMods/archive/refs/heads/main.zip) [Discord](https://discord.com/channels/1116389027176787968/1216064295633289286)
+
 - [__Math Blinds__](https://github.com/Bazinga9000/MathBlinds) (latest main code)
 
-  By Bazinga_900
+  By Bazinga_9000, tauttie
 
   [Download](https://github.com/Bazinga9000/MathBlinds/archive/refs/heads/main.zip) [Discord](https://discord.com/channels/1116389027176787968/1245962046235873301)
 
 - [__Mika's Balatro Mod Collection__](https://github.com/MikaSchoenmakers/MikasBalatro) (latest main code)
 
-  By Mika Schoenmakers
+  By Mikadoe
 
   [Download](https://github.com/MikaSchoenmakers/MikasBalatro/archive/refs/heads/main.zip) [Discord](https://discord.com/channels/1116389027176787968/1215775159638818826)
 
@@ -260,9 +260,15 @@ git submodule update --remote --recursive --merge
   
 - [__Myst's Boss Blinds__](https://github.com/Mysthaps/MystBlinds) (latest release)
 
-  By Myst
+  By Mysthaps
 
   [Download](https://github.com/Mysthaps/MystBlinds/releases) [Discord](https://discord.com/channels/1116389027176787968/1217028577858420806)
+
+- [__Nether's Blank Joker Standalone__](https://github.com/GitNether/nethers-jokers) (latest release)
+
+  By Nether
+
+  [Download](https://github.com/GitNether/nethers-jokers/releases/tag/blank-joker-standalone) [Discord](https://discord.com/channels/1116389027176787968/1245432531852066897)
 
 - [__Neow Blessings__](https://github.com/kjossul/NeowBlessings) (latest main code)
 
@@ -287,12 +293,6 @@ git submodule update --remote --recursive --merge
   By Matelote
 
   [Download](https://github.com/batabata3/balatro-pampa-joker-pack/releases) [Discord](https://discord.com/channels/1116389027176787968/1224352378871087104)
-
-- [__Recast Contrast__](https://github.com/LunaAstraCassiopeia/LunasBalatroMods) (latest main code)
-
-  By Luna
-
-  [Download](https://github.com/LunaAstraCassiopeia/LunasBalatroMods/archive/refs/heads/main.zip) [Discord](https://discord.com/channels/1116389027176787968/1216064295633289286)
 
 - [__RO-Balatro__](https://github.com/AlexZGreat/Ro-Balatro) (latest release)
 
@@ -323,30 +323,30 @@ git submodule update --remote --recursive --merge
 
 - [__Taikomochi__](https://github.com/Amvoled/Taikomochi) (latest main code)
 
-  By Amavoleda
+  By Amavoled
 
   [Download](https://github.com/Amvoled/Taikomochi/archive/refs/heads/main.zip) [Discord](https://discord.com/channels/1116389027176787968/1211425207080718416)
 
 - [__Talisman__](https://github.com/MathIsFun0/Talisman) (latest release)
 
-  By Mathisfun
+  By Mathisfun_
 
   [Download](https://github.com/MathIsFun0/Talisman/releases) [Discord](https://discord.com/channels/1116389027176787968/1241172556849876993)
 
 - [__The World Ends With Jimbo__](https://github.com/parchmentEngineer/The-World-Ends-With-Jimbo) (latest release)
 
-  By Parchment
+  By parchmentEngineer
 
   [Download](https://github.com/parchmentEngineer/The-World-Ends-With-Jimbo/releases) [Discord](https://discord.com/channels/1116389027176787968/1252312295296733194)
 
 - [__Tier 3 Vouchers Preview__](https://github.com/XenoCHeart/Crimsons-Ultimate-Card-Collection) (latest release)
 
-  By Crimson
+  By Crimson Heart
 
   [Download](https://github.com/XenoCHeart/Crimsons-Ultimate-Card-Collection/releases/tag/1.0.5) [Discord](https://discord.com/channels/1116389027176787968/1210976027036352582)
 
 - [__Trance__](https://github.com/MathIsFun0/Trance/tree/v1.0.0) (latest release)
 
-  By Mathisfun
+  By Mathisfun_
 
   [Download](https://github.com/MathIsFun0/Trance/releases) [Discord](https://discord.com/channels/1116389027176787968/1248865517112918016)
