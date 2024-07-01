@@ -122,26 +122,6 @@ git submodule update --remote --recursive --merge
 
   [Download](https://github.com/itayfeder/Codex-Arcanum/releases) [Discord](https://discord.com/channels/1116389027176787968/1221916334372290620)
 
-  1. Needs tweak for compat with the following mods:
-      - Bunco
-      - D6 jokers
-      - DX Tarots
-  - Change all `SMODS.Tag(s)` and `SMODS.Booster(s)` instances everywhere in files of this mod into `CATag(s)` and `CABooster(s)`
-  - Search for
-```
-if _c.set == "Alchemical" or (_c.set == 'Booster' and _c.name:find("Alchemy")) or _c.name == 'Shock Humor' then
-```
-in CA_Overrides.lua and replace it with
-```
-if _c.set == "Alchemical" or (_c.set == 'Booster' and (_c.name and _c.name:find("Alchemy"))) or _c.name == 'Shock Humor' then
-```
-   Thanks ejwu, Chromapie and Myst for this
-  2. Needs tweak for compat with the following mods:
-      - Not Just Yet
-  - Find and delete this entire section:
-    ![alt text](https://media.discordapp.net/attachments/1254814398476713994/1255174809122246666/image.png?ex=667cd4e2&is=667b8362&hm=41834b0f44b02933db6238cbd95861a86ddb142a8ab0e8e03d44433c1a3ded67&)
-    Thanks Toneblock for this
-
 - [__Crimson's Ultimate Card Kollection__](https://github.com/XenoCHeart/Crimsons-Ultimate-Card-Collection) (latest release)
 
   By Crimson 
@@ -177,14 +157,6 @@ if _c.set == "Alchemical" or (_c.set == 'Booster' and (_c.name and _c.name:find(
   By JeffVi
 
   [Download](https://github.com/JeffVi/DX-Tarots/releases) [Discord](https://discord.com/channels/1116389027176787968/1226210957253017691)
-
-  - Needs tweak for compat with the following mods:
-    - Bunco
-    - D6 Jokers
-    - Codex Arcanum
-  - Change all `SMODS.Booster(s)` instances everywhere in files of this mod into `CABooster(s)`
-  - Change all `love.filesystem` instances everywhere in files of this mod into `NFS`
-    Thanks Chromapie and Myst for this 
 
 - [__Enhanced Enhancements__](https://github.com/LunaAstraCassiopeia/LunasBalatroMods) (latest main code)
 
