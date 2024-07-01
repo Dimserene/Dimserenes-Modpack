@@ -197,6 +197,12 @@ if _c.set == "Alchemical" or (_c.set == 'Booster' and (_c.name and _c.name:find(
   By Myst
 
   [Download](https://github.com/Mysthaps/BalatroMods/releases) [Discord](https://discord.com/channels/1116389027176787968/1226224247677124719)
+
+- [__Inscrybed Jokers__](https://github.com/LunaAstraCassiopeia/LunasBalatroMods) (latest main code)
+
+  By Luna
+
+  [Download](https://github.com/LunaAstraCassiopeia/LunasBalatroMods/archive/refs/heads/main.zip) [Discord](https://discord.com/channels/1116389027176787968/1216064295633289286)
   
 - [__Jank Jonklers__](https://spikeof2010.github.io/JankJonklers/) (latest release)
 
@@ -274,6 +280,12 @@ if _c.set == "Alchemical" or (_c.set == 'Booster' and (_c.name and _c.name:find(
 
   [Download](https://github.com/GauntletGames-2086/Ortalab-DEMO/archive/refs/heads/test.zip) [Discord](https://discord.com/channels/1116389027176787968/1217704157574860810)
 
+- [__Recast Contrast__](https://github.com/LunaAstraCassiopeia/LunasBalatroMods) (latest main code)
+
+  By Luna
+
+  [Download](https://github.com/LunaAstraCassiopeia/LunasBalatroMods/archive/refs/heads/main.zip) [Discord](https://discord.com/channels/1116389027176787968/1216064295633289286)
+
 - [__RO-Balatro__](https://github.com/AlexZGreat/Ro-Balatro) (latest release)
 
   By AlexZGreat
@@ -294,12 +306,6 @@ if _c.set == "Alchemical" or (_c.set == 'Booster' and (_c.name and _c.name:find(
 
   - Needs tweak for compat with SMODS 1.0.0
   - Change `local center = GetCenterKeyByJokerName(card.ability.name)` instance into `local center = card.config.center`
-
-- [__Stupidity The Mod__](https://github.com/Aigengoku/Stupidity-the-mod) (latest release)
-
-  By Aigengoku
-
-  [Download](https://github.com/Aigengoku/Stupidity-the-mod/releases) [Discord](https://discord.com/channels/1116389027176787968/1248387108029202432)
 
 - [__Tags Preview__](https://github.com/JKd3vLD/BalatroTagPreview) (latest release)
 
