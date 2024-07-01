@@ -31,8 +31,9 @@ I repeat, this is not a full list of 1.0.0 compatible mods, this is a modpack th
 
   ```
   git clone --recurse-submodules --remote-submodules https://github.com/Dimserene/Dimserenes-Modpack
-  xcopy "Dimserenes-Modpack\Mods" "%appdata%\Balatro\Mods" /w /e /h /i
   ```
+
+  And then copy all the contents in Mods folder to your Mods folder.
 
 ## How to Update Modpack
 
@@ -46,6 +47,8 @@ I repeat, this is not a full list of 1.0.0 compatible mods, this is a modpack th
 git remote set-url origin https://github.com/Dimserene/Dimserenes-Modpack
 git submodule update --remote --recursive --merge
   ```
+
+  And then, again, copy all the contents in Mods folder to your Mods folder.
 
 ## FAQ
 
