@@ -80,9 +80,6 @@
 [submodule "Mods/The-World-Ends-With-Jimbo"]
 	path = Mods/The-World-Ends-With-Jimbo
 	url = https://github.com/parchmentEngineer/The-World-Ends-With-Jimbo
-[submodule "Mods/Trance"]
-	path = Mods/Trance
-	url = https://github.com/MathIsFun0/Trance
 [submodule "Mods/Balatro-Stickers-Always-Shown"]
 	path = Mods/Balatro-Stickers-Always-Shown
 	url = https://github.com/Dimserene/Balatro-Stickers-Always-Shown
