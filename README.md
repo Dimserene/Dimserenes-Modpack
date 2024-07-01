@@ -79,7 +79,7 @@ git submodule update --remote --recursive --merge
 
 - [__Balatro Safety__](https://github.com/Zei33/balatro-safety-steamodded) (latest release)
 
-  By Zei
+  By Zei33
 
   [Download](https://github.com/Zei33/balatro-safety-steamodded/releases) [Discord](https://discord.com/channels/1116389027176787968/1249718085301178418)
 
