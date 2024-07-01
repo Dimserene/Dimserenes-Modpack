@@ -92,7 +92,7 @@ git submodule update --remote --recursive --merge
     4. Betmma Voucher Pack
     5. Better Vouchers This Run UI
 
-  By Betmma
+  By Betmma, nicholassam6425 (Voucher Pack)
 
   [Download](https://github.com/betmma/my_balatro_mods/releases) [Discord](https://discord.com/channels/1116389027176787968/1225831216939536394)
 
@@ -116,13 +116,15 @@ git submodule update --remote --recursive --merge
 
 - [__Boss Blind Jokers__](https://github.com/KilledByLava/BossJokers) (latest main code)
 
-  By Lave
+  - Also come with: Boss Jokers Challenge
+  
+  By KilledByLava
 
   [Download](https://github.com/KilledByLava/BossJokers/archive/refs/heads/main.zip) [Discord](https://discord.com/channels/1116389027176787968/1239704177584771080)
 
 - [__Bunco__](https://github.com/Firch/Bunco/tree/main) (latest main code)
 
-  By Firch
+  By Firch, RENREN, Peas, minichibis, J.D., Guwahavel, Ciirulean, ejwu
 
   [Download](https://github.com/Firch/Bunco/archive/refs/heads/main.zip) [Discord](https://discord.com/channels/1116389027176787968/1220084296346501201)
   
@@ -186,7 +188,7 @@ git submodule update --remote --recursive --merge
 
 - [__Fusion Jokers__](https://itayfeder.github.io/Fusion-Jokers/) (latest release)
 
-  By itayfeder
+  By itayfeder, Lyman
 
   [Download](https://github.com/itayfeder/Fusion-Jokers/releases) [Discord](https://discord.com/channels/1116389027176787968/1227317656131211284)
 
