@@ -95,3 +95,9 @@
 [submodule "Mods/Steamodded"]
 	path = Mods/Steamodded
 	url = https://github.com/Steamopollys/Steamodded
+[submodule "Mods/Trance"]
+	path = Mods/Trance
+	url = https://github.com/Dimserene/Trance
+[submodule "Mods/Talisman"]
+	path = Mods/Talisman
+	url = https://github.com/MathIsFun0/Talisman
