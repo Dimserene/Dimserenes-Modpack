@@ -85,6 +85,13 @@ git submodule update --remote --recursive --merge
 
 - [__Betmma Series__](https://github.com/betmma/my_balatro_mods) (latest release)
 
+  - Contains the following:
+    1. 5 Legendary Challenges
+    2. Betmma Jokers
+    3. Betmma Vouchers
+    4. Betmma Voucher Pack
+    5. Better Vouchers This Run UI
+
   By Betmma
 
   [Download](https://github.com/betmma/my_balatro_mods/releases) [Discord](https://discord.com/channels/1116389027176787968/1225831216939536394)
