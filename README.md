@@ -64,7 +64,7 @@ git submodule update --remote --recursive --merge
      
 ## The List (WIP)
 
-- [__Steamodded 1.0.0 Alpha__](https://github.com/Steamopollys/Steamodded?tab=readme-ov-file) (latest main code)
+- [__Steamodded 1.0.0 Alpha__](https://github.com/Steamopollys/Steamodded) (latest main code)
 
   [Download](https://github.com/Steamopollys/Steamodded/archive/refs/heads/main.zip) [Discord](https://discord.com/channels/1116389027176787968/1209564621644505158) [Authors](https://github.com/Steamopollys/Steamodded/graphs/contributors)
 
