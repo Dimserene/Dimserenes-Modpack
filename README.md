@@ -130,6 +130,10 @@ if _c.set == "Alchemical" or (_c.set == 'Booster' and (_c.name and _c.name:find(
     ![alt text](https://media.discordapp.net/attachments/1254814398476713994/1255174809122246666/image.png?ex=667cd4e2&is=667b8362&hm=41834b0f44b02933db6238cbd95861a86ddb142a8ab0e8e03d44433c1a3ded67&)
     Thanks Toneblock for this
 
+- [__Crimson's Ultimate Card Kollection__](https://github.com/XenoCHeart/Crimsons-Ultimate-Card-Collection) (latest release)
+
+  [Download](https://github.com/XenoCHeart/Crimsons-Ultimate-Card-Collection/releases/tag/1.0.5) [Discord](https://discord.com/channels/1116389027176787968/1210976027036352582)
+
 - [__Cruel Blinds__](https://github.com/Mathguy23/Cruel-Blinds) (latest main code for 1.0.0)
 
   [Download](https://github.com/Mathguy23/Cruel-Blinds/archive/refs/heads/main.zip) [Discord](https://discord.com/channels/1116389027176787968/1251538877156425738)
@@ -320,6 +324,10 @@ if _c.set == "Alchemical" or (_c.set == 'Booster' and (_c.name and _c.name:find(
   By Parchment
 
   [Download](https://github.com/parchmentEngineer/The-World-Ends-With-Jimbo/releases) [Discord](https://discord.com/channels/1116389027176787968/1252312295296733194)
+
+- [__Tier 3 Vouchers Preview__](https://github.com/XenoCHeart/Crimsons-Ultimate-Card-Collection) (latest release)
+
+  [Download](https://github.com/XenoCHeart/Crimsons-Ultimate-Card-Collection/releases/tag/1.0.5) [Discord](https://discord.com/channels/1116389027176787968/1210976027036352582)
 
 - [__Trance__](https://github.com/MathIsFun0/Trance/tree/v1.0.0) (latest release)
 
