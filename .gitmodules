@@ -64,10 +64,6 @@
 [submodule "Mods/balatro-NotJustYet"]
 	path = Mods/balatro-NotJustYet
 	url = https://github.com/Toneblock/balatro-NotJustYet
-[submodule "Mods/Ortalab-DEMO"]
-	path = Mods/Ortalab-DEMO
-	url = https://github.com/GauntletGames-2086/Ortalab-DEMO
-	branch = test
 [submodule "Mods/Ro-Balatro"]
 	path = Mods/Ro-Balatro
 	url = https://github.com/AlexZGreat/Ro-Balatro
@@ -110,3 +106,6 @@
 [submodule "Mods/balatro-pampa-joker-pack"]
 	path = Mods/balatro-pampa-joker-pack
 	url = https://github.com/batabata3/balatro-pampa-joker-pack
+[submodule "Mods/Ortalab-DEMO"]
+	path = Mods/Ortalab-DEMO
+	url = https://github.com/Dimserene/Ortalab-DEMO
