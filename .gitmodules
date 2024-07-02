@@ -109,6 +109,3 @@
 [submodule "Mods/Joker-Evolution"]
 	path = Mods/Joker-Evolution
 	url = https://github.com/Dimserene/Joker-Evolution
-[submodule "Mods/gamblecore"]
-	path = Mods/gamblecore
-	url = https://github.com/nicholassam6425/gamblecore
