@@ -1,0 +1,9 @@
+{
+    "id": "gamblecore",
+    "name": "gamblecore",
+    "version": "1.0.0",
+    "author": "arachnei",
+    "description": ["aw dang it"],
+    "load_before": [],
+    "load_after": []
+}
