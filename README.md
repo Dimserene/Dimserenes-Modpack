@@ -180,6 +180,10 @@ git submodule update --remote --recursive --merge
 
   [Download](https://github.com/itayfeder/Fusion-Jokers/releases) [Discord](https://discord.com/channels/1116389027176787968/1227317656131211284)
 
+- [__Gamblecore__](https://github.com/nicholassam6425/gamblecore) (latest main code)
+
+  [Download](https://github.com/nicholassam6425/gamblecore/archive/refs/heads/main.zip) [Discord](https://discord.com/channels/1116389027176787968/1250974931433295983)
+
 - [__House Rules__](https://github.com/Mysthaps/BalatroMods) (latest release)
 
   By Mysthaps
