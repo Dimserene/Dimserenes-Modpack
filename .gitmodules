@@ -191,9 +191,6 @@
 [submodule "Mods/Ortalab-DEMO"]
 	path = Mods/Ortalab-DEMO
 	url = https://github.com/Eremel/Ortalab-Demo
-[submodule "Mods/RiskofJesters - ║╣╗τ║╗"]
-	path = Mods/RiskofJesters - ║╣╗τ║╗
-	url = https://github.com/lshtech/risk-of-jesters
 [submodule "Mods/5CEBalatro"]
 	path = Mods/5CEBalatro
 	url = https://github.com/lshtech/5CEBalatro
