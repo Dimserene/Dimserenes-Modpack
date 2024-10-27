@@ -766,12 +766,12 @@ update_modpack() {
 
     cd "$modpack_path" || exit
 
-    # Start the spinner
+    # Start the spinner with a consistent phrase
     show_progress &
     spinner_pid=$!
 
-    # Run the update script and capture the result
-    if sh "$modpack_path/autoversion.sh" >>"$log_file" 2>&1; then
+    # Run the update script and capture real-time output
+    if sh "$modpack_path/autoversion.sh" 2>&1 | tee -a "$log_file"; then
         kill "$spinner_pid"
         echo ""
         log_status "$modpack" "SUCCESS"
@@ -783,18 +783,17 @@ update_modpack() {
     fi
 }
 
-# Special Update Function for Elbe's Modpack
+# Real-time update function for Elbe's Modpack
 elbes_update() {
     local modpack_path=$1
 
     cd "$modpack_path" || return 1
 
-    # Start the spinner
     show_progress &
     spinner_pid=$!
 
-    # Pull the latest changes from the remote
-    if git pull --rebase >>"$log_file" 2>&1; then
+    # Pull the latest changes from the remote with real-time display
+    if git pull --rebase | tee -a "$log_file"; then
         log_status "Elbe's Modpack" "Pull SUCCESS"
     else
         kill "$spinner_pid"
@@ -803,8 +802,8 @@ elbes_update() {
         return 1
     fi
 
-    # Update all submodules
-    if git submodule update --remote --recursive >>"$log_file" 2>&1; then
+    # Update all submodules with real-time display
+    if git submodule update --remote --recursive | tee -a "$log_file"; then
         log_status "Elbe's Modpack" "Submodules update SUCCESS"
     else
         kill "$spinner_pid"
@@ -813,28 +812,25 @@ elbes_update() {
         return 1
     fi
 
-    # Stop the spinner
     kill "$spinner_pid"
     echo ""
-
     log_status "Elbe's Modpack" "SUCCESS"
     return 0
 }
 
-# Special Update Function for Coonie's Modpack
+# Real-time update function for Coonie's Modpack
 coonies_update() {
     local modpack_path=$1
     local temp_download_path="$modpack_path/temp_download.zip"
 
-    # Example custom update process for Coonie's Modpack
     show_progress &
     spinner_pid=$!
 
-    # Download the latest version
+    # Download the latest version with real-time display
     if command -v wget > /dev/null; then
-        wget -O "$temp_download_path" "$coonie_download_url" >>"$log_file" 2>&1
+        wget -O "$temp_download_path" "$coonie_download_url" 2>&1 | tee -a "$log_file"
     elif command -v curl > /dev/null; then
-        curl -L -o "$temp_download_path" "$coonie_download_url" >>"$log_file" 2>&1
+        curl -L -o "$temp_download_path" "$coonie_download_url" 2>&1 | tee -a "$log_file"
     else
         kill "$spinner_pid"
         log_status "Coonie's Modpack" "FAILED (Neither wget nor curl found for downloading)"
@@ -848,9 +844,9 @@ coonies_update() {
         return 1
     fi
 
-    # Unzip the downloaded file to the modpack directory
+    # Unzip the downloaded file to the modpack directory with real-time display
     if command -v unzip > /dev/null; then
-        unzip -o "$temp_download_path" -d "$modpack_path" >>"$log_file" 2>&1
+        unzip -o "$temp_download_path" -d "$modpack_path" 2>&1 | tee -a "$log_file"
     else
         kill "$spinner_pid"
         log_status "Coonie's Modpack" "FAILED (unzip command not found)"
@@ -866,43 +862,38 @@ coonies_update() {
     return 0
 }
 
+# Progress function with consistent phrase per modpack update
 show_progress() {
     local -a spinner=('䷀' '䷫' '䷠' '䷋' '䷩' '䷨' '䷊' '䷟' '䷞' '䷋' '䷩' '䷨' '䷊' '䷡' '䷪' '䷀' '䷀' '䷀')
     local delay=0.1
 
-    # Concise and neutral phrases
+    # Select one consistent phrase per modpack update
     local phrases=(
-        "Initializing..."
-        "Fetching data..."
-        "Updating..."
-        "Applying changes..."
-        "Loading resources..."
-        "Synchronizing..."
+        "Initializing"
+        "Fetching data"
+        "Updating"
+        "Applying changes"
+        "Loading resources"
+        "Synchronizing"
     )
 
-    local current_index=0
+    # Randomly choose a phrase to use for the entire update
+    local phrase="${phrases[$((RANDOM % ${#phrases[@]}))]}"
+    local dots=""
 
-    # Loop the spinner and rotate through the simplified phrases
     while true; do
         for s in "${spinner[@]}"; do
-            # Use the current phrase
-            current_phrase="${phrases[$current_index]}"
-
-            # Clear the current line, print the spinner and phrase
-            printf "\r\033[K%s %s" "$s" "$current_phrase"
-            
-            # Sleep and update spinner
-            sleep "$delay"
-            
-            # Update to the next phrase periodically (e.g., after 5 full rotations)
-            if [[ $((RANDOM % 5)) -eq 0 ]]; then
-                current_index=$((current_index + 1))
-                
-                # Loop back if the index exceeds the list
-                if [[ $current_index -ge ${#phrases[@]} ]]; then
-                    current_index=0
-                fi
+            # Extend trailing dots up to a limit
+            dots="${dots}."
+            if [[ ${#dots} -gt 6 ]]; then
+                dots="..."
             fi
+
+            # Clear the line, print spinner, and phrase with dots
+            printf "\r\033[K%s %s%s" "$s" "$phrase" "$dots"
+            
+            # Sleep for a short period before updating
+            sleep "$delay"
         done
     done
 }
