@@ -781,34 +781,49 @@ update_modpack() {
         return 1
     fi
 
+    # Choose a consistent phrase for the update
+    local phrase="Updating"
+    show_progress "$phrase" &
+    spinner_pid=$!
+
+    # If it's Coonie's Modpack, handle the special update
     if [[ "$modpack" == "Coonies-Modpack" ]]; then
         log_status "$modpack" "Special update process started"
         coonies_update "$modpack_path"
+        kill "$spinner_pid"
+        echo ""
         return $?
     elif [[ "$modpack" == "Elbes-Modpack" ]]; then
+        # Special handling for Elbe's Modpack
         log_status "$modpack" "Special pull process started"
         elbes_update "$modpack_path"
+        kill "$spinner_pid"
+        echo ""
         return $?
     fi
 
     if [[ ! -f "$modpack_path/autoversion.sh" ]]; then
         log_status "$modpack" "FAILED (autoversion.sh not found)"
+        kill "$spinner_pid"
         return 1
     fi
 
     cd "$modpack_path" || exit
 
-    show_progress &
-    spinner_pid=$!
+    # Run the update script and capture the output step-by-step
+    echo -e "\n\033[0;36mRunning autoversion.sh for $modpack...\033[0m"
+    sh "$modpack_path/autoversion.sh" 2>&1 | while IFS= read -r line; do
+        echo -e "\033[0;34m$line\033[0m"  # Output each line in blue color for clarity
+    done
 
-    # Run the update script and capture the result
-    if sh "$modpack_path/autoversion.sh" >>"$log_file" 2>&1; then
+    # Check the status of the script execution
+    if [[ ${PIPESTATUS[0]} -eq 0 ]]; then
         kill "$spinner_pid"
-        echo ""
+        echo -e "\n\033[0;32m$modpack: SUCCESS\033[0m"  # Success in green
         log_status "$modpack" "SUCCESS"
     else
         kill "$spinner_pid"
-        echo ""
+        echo -e "\n\033[0;31m$modpack: FAILED (Check autoversion.sh output for details)\033[0m"  # Failure in red
         log_status "$modpack" "FAILED (Check autoversion.sh output for details)"
         return 1
     fi
@@ -947,7 +962,7 @@ coonies_update() {
 # Progress function with consistent phrase per modpack update
 show_progress() {
     local -a spinner=('䷀' '䷫' '䷠' '䷋' '䷩' '䷨' '䷊' '䷟' '䷞' '䷋' '䷩' '䷨' '䷊' '䷡' '䷪' '䷀' '䷀' '䷀')
-    local delay=0.1
+    local delay=0.5
 
     # Select one consistent phrase per modpack update
     local phrases=(
