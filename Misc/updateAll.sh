@@ -718,25 +718,59 @@ fi
 # Log file path
 log_file="$base_path/update_log.txt"
 
-# Function to log messages
+# Define color codes
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[0;33m'
+NC='\033[0m'  # No color
+
+# Enhanced log_status function with color support
 log_status() {
     local modpack=$1
     local status=$2
+    local color
+    local display_status
+
+    # Determine color based on status
+    case "$status" in
+        *"SUCCESS"*)
+            color=$GREEN
+            display_status="SUCCESS"
+            ;;
+        *"FAILED"*)
+            color=$RED
+            display_status="FAILED"
+            ;;
+        *"SKIPPED"*)
+            color=$YELLOW
+            display_status="SKIPPED"
+            ;;
+        *)
+            color=$NC
+            display_status="$status"
+            ;;
+    esac
+
     local timestamp=$(date +"%Y-%m-%d %H:%M:%S")
-    local message="[$timestamp] ${modpack} update: $status"
+    local message="[$timestamp] ${modpack} update: ${display_status}"
+
+    # Print the message to the console with color
+    echo -e "${color}${message}${NC}"
     
-    # Print the message to the console
-    echo "$message"
-    
-    # Log the message to the log file
+    # Log the message to the log file without color
     echo "$message" >> "$log_file"
     
     # Add the message to the execution summary
-    execution_summaries+=("$modpack: $status")
+    execution_summaries+=("$modpack: $display_status")
 }
 
 # URL to download Coonie's Modpack
 coonie_download_url="https://github.com/GayCoonie/Coonies-Mod-Pack/releases/latest/download/Mods.zip"
+
+# ANSI color codes
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+NC='\033[0m'  # No Color
 
 update_modpack() {
     local modpack=$1
@@ -748,12 +782,10 @@ update_modpack() {
     fi
 
     if [[ "$modpack" == "Coonies-Modpack" ]]; then
-        # Special handling for Coonie's Modpack
         log_status "$modpack" "Special update process started"
         coonies_update "$modpack_path"
         return $?
     elif [[ "$modpack" == "Elbes-Modpack" ]]; then
-        # Special handling for Elbe's Modpack
         log_status "$modpack" "Special pull process started"
         elbes_update "$modpack_path"
         return $?
@@ -766,12 +798,11 @@ update_modpack() {
 
     cd "$modpack_path" || exit
 
-    # Start the spinner with a consistent phrase
     show_progress &
     spinner_pid=$!
 
-    # Run the update script and capture real-time output
-    if sh "$modpack_path/autoversion.sh" 2>&1 | tee -a "$log_file"; then
+    # Run the update script and capture the result
+    if sh "$modpack_path/autoversion.sh" >>"$log_file" 2>&1; then
         kill "$spinner_pid"
         echo ""
         log_status "$modpack" "SUCCESS"
@@ -818,19 +849,70 @@ elbes_update() {
     return 0
 }
 
-# Real-time update function for Coonie's Modpack
+# File to store the last known commit hash
+coonie_commit_hash_file="$base_path/coonie_last_commit_hash.txt"
+
+# GitHub API URL for the latest commit
+coonie_commit_api_url="https://api.github.com/repos/GayCoonie/Coonies-Mod-Pack/commits/main"
+
+# Check if Coonie's Modpack needs an update
+check_coonies_update() {
+    # Fetch the latest commit hash from GitHub
+    local latest_commit_hash
+    if command -v curl > /dev/null; then
+        latest_commit_hash=$(curl -s "$coonie_commit_api_url" | grep -m 1 '"sha"' | cut -d '"' -f 4)
+    elif command -v wget > /dev/null; then
+        latest_commit_hash=$(wget -qO- "$coonie_commit_api_url" | grep -m 1 '"sha"' | cut -d '"' -f 4)
+    else
+        log_status "Coonie's Modpack" "FAILED (Neither curl nor wget found)"
+        echo -e "${RED}FAILED (Neither curl nor wget found)${NC}"
+        return 1
+    fi
+
+    if [[ -z "$latest_commit_hash" ]]; then
+        log_status "Coonie's Modpack" "FAILED (Could not fetch latest commit hash)"
+        echo -e "${RED}FAILED (Could not fetch latest commit hash)${NC}"
+        return 1
+    fi
+
+    # Read the last known commit hash
+    local last_known_commit_hash=""
+    if [[ -f "$coonie_commit_hash_file" ]]; then
+        last_known_commit_hash=$(<"$coonie_commit_hash_file")
+    fi
+
+    # Compare the hashes
+    if [[ "$latest_commit_hash" == "$last_known_commit_hash" ]]; then
+        echo -e "${GREEN}Coonie's Modpack is up-to-date.${NC}"
+        log_status "Coonie's Modpack" "SKIPPED (Already up-to-date)"
+        return 0  # No update needed
+    else
+        echo "$latest_commit_hash" > "$coonie_commit_hash_file"  # Save the new hash
+        return 2  # Update needed
+    fi
+}
+
+# Special Update Function for Coonie's Modpack
 coonies_update() {
     local modpack_path=$1
     local temp_download_path="$modpack_path/temp_download.zip"
 
+    # Check if an update is needed
+    if check_coonies_update; then
+        if [[ $? -eq 0 ]]; then
+            log_status "Coonie's Modpack" "SKIPPED (Already up-to-date)"
+            return 0  # Skip update if up-to-date
+        fi
+    fi
+
     show_progress &
     spinner_pid=$!
 
-    # Download the latest version with real-time display
+    # Download the latest version
     if command -v wget > /dev/null; then
-        wget -O "$temp_download_path" "$coonie_download_url" 2>&1 | tee -a "$log_file"
+        wget -O "$temp_download_path" "$coonie_download_url" >>"$log_file" 2>&1
     elif command -v curl > /dev/null; then
-        curl -L -o "$temp_download_path" "$coonie_download_url" 2>&1 | tee -a "$log_file"
+        curl -L -o "$temp_download_path" "$coonie_download_url" >>"$log_file" 2>&1
     else
         kill "$spinner_pid"
         log_status "Coonie's Modpack" "FAILED (Neither wget nor curl found for downloading)"
@@ -844,9 +926,9 @@ coonies_update() {
         return 1
     fi
 
-    # Unzip the downloaded file to the modpack directory with real-time display
+    # Unzip the downloaded file to the modpack directory
     if command -v unzip > /dev/null; then
-        unzip -o "$temp_download_path" -d "$modpack_path" 2>&1 | tee -a "$log_file"
+        unzip -o "$temp_download_path" -d "$modpack_path" >>"$log_file" 2>&1
     else
         kill "$spinner_pid"
         log_status "Coonie's Modpack" "FAILED (unzip command not found)"
