@@ -696,56 +696,230 @@ input_error_message() {
     echo "${errors[$error_index]}"
 }
 
-# Define an array of modpack directories
-modpacks=("Dimserenes-Modpack" "Fine-tuned-Pack" "Vanilla-Plus-Pack" "Insane-Pack" "Cruel-Pack")
-
 # Base path
 base_path=/sdcard/Modpacks
+modpacks_list="$base_path/modpacks_list.txt"
+
+# Load modpacks dynamically from a file
+modpacks=()
+if [[ -f "$modpacks_list" ]]; then
+    while IFS= read -r line; do
+        # Trim leading/trailing whitespace and skip empty lines
+        trimmed_line=$(echo "$line" | xargs)
+        if [[ -n "$trimmed_line" ]]; then
+            modpacks+=("$trimmed_line")
+        fi
+    done < "$modpacks_list"
+else
+    echo "Error: $modpacks_list not found."
+    exit 1
+fi
 
 # Log file path
 log_file="$base_path/update_log.txt"
 
 # Function to log messages
-log_message() {
-    echo "$(date +"%Y-%m-%d %H:%M:%S") - $1" >> "$log_file"
+log_status() {
+    local modpack=$1
+    local status=$2
+    local timestamp=$(date +"%Y-%m-%d %H:%M:%S")
+    local message="[$timestamp] ${modpack} update: $status"
+    
+    # Print the message to the console
+    echo "$message"
+    
+    # Log the message to the log file
+    echo "$message" >> "$log_file"
+    
+    # Add the message to the execution summary
+    execution_summaries+=("$modpack: $status")
 }
 
-# Function to update a single modpack
+# URL to download Coonie's Modpack
+coonie_download_url="https://github.com/GayCoonie/Coonies-Mod-Pack/releases/latest/download/Mods.zip"
+
 update_modpack() {
     local modpack=$1
     local modpack_path="$base_path/$modpack"
 
     if [[ ! -d "$modpack_path" ]]; then
-        message="Directory $modpack_path does not exist. Skipping $modpack."
-        log_message "$message"
-        execution_summaries+=("$modpack: FAILED (Directory does not exist)")
+        log_status "$modpack" "FAILED (Directory does not exist)"
         return 1
     fi
-    
+
+    if [[ "$modpack" == "Coonies-Modpack" ]]; then
+        # Special handling for Coonie's Modpack
+        log_status "$modpack" "Special update process started"
+        coonies_update "$modpack_path"
+        return $?
+    elif [[ "$modpack" == "Elbes-Modpack" ]]; then
+        # Special handling for Elbe's Modpack
+        log_status "$modpack" "Special pull process started"
+        elbes_update "$modpack_path"
+        return $?
+    fi
+
     if [[ ! -f "$modpack_path/autoversion.sh" ]]; then
-        message="autoversion.sh script not found in $modpack_path. Skipping $modpack."
-        log_message "$message"
-        execution_summaries+=("$modpack: FAILED (autoversion.sh not found)")
+        log_status "$modpack" "FAILED (autoversion.sh not found)"
         return 1
     fi
-    
-    # Run the update script and capture the result
+
     cd "$modpack_path" || exit
-    sh "$modpack_path/autoversion.sh"
-    if [[ $? -eq 0 ]]; then
-        execution_summaries+=("$modpack: SUCCESS")
-        log_message "$modpack update: SUCCESS"
+
+    # Start the spinner
+    show_progress &
+    spinner_pid=$!
+
+    # Run the update script and capture the result
+    if sh "$modpack_path/autoversion.sh" >>"$log_file" 2>&1; then
+        kill "$spinner_pid"
+        echo ""
+        log_status "$modpack" "SUCCESS"
     else
-        execution_summaries+=("$modpack: FAILED (Check autoversion.sh output for details)")
-        log_message "$modpack update: FAILED (Check autoversion.sh output for details)"
+        kill "$spinner_pid"
+        echo ""
+        log_status "$modpack" "FAILED (Check autoversion.sh output for details)"
         return 1
     fi
+}
+
+# Special Update Function for Elbe's Modpack
+elbes_update() {
+    local modpack_path=$1
+
+    cd "$modpack_path" || return 1
+
+    # Start the spinner
+    show_progress &
+    spinner_pid=$!
+
+    # Pull the latest changes from the remote
+    if git pull --rebase >>"$log_file" 2>&1; then
+        log_status "Elbe's Modpack" "Pull SUCCESS"
+    else
+        kill "$spinner_pid"
+        echo ""
+        log_status "Elbe's Modpack" "FAILED (git pull error)"
+        return 1
+    fi
+
+    # Update all submodules
+    if git submodule update --remote --recursive >>"$log_file" 2>&1; then
+        log_status "Elbe's Modpack" "Submodules update SUCCESS"
+    else
+        kill "$spinner_pid"
+        echo ""
+        log_status "Elbe's Modpack" "FAILED (Submodules update error)"
+        return 1
+    fi
+
+    # Stop the spinner
+    kill "$spinner_pid"
+    echo ""
+
+    log_status "Elbe's Modpack" "SUCCESS"
+    return 0
+}
+
+# Special Update Function for Coonie's Modpack
+coonies_update() {
+    local modpack_path=$1
+    local temp_download_path="$modpack_path/temp_download.zip"
+
+    # Example custom update process for Coonie's Modpack
+    show_progress &
+    spinner_pid=$!
+
+    # Download the latest version
+    if command -v wget > /dev/null; then
+        wget -O "$temp_download_path" "$coonie_download_url" >>"$log_file" 2>&1
+    elif command -v curl > /dev/null; then
+        curl -L -o "$temp_download_path" "$coonie_download_url" >>"$log_file" 2>&1
+    else
+        kill "$spinner_pid"
+        log_status "Coonie's Modpack" "FAILED (Neither wget nor curl found for downloading)"
+        return 1
+    fi
+
+    # Check if download was successful
+    if [[ ! -f "$temp_download_path" ]]; then
+        kill "$spinner_pid"
+        log_status "Coonie's Modpack" "FAILED (Download failed)"
+        return 1
+    fi
+
+    # Unzip the downloaded file to the modpack directory
+    if command -v unzip > /dev/null; then
+        unzip -o "$temp_download_path" -d "$modpack_path" >>"$log_file" 2>&1
+    else
+        kill "$spinner_pid"
+        log_status "Coonie's Modpack" "FAILED (unzip command not found)"
+        return 1
+    fi
+
+    # Cleanup the temporary download file
+    rm -f "$temp_download_path"
+
+    kill "$spinner_pid"
+    echo ""
+    log_status "Coonie's Modpack" "SUCCESS"
+    return 0
+}
+
+show_progress() {
+    local -a spinner=('䷀' '䷫' '䷠' '䷋' '䷩' '䷨' '䷊' '䷟' '䷞' '䷋' '䷩' '䷨' '䷊' '䷡' '䷪' '䷀' '䷀' '䷀')
+    local delay=0.1
+
+    # Concise and neutral phrases
+    local phrases=(
+        "Initializing..."
+        "Fetching data..."
+        "Updating..."
+        "Applying changes..."
+        "Loading resources..."
+        "Synchronizing..."
+    )
+
+    local current_index=0
+
+    # Loop the spinner and rotate through the simplified phrases
+    while true; do
+        for s in "${spinner[@]}"; do
+            # Use the current phrase
+            current_phrase="${phrases[$current_index]}"
+
+            # Clear the current line, print the spinner and phrase
+            printf "\r\033[K%s %s" "$s" "$current_phrase"
+            
+            # Sleep and update spinner
+            sleep "$delay"
+            
+            # Update to the next phrase periodically (e.g., after 5 full rotations)
+            if [[ $((RANDOM % 5)) -eq 0 ]]; then
+                current_index=$((current_index + 1))
+                
+                # Loop back if the index exceeds the list
+                if [[ $current_index -ge ${#phrases[@]} ]]; then
+                    current_index=0
+                fi
+            fi
+        done
+    done
+}
+
+validate_input() {
+    local input=$1
+    if [[ ! "$input" =~ ^[0-9]+$ ]]; then
+        log_status "Input Validation" "FAILED (Invalid input: $input)"
+        input_error_message
+        return 1
+    fi
+    return 0
 }
 
 # Function to select modpacks
 select_modpacks() {
     while true; do
-        # Display modpack options to the user
         echo "================================="
         selection_prompt  # Random selection prompt
         echo "(e.g., 1 2 4-5 or 1-3 5)"
@@ -757,132 +931,134 @@ select_modpacks() {
         echo "a. Update all modpacks"
         echo "q. Cancel and exit"
         echo "================================="
-        
-local input_prompts=(
-        "Enter your selection: "
-        "Please choose an option: "
-        "Make your selection: "
-        "Choose your desired option: "
-        "Select your option: "
-        "Go ahead, pick a number: "
-        "Your choice, please: "
-        "What would you like to do? "
-        "It's your move, enter your choice: "
-        "Type your selection: "
-        "Which option will it be? "
-        "Decide now, enter your selection: "
-        "Time to pick! Enter your selection: "
-        "Select a number and hit enter: "
-        "Enter your preferred option: "
-        "Make your move, choose an option: "
-        "Please type the number of your choice: "
-        "Go ahead and make your selection: "
-        "Your call, enter the number: "
-        "Pick a number to proceed: "
-        "What’s your choice? Enter now: "
-        "Type the number of your chosen option: "
-        "Select from the list above: "
-        "Ready? Pick your option: "
-        "Your turn! Enter your choice: "
-        "Please provide your input: "
-        "Time to decide, pick a number: "
-        "Choose wisely! Enter your selection: "
-        "What’s your decision? Type it here: "
-        "Type your choice and hit enter: "
-        "Which path will you take? Pick an option: "
-        "Your journey begins! Pick a number: "
-        "The choice is yours! Enter a number: "
-        "Input your choice and press enter: "
-        "Your adventure awaits! Choose an option: "
-        "Select the path forward by typing a number: "
-        "Which way will you go? Enter your selection: "
-        "Decision time! Enter your selection: "
-        "Your input, please: "
-        "What’s next? Choose an option: "
-        "Type your decision here: "
-        "Pick a number from the list: "
-        "Let’s go! What’s your choice? "
-        "Choose your option from the menu: "
-        "Select your path by entering a number: "
-        "What’s your move? Enter it now: "
-        "Input your selection to continue: "
-        "Pick a number to advance: "
-        "Make your decision: "
-        "Your choice determines the next step! Pick wisely: "
-        "Let’s keep things rolling! Enter your choice: "
-        "Select an option to proceed: "
-        "Where will you go from here? Pick a number: "
-        "Lock in your choice by entering a number: "
-        "Onward! What’s your next move? "
-        "The next step is yours! Type your choice: "
-        "Take your pick and let’s proceed: "
-        "Ready to move forward? Enter a number: "
-        "Which option do you prefer? Type it here: "
-        "The choice is yours! Enter a number: "
-        "Make your mark! Pick a number: "
-        "Chart your course! Choose an option: "
-        "What’s your game plan? Type your choice: "
-        "Go ahead and pick your number: "
-        "Your selection determines the course! Pick wisely: "
-    )
-    
-    local prompt_index=$((RANDOM % ${#input_prompts[@]}))
-    read -p "${input_prompts[$prompt_index]}" choice
-        
-        # Handle user input
+
+        local input_prompts=(
+            "Enter your selection: "
+            "Please choose an option: "
+            "Make your selection: "
+            "Choose your desired option: "
+            "Select your option: "
+            "Go ahead, pick a number: "
+            "Your choice, please: "
+            "What would you like to do? "
+            "It's your move, enter your choice: "
+            "Type your selection: "
+            "Which option will it be? "
+            "Decide now, enter your selection: "
+            "Time to pick! Enter your selection: "
+            "Select a number and hit enter: "
+            "Enter your preferred option: "
+            "Make your move, choose an option: "
+            "Please type the number of your choice: "
+            "Go ahead and make your selection: "
+            "Your call, enter the number: "
+            "Pick a number to proceed: "
+            "What’s your choice? Enter now: "
+            "Type the number of your chosen option: "
+            "Select from the list above: "
+            "Ready? Pick your option: "
+            "Your turn! Enter your choice: "
+            "Please provide your input: "
+            "Time to decide, pick a number: "
+            "Choose wisely! Enter your selection: "
+            "What’s your decision? Type it here: "
+            "Type your choice and hit enter: "
+            "Which path will you take? Pick an option: "
+            "Your journey begins! Pick a number: "
+            "The choice is yours! Enter a number: "
+            "Input your choice and press enter: "
+            "Your adventure awaits! Choose an option: "
+            "Select the path forward by typing a number: "
+            "Which way will you go? Enter your selection: "
+            "Decision time! Enter your selection: "
+            "Your input, please: "
+            "What’s next? Choose an option: "
+            "Type your decision here: "
+            "Pick a number from the list: "
+            "Let’s go! What’s your choice? "
+            "Choose your option from the menu: "
+            "Select your path by entering a number: "
+            "What’s your move? Enter it now: "
+            "Input your selection to continue: "
+            "Pick a number to advance: "
+            "Make your decision: "
+            "Your choice determines the next step! Pick wisely: "
+            "Let’s keep things rolling! Enter your choice: "
+            "Select an option to proceed: "
+            "Where will you go from here? Pick a number: "
+            "Lock in your choice by entering a number: "
+            "Onward! What’s your next move? "
+            "The next step is yours! Type your choice: "
+            "Take your pick and let’s proceed: "
+            "Ready to move forward? Enter a number: "
+            "Which option do you prefer? Type it here: "
+            "The choice is yours! Enter a number: "
+            "Make your mark! Pick a number: "
+            "Chart your course! Choose an option: "
+            "What’s your game plan? Type your choice: "
+            "Go ahead and pick your number: "
+            "Your selection determines the course! Pick wisely: "
+        )
+
+        local prompt_index=$((RANDOM % ${#input_prompts[@]}))
+        read -p "${input_prompts[$prompt_index]}" choice
+
+        # Check if input is 'q' or 'a' before number/range validation
         if [[ "$choice" == "q" ]]; then
             exit_quote  # Random exit quote
             sleep 1  # Wait 1 second before exiting
-            log_message "User exited the script."
+            log_status "User Action" "Exited the script."
             exit 0
         elif [[ "$choice" == "a" ]]; then
-            # Update all modpacks
             selected_modpacks=("${modpacks[@]}")
             break
-        else
-            # Convert user input into an array
-            selected_modpacks=()
-            valid_input=true
+        fi
 
-            IFS=' ' read -r -a choice_array <<< "$choice"
+        selected_modpacks=()
+        valid_input=true
 
-            for item in "${choice_array[@]}"; do
-                if [[ "$item" =~ ^[0-9]+-[0-9]+$ ]]; then
-                    # Handle range input (e.g., 1-3)
-                    start=$(echo "$item" | cut -d '-' -f 1)
-                    end=$(echo "$item" | cut -d '-' -f 2)
-                    if [[ "$start" -ge 1 && "$end" -le "${#modpacks[@]}" && "$start" -le "$end" ]]; then
-                        for ((i=start; i<=end; i++)); do
-                            selected_modpacks+=("${modpacks[$((i-1))]}")
-                        done
-                    else
-                        input_error_message  # Random error message
-                        valid_input=false
-                        break
-                    fi
-                elif [[ "$item" =~ ^[0-9]+$ ]]; then
-                    # Handle single number input (e.g., 5)
-                    if [[ "$item" -ge 1 && "$item" -le "${#modpacks[@]}" ]]; then
-                        selected_modpacks+=("${modpacks[$((item-1))]}")
-                    else
-                        input_error_message  # Random error message
-                        valid_input=false
-                        break
-                    fi
+        # Split choice into individual selections
+        IFS=' ' read -r -a choice_array <<< "$choice"
+
+        # Validate each selection
+        for item in "${choice_array[@]}"; do
+            if [[ "$item" =~ ^[0-9]+-[0-9]+$ ]]; then
+                start=$(echo "$item" | cut -d '-' -f 1)
+                end=$(echo "$item" | cut -d '-' -f 2)
+                if [[ "$start" -ge 1 && "$end" -le "${#modpacks[@]}" && "$start" -le "$end" ]]; then
+                    for ((i=start; i<=end; i++)); do
+                        selected_modpacks+=("${modpacks[$((i-1))]}")
+                    done
                 else
-                    input_error_message  # Random error message
+                    input_error_message
+                    log_status "Range Selection" "FAILED (Invalid range: $item)"
                     valid_input=false
                     break
                 fi
-            done
-            
-            # If input was valid, break out of loop
-            if $valid_input; then
+            elif [[ "$item" =~ ^[0-9]+$ ]]; then
+                if [[ "$item" -ge 1 && "$item" -le "${#modpacks[@]}" ]]; then
+                    selected_modpacks+=("${modpacks[$((item-1))]}")
+                else
+                    input_error_message
+                    log_status "Selection" "FAILED (Invalid selection: $item)"
+                    valid_input=false
+                    break
+                fi
+            else
+                input_error_message
+                log_status "Selection" "FAILED (Invalid input: $item)"
+                valid_input=false
                 break
             fi
+        done
+        
+        # Break the loop if input was valid
+        if $valid_input; then
+            break
         fi
     done
 }
+        
 
 # Main Execution
 execution_summaries=()
@@ -905,14 +1081,12 @@ echo "================================="
 echo "Update Summary:"
 for summary in "${execution_summaries[@]}"; do
     echo "$summary"
+    log_status "Update Summary" "$summary"
 done
 echo "================================="
 
-# Log the summary
-log_message "Update Summary:"
-for summary in "${execution_summaries[@]}"; do
-    log_message "$summary"
-done
+# Final script completion log
+log_status "Script Execution" "Completed successfully."
 
 # Display a random exit message
 exit_message
@@ -921,4 +1095,3 @@ exit_message
 echo ""
 echo "Press enter to exit..."
 read -r  # Changed to wait for enter key
-log_message "Script execution completed."
