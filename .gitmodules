@@ -260,3 +260,6 @@
 [submodule "Mods/RoR2-Funnyitems"]
 	path = Mods/RoR2-Funnyitems
 	url = https://github.com/lshtech/ror2funnyitems
+[submodule "Mods/ExtraPlanets"]
+	path = Mods/ExtraPlanets
+	url = https://github.com/lshtech/ExtraPlanets
