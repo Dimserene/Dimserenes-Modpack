@@ -236,3 +236,27 @@
 [submodule "Mods/CheesyJokers"]
 	path = Mods/CheesyJokers
 	url = https://github.com/lshtech/CheesyJokers
+[submodule "Mods/Familiar"]
+	path = Mods/Familiar
+	url = https://github.com/lshtech/Familiar
+[submodule "Mods/NeowBlessings"]
+	path = Mods/NeowBlessings
+	url = https://github.com/lshtech/NeowBlessings
+[submodule "Mods/SyltStickers"]
+	path = Mods/SyltStickers
+	url = https://github.com/lshtech/SyltStickers
+[submodule "Mods/Risk-of-Jesters"]
+	path = Mods/Risk-of-Jesters
+	url = https://github.com/lshtech/risk-of-jesters
+[submodule "Mods/The-Buffoon-Pack"]
+	path = Mods/The-Buffoon-Pack
+	url = https://github.com/lshtech/The-Buffoon-Pack
+[submodule "Mods/Multi-Jokers"]
+	path = Mods/Multi-Jokers
+	url = https://github.com/lshtech/multi-jokers
+[submodule "Mods/Seven-Deadly-Sins"]
+	path = Mods/Seven-Deadly-Sins
+	url = https://github.com/lshtech/sevendeadlysins
+[submodule "Mods/RoR2-Funnyitems"]
+	path = Mods/RoR2-Funnyitems
+	url = https://github.com/lshtech/ror2funnyitems
