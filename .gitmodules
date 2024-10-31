@@ -131,9 +131,6 @@
 [submodule "Mods/Cruel-Blinds"]
 	path = Mods/Cruel-Blinds
 	url = https://github.com/Dimserene/Cruel-Blinds
-[submodule "Mods/Aure-Spectral"]
-	path = Mods/Aure-Spectral
-	url = https://github.com/SDM0/Aure-Spectral
 [submodule "Mods/LushMod"]
 	path = Mods/LushMod
 	url = https://github.com/lshtech/LushMod
@@ -155,9 +152,6 @@
 [submodule "Mods/Themed_Jokers"]
 	path = Mods/Themed_Jokers
 	url = https://github.com/Jevonnissocoolman/Themed-Jokers
-[submodule "Mods/LunasBalatroMods"]
-	path = Mods/LunasBalatroMods
-	url = https://github.com/LunaAstraCassiopeia/LunasBalatroMods
 [submodule "Mods/Trance"]
 	path = Mods/Trance
 	url = https://github.com/MathIsFun0/Trance
@@ -263,3 +257,27 @@
 [submodule "Mods/ExtraPlanets"]
 	path = Mods/ExtraPlanets
 	url = https://github.com/lshtech/ExtraPlanets
+[submodule "Mods/Balatro451"]
+	path = Mods/Balatro451
+	url = https://github.com/SM451Modding/Balatro451/
+[submodule "Mods/Malverk"]
+	path = Mods/Malverk
+	url = https://github.com/Eremel/Malverk
+[submodule "Mods/Potatro"]
+	path = Mods/Potatro
+	url = https://github.com/balt-dev/potatro/
+[submodule "Mods/Multipack"]
+	path = Mods/Multipack
+	url = https://github.com/snowylight/Multipack
+[submodule "Mods/AntonosStakes"]
+	path = Mods/AntonosStakes
+	url = https://github.com/Antonos101/Scaling-Ante-Stakes
+[submodule "Mods/Aure-Spectral"]
+	path = Mods/Aure-Spectral
+	url = https://github.com/Eremel/Aure-Spectral/
+[submodule "Mods/LunasBalatroMods"]
+	path = Mods/LunasBalatroMods
+	url = https://github.com/Dimserene/LunasBalatroMods
+[submodule "Mods/Luna-s-Enhancements"]
+	path = Mods/Luna-s-Enhancements
+	url = https://github.com/Eremel/Luna-s-Enhancements/
