@@ -7,9 +7,6 @@
 [submodule "Mods/Steamodded"]
 	path = Mods/Steamodded
 	url = https://github.com/Steamopollys/Steamodded
-[submodule "Mods/Aura"]
-	path = Mods/Aura
-	url = https://github.com/MathIsFun0/Aura
 [submodule "Mods/JokerSellValue"]
 	path = Mods/JokerSellValue
 	url = https://github.com/OppositeWolf770/JokerSellValue
@@ -118,9 +115,6 @@
 [submodule "Mods/Betmma_mods"]
 	path = Mods/Betmma_mods
 	url = https://github.com/Dimserene/Betmma_mods
-[submodule "Mods/DeckSkinsPlus"]
-	path = Mods/DeckSkinsPlus
-	url = https://github.com/Dimserene/DeckSkinsPlus.git
 [submodule "Mods/MoreFluff"]
 	path = Mods/MoreFluff
 	url = https://github.com/notmario/MoreFluff
