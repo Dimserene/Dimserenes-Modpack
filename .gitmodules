@@ -224,9 +224,6 @@
 [submodule "Mods/CheesyJokers"]
 	path = Mods/CheesyJokers
 	url = https://github.com/lshtech/CheesyJokers
-[submodule "Mods/Familiar"]
-	path = Mods/Familiar
-	url = https://github.com/lshtech/Familiar
 [submodule "Mods/NeowBlessings"]
 	path = Mods/NeowBlessings
 	url = https://github.com/lshtech/NeowBlessings
@@ -275,3 +272,6 @@
 [submodule "Mods/Luna-s-Enhancements"]
 	path = Mods/Luna-s-Enhancements
 	url = https://github.com/Eremel/Luna-s-Enhancements/
+[submodule "Mods/Familiar"]
+	path = Mods/Familiar
+	url = https://github.com/RattlingSnow353/Familiar
