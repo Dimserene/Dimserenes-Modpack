@@ -263,9 +263,6 @@
 [submodule "Mods/AntonosStakes"]
 	path = Mods/AntonosStakes
 	url = https://github.com/Antonos101/Scaling-Ante-Stakes
-[submodule "Mods/Aure-Spectral"]
-	path = Mods/Aure-Spectral
-	url = https://github.com/Eremel/Aure-Spectral/
 [submodule "Mods/LunasBalatroMods"]
 	path = Mods/LunasBalatroMods
 	url = https://github.com/Dimserene/LunasBalatroMods
@@ -275,3 +272,6 @@
 [submodule "Mods/Familiar"]
 	path = Mods/Familiar
 	url = https://github.com/RattlingSnow353/Familiar
+[submodule "Mods/Aure-Spectral"]
+	path = Mods/Aure-Spectral
+	url = https://github.com/SDM0/Aure-Spectral
