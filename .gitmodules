@@ -52,9 +52,6 @@
 [submodule "Mods/Jestobiology"]
 	path = Mods/Jestobiology
 	url = https://github.com/spikeof2010/Jestobiology
-[submodule "Mods/Fusion-Jokers"]
-	path = Mods/Fusion-Jokers
-	url = https://github.com/Dimserene/Fusion-Jokers
 [submodule "Mods/ModpackDecks"]
 	path = Mods/ModpackDecks
 	url = https://github.com/Dimserene/ModpackDecks
@@ -275,3 +272,6 @@
 [submodule "Mods/Aure-Spectral"]
 	path = Mods/Aure-Spectral
 	url = https://github.com/SDM0/Aure-Spectral
+[submodule "Mods/Fusion-Jokers"]
+	path = Mods/Fusion-Jokers
+	url = https://github.com/lshtech/Fusion-Jokers
