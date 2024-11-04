@@ -50,6 +50,12 @@ function Game:main_menu(change_context)
 	})
 end
 
+local click_ref = Card.click
+function Card:click()
+  click_ref(self)
+  print(self.config.center and self.config.center.key or 'no key found')
+end
+
 function Game:splash_screen()
     splash_screenRef(self)
 
