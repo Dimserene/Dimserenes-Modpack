@@ -62,6 +62,8 @@ else
     submodule_status="FAILED"
 fi
 
+cp ./ModpackName.txt ./Mods/ModpackUtil/
+
 # Check for changes in the "Mods" folder (excluding README.md files)
 mods_changes=$(git status --porcelain Mods/ | grep -v "README.md")
 

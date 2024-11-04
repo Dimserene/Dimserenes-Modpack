@@ -3,7 +3,6 @@
 --- MOD_ID: Modpack_Util
 --- MOD_AUTHOR: [Dimserene]
 --- MOD_DESCRIPTION: Dimserene's Modpack Utility
---- VERSION: Full
 --- PRIORITY: -999999999999999999999999
 ----------------------------------------------
 ------------MOD CODE -------------------------
@@ -22,7 +21,7 @@ if SMODS.Atlas then
 end
 
 
-local ModpackName = "Dimserene's Modpack - Full"
+local ModpackName = nativefs.read(lovely.mod_dir .. "/ModpackUtil/ModpackName.txt")
 local ModpackVersion = nativefs.read(lovely.mod_dir .. "/ModpackUtil/CurrentVersion.txt")
 local ModpackUpdate = nativefs.read(lovely.mod_dir .. "/ModpackUtil/VersionTime.txt")
 
@@ -32,7 +31,7 @@ function Game:main_menu(change_context)
 	UIBox({
 		definition = {n = G.UIT.ROOT, config = {align = "cm", colour = G.C.CLEAR}, nodes = {
 						{n= G.UIT.R, config = {align = "cr"}, nodes = {
-							{n = G.UIT.T, config = {scale = 0.3, text = ModpackName, align = "cr", colour = G.C.UI.TEXT_LIGHT}}}},
+							{n = G.UIT.T, config = {scale = 0.3, text = "Dimserene's Modpack - " .. ModpackName, align = "cr", colour = G.C.UI.TEXT_LIGHT}}}},
 						{n= G.UIT.R, config = {align = "cr", padding = 0.05}, nodes = {
 							{n = G.UIT.T, config = {scale = 0.3, text = "Current Version: " .. ModpackVersion, align = "cr", colour = G.C.UI.TEXT_LIGHT}}}},
 						{n= G.UIT.R, config = {align = "cr", padding = 0.05}, nodes = {
@@ -68,16 +67,14 @@ function Game:splash_screen()
                 table.remove(G.P_CENTER_POOLS["Booster"], i)
             end
         end
-    end
 
-	if (SMODS.Mods["Oiimanaddition"] or {}).can_load then
-		for i = #G.P_CENTER_POOLS["Booster"], 1, -1 do
-			local entry = G.P_CENTER_POOLS["Booster"][i]
-			if string.find(entry.key, "p_oiim_conditional") then
-				table.remove(G.P_CENTER_POOLS["Booster"], i)
-			end
-		end
-	end
+        for i = #G.P_CENTER_POOLS["Polymino"], 1, -1 do
+            local entry = G.P_CENTER_POOLS["Polymino"][i]
+            if string.find(entry.key, "c_bunc_the") then
+                table.remove(G.P_CENTER_POOLS["Polymino"], i)
+            end
+        end
+    end
 end
 
 ----------------------------------------------
