@@ -281,9 +281,6 @@
 [submodule "Mods/Tsunami"]
 	path = Mods/Tsunami
 	url = https://github.com/Maratby/Tsunami
-[submodule "Mods/NumBalatro"]
-	path = Mods/NumBalatro
-	url = https://github.com/Numbuh214/NumBalatro
 [submodule "Mods/MixedPotion"]
 	path = Mods/MixedPotion
 	url = https://github.com/snowylight/MixedPotion
