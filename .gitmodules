@@ -275,3 +275,21 @@
 [submodule "Mods/Fusion-Jokers"]
 	path = Mods/Fusion-Jokers
 	url = https://github.com/lshtech/Fusion-Jokers
+[submodule "Mods/Pokermon"]
+	path = Mods/Pokermon
+	url = https://github.com/InertSteak/Pokermon
+[submodule "Mods/Tsunami"]
+	path = Mods/Tsunami
+	url = https://github.com/Maratby/Tsunami
+[submodule "Mods/NumBalatro"]
+	path = Mods/NumBalatro
+	url = https://github.com/Numbuh214/NumBalatro
+[submodule "Mods/MixedPotion"]
+	path = Mods/MixedPotion
+	url = https://github.com/snowylight/MixedPotion
+[submodule "Mods/JoJokers"]
+	path = Mods/JoJokers
+	url = https://github.com/WarlordShado/JoJokers
+[submodule "Mods/Strange-Pencil"]
+	path = Mods/Strange-Pencil
+	url = https://github.com/DigitalDetective47/strange-pencil
