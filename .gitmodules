@@ -290,3 +290,6 @@
 [submodule "Mods/Strange-Pencil"]
 	path = Mods/Strange-Pencil
 	url = https://github.com/DigitalDetective47/strange-pencil
+[submodule "Mods/NumBalatro"]
+	path = Mods/NumBalatro
+	url = https://github.com/Numbuh214/NumBalatro
