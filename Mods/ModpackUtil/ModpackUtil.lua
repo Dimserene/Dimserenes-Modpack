@@ -55,6 +55,18 @@ function Card:click()
   print(self.config.center and self.config.center.key or 'no key found')
 end
 
+if not CenterBlacklist then
+	CenterBlacklist = {}
+end
+
+table.insert(CenterBlacklist, "")
+
+if not TypeBlacklist then
+	TypeBlacklist = {}
+end
+
+table.insert(TypeBlacklist, "Polymino")
+
 function Game:splash_screen()
     splash_screenRef(self)
 

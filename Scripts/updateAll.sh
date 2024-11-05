@@ -961,8 +961,8 @@ coonies_update() {
 
 # Progress function with consistent phrase per modpack update
 show_progress() {
-    local -a spinner=('䷀' '䷫' '䷠' '䷋' '䷩' '䷨' '䷊' '䷟' '䷞' '䷋' '䷩' '䷨' '䷊' '䷡' '䷪' '䷀' '䷀' '䷀')
-    local delay=0.5
+    local -a spinner=('䷀' '䷪' '䷍' '䷡' '䷈' '䷄' '䷙' '䷊' '䷉' '䷹' '䷥' '䷵' '䷼' '䷻' '䷨' '䷒' '䷌' '䷰' '䷝' '䷶' '䷤' '䷾' '䷕' '䷣' '䷘' '䷐' '䷔' '䷲' '䷩' '䷂' '䷚' '䷗' '䷁' '䷖' '䷇' '䷓' '䷏' '䷢' '䷬' '䷋' '䷎' '䷳' '䷦' '䷴' '䷽' '䷷' '䷞' '䷠' '䷆' '䷃' '䷜' '䷺' '䷧' '䷿' '䷮' '䷅' '䷭' '䷑' '䷯' '䷸' '䷟' '䷱' '䷛' '䷫')
+    local delay=0.1
 
     # Select one consistent phrase per modpack update
     local phrases=(
