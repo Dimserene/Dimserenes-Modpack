@@ -119,9 +119,6 @@
 	path = Mods/SnoresvillesTurbulentJokers
 	url = https://github.com/Snoresville/snoresville_turbulent_jokers
 	branch = release
-[submodule "Mods/Cruel-Blinds"]
-	path = Mods/Cruel-Blinds
-	url = https://github.com/Dimserene/Cruel-Blinds
 [submodule "Mods/LushMod"]
 	path = Mods/LushMod
 	url = https://github.com/lshtech/LushMod
@@ -293,3 +290,6 @@
 [submodule "Mods/NumBalatro"]
 	path = Mods/NumBalatro
 	url = https://github.com/Numbuh214/NumBalatro
+[submodule "Mods/Cruel-Blinds"]
+	path = Mods/Cruel-Blinds
+	url = https://github.com/Dimserene/Cruel-Blinds
