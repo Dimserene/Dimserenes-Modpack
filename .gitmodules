@@ -109,9 +109,6 @@
 [submodule "Mods/MathBlinds"]
 	path = Mods/MathBlinds
 	url = https://github.com/Bazinga9000/MathBlinds
-[submodule "Mods/Betmma_mods"]
-	path = Mods/Betmma_mods
-	url = https://github.com/Dimserene/Betmma_mods
 [submodule "Mods/MoreFluff"]
 	path = Mods/MoreFluff
 	url = https://github.com/notmario/MoreFluff
@@ -245,9 +242,6 @@
 [submodule "Mods/Balatro451"]
 	path = Mods/Balatro451
 	url = https://github.com/SM451Modding/Balatro451/
-[submodule "Mods/Malverk"]
-	path = Mods/Malverk
-	url = https://github.com/Eremel/Malverk
 [submodule "Mods/Potatro"]
 	path = Mods/Potatro
 	url = https://github.com/balt-dev/potatro/
@@ -272,9 +266,6 @@
 [submodule "Mods/Fusion-Jokers"]
 	path = Mods/Fusion-Jokers
 	url = https://github.com/lshtech/Fusion-Jokers
-[submodule "Mods/Pokermon"]
-	path = Mods/Pokermon
-	url = https://github.com/InertSteak/Pokermon
 [submodule "Mods/Tsunami"]
 	path = Mods/Tsunami
 	url = https://github.com/Maratby/Tsunami
@@ -287,9 +278,9 @@
 [submodule "Mods/Strange-Pencil"]
 	path = Mods/Strange-Pencil
 	url = https://github.com/DigitalDetective47/strange-pencil
-[submodule "Mods/NumBalatro"]
-	path = Mods/NumBalatro
-	url = https://github.com/Numbuh214/NumBalatro
 [submodule "Mods/Cruel-Blinds"]
 	path = Mods/Cruel-Blinds
 	url = https://github.com/Dimserene/Cruel-Blinds
+[submodule "Mods/Jimbo-s-Pack"]
+	path = Mods/Jimbo-s-Pack
+	url = https://github.com/art-muncher/Jimbo-s-Pack
