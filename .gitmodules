@@ -251,12 +251,6 @@
 [submodule "Mods/AntonosStakes"]
 	path = Mods/AntonosStakes
 	url = https://github.com/Antonos101/Scaling-Ante-Stakes
-[submodule "Mods/LunasBalatroMods"]
-	path = Mods/LunasBalatroMods
-	url = https://github.com/Dimserene/LunasBalatroMods
-[submodule "Mods/Luna-s-Enhancements"]
-	path = Mods/Luna-s-Enhancements
-	url = https://github.com/Eremel/Luna-s-Enhancements/
 [submodule "Mods/Familiar"]
 	path = Mods/Familiar
 	url = https://github.com/RattlingSnow353/Familiar
@@ -284,3 +278,6 @@
 [submodule "Mods/Jimbo-s-Pack"]
 	path = Mods/Jimbo-s-Pack
 	url = https://github.com/art-muncher/Jimbo-s-Pack
+[submodule "Mods/LunasBalatroMods"]
+	path = Mods/LunasBalatroMods
+	url = https://github.com/LunaAstraCassiopeia/LunasBalatroMods
