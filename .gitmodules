@@ -19,9 +19,6 @@
 [submodule "Mods/Talisman"]
 	path = Mods/Talisman
 	url = https://github.com/Dimserene/Talisman
-[submodule "Mods/BonusBlinds"]
-	path = Mods/BonusBlinds
-	url = https://github.com/Dimserene/BonusBlinds
 [submodule "Mods/DebugPlus"]
 	path = Mods/DebugPlus
 	url = https://github.com/Dimserene/DebugPlus
@@ -182,9 +179,6 @@
 [submodule "Mods/Tetrapak"]
 	path = Mods/Tetrapak
 	url = https://github.com/lshtech/Tetrapak
-[submodule "Mods/MikasBalatro"]
-	path = Mods/MikasBalatro
-	url = https://github.com/lshtech/MikasBalatro
 [submodule "Mods/DX-Tarots"]
 	path = Mods/DX-Tarots
 	url = https://github.com/lshtech/DX-Tarots
