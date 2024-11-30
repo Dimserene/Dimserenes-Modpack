@@ -263,9 +263,6 @@
 [submodule "Mods/JoJokers"]
 	path = Mods/JoJokers
 	url = https://github.com/WarlordShado/JoJokers
-[submodule "Mods/Strange-Pencil"]
-	path = Mods/Strange-Pencil
-	url = https://github.com/DigitalDetective47/strange-pencil
 [submodule "Mods/Cruel-Blinds"]
 	path = Mods/Cruel-Blinds
 	url = https://github.com/Dimserene/Cruel-Blinds
@@ -275,3 +272,6 @@
 [submodule "Mods/LunasBalatroMods"]
 	path = Mods/LunasBalatroMods
 	url = https://github.com/LunaAstraCassiopeia/LunasBalatroMods
+[submodule "Mods/Betmma_mods"]
+	path = Mods/Betmma_mods
+	url = https://github.com/betmma/my_balatro_mods
