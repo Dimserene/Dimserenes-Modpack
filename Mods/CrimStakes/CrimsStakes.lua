@@ -5,7 +5,7 @@
 --- MOD_AUTHOR: [Crimson Heart]
 --- MOD_DESCRIPTION: Want to try the base stakes with just mods? Here you go! [DO NOT USE BY ITSELF] 
 --- BADGE_COLOUR: 990000
---- VERSION: Beta 1.0
+--- VERSION: 1.0
 --- PRIORITY: -1
 --- DEPENDENCIES: [Talisman>=2.0.0-beta5]
 
