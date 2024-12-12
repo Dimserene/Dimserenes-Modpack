@@ -206,9 +206,6 @@
 [submodule "Mods/JankJonklers"]
 	path = Mods/JankJonklers
 	url = https://github.com/spikeof2010/JankJonklers
-[submodule "Mods/CheesyJokers"]
-	path = Mods/CheesyJokers
-	url = https://github.com/lshtech/CheesyJokers
 [submodule "Mods/NeowBlessings"]
 	path = Mods/NeowBlessings
 	url = https://github.com/lshtech/NeowBlessings
@@ -275,3 +272,6 @@
 [submodule "Mods/Aure-Spectral"]
 	path = Mods/Aure-Spectral
 	url = https://github.com/SDM0/Aure-Spectral
+[submodule "Mods/CheesyJokers"]
+	path = Mods/CheesyJokers
+	url = https://github.com/lshtech/CheesyJokers
