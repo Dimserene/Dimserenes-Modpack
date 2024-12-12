@@ -272,3 +272,6 @@
 [submodule "Mods/AntonosStakes"]
 	path = Mods/AntonosStakes
 	url = https://github.com/lshtech/Scaling-Ante-Stakes
+[submodule "Mods/Aure-Spectral"]
+	path = Mods/Aure-Spectral
+	url = https://github.com/SDM0/Aure-Spectral
