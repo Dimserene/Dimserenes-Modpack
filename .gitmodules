@@ -242,15 +242,9 @@
 [submodule "Mods/Multipack"]
 	path = Mods/Multipack
 	url = https://github.com/snowylight/Multipack
-[submodule "Mods/AntonosStakes"]
-	path = Mods/AntonosStakes
-	url = https://github.com/Antonos101/Scaling-Ante-Stakes
 [submodule "Mods/Familiar"]
 	path = Mods/Familiar
 	url = https://github.com/RattlingSnow353/Familiar
-[submodule "Mods/Aure-Spectral"]
-	path = Mods/Aure-Spectral
-	url = https://github.com/SDM0/Aure-Spectral
 [submodule "Mods/Fusion-Jokers"]
 	path = Mods/Fusion-Jokers
 	url = https://github.com/lshtech/Fusion-Jokers
@@ -275,3 +269,6 @@
 [submodule "Mods/Betmma_mods"]
 	path = Mods/Betmma_mods
 	url = https://github.com/betmma/my_balatro_mods
+[submodule "Mods/AntonosStakes"]
+	path = Mods/AntonosStakes
+	url = https://github.com/lshtech/Scaling-Ante-Stakes
