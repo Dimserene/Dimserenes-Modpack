@@ -85,9 +85,6 @@
 [submodule "Mods/No-Laughing-Matter"]
 	path = Mods/No-Laughing-Matter
 	url = https://github.com/Minirebel/no-laughing-matter
-[submodule "Mods/Grim"]
-	path = Mods/Grim
-	url = https://github.com/Mathguy23/Grim
 [submodule "Mods/CardSleeves"]
 	path = Mods/CardSleeves
 	url = https://github.com/larswijn/CardSleeves
@@ -275,3 +272,21 @@
 [submodule "Mods/Bunco"]
 	path = Mods/Bunco
 	url = https://github.com/Firch/Bunco
+[submodule "Mods/strange-pencil"]
+	path = Mods/strange-pencil
+	url = https://github.com/DigitalDetective47/strange-pencil
+[submodule "Mods/TOGAPackBalatro"]
+	path = Mods/TOGAPackBalatro
+	url = https://github.com/TheOneGoofAli/TOGAPackBalatro
+[submodule "Mods/Gemstones"]
+	path = Mods/Gemstones
+	url = https://github.com/0fficialHalo/Gemstones
+[submodule "Mods/BlindEditions"]
+	path = Mods/BlindEditions
+	url = https://github.com/Mathguy23/BlindEditions
+[submodule "Mods/YART"]
+	path = Mods/YART
+	url = https://github.com/DigitalDetective47/yart
+[submodule "Mods/ExtraCredit"]
+	path = Mods/ExtraCredit
+	url = https://github.com/GuilloryCraft/ExtraCredit
