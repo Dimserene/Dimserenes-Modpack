@@ -272,9 +272,6 @@
 [submodule "Mods/Bunco"]
 	path = Mods/Bunco
 	url = https://github.com/Firch/Bunco
-[submodule "Mods/strange-pencil"]
-	path = Mods/strange-pencil
-	url = https://github.com/DigitalDetective47/strange-pencil
 [submodule "Mods/TOGAPackBalatro"]
 	path = Mods/TOGAPackBalatro
 	url = https://github.com/TheOneGoofAli/TOGAPackBalatro
@@ -290,3 +287,6 @@
 [submodule "Mods/ExtraCredit"]
 	path = Mods/ExtraCredit
 	url = https://github.com/GuilloryCraft/ExtraCredit
+[submodule "Mods/Strange-Pencil"]
+	path = Mods/Strange-Pencil
+	url = https://github.com/DigitalDetective47/strange-pencil
