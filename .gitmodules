@@ -227,9 +227,6 @@
 [submodule "Mods/Potatro"]
 	path = Mods/Potatro
 	url = https://github.com/balt-dev/potatro/
-[submodule "Mods/Multipack"]
-	path = Mods/Multipack
-	url = https://github.com/snowylight/Multipack
 [submodule "Mods/Familiar"]
 	path = Mods/Familiar
 	url = https://github.com/RattlingSnow353/Familiar
@@ -296,3 +293,9 @@
 [submodule "Mods/Oiiman-s-Additions"]
 	path = Mods/Oiiman-s-Additions
 	url = https://github.com/lshtech/Oiiman-s-Additions
+[submodule "Mods/BonusBlinds"]
+	path = Mods/BonusBlinds
+	url = https://github.com/Mathguy23/BonusBlinds
+[submodule "Mods/Grim"]
+	path = Mods/Grim
+	url = https://github.com/Mathguy23/Grim
