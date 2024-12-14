@@ -122,9 +122,6 @@
 [submodule "Mods/Taikomochi"]
 	path = Mods/Taikomochi
 	url = https://github.com/larswijn/Taikomochi
-[submodule "Mods/Themed_Jokers"]
-	path = Mods/Themed_Jokers
-	url = https://github.com/Jevonnissocoolman/Themed-Jokers
 [submodule "Mods/Trance"]
 	path = Mods/Trance
 	url = https://github.com/MathIsFun0/Trance
@@ -302,3 +299,6 @@
 [submodule "Mods/Multipack"]
 	path = Mods/Multipack
 	url = https://github.com/snowylight/Multipack
+[submodule "Mods/Themed_Jokers"]
+	path = Mods/Themed_Jokers
+	url = https://github.com/cerloCasa/Themed-Jokers
