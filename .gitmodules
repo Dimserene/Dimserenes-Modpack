@@ -299,3 +299,6 @@
 [submodule "Mods/Grim"]
 	path = Mods/Grim
 	url = https://github.com/Mathguy23/Grim
+[submodule "Mods/Multipack"]
+	path = Mods/Multipack
+	url = https://github.com/snowylight/Multipack
