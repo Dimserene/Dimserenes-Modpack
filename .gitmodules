@@ -302,3 +302,33 @@
 [submodule "Mods/Themed_Jokers"]
 	path = Mods/Themed_Jokers
 	url = https://github.com/cerloCasa/Themed-Jokers
+[submodule "Mods/Aura"]
+	path = Mods/Aura
+	url = https://github.com/MathIsFun0/Aura
+[submodule "Mods/DreadJokers"]
+	path = Mods/DreadJokers
+	url = https://github.com/LunaAstraCassiopeia/DreadJokers
+[submodule "Mods/Morjokers"]
+	path = Mods/Morjokers
+	url = https://github.com/lshtech/morjokers
+[submodule "Mods/JellyMod"]
+	path = Mods/JellyMod
+	url = https://github.com/lshtech/JellyMod
+[submodule "Mods/JamMod"]
+	path = Mods/JamMod
+	url = https://github.com/WilsontheWolf/JamMod
+[submodule "Mods/Balatro-Repentance"]
+	path = Mods/Balatro-Repentance
+	url = https://github.com/lshtech/balatro-repentance
+[submodule "Mods/MikasBalatro"]
+	path = Mods/MikasBalatro
+	url = https://github.com/lshtech/MikasBalatro
+[submodule "Mods/CommunityPack"]
+	path = Mods/CommunityPack
+	url = https://github.com/lshtech/Balatro-CommunityPack
+[submodule "Mods/FoldButton"]
+	path = Mods/FoldButton
+	url = https://github.com/happinyz/BalatroFoldButton
+[submodule "Mods/Ro-Balatro"]
+	path = Mods/Ro-Balatro
+	url = https://github.com/AlexZGreat/Ro-Balatro
