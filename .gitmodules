@@ -305,9 +305,6 @@
 [submodule "Mods/Aura"]
 	path = Mods/Aura
 	url = https://github.com/MathIsFun0/Aura
-[submodule "Mods/DreadJokers"]
-	path = Mods/DreadJokers
-	url = https://github.com/LunaAstraCassiopeia/DreadJokers
 [submodule "Mods/Morjokers"]
 	path = Mods/Morjokers
 	url = https://github.com/lshtech/morjokers
