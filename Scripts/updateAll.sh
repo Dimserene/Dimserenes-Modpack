@@ -764,9 +764,6 @@ log_status() {
     execution_summaries+=("$modpack: $display_status")
 }
 
-# URL to download Coonie's Modpack
-coonie_download_url="https://github.com/GayCoonie/Coonies-Mod-Pack/releases/latest/download/Mods.zip"
-
 # ANSI color codes
 RED='\033[0;31m'
 GREEN='\033[0;32m'
@@ -785,22 +782,6 @@ update_modpack() {
     local phrase="Updating"
     show_progress "$phrase" &
     spinner_pid=$!
-
-    # If it's Coonie's Modpack, handle the special update
-    if [[ "$modpack" == "Coonies-Modpack" ]]; then
-        log_status "$modpack" "Special update process started"
-        coonies_update "$modpack_path"
-        kill "$spinner_pid"
-        echo ""
-        return $?
-    elif [[ "$modpack" == "Elbes-Modpack" ]]; then
-        # Special handling for Elbe's Modpack
-        log_status "$modpack" "Special pull process started"
-        elbes_update "$modpack_path"
-        kill "$spinner_pid"
-        echo ""
-        return $?
-    fi
 
     if [[ ! -f "$modpack_path/autoversion.sh" ]]; then
         log_status "$modpack" "FAILED (autoversion.sh not found)"
@@ -827,136 +808,6 @@ update_modpack() {
         log_status "$modpack" "FAILED (Check autoversion.sh output for details)"
         return 1
     fi
-}
-
-# Real-time update function for Elbe's Modpack
-elbes_update() {
-    local modpack_path=$1
-
-    cd "$modpack_path" || return 1
-
-    show_progress &
-    spinner_pid=$!
-
-    # Pull the latest changes from the remote with real-time display
-    if git pull --rebase | tee -a "$log_file"; then
-        log_status "Elbe's Modpack" "Pull SUCCESS"
-    else
-        kill "$spinner_pid"
-        echo ""
-        log_status "Elbe's Modpack" "FAILED (git pull error)"
-        return 1
-    fi
-
-    # Update all submodules with real-time display
-    if git submodule update --remote --recursive | tee -a "$log_file"; then
-        log_status "Elbe's Modpack" "Submodules update SUCCESS"
-    else
-        kill "$spinner_pid"
-        echo ""
-        log_status "Elbe's Modpack" "FAILED (Submodules update error)"
-        return 1
-    fi
-
-    kill "$spinner_pid"
-    echo ""
-    log_status "Elbe's Modpack" "SUCCESS"
-    return 0
-}
-
-# File to store the last known commit hash
-coonie_commit_hash_file="$base_path/coonie_last_commit_hash.txt"
-
-# GitHub API URL for the latest commit
-coonie_commit_api_url="https://api.github.com/repos/GayCoonie/Coonies-Mod-Pack/commits/main"
-
-# Check if Coonie's Modpack needs an update
-check_coonies_update() {
-    # Fetch the latest commit hash from GitHub
-    local latest_commit_hash
-    if command -v curl > /dev/null; then
-        latest_commit_hash=$(curl -s "$coonie_commit_api_url" | grep -m 1 '"sha"' | cut -d '"' -f 4)
-    elif command -v wget > /dev/null; then
-        latest_commit_hash=$(wget -qO- "$coonie_commit_api_url" | grep -m 1 '"sha"' | cut -d '"' -f 4)
-    else
-        log_status "Coonie's Modpack" "FAILED (Neither curl nor wget found)"
-        echo -e "${RED}FAILED (Neither curl nor wget found)${NC}"
-        return 1
-    fi
-
-    if [[ -z "$latest_commit_hash" ]]; then
-        log_status "Coonie's Modpack" "FAILED (Could not fetch latest commit hash)"
-        echo -e "${RED}FAILED (Could not fetch latest commit hash)${NC}"
-        return 1
-    fi
-
-    # Read the last known commit hash
-    local last_known_commit_hash=""
-    if [[ -f "$coonie_commit_hash_file" ]]; then
-        last_known_commit_hash=$(<"$coonie_commit_hash_file")
-    fi
-
-    # Compare the hashes
-    if [[ "$latest_commit_hash" == "$last_known_commit_hash" ]]; then
-        echo -e "${GREEN}Coonie's Modpack is up-to-date.${NC}"
-        log_status "Coonie's Modpack" "SKIPPED (Already up-to-date)"
-        return 0  # No update needed
-    else
-        echo "$latest_commit_hash" > "$coonie_commit_hash_file"  # Save the new hash
-        return 2  # Update needed
-    fi
-}
-
-# Special Update Function for Coonie's Modpack
-coonies_update() {
-    local modpack_path=$1
-    local temp_download_path="$modpack_path/temp_download.zip"
-
-    # Check if an update is needed
-    if check_coonies_update; then
-        if [[ $? -eq 0 ]]; then
-            log_status "Coonie's Modpack" "SKIPPED (Already up-to-date)"
-            return 0  # Skip update if up-to-date
-        fi
-    fi
-
-    show_progress &
-    spinner_pid=$!
-
-    # Download the latest version
-    if command -v wget > /dev/null; then
-        wget -O "$temp_download_path" "$coonie_download_url" >>"$log_file" 2>&1
-    elif command -v curl > /dev/null; then
-        curl -L -o "$temp_download_path" "$coonie_download_url" >>"$log_file" 2>&1
-    else
-        kill "$spinner_pid"
-        log_status "Coonie's Modpack" "FAILED (Neither wget nor curl found for downloading)"
-        return 1
-    fi
-
-    # Check if download was successful
-    if [[ ! -f "$temp_download_path" ]]; then
-        kill "$spinner_pid"
-        log_status "Coonie's Modpack" "FAILED (Download failed)"
-        return 1
-    fi
-
-    # Unzip the downloaded file to the modpack directory
-    if command -v unzip > /dev/null; then
-        unzip -o "$temp_download_path" -d "$modpack_path" >>"$log_file" 2>&1
-    else
-        kill "$spinner_pid"
-        log_status "Coonie's Modpack" "FAILED (unzip command not found)"
-        return 1
-    fi
-
-    # Cleanup the temporary download file
-    rm -f "$temp_download_path"
-
-    kill "$spinner_pid"
-    echo ""
-    log_status "Coonie's Modpack" "SUCCESS"
-    return 0
 }
 
 # Progress function with consistent phrase per modpack update
