@@ -323,3 +323,6 @@
 [submodule "Mods/Ro-Balatro"]
 	path = Mods/Ro-Balatro
 	url = https://github.com/AlexZGreat/Ro-Balatro
+[submodule "Mods/Handy"]
+	path = Mods/Handy
+	url = https://github.com/SleepyG11/HandyBalatro
