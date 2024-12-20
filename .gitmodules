@@ -55,9 +55,6 @@
 [submodule "Mods/Galdur"]
 	path = Mods/Galdur
 	url = https://github.com/Eremel/Galdur/
-[submodule "Mods/Handy"]
-	path = Mods/Handy
-	url = https://github.com/SleepyG11/HandyBalatro
 [submodule "Mods/Paperback"]
 	path = Mods/Paperback
 	url = https://github.com/GitNether/Paperback
@@ -200,9 +197,6 @@
 [submodule "Mods/SyltStickers"]
 	path = Mods/SyltStickers
 	url = https://github.com/lshtech/SyltStickers
-[submodule "Mods/Risk-of-Jesters"]
-	path = Mods/Risk-of-Jesters
-	url = https://github.com/lshtech/risk-of-jesters
 [submodule "Mods/The-Buffoon-Pack"]
 	path = Mods/The-Buffoon-Pack
 	url = https://github.com/lshtech/The-Buffoon-Pack
