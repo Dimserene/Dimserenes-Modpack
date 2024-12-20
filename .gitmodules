@@ -326,3 +326,27 @@
 [submodule "Mods/Handy"]
 	path = Mods/Handy
 	url = https://github.com/SleepyG11/HandyBalatro
+[submodule "Mods/ExtendedBlueprint"]
+	path = Mods/ExtendedBlueprint
+	url = https://github.com/Toneblock/balatro-ExtendedBlueprint
+[submodule "Mods/KusoMods"]
+	path = Mods/KusoMods
+	url = https://github.com/lshtech/KusoMods
+[submodule "Mods/ShenanigansMod"]
+	path = Mods/ShenanigansMod
+	url = https://github.com/lshtech/balatro-shenanigans-mod
+[submodule "Mods/SynthDeck"]
+	path = Mods/SynthDeck
+	url = https://github.com/Eman-3600/SynthDeck
+[submodule "Mods/RuinaDecks"]
+	path = Mods/RuinaDecks
+	url = https://github.com/someone23832/RuinaDecks
+[submodule "Mods/BalatroOlympus"]
+	path = Mods/BalatroOlympus
+	url = https://github.com/lshtech/BalatroOlympus
+[submodule "Mods/TatteredDecks"]
+	path = Mods/TatteredDecks
+	url = https://github.com/Cheesy-Brik/TatteredDecks
+[submodule "Mods/SoulDeck"]
+	path = Mods/SoulDeck
+	url = https://github.com/schoodst/Schoodst-SoulDeck
