@@ -353,3 +353,24 @@
 [submodule "Mods/Item-Remover"]
 	path = Mods/Item-Remover
 	url = https://github.com/art-muncher/Item-Remover
+[submodule "Mods/Small-Decks"]
+	path = Mods/Small-Decks
+	url = https://github.com/Dimserene/Small-Decks
+[submodule "Mods/TheTrickster"]
+	path = Mods/TheTrickster
+	url = https://github.com/cerloCasa/TheTrickster
+[submodule "Mods/Golds-Cards"]
+	path = Mods/Golds-Cards
+	url = https://github.com/lshtech/Golds-Cards
+[submodule "Mods/FusionForce"]
+	path = Mods/FusionForce
+	url = https://github.com/LunaAstraCassiopeia/FusionForce
+[submodule "Mods/Balatro-Draft"]
+	path = Mods/Balatro-Draft
+	url = https://github.com/spire-winder/Balatro-Draft
+[submodule "Mods/Seven-Deadly-Decks"]
+	path = Mods/Seven-Deadly-Decks
+	url = https://github.com/AstroLightz/Balatro-7DeadlyDecks
+[submodule "Mods/TheCircus"]
+	path = Mods/TheCircus
+	url = https://gitlab.com/infinite_jesters/circus
