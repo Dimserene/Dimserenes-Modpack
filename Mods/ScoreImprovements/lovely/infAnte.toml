@@ -1,0 +1,44 @@
+[manifest]
+version = "1.0.0"
+dump_lua = true
+priority = 0
+
+[[patches]]
+[patches.pattern]
+target = "functions/state_events.lua"
+pattern = "if G.GAME.chips - G.GAME.blind.chips >= 0 then"
+position = "at"
+payload = 'if G.GAME.chips >= G.GAME.blind.chips then'
+match_indent = true
+overwrite = false
+
+[[patches]]
+[patches.pattern]
+target = "game.lua"
+pattern = "if G.GAME.chips - G.GAME.blind.chips >= 0 or G.GAME.current_round.hands_left < 1 then"
+position = "at"
+payload = 'if G.GAME.chips >= G.GAME.blind.chips or G.GAME.current_round.hands_left < 1 then'
+match_indent = true
+overwrite = false
+
+[[patches]]
+[patches.pattern]
+target = "blind.lua"
+pattern = "if self.boss and G.GAME.chips - G.GAME.blind.chips >= 0 then"
+position = "at"
+payload = 'if self.boss and G.GAME.chips >= G.GAME.blind.chips then'
+match_indent = true
+overwrite = false
+
+[[patches]]
+[patches.pattern]
+target = "functions/misc_functions.lua"
+pattern = "amount = amount - amount%(10^math.floor(math.log10(amount)-1))"
+position = "after"
+payload = '''
+if amount ~= amount then -- Is NaN
+    amount = math.huge
+end
+'''
+match_indent = true
+overwrite = false

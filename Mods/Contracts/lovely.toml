@@ -1,0 +1,192 @@
+[manifest]
+version = "1.0.0"
+dump_lua = true
+priority = 0
+
+[[patches]]
+[patches.pattern]
+target = 'functions/UI_definitions.lua'
+pattern = '''}} or card.ability.set == 'Booster' and {'''
+position = 'before'
+payload = '''}} or card.ability.set == 'Contract' and {
+n=G.UIT.ROOT, config = {ref_table = card, minw = 1.1, maxw = 1.3, padding = 0.1, align = 'bm', colour = G.C.GREEN, shadow = true, r = 0.08, minh = 0.94, func = 'can_sign', one_press = true, button = 'sign_contract', hover = true}, nodes={
+    {n=G.UIT.T, config={text = localize('b_sign'),colour = G.C.WHITE, scale = 0.5}}'''
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = 'functions/UI_definitions.lua'
+pattern = '''elseif args.type == 'use' then'''
+position = 'before'
+payload = '''elseif args.type == 'sign' then 
+    button_contents = {n=G.UIT.T, config={text = localize('b_sign'),colour = G.C.WHITE, scale = 0.5}}'''
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = 'functions/UI_definitions.lua'
+pattern = '''UIBox_button({button = 'your_collection_vouchers', label = {localize('b_vouchers')}, count = G.DISCOVER_TALLIES.vouchers, minw = 5, id = 'your_collection_vouchers'}),'''
+position = 'after'
+payload = '''UIBox_button({button = 'your_collection_contracts', label = {localize('b_contracts')}, count = G.DISCOVER_TALLIES.contracts, minw = 5, id = 'your_collection_contracts'}),'''
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = 'game.lua'
+pattern = '''Stake = {},'''
+position = 'after'
+payload = '''Contract = {},'''
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = 'functions/common_events.lua'
+pattern = '''(_c.set == 'Joker' and G.C.RARITY[_c.rarity]) or'''
+position = 'after'
+payload = '''(_c.set == 'Contract' and G.C.ETERNAL) or'''
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = 'functions/button_callbacks.lua'
+pattern = '''elseif card.ability.set == 'Voucher' then'''
+position = 'before'
+payload = '''elseif card.ability.set == 'Contract' then
+    if card.apply and type(card.apply) == "function" then
+        card:apply()
+    end
+    G.GAME.contracts[card.key] = true'''
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = 'game.lua'
+pattern = '''if G.GAME.current_round.voucher and G.P_CENTERS[G.GAME.current_round.voucher] then'''
+position = 'before'
+payload = '''if (pseudorandom(pseudoseed('contract')) > 0.8) and contract_allowed() then
+G.shop_vouchers.config.card_limit = G.shop_vouchers.config.card_limit + 1
+local card = Card(G.shop_vouchers.T.x + G.shop_vouchers.T.w/2,
+G.shop_vouchers.T.y, G.CARD_W, G.CARD_H, G.P_CARDS.empty, G.P_CENTERS[get_contract()],{bypass_discovery_center = true, bypass_discovery_ui = true})
+create_shop_card_ui(card, 'Contract', G.shop_vouchers)
+card:start_materialize()
+G.shop_vouchers:emplace(card)
+end'''
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = 'functions/UI_definitions.lua'
+pattern = '''card.children.buy_button = UIBox{'''
+position = 'before'
+payload = '''if card.ability.set == "Contract" then card.children.price:remove(); card.children.price = nil end'''
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = 'functions/UI_definitions.lua'
+pattern = '''card.children.price.alignment.offset.y = card.ability.set == 'Booster' and 0.5 or 0.38'''
+position = 'before'
+payload = '''if card.ability.set == "Contract" then return true end'''
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = 'game.lua'
+pattern = '''win_ante = 8,'''
+position = 'after'
+payload = '''contracts = {},
+contract_data = {
+    current_hand = "",
+    most_played = "High Card"
+},'''
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = 'functions/state_events.lua'
+pattern = '''G.GAME.current_round.used_packs = {}'''
+position = 'after'
+payload = '''if G.GAME.contracts.loan then
+    ease_dollars(-4)
+end'''
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = 'functions/UI_definitions.lua'
+pattern = '''G.GAME.stake > 1 and {'''
+position = 'before'
+payload = '''{
+    label = localize('b_contracts'),
+    tab_definition_function = G.UIDEF.signed_contracts,
+},'''
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = 'functions/button_callbacks.lua'
+pattern = '''if (e.config.ref_table.cost > G.GAME.dollars - G.GAME.bankrupt_at) and (e.config.ref_table.cost > 0) then'''
+position = 'at'
+payload = '''if ((e.config.ref_table.cost > G.GAME.dollars - G.GAME.bankrupt_at) and (e.config.ref_table.cost > 0)) or not contract_can_buy(e.config.ref_table) then'''
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = 'blind.lua'
+pattern = '''function Blind:debuff_hand(cards, hand, handname, check)'''
+position = 'after'
+payload = '''if check then
+    G.GAME.contract_data.current_hand = handname
+end'''
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = 'functions/state_events.lua'
+pattern = '''G.GAME.hands[text].played = G.GAME.hands[text].played + 1'''
+position = 'after'
+payload = '''
+local _handname, _played, _order = 'High Card', -1, 100
+for k, v in pairs(G.GAME.hands) do
+    if v.played > _played or (v.played == _played and _order > v.order) then 
+        _played = v.played
+        _handname = k
+    end
+end
+G.GAME.contract_data.most_played = _handname'''
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = 'functions/button_callbacks.lua'
+pattern = '''if (e.config.ref_table.cost) > 0 and (e.config.ref_table.cost > G.GAME.dollars - G.GAME.bankrupt_at) then'''
+position = 'at'
+payload = '''if ((e.config.ref_table.cost) > 0 and (e.config.ref_table.cost > G.GAME.dollars - G.GAME.bankrupt_at)) or not contract_can_open(e.config.ref_table) then'''
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = 'functions/button_callbacks.lua'
+pattern = '''if (((e.config.ref_table.cost > G.GAME.dollars - G.GAME.bankrupt_at) and (e.config.ref_table.cost > 0)) or (not e.config.ref_table:can_use_consumeable())) then'''
+position = 'at'
+payload = '''if ((((e.config.ref_table.cost > G.GAME.dollars - G.GAME.bankrupt_at) and (e.config.ref_table.cost > 0)) or (not e.config.ref_table:can_use_consumeable()))) or not contract_can_buy(e.config.ref_table) then'''
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = 'functions/common_events.lua'
+pattern = '''_starting_pool, _pool_key = G.P_JOKER_RARITY_POOLS[rarity], 'Joker'..rarity..((not _legendary and _append) or '')'''
+position = 'before'
+payload = '''if rarity == 1 and G.GAME.contracts.cn_nh_green and (_append == 'sho') then 
+    local rarity2 = pseudorandom('rarity'..G.GAME.round_resets.ante..(_append or '')) 
+    rarity = (rarity2 > 0.833 and 3) or 2
+end'''
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = 'functions/button_callbacks.lua'
+pattern = '''if G.GAME.current_round.discards_left <= 0 or #G.hand.highlighted <= 0 then'''
+position = 'at'
+payload = '''if (G.GAME.current_round.discards_left <= 0 or #G.hand.highlighted <= 0) or not contract_can_discard() then'''
+match_indent = true

@@ -1,0 +1,112 @@
+[manifest]
+version = "1.0.0"
+dump_lua = true
+priority = 0
+
+[[patches]]
+[patches.module]
+source = 'nativefs.lua'
+before = 'main.lua'
+name = 'nativefs'
+
+[[patches]]
+[patches.pattern]
+target = "game.lua"
+pattern = "self.SPEEDFACTOR = 1"
+position = "after"
+payload = "initSpeedrunTimer()"
+match_indent = true
+
+[[patches]]
+[patches.copy]
+target = "main.lua"
+position = "append"
+sources = [
+    "Ankh.lua"
+]
+
+# Removes seed from game_win screen
+[[patches]]
+[patches.pattern]
+target = "functions/UI_definitions.lua"
+pattern = "create_UIBox_round_scores_row('seed', G.C.WHITE),"
+position = "at"
+payload = " "
+match_indent = true
+
+# Removes copy_seed button from game_win screen
+[[patches]]
+[patches.pattern]
+target = "functions/UI_definitions.lua"
+pattern = "UIBox_button({button = 'copy_seed', label = {localize('b_copy')}, colour = G.C.BLUE, scale = 0.3, minw = 2.3, minh = 0.4,}),"
+position = "at"
+payload = " "
+match_indent = true
+
+# Adds seed to game_loss screen
+[[patches]]
+[patches.pattern]
+target = "functions/UI_definitions.lua"
+pattern = "UIBox_button({button = 'copy_seed', label = {localize('b_copy')}, colour = G.C.BLUE, scale = 0.3, minw = 2.3, minh = 0.4, focus_args = {nav = 'wide'}}),"
+position = "before"
+payload = "create_UIBox_round_scores_row('seed', G.C.WHITE),"
+match_indent = true
+
+# Cash out automatically in replay mode
+[[patches]]
+[patches.pattern]
+target = "functions/state_events.lua"
+pattern = "add_round_eval_row({name = 'bottom', dollars = dollars})"
+position = "after"
+payload = '''if DejaVu.replayMode then 
+delay(DejaVu.DELAY_TIME)
+G.E_MANAGER:add_event(Event({
+    trigger = 'after',
+    func = function()
+    G.FUNCS.cash_out({config = {}})
+    return true
+    end
+})) end'''
+match_indent = true
+
+# Fix sort_id causing inconsistent RNG when loading saves on game relaunch
+# Add Ankh run-specific sort ID
+[[patches]]
+[patches.pattern]
+target = "card.lua"
+pattern = "self.sort_id = cardTable.sort_id"
+position = "after"
+payload = '''self.ankh_id = cardTable.ankh_id
+G.sort_id = math.max(self.sort_id, G.sort_id or 0)
+G.GAME.ankh_id = math.max(self.ankh_id, G.GAME.ankh_id or 0)
+'''
+match_indent = true
+
+# Add Ankh run-specific sort ID
+[[patches]]
+[patches.pattern]
+target = "card.lua"
+pattern = "G.sort_id = (G.sort_id or 0) + 1"
+position = "before"
+payload = '''G.GAME.ankh_id = (G.GAME.ankh_id or 0) + 1
+self.ankh_id = G.GAME.ankh_id
+'''
+match_indent = true
+
+# Add Ankh run-specific sort ID
+[[patches]]
+[patches.pattern]
+target = "card.lua"
+pattern = "sort_id = self.sort_id,"
+position = "before"
+payload = "ankh_id = self.ankh_id,"
+match_indent = true
+
+# Show Ankh spectral when loading a replay
+[[patches]]
+[patches.pattern]
+target = "functions/button_callbacks.lua"
+pattern = "G.screenwipecard = Card(1, 1, G.CARD_W, G.CARD_H, pseudorandom_element(G.P_CARDS), G.P_CENTERS.c_base)"
+position = "at"
+payload = "G.screenwipecard = Card(1, 1, G.CARD_W, G.CARD_H, not DejaVu.replay and pseudorandom_element(G.P_CARDS), not DejaVu.replay and G.P_CENTERS.c_base or G.P_CENTERS.c_ankh)"
+match_indent = true
