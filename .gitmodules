@@ -362,9 +362,6 @@
 [submodule "Mods/Golds-Cards"]
 	path = Mods/Golds-Cards
 	url = https://github.com/lshtech/Golds-Cards
-[submodule "Mods/FusionForce"]
-	path = Mods/FusionForce
-	url = https://github.com/LunaAstraCassiopeia/FusionForce
 [submodule "Mods/Balatro-Draft"]
 	path = Mods/Balatro-Draft
 	url = https://github.com/spire-winder/Balatro-Draft
