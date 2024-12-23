@@ -371,6 +371,3 @@
 [submodule "Mods/Seven-Deadly-Decks"]
 	path = Mods/Seven-Deadly-Decks
 	url = https://github.com/AstroLightz/Balatro-7DeadlyDecks
-[submodule "Mods/TheCircus"]
-	path = Mods/TheCircus
-	url = https://gitlab.com/infinite_jesters/circus
