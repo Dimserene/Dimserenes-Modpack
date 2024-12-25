@@ -113,9 +113,6 @@
 [submodule "Mods/Reverie"]
 	path = Mods/Reverie
 	url = https://github.com/dvrp0/reverie
-[submodule "Mods/HandPreview"]
-	path = Mods/HandPreview
-	url = https://github.com/lshtech/Balatro-HandPreview
 [submodule "Mods/Taikomochi"]
 	path = Mods/Taikomochi
 	url = https://github.com/larswijn/Taikomochi
@@ -311,9 +308,6 @@
 [submodule "Mods/Balatro-Repentance"]
 	path = Mods/Balatro-Repentance
 	url = https://github.com/lshtech/balatro-repentance
-[submodule "Mods/MikasBalatro"]
-	path = Mods/MikasBalatro
-	url = https://github.com/lshtech/MikasBalatro
 [submodule "Mods/CommunityPack"]
 	path = Mods/CommunityPack
 	url = https://github.com/lshtech/Balatro-CommunityPack
