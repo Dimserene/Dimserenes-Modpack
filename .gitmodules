@@ -215,9 +215,6 @@
 [submodule "Mods/Potatro"]
 	path = Mods/Potatro
 	url = https://github.com/balt-dev/potatro/
-[submodule "Mods/Familiar"]
-	path = Mods/Familiar
-	url = https://github.com/RattlingSnow353/Familiar
 [submodule "Mods/Fusion-Jokers"]
 	path = Mods/Fusion-Jokers
 	url = https://github.com/lshtech/Fusion-Jokers
@@ -284,9 +281,6 @@
 [submodule "Mods/BonusBlinds"]
 	path = Mods/BonusBlinds
 	url = https://github.com/Mathguy23/BonusBlinds
-[submodule "Mods/Grim"]
-	path = Mods/Grim
-	url = https://github.com/Mathguy23/Grim
 [submodule "Mods/Multipack"]
 	path = Mods/Multipack
 	url = https://github.com/snowylight/Multipack

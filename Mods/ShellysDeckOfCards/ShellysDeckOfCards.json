@@ -1,0 +1,13 @@
+{
+	"id": "sdoc",
+	"name": "Shellular's Deck of Cards",
+	"display_name": "Deck o' Cards",
+	"author": ["Shellular"],
+	"description": "A collection of decks (and a few other things) that aim to feel relatively \"vanilla.\" Please message @shellular on discord for any questions!",
+	"prefix": "sdoc",
+	"main_file": "main.lua",
+	"priority": 6,
+	"badge_colour": "F1006F",
+	"badge_text_colour": "FFFFFF",
+	"version": "0.5.01-hotfix"
+}
