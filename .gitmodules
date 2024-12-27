@@ -365,3 +365,6 @@
 [submodule "Mods/FusionForce"]
 	path = Mods/FusionForce
 	url = https://github.com/Dimserene/FusionForce
+[submodule "Mods/LunasDreadJokers"]
+	path = Mods/LunasDreadJokers
+	url = https://github.com/LunaAstraCassiopeia/DreadJokers
