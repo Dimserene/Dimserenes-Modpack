@@ -356,3 +356,12 @@
 [submodule "Mods/Seven-Deadly-Decks"]
 	path = Mods/Seven-Deadly-Decks
 	url = https://github.com/AstroLightz/Balatro-7DeadlyDecks
+[submodule "Mods/Grim"]
+	path = Mods/Grim
+	url = https://github.com/Mathguy23/Grim
+[submodule "Mods/Pokermon"]
+	path = Mods/Pokermon
+	url = https://github.com/Dimserene/Pokermon
+[submodule "Mods/Donuts-Mod"]
+	path = Mods/Donuts-Mod
+	url = https://github.com/BDonutGLXY/Balatro-Donuts-Mod
