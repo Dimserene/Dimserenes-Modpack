@@ -368,3 +368,6 @@
 [submodule "Mods/LunasDreadJokers"]
 	path = Mods/LunasDreadJokers
 	url = https://github.com/LunaAstraCassiopeia/DreadJokers
+[submodule "Mods/Balatro-Plus"]
+	path = Mods/Balatro-Plus
+	url = https://github.com/SomeCoder99/balatro-plus
