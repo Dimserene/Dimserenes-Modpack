@@ -230,9 +230,6 @@
 [submodule "Mods/Cruel-Blinds"]
 	path = Mods/Cruel-Blinds
 	url = https://github.com/Dimserene/Cruel-Blinds
-[submodule "Mods/Jimbo-s-Pack"]
-	path = Mods/Jimbo-s-Pack
-	url = https://github.com/art-muncher/Jimbo-s-Pack
 [submodule "Mods/LunasBalatroMods"]
 	path = Mods/LunasBalatroMods
 	url = https://github.com/LunaAstraCassiopeia/LunasBalatroMods
@@ -365,3 +362,6 @@
 [submodule "Mods/Donuts-Mod"]
 	path = Mods/Donuts-Mod
 	url = https://github.com/Dimserene/Donuts-Mod
+[submodule "Mods/FusionForce"]
+	path = Mods/FusionForce
+	url = https://github.com/Dimserene/FusionForce
