@@ -227,9 +227,6 @@
 [submodule "Mods/JoJokers"]
 	path = Mods/JoJokers
 	url = https://github.com/WarlordShado/JoJokers
-[submodule "Mods/Cruel-Blinds"]
-	path = Mods/Cruel-Blinds
-	url = https://github.com/Dimserene/Cruel-Blinds
 [submodule "Mods/LunasBalatroMods"]
 	path = Mods/LunasBalatroMods
 	url = https://github.com/LunaAstraCassiopeia/LunasBalatroMods
@@ -371,3 +368,6 @@
 [submodule "Mods/Balatro-Plus"]
 	path = Mods/Balatro-Plus
 	url = https://github.com/SomeCoder99/balatro-plus
+[submodule "Mods/Cruel-Blinds"]
+	path = Mods/Cruel-Blinds
+	url = https://github.com/Dimserene/Cruel-Blinds
