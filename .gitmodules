@@ -263,15 +263,9 @@
 [submodule "Mods/ExtraCredit"]
 	path = Mods/ExtraCredit
 	url = https://github.com/GuilloryCraft/ExtraCredit
-[submodule "Mods/Strange-Pencil"]
-	path = Mods/Strange-Pencil
-	url = https://github.com/DigitalDetective47/strange-pencil
 [submodule "Mods/FasterAnteScaling"]
 	path = Mods/FasterAnteScaling
 	url = https://github.com/castleCodr/FasterAnteScaling
-[submodule "Mods/Oiiman-s-Additions"]
-	path = Mods/Oiiman-s-Additions
-	url = https://github.com/lshtech/Oiiman-s-Additions
 [submodule "Mods/BonusBlinds"]
 	path = Mods/BonusBlinds
 	url = https://github.com/Mathguy23/BonusBlinds
@@ -359,9 +353,6 @@
 [submodule "Mods/Donuts-Mod"]
 	path = Mods/Donuts-Mod
 	url = https://github.com/Dimserene/Donuts-Mod
-[submodule "Mods/FusionForce"]
-	path = Mods/FusionForce
-	url = https://github.com/Dimserene/FusionForce
 [submodule "Mods/LunasDreadJokers"]
 	path = Mods/LunasDreadJokers
 	url = https://github.com/LunaAstraCassiopeia/DreadJokers
