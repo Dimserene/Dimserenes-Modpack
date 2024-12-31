@@ -362,3 +362,15 @@
 [submodule "Mods/Cruel-Blinds"]
 	path = Mods/Cruel-Blinds
 	url = https://github.com/Dimserene/Cruel-Blinds
+[submodule "Mods/CollectorsCards"]
+	path = Mods/CollectorsCards
+	url = https://github.com/Mathguy23/CollectorsCards
+[submodule "Mods/Cosmos"]
+	path = Mods/Cosmos
+	url = https://github.com/neatoqueen/Cosmos
+[submodule "Mods/Your-Only-Move-Is-GAMBLE"]
+	path = Mods/Your-Only-Move-Is-GAMBLE
+	url = https://github.com/ddf9795/balatro-yomi-gamble
+[submodule "Mods/Warpzone"]
+	path = Mods/Warpzone
+	url = https://github.com/frangnosquest/Warpzone
