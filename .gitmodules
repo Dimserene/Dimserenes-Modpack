@@ -374,3 +374,6 @@
 [submodule "Mods/Warpzone"]
 	path = Mods/Warpzone
 	url = https://github.com/frangnosquest/Warpzone
+[submodule "Mods/CrashAvoider"]
+	path = Mods/CrashAvoider
+	url = https://github.com/WilsontheWolf/CrashAvoider
