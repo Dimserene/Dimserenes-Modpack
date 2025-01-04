@@ -377,3 +377,6 @@
 [submodule "Mods/CrashAvoider"]
 	path = Mods/CrashAvoider
 	url = https://github.com/WilsontheWolf/CrashAvoider
+[submodule "Mods/Familiar"]
+	path = Mods/Familiar
+	url = https://github.com/RattlingSnow353/Familiar
