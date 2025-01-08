@@ -1,0 +1,10 @@
+--- STEAMODDED HEADER
+--- MOD_NAME: Wheel of Purchase
+--- MOD_ID: wheelofpurchase
+--- MOD_AUTHOR: [SDM_0]
+--- MOD_DESCRIPTION: Replaces "Nope!" with "[OR-FGEMF-20]"
+--- BADGE_COLOUR: 8b30db
+--- DISPLAY_NAME: Wheel of Purchase
+--- PREFIX: wop
+--- VERSION: 1.0.0a
+--- DEPENDENCIES: [Steamodded>=1.0.0~ALPHA-0812d]

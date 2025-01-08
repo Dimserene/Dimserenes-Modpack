@@ -4,9 +4,6 @@
 [submodule "Mods/CollectorsCards"]
 	path = Mods/CollectorsCards
 	url = https://github.com/Mathguy23/CollectorsCards
-[submodule "Mods/Grim"]
-	path = Mods/Grim
-	url = https://github.com/Mathguy23/Grim
 [submodule "Mods/Ortalab-DEMO"]
 	path = Mods/Ortalab-DEMO
 	url = https://github.com/Eremel/Ortalab-Demo
@@ -16,3 +13,78 @@
 [submodule "Mods/JamMod"]
 	path = Mods/JamMod
 	url = https://github.com/WilsontheWolf/JamMod
+[submodule "Mods/JokerDisplay"]
+	path = Mods/JokerDisplay
+	url = https://github.com/nh6574/JokerDisplay
+[submodule "Mods/JokerSellValue"]
+	path = Mods/JokerSellValue
+	url = https://github.com/OppositeWolf770/JokerSellValue
+[submodule "Mods/Cartomancer"]
+	path = Mods/Cartomancer
+	url = https://github.com/stupxd/Cartomancer
+[submodule "Mods/BalatroSafety"]
+	path = Mods/BalatroSafety
+	url = https://github.com/Zei33/balatro-safety-steamodded
+[submodule "Mods/Galdur"]
+	path = Mods/Galdur
+	url = https://github.com/Eremel/Galdur/
+[submodule "Mods/Flower-Pot"]
+	path = Mods/Flower-Pot
+	url = https://github.com/GauntletGames-2086/Flower-Pot
+[submodule "Mods/Talisman"]
+	path = Mods/Talisman
+	url = https://github.com/Dimserene/Talisman
+[submodule "Mods/TooManyJokers"]
+	path = Mods/TooManyJokers
+	url = https://github.com/cg-223/toomanyjokers
+[submodule "Mods/Trance"]
+	path = Mods/Trance
+	url = https://github.com/MathIsFun0/Trance
+[submodule "Mods/DiscoveryManager"]
+	path = Mods/DiscoveryManager
+	url = https://github.com/lshtech/DiscoveryManager
+[submodule "Mods/HeyListen"]
+	path = Mods/HeyListen
+	url = https://github.com/SleepyG11/HeyListenBalatro
+[submodule "Mods/ModPackFixes"]
+	path = Mods/ModPackFixes
+	url = https://github.com/lshtech/ModPackFixes
+[submodule "Mods/Blueprint"]
+	path = Mods/Blueprint
+	url = https://github.com/stupxd/Blueprint
+[submodule "Mods/Potatro"]
+	path = Mods/Potatro
+	url = https://github.com/balt-dev/potatro/
+[submodule "Mods/Aure-Spectral"]
+	path = Mods/Aure-Spectral
+	url = https://github.com/SDM0/Aure-Spectral
+[submodule "Mods/DebugPlus"]
+	path = Mods/DebugPlus
+	url = https://github.com/WilsontheWolf/DebugPlus
+[submodule "Mods/Aura"]
+	path = Mods/Aura
+	url = https://github.com/MathIsFun0/Aura
+[submodule "Mods/FoldButton"]
+	path = Mods/FoldButton
+	url = https://github.com/happinyz/BalatroFoldButton
+[submodule "Mods/Handy"]
+	path = Mods/Handy
+	url = https://github.com/SleepyG11/HandyBalatro
+[submodule "Mods/Item-Remover"]
+	path = Mods/Item-Remover
+	url = https://github.com/art-muncher/Item-Remover
+[submodule "Mods/CardSleeves"]
+	path = Mods/CardSleeves
+	url = https://github.com/larswijn/CardSleeves
+[submodule "Mods/BlackSeal"]
+	path = Mods/BlackSeal
+	url = https://github.com/lshtech/BlackSeal
+[submodule "Mods/SilverSeal"]
+	path = Mods/SilverSeal
+	url = https://github.com/lshtech/SilverSeal
+[submodule "Mods/NeowBlessings"]
+	path = Mods/NeowBlessings
+	url = https://github.com/lshtech/NeowBlessings
+[submodule "Mods/Dice-Seals"]
+	path = Mods/Dice-Seals
+	url = https://github.com/lshtech/Dice-Seals
