@@ -88,3 +88,15 @@
 [submodule "Mods/Dice-Seals"]
 	path = Mods/Dice-Seals
 	url = https://github.com/lshtech/Dice-Seals
+[submodule "Mods/5CEBalatro"]
+	path = Mods/5CEBalatro
+	url = https://github.com/lshtech/5CEBalatro
+[submodule "Mods/Actions"]
+	path = Mods/Actions
+	url = https://github.com/Mathguy23/Actions
+[submodule "Mods/Alices_Annum"]
+	path = Mods/Alices_Annum
+	url = https://github.com/Dimserene/alices_annum_balatro_mod
+[submodule "Mods/AntonosStakes"]
+	path = Mods/AntonosStakes
+	url = https://github.com/lshtech/Scaling-Ante-Stakes
