@@ -100,3 +100,21 @@
 [submodule "Mods/AntonosStakes"]
 	path = Mods/AntonosStakes
 	url = https://github.com/lshtech/Scaling-Ante-Stakes
+[submodule "Mods/BBBalatro"]
+	path = Mods/BBBalatro
+	url = https://github.com/BBBalatroMod/BBBalatro
+[submodule "Mods/Balatro-Jokers-Plus"]
+	path = Mods/Balatro-Jokers-Plus
+	url = https://github.com/KaviD-115/Balatro-Jokers-Plus
+[submodule "Mods/Balatro-Plus"]
+	path = Mods/Balatro-Plus
+	url = https://github.com/SomeCoder99/balatro-plus
+[submodule "Mods/Balatro-Repentance"]
+	path = Mods/Balatro-Repentance
+	url = https://github.com/lshtech/balatro-repentance
+[submodule "Mods/Balatro451"]
+	path = Mods/Balatro451
+	url = https://github.com/SM451Modding/Balatro451/
+[submodule "Mods/BalatroOlympus"]
+	path = Mods/BalatroOlympus
+	url = https://github.com/lshtech/BalatroOlympus
