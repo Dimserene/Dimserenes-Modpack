@@ -208,3 +208,36 @@
 [submodule "Mods/ModpackDecks"]
 	path = Mods/ModpackDecks
 	url = https://github.com/Dimserene/ModpackDecks
+[submodule "Mods/Paperback"]
+	path = Mods/Paperback
+	url = https://github.com/GitNether/Paperback
+[submodule "Mods/PampaJokerPack"]
+	path = Mods/PampaJokerPack
+	url = https://github.com/lshtech/balatro-pampa-joker-pack
+[submodule "Mods/NotJustYet"]
+	path = Mods/NotJustYet
+	url = https://github.com/Toneblock/balatro-NotJustYet
+[submodule "Mods/No-Laughing-Matter"]
+	path = Mods/No-Laughing-Matter
+	url = https://github.com/Minirebel/no-laughing-matter
+[submodule "Mods/MystesOpenJokers"]
+	path = Mods/MystesOpenJokers
+	url = https://github.com/lshtech/MystesOpenJokers
+[submodule "Mods/MystBlinds"]
+	path = Mods/MystBlinds
+	url = https://github.com/Mysthaps/MystBlinds
+[submodule "Mods/Multipack"]
+	path = Mods/Multipack
+	url = https://github.com/snowylight/Multipack
+[submodule "Mods/Multi-Jokers"]
+	path = Mods/Multi-Jokers
+	url = https://github.com/lshtech/multi-jokers
+[submodule "Mods/Morjokers"]
+	path = Mods/Morjokers
+	url = https://github.com/lshtech/morjokers
+[submodule "Mods/MoreJokerPacks"]
+	path = Mods/MoreJokerPacks
+	url = https://github.com/Samario1/MoreJokerPacks
+[submodule "Mods/MoreFluff"]
+	path = Mods/MoreFluff
+	url = https://github.com/notmario/MoreFluff
