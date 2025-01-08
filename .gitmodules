@@ -1,0 +1,12 @@
+[submodule "Mods/Steamodded"]
+	path = Mods/Steamodded
+	url = https://github.com/Steamodded/smods
+[submodule "Mods/CollectorsCards"]
+	path = Mods/CollectorsCards
+	url = https://github.com/Mathguy23/CollectorsCards
+[submodule "Mods/Grim"]
+	path = Mods/Grim
+	url = https://github.com/Mathguy23/Grim
+[submodule "Mods/Ortalab-DEMO"]
+	path = Mods/Ortalab-DEMO
+	url = https://github.com/Eremel/Ortalab-Demo
