@@ -172,3 +172,39 @@
 [submodule "Mods/Fusion-Jokers"]
 	path = Mods/Fusion-Jokers
 	url = https://github.com/lshtech/Fusion-Jokers
+[submodule "Mods/JankJonklers"]
+	path = Mods/JankJonklers
+	url = https://github.com/spikeof2010/JankJonklers
+[submodule "Mods/Jestobiology"]
+	path = Mods/Jestobiology
+	url = https://github.com/spikeof2010/Jestobiology
+[submodule "Mods/JestersPrivilege"]
+	path = Mods/JestersPrivilege
+	url = https://github.com/unethikeele/JestersPrivilege
+[submodule "Mods/JoJokers"]
+	path = Mods/JoJokers
+	url = https://github.com/WarlordShado/JoJokers
+[submodule "Mods/KusoMods"]
+	path = Mods/KusoMods
+	url = https://github.com/lshtech/KusoMods
+[submodule "Mods/LobotomyCorp"]
+	path = Mods/LobotomyCorp
+	url = https://github.com/Mysthaps/LobotomyCorp
+[submodule "Mods/LunasBalatroMods"]
+	path = Mods/LunasBalatroMods
+	url = https://github.com/LunaAstraCassiopeia/LunasBalatroMods
+[submodule "Mods/LushMod"]
+	path = Mods/LushMod
+	url = https://github.com/lshtech/LushMod
+[submodule "Mods/Matchbox"]
+	path = Mods/Matchbox
+	url = https://github.com/lshtech/Matchbox
+[submodule "Mods/MixedPotion"]
+	path = Mods/MixedPotion
+	url = https://github.com/snowylight/MixedPotion
+[submodule "Mods/MOARJokers"]
+	path = Mods/MOARJokers
+	url = https://github.com/MrSmoothieHuman1/MOARJokers
+[submodule "Mods/ModpackDecks"]
+	path = Mods/ModpackDecks
+	url = https://github.com/Dimserene/ModpackDecks
