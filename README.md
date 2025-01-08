@@ -32,29 +32,29 @@ If you wanna join us dealing with this nightmare beast, you can join our [Discor
 
 ## How to Install
 
-  Download the __SetupActive.bat__(Windows) or __SetupActive.sh__(Linux) and put it wherever you want, and run it. The mods will be automatically downloaded and put into correct directory.
+  Download the __SetupBetterCalc.bat__(Windows) or __SetupBetterCalc.sh__(Linux) and put it wherever you want, and run it. The mods will be automatically downloaded and put into correct directory.
 
   Or
 
   Run following scripts in command prompt:
 
 ```
-git clone --recurse-submodules --remote-submodules https://github.com/Dimserene/Active-Pack
-xcopy "Active-Pack\Mods" "%appdata%\Balatro\Mods" /w /e /h /i
+git clone --recurse-submodules --remote-submodules https://github.com/Dimserene/BetterCalc-Pack
+xcopy "BetterCalc-Pack\Mods" "%appdata%\Balatro\Mods" /w /e /h /i
 ```
 
   And then copy all the contents in Mods folder to your Mods folder.
 
 ## How to Update Modpack
 
-  Run __UpdateActive.bat__(Windows) or __UpdateActive.sh__(Linux) which should be in the downloaded __Active-Pack__ folder.
+  Run __UpdateBetterCalc.bat__(Windows) or __UpdateBetterCalc.sh__(Linux) which should be in the downloaded __BetterCalc-Pack__ folder.
 
   Or
 
   Run following scripts in command prompt:
 
   ```
-git remote set-url origin https://github.com/Dimserene/Active-Pack
+git remote set-url origin https://github.com/Dimserene/BetterCalc-Pack
 git pull
 git submodule update --remote --recursive --merge
   ```
