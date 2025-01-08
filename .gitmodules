@@ -241,3 +241,12 @@
 [submodule "Mods/MoreFluff"]
 	path = Mods/MoreFluff
 	url = https://github.com/notmario/MoreFluff
+[submodule "Mods/Ro-Balatro-Reborn"]
+	path = Mods/Ro-Balatro-Reborn
+	url = https://github.com/AlexZGreat/Ro-Balatro-Reborn
+[submodule "Mods/RoR2-Funnyitems"]
+	path = Mods/RoR2-Funnyitems
+	url = https://github.com/lshtech/ror2funnyitems
+[submodule "Mods/RuinaDecks"]
+	path = Mods/RuinaDecks
+	url = https://github.com/someone23832/RuinaDecks
