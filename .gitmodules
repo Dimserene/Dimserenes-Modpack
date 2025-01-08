@@ -142,3 +142,36 @@
 [submodule "Mods/Codex-Arcanum"]
 	path = Mods/Codex-Arcanum
 	url = https://github.com/lshtech/Codex-Arcanum
+[submodule "Mods/CommunityPack"]
+	path = Mods/CommunityPack
+	url = https://github.com/lshtech/Balatro-CommunityPack
+[submodule "Mods/Cosmos"]
+	path = Mods/Cosmos
+	url = https://github.com/neatoqueen/Cosmos
+[submodule "Mods/CrashAvoider"]
+	path = Mods/CrashAvoider
+	url = https://github.com/WilsontheWolf/CrashAvoider
+[submodule "Mods/DX-Tarots"]
+	path = Mods/DX-Tarots
+	url = https://github.com/lshtech/DX-Tarots
+[submodule "Mods/ExtendedBlueprint"]
+	path = Mods/ExtendedBlueprint
+	url = https://github.com/Toneblock/balatro-ExtendedBlueprint
+[submodule "Mods/ExtraCredit"]
+	path = Mods/ExtraCredit
+	url = https://github.com/GuilloryCraft/ExtraCredit
+[submodule "Mods/ExtraPlanets"]
+	path = Mods/ExtraPlanets
+	url = https://github.com/lshtech/ExtraPlanets
+[submodule "Mods/Familiar"]
+	path = Mods/Familiar
+	url = https://github.com/RattlingSnow353/Familiar
+[submodule "Mods/FasterAnteScaling"]
+	path = Mods/FasterAnteScaling
+	url = https://github.com/castleCodr/FasterAnteScaling
+[submodule "Mods/FloundersJokers"]
+	path = Mods/FloundersJokers
+	url = https://github.com/Flounderlul/FloundersJokers
+[submodule "Mods/Fusion-Jokers"]
+	path = Mods/Fusion-Jokers
+	url = https://github.com/lshtech/Fusion-Jokers
