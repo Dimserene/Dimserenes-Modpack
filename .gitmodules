@@ -133,3 +133,12 @@
 [submodule "Mods/Buffoonery"]
 	path = Mods/Buffoonery
 	url = https://github.com/pinkmaggit-hub/Buffoonery
+[submodule "Mods/Bunco"]
+	path = Mods/Bunco
+	url = https://github.com/Firch/Bunco
+[submodule "Mods/CheesyJokers"]
+	path = Mods/CheesyJokers
+	url = https://github.com/lshtech/CheesyJokers
+[submodule "Mods/Codex-Arcanum"]
+	path = Mods/Codex-Arcanum
+	url = https://github.com/lshtech/Codex-Arcanum
