@@ -5,10 +5,12 @@ echo The installation will overwrite existing files in your Mods directory.
 echo *******************************************************
 pause
 
-git clone --recurse-submodules --remote-submodules https://github.com/Dimserene/Active-Pack
+git remote set-url origin https://github.com/Dimserene/BetterCalc-Pack
+git pull
+git submodule update --remote --recursive --merge
 
 echo Copying Mods folder to %appdata%\Balatro\Mods
-xcopy "Active-Pack\Mods" "%appdata%\Balatro\Mods" /w /e /h /i
+xcopy "Mods" "%appdata%\Balatro\Mods" /w /e /h /i
 
-echo Installation complete. Please ensure everything is working correctly.
+echo Update complete. Please ensure everything is working correctly.
 pause
