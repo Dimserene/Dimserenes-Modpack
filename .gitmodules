@@ -106,9 +106,6 @@
 [submodule "Mods/Balatro-Jokers-Plus"]
 	path = Mods/Balatro-Jokers-Plus
 	url = https://github.com/KaviD-115/Balatro-Jokers-Plus
-[submodule "Mods/Balatro-Plus"]
-	path = Mods/Balatro-Plus
-	url = https://github.com/SomeCoder99/balatro-plus
 [submodule "Mods/Balatro-Repentance"]
 	path = Mods/Balatro-Repentance
 	url = https://github.com/lshtech/balatro-repentance
@@ -118,3 +115,21 @@
 [submodule "Mods/BalatroOlympus"]
 	path = Mods/BalatroOlympus
 	url = https://github.com/lshtech/BalatroOlympus
+[submodule "Mods/Bird-Jokers"]
+	path = Mods/Bird-Jokers
+	url = https://github.com/JustinBanzon/Bird-Jokers
+[submodule "Mods/BetterIllusion"]
+	path = Mods/BetterIllusion
+	url = https://github.com/rileyinman/BetterIllusion
+[submodule "Mods/BlindEditions"]
+	path = Mods/BlindEditions
+	url = https://github.com/Mathguy23/BlindEditions
+[submodule "Mods/BonusBlinds"]
+	path = Mods/BonusBlinds
+	url = https://github.com/Mathguy23/BonusBlinds
+[submodule "Mods/BossJokers"]
+	path = Mods/BossJokers
+	url = https://github.com/KilledByLava/BossJokers
+[submodule "Mods/Buffoonery"]
+	path = Mods/Buffoonery
+	url = https://github.com/pinkmaggit-hub/Buffoonery
