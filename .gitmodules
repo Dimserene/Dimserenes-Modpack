@@ -46,9 +46,6 @@
 [submodule "Mods/HeyListen"]
 	path = Mods/HeyListen
 	url = https://github.com/SleepyG11/HeyListenBalatro
-[submodule "Mods/ModPackFixes"]
-	path = Mods/ModPackFixes
-	url = https://github.com/lshtech/ModPackFixes
 [submodule "Mods/Blueprint"]
 	path = Mods/Blueprint
 	url = https://github.com/stupxd/Blueprint
