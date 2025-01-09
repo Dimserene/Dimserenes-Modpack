@@ -49,9 +49,6 @@
 [submodule "Mods/Blueprint"]
 	path = Mods/Blueprint
 	url = https://github.com/stupxd/Blueprint
-[submodule "Mods/Potatro"]
-	path = Mods/Potatro
-	url = https://github.com/balt-dev/potatro/
 [submodule "Mods/Aure-Spectral"]
 	path = Mods/Aure-Spectral
 	url = https://github.com/SDM0/Aure-Spectral
@@ -253,3 +250,75 @@
 [submodule "Mods/ShenanigansMod"]
 	path = Mods/ShenanigansMod
 	url = https://github.com/lshtech/balatro-shenanigans-mod
+[submodule "Mods/Small-Decks"]
+	path = Mods/Small-Decks
+	url = https://github.com/Dimserene/Small-Decks
+[submodule "Mods/SnoresvillesTurbulentJokers"]
+	path = Mods/SnoresvillesTurbulentJokers
+	url = https://github.com/Snoresville/snoresville_turbulent_jokers
+[submodule "Mods/Snow-s-Mods"]
+	path = Mods/Snow-s-Mods
+	url = https://github.com/RattlingSnow353/Snow-s-Mods
+[submodule "Mods/SoulDeck"]
+	path = Mods/SoulDeck
+	url = https://github.com/schoodst/Schoodst-SoulDeck
+[submodule "Mods/SpicyJokers"]
+	path = Mods/SpicyJokers
+	url = https://github.com/lshtech/SpicyJokers
+[submodule "Mods/SyltStickers"]
+	path = Mods/SyltStickers
+	url = https://github.com/lshtech/SyltStickers
+[submodule "Mods/SylviesSilliness"]
+	path = Mods/SylviesSilliness
+	url = https://github.com/lshtech/SylvieSilly
+[submodule "Mods/SynthDeck"]
+	path = Mods/SynthDeck
+	url = https://github.com/Eman-3600/SynthDeck
+[submodule "Mods/TOGAPackBalatro"]
+	path = Mods/TOGAPackBalatro
+	url = https://github.com/TheOneGoofAli/TOGAPackBalatro
+[submodule "Mods/TagPreview"]
+	path = Mods/TagPreview
+	url = https://github.com/lshtech/BalatroTagPreview
+[submodule "Mods/Taikomochi"]
+	path = Mods/Taikomochi
+	url = https://github.com/larswijn/Taikomochi
+[submodule "Mods/TatteredDecks"]
+	path = Mods/TatteredDecks
+	url = https://github.com/Cheesy-Brik/TatteredDecks
+[submodule "Mods/Tetrapak"]
+	path = Mods/Tetrapak
+	url = https://github.com/lshtech/Tetrapak
+[submodule "Mods/The-Buffoon-Pack"]
+	path = Mods/The-Buffoon-Pack
+	url = https://github.com/lshtech/The-Buffoon-Pack
+[submodule "Mods/The-World-Ends-With-Jimbo"]
+	path = Mods/The-World-Ends-With-Jimbo
+	url = https://github.com/Dimserene/The-World-Ends-With-Jimbo
+[submodule "Mods/TheTrickster"]
+	path = Mods/TheTrickster
+	url = https://github.com/cerloCasa/TheTrickster
+[submodule "Mods/Themed_Jokers"]
+	path = Mods/Themed_Jokers
+	url = https://github.com/cerloCasa/Themed-Jokers
+[submodule "Mods/Tsunami"]
+	path = Mods/Tsunami
+	url = https://github.com/Maratby/Tsunami
+[submodule "Mods/UnStable"]
+	path = Mods/UnStable
+	url = https://github.com/kirbio/UnStable
+[submodule "Mods/UnStableEX"]
+	path = Mods/UnStableEX
+	url = https://github.com/kirbio/UnStableEX
+[submodule "Mods/Virtues"]
+	path = Mods/Virtues
+	url = https://github.com/someone23832/Virtues
+[submodule "Mods/Warpzone"]
+	path = Mods/Warpzone
+	url = https://github.com/frangnosquest/Warpzone
+[submodule "Mods/YART"]
+	path = Mods/YART
+	url = https://github.com/DigitalDetective47/yart
+[submodule "Mods/Your-Only-Move-Is-GAMBLE"]
+	path = Mods/Your-Only-Move-Is-GAMBLE
+	url = https://github.com/ddf9795/balatro-yomi-gamble
