@@ -49,15 +49,9 @@
 [submodule "Mods/Blueprint"]
 	path = Mods/Blueprint
 	url = https://github.com/stupxd/Blueprint
-[submodule "Mods/Aure-Spectral"]
-	path = Mods/Aure-Spectral
-	url = https://github.com/SDM0/Aure-Spectral
 [submodule "Mods/DebugPlus"]
 	path = Mods/DebugPlus
 	url = https://github.com/WilsontheWolf/DebugPlus
-[submodule "Mods/Aura"]
-	path = Mods/Aura
-	url = https://github.com/MathIsFun0/Aura
 [submodule "Mods/FoldButton"]
 	path = Mods/FoldButton
 	url = https://github.com/happinyz/BalatroFoldButton
@@ -181,9 +175,6 @@
 [submodule "Mods/LobotomyCorp"]
 	path = Mods/LobotomyCorp
 	url = https://github.com/Mysthaps/LobotomyCorp
-[submodule "Mods/LunasBalatroMods"]
-	path = Mods/LunasBalatroMods
-	url = https://github.com/LunaAstraCassiopeia/LunasBalatroMods
 [submodule "Mods/LushMod"]
 	path = Mods/LushMod
 	url = https://github.com/lshtech/LushMod
@@ -322,3 +313,27 @@
 [submodule "Mods/Your-Only-Move-Is-GAMBLE"]
 	path = Mods/Your-Only-Move-Is-GAMBLE
 	url = https://github.com/ddf9795/balatro-yomi-gamble
+[submodule "Mods/Malverk"]
+	path = Mods/Malverk
+	url = https://github.com/Eremel/Malverk
+[submodule "Mods/Balatro-Draft"]
+	path = Mods/Balatro-Draft
+	url = https://github.com/spire-winder/Balatro-Draft
+[submodule "Mods/Aure-Spectral"]
+	path = Mods/Aure-Spectral
+	url = https://github.com/Eremel/Aure-Spectral
+[submodule "Mods/Colorblind-Seals"]
+	path = Mods/Colorblind-Seals
+	url = https://github.com/martinkauppinen/colorblind-seals
+[submodule "Mods/EnhancedEnhancements"]
+	path = Mods/EnhancedEnhancements
+	url = https://github.com/Eremel/Luna-s-Enhancements
+[submodule "Mods/Moonspell-Cards"]
+	path = Mods/Moonspell-Cards
+	url = https://github.com/Eremel/Moonspell-Cards
+[submodule "Mods/SpecTrans"]
+	path = Mods/SpecTrans
+	url = https://github.com/Eremel/SpecTrans
+[submodule "Mods/BalatroWilds"]
+	path = Mods/BalatroWilds
+	url = https://github.com/Eremel/BalatroWilds
