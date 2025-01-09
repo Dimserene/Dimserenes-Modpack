@@ -127,15 +127,9 @@
 [submodule "Mods/BossJokers"]
 	path = Mods/BossJokers
 	url = https://github.com/KilledByLava/BossJokers
-[submodule "Mods/Buffoonery"]
-	path = Mods/Buffoonery
-	url = https://github.com/pinkmaggit-hub/Buffoonery
 [submodule "Mods/Bunco"]
 	path = Mods/Bunco
 	url = https://github.com/Firch/Bunco
-[submodule "Mods/CheesyJokers"]
-	path = Mods/CheesyJokers
-	url = https://github.com/lshtech/CheesyJokers
 [submodule "Mods/Codex-Arcanum"]
 	path = Mods/Codex-Arcanum
 	url = https://github.com/lshtech/Codex-Arcanum
@@ -238,9 +232,6 @@
 [submodule "Mods/MoreJokerPacks"]
 	path = Mods/MoreJokerPacks
 	url = https://github.com/Samario1/MoreJokerPacks
-[submodule "Mods/MoreFluff"]
-	path = Mods/MoreFluff
-	url = https://github.com/notmario/MoreFluff
 [submodule "Mods/Ro-Balatro-Reborn"]
 	path = Mods/Ro-Balatro-Reborn
 	url = https://github.com/AlexZGreat/Ro-Balatro-Reborn
@@ -250,3 +241,15 @@
 [submodule "Mods/RuinaDecks"]
 	path = Mods/RuinaDecks
 	url = https://github.com/someone23832/RuinaDecks
+[submodule "Mods/SDM_0-s-Stuff"]
+	path = Mods/SDM_0-s-Stuff
+	url = https://github.com/SDM0/SDM_0-s-Stuff
+[submodule "Mods/Seven-Deadly-Sins"]
+	path = Mods/Seven-Deadly-Sins
+	url = https://github.com/lshtech/sevendeadlysins
+[submodule "Mods/Seven-Deadly-Decks"]
+	path = Mods/Seven-Deadly-Decks
+	url = https://github.com/AstroLightz/Balatro-7DeadlyDecks
+[submodule "Mods/ShenanigansMod"]
+	path = Mods/ShenanigansMod
+	url = https://github.com/lshtech/balatro-shenanigans-mod

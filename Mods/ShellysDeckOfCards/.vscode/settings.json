@@ -1,0 +1,7 @@
+{
+    "Lua.diagnostics.globals": [
+        "SMODS",
+        "sendInfoMessage",
+        "sendErrorMessage"
+    ]
+}
