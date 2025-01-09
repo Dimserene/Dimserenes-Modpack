@@ -319,3 +319,9 @@
 [submodule "Mods/Aure-Spectral"]
 	path = Mods/Aure-Spectral
 	url = https://github.com/SDM0/Aure-Spectral
+[submodule "Mods/Aura"]
+	path = Mods/Aura
+	url = https://github.com/MathIsFun0/Aura
+[submodule "Mods/Joker-Evolution"]
+	path = Mods/Joker-Evolution
+	url = https://github.com/SDM0/Joker-Evolution
