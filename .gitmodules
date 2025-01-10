@@ -139,9 +139,6 @@
 [submodule "Mods/ExtraPlanets"]
 	path = Mods/ExtraPlanets
 	url = https://github.com/lshtech/ExtraPlanets
-[submodule "Mods/Familiar"]
-	path = Mods/Familiar
-	url = https://github.com/RattlingSnow353/Familiar
 [submodule "Mods/FasterAnteScaling"]
 	path = Mods/FasterAnteScaling
 	url = https://github.com/castleCodr/FasterAnteScaling
