@@ -331,3 +331,12 @@
 [submodule "Mods/ModPackFixes"]
 	path = Mods/ModPackFixes
 	url = https://github.com/lshtech/ModPackFixes
+[submodule "Mods/NoFantasy"]
+	path = Mods/NoFantasy
+	url = https://github.com/fantasygone/nofantasyJokers/
+[submodule "Mods/Emporium"]
+	path = Mods/Emporium
+	url = https://github.com/krokshut/Emporium
+[submodule "Mods/AdAbsurdum"]
+	path = Mods/AdAbsurdum
+	url = https://github.com/7f-galaxii/AdAbsurdum
