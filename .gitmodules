@@ -160,9 +160,6 @@
 [submodule "Mods/JankJonklers"]
 	path = Mods/JankJonklers
 	url = https://github.com/spikeof2010/JankJonklers
-[submodule "Mods/Jestobiology"]
-	path = Mods/Jestobiology
-	url = https://github.com/spikeof2010/Jestobiology
 [submodule "Mods/JestersPrivilege"]
 	path = Mods/JestersPrivilege
 	url = https://github.com/unethikeele/JestersPrivilege
@@ -325,3 +322,9 @@
 [submodule "Mods/Joker-Evolution"]
 	path = Mods/Joker-Evolution
 	url = https://github.com/SDM0/Joker-Evolution
+[submodule "Mods/Grim"]
+	path = Mods/Grim
+	url = https://github.com/Mathguy23/Grim
+[submodule "Mods/Jestobiology"]
+	path = Mods/Jestobiology
+	url = https://github.com/lshtech/Jestobiology
