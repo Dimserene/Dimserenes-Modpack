@@ -247,9 +247,6 @@
 [submodule "Mods/SpicyJokers"]
 	path = Mods/SpicyJokers
 	url = https://github.com/lshtech/SpicyJokers
-[submodule "Mods/SyltStickers"]
-	path = Mods/SyltStickers
-	url = https://github.com/lshtech/SyltStickers
 [submodule "Mods/SylviesSilliness"]
 	path = Mods/SylviesSilliness
 	url = https://github.com/lshtech/SylvieSilly
