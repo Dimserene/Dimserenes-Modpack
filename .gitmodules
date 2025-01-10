@@ -79,9 +79,6 @@
 [submodule "Mods/Actions"]
 	path = Mods/Actions
 	url = https://github.com/Mathguy23/Actions
-[submodule "Mods/Alices_Annum"]
-	path = Mods/Alices_Annum
-	url = https://github.com/Dimserene/alices_annum_balatro_mod
 [submodule "Mods/AntonosStakes"]
 	path = Mods/AntonosStakes
 	url = https://github.com/lshtech/Scaling-Ante-Stakes
@@ -325,9 +322,6 @@
 [submodule "Mods/Jestobiology"]
 	path = Mods/Jestobiology
 	url = https://github.com/lshtech/Jestobiology
-[submodule "Mods/Balatro-Plus"]
-	path = Mods/Balatro-Plus
-	url = https://github.com/SomeCoder99/balatro-plus
 [submodule "Mods/ModPackFixes"]
 	path = Mods/ModPackFixes
 	url = https://github.com/lshtech/ModPackFixes
@@ -340,3 +334,9 @@
 [submodule "Mods/AdAbsurdum"]
 	path = Mods/AdAbsurdum
 	url = https://github.com/7f-galaxii/AdAbsurdum
+[submodule "Mods/Reverie"]
+	path = Mods/Reverie
+	url = https://github.com/jumbocarrot0/reverie
+[submodule "Mods/Alices_Annum"]
+	path = Mods/Alices_Annum
+	url = https://github.com/ThreeCubed273/alices_annum_balatro_mod
