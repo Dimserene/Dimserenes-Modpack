@@ -1,6 +1,8 @@
-Main modpack: [Dimserene's Modpack](https://github.com/Dimserene/Dimserenes-Modpack)
+# Dimserene's Modpacks (for Steamodded-1.0.0 Alpha)
 
-Mod List: [Google Sheet](https://docs.google.com/spreadsheets/d/1L2wPG5mNI-ZBSW_ta__L9EcfAw-arKrXXVD-43eU4og/)
+![Alttext](https://github.com/Dimserene/Dimserenes-Modpack/blob/main/NewFullPackLogo.png)
+
+Sub-Modpacks: [Vanilla Plus Pack](https://github.com/Dimserene/Vanilla-Plus-Pack) & [Fine-tuned Pack](https://github.com/Dimserene/Fine-tuned-Pack)
 
 #### Thank you all the mod authors and many others on discord for helping and testing!
 (Updates frequently)
@@ -32,29 +34,23 @@ If you wanna join us dealing with this nightmare beast, you can join our [Discor
 
 ## How to Install
 
-  Download the __SetupBetterCalc.bat__(Windows) or __SetupBetterCalc.sh__(Linux) and put it wherever you want, and run it. The mods will be automatically downloaded and put into correct directory.
+  Download __SetupFull.bat__(Windows) or __SetupFull.sh__(Linux), put it wherever you want, and run it. The mods will be automatically downloaded and put into correct directory.
 
-  Or
+  Or run following scripts in command prompt:
 
-  Run following scripts in command prompt:
-
-```
-git clone --recurse-submodules --remote-submodules https://github.com/Dimserene/BetterCalc-Pack
-xcopy "BetterCalc-Pack\Mods" "%appdata%\Balatro\Mods" /w /e /h /i
-```
-
-  And then copy all the contents in Mods folder to your Mods folder.
+  ```
+git clone --recurse-submodules --remote-submodules https://github.com/Dimserene/Dimserenes-Modpack
+xcopy "Dimserenes-Modpack\Mods" "%appdata%\Balatro\Mods" /w /e /h /i
+  ```
 
 ## How to Update Modpack
 
-  Run __UpdateBetterCalc.bat__(Windows) or __UpdateBetterCalc.sh__(Linux) which should be in the downloaded __BetterCalc-Pack__ folder.
+  Run __Update.bat__(Windows) or __UpdateFull.sh__(Linux) which should be in the downloaded Dimserenes-Modpack folder.
 
-  Or
-
-  Run following scripts in command prompt:
+  Or run following commands where your downloaded modpack located:
 
   ```
-git remote set-url origin https://github.com/Dimserene/BetterCalc-Pack
+git remote set-url origin https://github.com/Dimserene/Dimserenes-Modpack
 git pull
 git submodule update --remote --recursive --merge
   ```

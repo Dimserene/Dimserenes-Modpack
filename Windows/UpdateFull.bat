@@ -5,7 +5,7 @@ echo The installation will overwrite existing files in your Mods directory.
 echo *******************************************************
 pause
 
-git remote set-url origin https://github.com/Dimserene/BetterCalc-Pack
+git remote set-url origin https://github.com/Dimserene/Dimserenes-Modpack
 git pull
 git submodule update --remote --recursive --merge
 
