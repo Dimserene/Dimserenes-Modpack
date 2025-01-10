@@ -325,3 +325,9 @@
 [submodule "Mods/Jestobiology"]
 	path = Mods/Jestobiology
 	url = https://github.com/lshtech/Jestobiology
+[submodule "Mods/Balatro-Plus"]
+	path = Mods/Balatro-Plus
+	url = https://github.com/SomeCoder99/balatro-plus
+[submodule "Mods/ModPackFixes"]
+	path = Mods/ModPackFixes
+	url = https://github.com/lshtech/ModPackFixes
