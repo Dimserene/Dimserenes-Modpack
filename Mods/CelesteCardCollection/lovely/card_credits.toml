@@ -1,0 +1,104 @@
+# Meant to add the ability to specify credits that are shown on the right side of the card 
+
+[manifest]
+version = "1.0.0"
+dump_lua = true
+priority = 0
+
+
+
+# THE GREAT EQUALIZER 1
+[[patches]]
+[patches.pattern]
+target = "functions/UI_definitions.lua"
+pattern = "return {n=G.UIT.ROOT, config = {align = 'cm', colour = G.C.CLEAR}, nodes={"
+position = "before"
+payload = '''
+local finalstr = ""
+if AUT.mod_credit and (G.STATE ~= G.STATES.SHOP or G.SETTINGS.paused or Has_value(G.jokers.cards, card))  then
+	local artstr = "Art by " .. AUT.mod_credit.art
+	local codestr = "Code by " .. AUT.mod_credit.code
+
+	finalstr = "Concept by " .. AUT.mod_credit.concept
+	if string.len(finalstr) < string.len(codestr) then
+		finalstr = codestr
+	end
+	if string.len(finalstr) < string.len(artstr) then
+		finalstr = artstr
+	end
+end
+'''
+match_indent = true
+
+# THE GREAT EQUALIZER 2
+[[patches]]
+[patches.pattern]
+target = "functions/UI_definitions.lua"
+pattern = "return {n=G.UIT.ROOT, config = {align = 'cm', colour = G.C.CLEAR}, nodes={"
+position = "after"
+payload = '''
+AUT.mod_credit and (G.STATE ~= G.STATES.SHOP or G.SETTINGS.paused or Has_value(G.jokers.cards, card)) and ({n=G.UIT.C,  config={align = "cm", r = 0.1, padding = 0.3, emboss = 0.10}, nodes={ 
+	{n=G.UIT.R, config={align = "cm"}, nodes = {
+		{n=G.UIT.O, config={object = DynaText({string = finalstr, colours = {{0,0,0,0}}, shadow = false, offset_y = -0.05, silent = true, spacing = 1, scale = 0.33})}}
+	}}
+}}) or nil,
+'''
+match_indent = true
+
+
+# The thing that makes the credits appear
+[[patches]]
+[patches.regex]
+target = "functions/UI_definitions.lua"
+pattern = '''badges\[1\] and \{n=G\.UIT\.R, config=\{align = "cm", padding = 0\.03\}, nodes=badges\} or nil,\n\s+\}\}\n\s+\}\}\n\s+\}\},''' #'''badges[1] and {n=G.UIT.R, config={align = "cm", padding = 0.03}, nodes=badges} or nil,\n'''
+position = "after"
+payload = '''
+AUT.mod_credit and (G.STATE ~= G.STATES.SHOP or G.SETTINGS.paused or Has_value(G.jokers.cards, card))  and ({n=G.UIT.C,  config={align = "cm", r = 0.1, padding = 0.05, emboss = 0.05}, nodes={
+	{n=G.UIT.R, config={align = "cm", colour = lighten(G.C.JOKER_GREY, 0.5), r = 0.1, padding = 0.05, emboss = 0.05}, nodes={
+	{n=G.UIT.R, config={align = "cm", colour = lighten(G.C.GREY, 0.15), r = 0.1, padding=0.2}, nodes={
+	{n=G.UIT.R, config={align = "cm"}, nodes={
+		{n=G.UIT.O, config={object = DynaText({string = "Art by ", colours = {G.C.WHITE}, shadow = true, offset_y = -0.05, silent = true, spacing = 1, scale = 0.33})}},
+		{n=G.UIT.O, config={object = DynaText({string = AUT.mod_credit.art, colours = {G.C.CCC_COLOUR}, float = true, shadow = true, offset_y = -0.05, silent = true, spacing = 1, scale = 0.33})}}}},
+	{n=G.UIT.R, config={align = "cm"}, nodes={
+		{n=G.UIT.O, config={object = DynaText({string = "Code by ", colours = {G.C.WHITE}, shadow = true, offset_y = -0.05, silent = true, spacing = 1, scale = 0.33})}},
+		{n=G.UIT.O, config={object = DynaText({string = AUT.mod_credit.code, colours = {G.C.CCC_COLOUR }, float = true, shadow = true, offset_y = -0.05, silent = true, spacing = 1, scale = 0.33})}}}},
+	{n=G.UIT.R, config={align = "cm"}, nodes={
+		{n=G.UIT.O, config={object = DynaText({string = "Concept by ", colours = {G.C.WHITE}, shadow = true, offset_y = -0.05, silent = true, spacing = 1, scale = 0.33})}},
+		{n=G.UIT.O, config={object = DynaText({string = AUT.mod_credit.concept, colours = {G.C.CCC_COLOUR }, float = true, shadow = true, offset_y = -0.05, silent = true, spacing = 1, scale = 0.33})}}}},
+}}}}}}) or nil
+'''
+match_indent = true
+
+
+# deck credits NEW RUN
+[[patches]]
+[patches.pattern]
+target = "functions/UI_definitions.lua"
+pattern = '''{n=G.UIT.R, config={align = "cm", colour = G.C.WHITE, minh = 1.7, r = 0.1}, nodes={'''
+position = "before"
+payload = '''
+	ccc_generate_deck_credit_payload(),
+'''
+match_indent = true
+
+# deck credits CONTINUE
+[[patches]]
+[patches.pattern]
+target = "functions/UI_definitions.lua"
+pattern = '''{n=G.UIT.R, config={align = "cm", colour = G.C.WHITE,padding = 0.03, minh = 1.75, r = 0.1}, nodes={'''
+position = "before"
+payload = '''
+	ccc_generate_deck_credit_payload(),
+'''
+match_indent = true
+
+# deck credits COLLECTION
+[[patches]]
+[patches.pattern]
+target = "functions/UI_definitions.lua"
+pattern = '''{n=G.UIT.R, config={align = "cm", colour = G.C.WHITE, emboss = 0.1, minh = 2.2, r = 0.1}, nodes={'''
+position = "before"
+payload = '''
+	ccc_generate_deck_credit_payload(),
+'''
+match_indent = true

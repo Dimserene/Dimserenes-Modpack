@@ -1,0 +1,60 @@
+[manifest]
+version = "1.0.0"
+dump_lua = true
+priority = 0
+
+
+# yes this is an entire lovely injection just for strawberries... you have a problem with that?
+# i do now, fuck you past toneblock
+[[patches]]
+[patches.pattern]
+target = "card.lua"
+pattern = "if self.ability.name == 'Golden Joker' then"
+position = "before"
+payload = '''
+if self.ability.name == 'ccc_Strawberry' then
+	return self.ability.extra.money
+end
+if self.ability.name == 'ccc_Golden Strawberry' then
+	if self.ability.extra.after_boss == true then 
+		return self.ability.extra.money
+	end
+end
+if self.ability.name == 'ccc_Winged Golden Strawberry' then
+	if self.ability.extra.after_boss == true then
+		if self.ability.extra.condition_satisfied == true then
+			return self.ability.extra.money
+		end
+	end
+end
+if self.ability.name == 'ccc_1UP' then
+	return self.ability.extra.money
+end
+'''
+match_indent = true
+
+# ccc_cash_out calculate
+[[patches]]
+[patches.pattern]
+target = "functions/button_callbacks.lua"
+pattern = "G.deck:shuffle('cashout'..G.GAME.round_resets.ante)"
+position = "after"
+payload = '''
+for i = 1, #G.jokers.cards do
+	G.jokers.cards[i]:calculate_joker({ccc_cash_out = true})
+end
+'''
+match_indent = true
+
+# ccc_paid_booster calculate
+[[patches]]
+[patches.pattern]
+target = "card.lua"
+pattern = "if self.cost > 0 then"
+position = "after"
+payload = '''
+for i = 1, #G.jokers.cards do
+	G.jokers.cards[i]:calculate_joker({ccc_paid_booster = true, card = self})
+end
+'''
+match_indent = true

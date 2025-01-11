@@ -1,0 +1,28 @@
+[manifest]
+version = "1.0.0"
+dump_lua = true
+priority = 0
+
+
+# blinds stuff
+[[patches]]
+[patches.pattern]
+target = "blind.lua"
+pattern = "if self.name == 'The Mark' and card:is_face(true) then"
+position = "before"
+payload = '''
+if self.name == 'ccc_The Snow' and card:is_suit('Clubs', true) then
+	return true
+end
+if self.name == 'ccc_The Stone' and card:is_suit('Spades', true) then
+	return true
+end
+if self.name == 'ccc_The Crystal' and card:is_suit('Diamonds', true) then
+	return true
+end
+if self.name == 'ccc_The Berry' and card:is_suit('Hearts', true) then
+	return true
+end
+
+'''
+match_indent = true

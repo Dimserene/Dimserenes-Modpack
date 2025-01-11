@@ -1,0 +1,21 @@
+[manifest]
+version = "1.0.0"
+dump_lua = true
+priority = 0
+
+
+# overwrite :( can't think of a better way to do this
+[[patches]]
+[patches.pattern]
+target = "functions/UI_definitions.lua"
+pattern = "local card = create_card(v.type, area, nil, nil, nil, nil, nil, 'sho')"
+position = "at"
+payload = '''
+local card = ""
+if G.GAME.pool_flags.badeline_break and not (G.GAME.used_jokers['j_ccc_badeline'] and not next(find_joker("Showman"))) and pseudorandom('baddie'..G.GAME.round_resets.ante) > 0.994 then
+	card = create_card('Joker', area, nil, nil, nil, nil, 'j_ccc_badeline', 'bad')
+else
+	card = create_card(v.type, area, nil, nil, nil, nil, nil, 'sho')
+end
+'''
+match_indent = true

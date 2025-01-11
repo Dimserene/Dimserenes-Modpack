@@ -1,0 +1,19 @@
+[manifest]
+version = "1.0.0"
+dump_lua = true
+priority = 0
+
+
+# add Card:afterload()
+[[patches]]
+[patches.pattern]
+target = 'card.lua'
+pattern = 'self:set_sprites(self.config.center, self.config.card)'
+match_indent = true
+position = 'after'
+payload = '''
+local obj = self.config.center
+if obj.afterload and type(obj.afterload) == 'function' then
+	obj:afterload(self, cardTable, other_card)
+end
+'''

@@ -1,0 +1,77 @@
+[manifest]
+version = "1.0.0"
+dump_lua = true
+priority = 0
+
+# i don't think abusing lovely injections is the way to go, but when it's this easy...
+[[patches]]
+[patches.pattern]
+target = "card.lua"
+pattern = "for i = 1, _size do"
+position = "before"
+payload = '''
+if next(find_joker('ccc_Red Booster')) then
+	G.GAME.pack_choices = G.GAME.pack_choices + ccc_rrubble_bonus_choices
+end
+'''
+match_indent = true
+
+# this should be increasing pack size using grubble to prevent them from being squished but i can't get it to work, so instead it just increases size if grubble is detected
+[[patches]]
+[patches.pattern]
+target = "card.lua"
+pattern = "G.GAME.pack_choices = self.config.center.config.choose or 1"
+position = "before"
+payload = '''
+if next(find_joker('ccc_Green Booster')) then
+	if G.GAME.pack_size < 5 then
+		G.GAME.pack_size = G.GAME.pack_size + 1
+	end
+end
+'''
+match_indent = true
+
+# variable to prevent softlock if player has more choices than number of cards
+[[patches]]
+[patches.pattern]
+target = "card.lua"
+pattern = "for i = 1, _size do"
+position = "before"
+payload = '''
+ccc_MAX_CHOICES_FAILSAFE = (ccc_grubble_bonus_choices or 0) + self.ability.extra
+'''
+match_indent = true
+
+
+# variable reset (this is so FUCKING messy!!!!!!!!!! but i'm too stubborn to learn regex if you're seeing this PLEASE don't do this)
+[[patches]]
+[patches.pattern]
+target = "card.lua"
+pattern = "pack_cards[i] = card"
+position = "after"
+payload = '''
+end
+if ccc_MAX_CHOICES_FAILSAFE < G.GAME.pack_choices then
+	G.GAME.pack_choices = ccc_MAX_CHOICES_FAILSAFE
+end
+ccc_grubble_bonus_choices = 0
+ccc_rrubble_bonus_choices = 0
+return true
+end}))
+G.E_MANAGER:add_event(Event({trigger = 'after', delay = 0.0, blockable = true, blocking = false, func = function()
+this_works = true
+if this_works == true then
+	this_is_some_absolute_bullshit = true
+'''
+match_indent = true
+
+# overwrite :(
+[[patches]]
+[patches.pattern]
+target = "card.lua"
+pattern = "for i = 1, _size do"
+position = "at"
+payload = '''
+for i = 1, _size + (ccc_grubble_bonus_choices or 0) do
+'''
+match_indent = true

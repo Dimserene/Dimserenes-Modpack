@@ -1,0 +1,17 @@
+[manifest]
+version = "1.0.0"
+dump_lua = true
+priority = 0
+
+# calculate here
+[[patches]]
+[patches.pattern]
+target = "game.lua"
+pattern = "if G.FUNCS.draw_from_deck_to_hand(nil) then"
+position = "before"
+payload = '''
+for i = 1, #G.jokers.cards do
+	G.jokers.cards[i]:calculate_joker({ccc_hand_drawn = true})
+end
+'''
+match_indent = true

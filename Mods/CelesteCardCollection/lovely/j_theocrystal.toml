@@ -1,0 +1,115 @@
+[manifest]
+version = "1.0.0"
+dump_lua = true
+priority = 0
+
+# this is painful and hardcoded
+[[patches]]
+[patches.pattern]
+target = "card.lua"
+pattern = "G.GAME.probabilities[k] = v*2"
+position = "after"
+payload = '''
+	end
+end
+if self.ability.name == 'ccc_Theo Crystal' then
+	local oops_factor = 1
+	if G.jokers ~= nil then
+		for i = 1, #G.jokers.cards do
+			if G.jokers.cards[i].ability.set == 'Joker' then
+				if G.jokers.cards[i].ability.name == 'Oops! All 6s' then
+					oops_factor = oops_factor*2
+				end
+			end
+		end
+	end
+	for k, v in pairs(G.GAME.probabilities) do 
+		G.GAME.probabilities[k] = v + (self.ability.extra.base_probs*oops_factor)
+'''
+match_indent = true
+
+# injecting into card:update to deal with oops shenanigans 
+[[patches]]
+[patches.pattern]
+target = "card.lua"
+pattern = "self.ability.mult = sell_cost"
+position = "after"
+payload = '''
+end
+if self.ability.name == 'ccc_Theo Crystal' then
+	local oops_factor = 1
+	if G.jokers ~= nil then
+		for i = 1, #G.jokers.cards do
+			if G.jokers.cards[i].ability.set == 'Joker' then
+				if G.jokers.cards[i].ability.name == 'Oops! All 6s' then
+					oops_factor = oops_factor*2
+				end
+			end
+		end
+	end
+	self.ability.extra.probs = self.ability.extra.base_probs*oops_factor
+	self.ability.extra.scale = self.ability.extra.base_scale*oops_factor
+'''
+match_indent = true
+
+# why the FUCK do i have to add a *2 there????????? it adds the probability again when it's sold for some reason?? so i have to make it subtract twice?? this is so stupid
+[[patches]]
+[patches.pattern]
+target = "card.lua"
+pattern = "G.GAME.probabilities[k] = v/2"
+position = "after"
+payload = '''
+	end
+end
+if self.ability.name == 'ccc_Theo Crystal' then
+	local oops_factor = 1
+	if G.jokers ~= nil then
+		for i = 1, #G.jokers.cards do
+			if G.jokers.cards[i].ability.set == 'Joker' then
+				if G.jokers.cards[i].ability.name == 'Oops! All 6s' then
+					oops_factor = oops_factor*2
+				end
+			end
+		end
+	end
+	for k, v in ipairs(G.hand.cards) do
+		if v.ability.forced_selection then
+			v.ability.forced_selection = false
+		end
+	end
+	for k, v in pairs(G.GAME.probabilities) do 
+		G.GAME.probabilities[k] = v - (self.ability.extra.base_probs*oops_factor*2)
+'''
+match_indent = true
+
+# HUIGDNOOIYOJDHIVGHIKJOLIKJPSHUGDYVGHUKHBIVG WHY AM I INJECTING BLIND.LUA???? FOR A JOKER???? THIS RUNS EVERY TIME A HAND IS DRAWN?? I HATE THIS
+[[patches]]
+[patches.pattern]
+target = "blind.lua"
+pattern = "function Blind:drawn_to_hand()"
+position = "after"
+payload = '''
+local theo_crystal_override = false
+for i = 1, #G.jokers.cards do
+	if G.jokers.cards[i].ability.set == 'Joker' then
+		if G.jokers.cards[i].ability.name == 'ccc_Theo Crystal' then
+			theo_crystal_override = true
+		end
+	end
+end
+if theo_crystal_override == true then
+	local any_forced = nil
+	for k, v in ipairs(G.hand.cards) do
+		if v.ability.forced_selection then
+			any_forced = true
+		end
+	end
+	if not any_forced then 
+		G.hand:unhighlight_all()
+		local forced_card = pseudorandom_element(G.hand.cards, pseudoseed('cerulean_bell'))
+		forced_card.ability.forced_selection = true
+		G.hand:add_to_highlighted(forced_card)
+	end
+end
+'''
+match_indent = true

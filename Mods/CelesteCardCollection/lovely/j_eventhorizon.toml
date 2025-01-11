@@ -1,0 +1,33 @@
+[manifest]
+version = "1.0.0"
+dump_lua = true
+priority = 0
+
+
+# dumb overwrites
+[[patches]]
+[patches.pattern]
+target = "card.lua"
+pattern = "if self.ability.consumeable.hand_type then"
+position = "at"
+payload = '''
+if self.ability.consumeable.hand_type and not (next(find_joker('ccc_Event Horizon')) and ccc_GLOBAL_eventhorizon_override ~= nil and ccc_GLOBAL_eventhorizon_override > 0) then
+'''
+match_indent = true
+
+# dumb overwrites pt.2
+[[patches]]
+[patches.pattern]
+target = "card.lua"
+pattern = "if self.ability.name == 'Black Hole' then"
+position = "at"
+payload = '''
+if self.ability.name == 'Black Hole' or (self.ability.consumeable.hand_type and (next(find_joker('ccc_Event Horizon')) and ccc_GLOBAL_eventhorizon_override ~= nil and ccc_GLOBAL_eventhorizon_override > 0)) then
+	if self.ability.consumeable.hand_type and (next(find_joker('ccc_Event Horizon')) and ccc_GLOBAL_eventhorizon_override ~= nil and ccc_GLOBAL_eventhorizon_override > 0) then
+		delay(0.75)
+		G.E_MANAGER:add_event(Event({trigger = 'before',delay = 0.75,func = function() self:flip();play_sound('card1', 1);self:juice_up(0.3, 0.3);return true end }))
+		G.E_MANAGER:add_event(Event({trigger = 'before',delay = 0.75,func = function() self.children.center:set_sprite_pos({x=9,y=3});return true end }))
+                G.E_MANAGER:add_event(Event({trigger = 'before',delay = 0.75,func = function() self:flip();play_sound('tarot2', 1, 0.6);self:juice_up(0.3, 0.3);return true end }))
+	end
+'''
+match_indent = true

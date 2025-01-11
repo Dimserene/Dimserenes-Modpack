@@ -331,3 +331,6 @@
 [submodule "Mods/Alices_Annum"]
 	path = Mods/Alices_Annum
 	url = https://github.com/ThreeCubed273/alices_annum_balatro_mod
+[submodule "Mods/KCVanilla"]
+	path = Mods/KCVanilla
+	url = https://github.com/jumbocarrot0/kcvanilla/
