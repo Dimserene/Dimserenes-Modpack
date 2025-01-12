@@ -349,3 +349,7 @@
 [submodule "Mods/Betmma_mods"]
 	path = Mods/Betmma_mods
 	url = https://github.com/betmma/my_balatro_mods
+[submodule "Mods/7thbeatcards"]
+	path = Mods/7thbeatcards
+	url = https://github.com/Joglacraft/7thbeatcards
+	branch = beta
