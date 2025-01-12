@@ -337,3 +337,12 @@
 [submodule "Mods/Cruel-Blinds"]
 	path = Mods/Cruel-Blinds
 	url = https://github.com/Dimserene/Cruel-Blinds
+[submodule "Mods/Isaactro"]
+	path = Mods/Isaactro
+	url = https://github.com/WilliamFlinchbaugh/Isaactro
+[submodule "Mods/JimboRecords"]
+	path = Mods/JimboRecords
+	url = https://github.com/TherkLe/JimboRecords
+[submodule "Mods/Dungeon"]
+	path = Mods/Dungeon
+	url = https://github.com/Mathguy23/Dungeon

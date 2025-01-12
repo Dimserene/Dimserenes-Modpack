@@ -1,0 +1,11 @@
+{
+	"id": "Inversion",
+	"name": "Inversion",
+	"author": ["sup3p"],
+	"description": "Implements Negative playing cards in standard packs, and a Spectral to turn cards Negative.",
+	"prefix": "inversion",
+	"main_file": "inversion.lua",
+	"priority": -101,
+	"version": "1.0.0",
+	"dependencies": ["Lovely (>=0.6)", "Steamodded (>=1.*)"],
+}

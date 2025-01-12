@@ -1,0 +1,16 @@
+{
+	"id": "jogla_test_mod",
+	"name": "7th beat cards",
+	"display_name": "7th beat cards",
+	"author": ["Jogla","deathmodereal"],
+	"description": "A mod that adds several jokers and consumibles based on 7th Beat Games.",
+	"prefix": "sbc",
+	"main_file": "main.lua",
+	"priority": 0,
+	"badge_colour": "FF0000",
+	"badge_text_colour": "ffff00",
+	"version": "0.0.4",
+	"dependencies": [
+		"Talisman (>=2.0.0)"
+	]
+}
