@@ -1599,12 +1599,12 @@ coreswitch.calculate = function(self, card, context)
 			else
 				card.ability.extra.pos_override.x = 6
 			end
-			G.E_MANAGER:add_event(Event({trigger = 'after',delay = 0.2*delayfac,
+			G.E_MANAGER:add_event(Event({trigger = 'after',delay = 0.0,
 				func = function()
 					save_run()
 					return true
-				end}
-			))
+				end
+			}))
 			if coreswitch_hand_juggle == 0 then  -- you're a dumbass lol
 				end_round()
 			end
