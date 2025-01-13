@@ -253,9 +253,6 @@
 [submodule "Mods/TagPreview"]
 	path = Mods/TagPreview
 	url = https://github.com/lshtech/BalatroTagPreview
-[submodule "Mods/Taikomochi"]
-	path = Mods/Taikomochi
-	url = https://github.com/larswijn/Taikomochi
 [submodule "Mods/TatteredDecks"]
 	path = Mods/TatteredDecks
 	url = https://github.com/Cheesy-Brik/TatteredDecks
@@ -350,3 +347,6 @@
 	path = Mods/7thbeatcards
 	url = https://github.com/Joglacraft/7thbeatcards
 	branch = beta
+[submodule "Mods/Taikomochi"]
+	path = Mods/Taikomochi
+	url = https://github.com/Amvoled/Taikomochi
