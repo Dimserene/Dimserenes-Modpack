@@ -265,8 +265,10 @@ function heartside_start_run(self)
 	if G.GAME.selected_back.effect.config.all_jokers_modded then
 		local jokerPool = {}
 		for k, v in pairs(G.P_CENTERS) do
-			if (not v.mod) or (v.mod and v.mod.name ~= 'Celeste Card Collection') then
-				G.GAME.banned_keys[k] = true
+			if v.set == 'Joker' then
+				if (not v.mod) then
+					G.GAME.banned_keys[k] = true
+				end
 			end
 		end
 		G.GAME.pool_flags.heartside_deck = true
