@@ -259,9 +259,6 @@
 [submodule "Mods/The-Buffoon-Pack"]
 	path = Mods/The-Buffoon-Pack
 	url = https://github.com/lshtech/The-Buffoon-Pack
-[submodule "Mods/The-World-Ends-With-Jimbo"]
-	path = Mods/The-World-Ends-With-Jimbo
-	url = https://github.com/Dimserene/The-World-Ends-With-Jimbo
 [submodule "Mods/TheTrickster"]
 	path = Mods/TheTrickster
 	url = https://github.com/cerloCasa/TheTrickster
