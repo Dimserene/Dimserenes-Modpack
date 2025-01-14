@@ -112,9 +112,6 @@
 [submodule "Mods/Bunco"]
 	path = Mods/Bunco
 	url = https://github.com/Firch/Bunco
-[submodule "Mods/Codex-Arcanum"]
-	path = Mods/Codex-Arcanum
-	url = https://github.com/lshtech/Codex-Arcanum
 [submodule "Mods/CommunityPack"]
 	path = Mods/CommunityPack
 	url = https://github.com/lshtech/Balatro-CommunityPack
