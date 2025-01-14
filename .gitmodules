@@ -344,3 +344,6 @@
 [submodule "Mods/Taikomochi"]
 	path = Mods/Taikomochi
 	url = https://github.com/Amvoled/Taikomochi
+[submodule "Mods/CelesteCardCollection"]
+	path = Mods/CelesteCardCollection
+	url = https://github.com/AuroraKy/CelesteCardCollection
