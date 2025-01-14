@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Repositories to check
-repos=("Dimserene/Dimserenes-Modpack" "Dimserene/Fine-tuned-Pack" "Dimserene/Vanilla-Plus-Pack" "Dimserene/Cruel-Pack" "Dimserene/Experimental-Pack" "Dimserene/BetterCalc-Pack")
+repos=("Dimserene/Dimserenes-Modpack" "Dimserene/Fine-tuned-Pack" "Dimserene/Vanilla-Plus-Pack" "Dimserene/Cruel-Pack" "Dimserene/Experimental-Pack")
 
 # Function to fetch the latest commit message from a GitHub repository
 get_latest_commit_message() {
