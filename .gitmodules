@@ -73,9 +73,6 @@
 [submodule "Mods/Actions"]
 	path = Mods/Actions
 	url = https://github.com/Mathguy23/Actions
-[submodule "Mods/AntonosStakes"]
-	path = Mods/AntonosStakes
-	url = https://github.com/lshtech/Scaling-Ante-Stakes
 [submodule "Mods/BBBalatro"]
 	path = Mods/BBBalatro
 	url = https://github.com/BBBalatroMod/BBBalatro
@@ -241,9 +238,6 @@
 [submodule "Mods/SynthDeck"]
 	path = Mods/SynthDeck
 	url = https://github.com/Eman-3600/SynthDeck
-[submodule "Mods/TOGAPackBalatro"]
-	path = Mods/TOGAPackBalatro
-	url = https://github.com/TheOneGoofAli/TOGAPackBalatro
 [submodule "Mods/TagPreview"]
 	path = Mods/TagPreview
 	url = https://github.com/lshtech/BalatroTagPreview
@@ -304,9 +298,6 @@
 [submodule "Mods/NoFantasy"]
 	path = Mods/NoFantasy
 	url = https://github.com/fantasygone/nofantasyJokers/
-[submodule "Mods/Emporium"]
-	path = Mods/Emporium
-	url = https://github.com/krokshut/Emporium
 [submodule "Mods/AdAbsurdum"]
 	path = Mods/AdAbsurdum
 	url = https://github.com/7f-galaxii/AdAbsurdum
@@ -334,16 +325,9 @@
 [submodule "Mods/Betmma_mods"]
 	path = Mods/Betmma_mods
 	url = https://github.com/betmma/my_balatro_mods
-[submodule "Mods/7thbeatcards"]
-	path = Mods/7thbeatcards
-	url = https://github.com/Joglacraft/7thbeatcards
-	branch = beta
 [submodule "Mods/Taikomochi"]
 	path = Mods/Taikomochi
 	url = https://github.com/Amvoled/Taikomochi
 [submodule "Mods/CelesteCardCollection"]
 	path = Mods/CelesteCardCollection
 	url = https://github.com/AuroraKy/CelesteCardCollection
-[submodule "Mods/Talisman"]
-	path = Mods/Talisman
-	url = https://github.com/MathIsFun0/Talisman
