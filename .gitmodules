@@ -223,9 +223,6 @@
 [submodule "Mods/SnoresvillesTurbulentJokers"]
 	path = Mods/SnoresvillesTurbulentJokers
 	url = https://github.com/Snoresville/snoresville_turbulent_jokers
-[submodule "Mods/Snow-s-Mods"]
-	path = Mods/Snow-s-Mods
-	url = https://github.com/RattlingSnow353/Snow-s-Mods
 [submodule "Mods/SoulDeck"]
 	path = Mods/SoulDeck
 	url = https://github.com/schoodst/Schoodst-SoulDeck
