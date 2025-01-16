@@ -322,3 +322,24 @@
 [submodule "Mods/CelesteCardCollection"]
 	path = Mods/CelesteCardCollection
 	url = https://github.com/AuroraKy/CelesteCardCollection
+[submodule "Mods/Aikoyoris-Shenanigans"]
+	path = Mods/Aikoyoris-Shenanigans
+	url = https://github.com/Aikoyori/Balatro-Aikoyoris-Shenanigans
+[submodule "Mods/Maximus"]
+	path = Mods/Maximus
+	url = https://github.com/the-Astra/Maximus
+[submodule "Mods/H1DROmod"]
+	path = Mods/H1DROmod
+	url = https://github.com/hidro0091/H1DROmod-balatro
+[submodule "Mods/YuGiOh-Cards"]
+	path = Mods/YuGiOh-Cards
+	url = https://github.com/VaporeonMega-git/Balatro-YuGiOh-Cards
+[submodule "Mods/Magic-the-Jokering"]
+	path = Mods/Magic-the-Jokering
+	url = https://github.com/spire-winder/Magic-the-Jokering
+[submodule "Mods/MintysSillyMod"]
+	path = Mods/MintysSillyMod
+	url = https://github.com/wingedcatgirl/MintysSillyMod
+[submodule "Mods/Misers_Menagerie"]
+	path = Mods/Misers_Menagerie
+	url = https://github.com/iiiaaa123/Misers_Menagerie
