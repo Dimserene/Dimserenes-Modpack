@@ -16,9 +16,6 @@
 [submodule "Mods/Cartomancer"]
 	path = Mods/Cartomancer
 	url = https://github.com/stupxd/Cartomancer
-[submodule "Mods/BalatroSafety"]
-	path = Mods/BalatroSafety
-	url = https://github.com/Zei33/balatro-safety-steamodded
 [submodule "Mods/Galdur"]
 	path = Mods/Galdur
 	url = https://github.com/Eremel/Galdur/
