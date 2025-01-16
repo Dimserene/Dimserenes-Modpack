@@ -217,9 +217,6 @@
 [submodule "Mods/ShenanigansMod"]
 	path = Mods/ShenanigansMod
 	url = https://github.com/lshtech/balatro-shenanigans-mod
-[submodule "Mods/Small-Decks"]
-	path = Mods/Small-Decks
-	url = https://github.com/Dimserene/Small-Decks
 [submodule "Mods/SnoresvillesTurbulentJokers"]
 	path = Mods/SnoresvillesTurbulentJokers
 	url = https://github.com/Snoresville/snoresville_turbulent_jokers
