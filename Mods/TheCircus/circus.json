@@ -1,0 +1,17 @@
+{
+	"id": "circus",
+	"name": "The Circus",
+	"display_name": "Circus",
+	"author": ["Joerg Rings"],
+	"description": "The Circus comes to town! Visit the circus and be amazed by the finely-tuned machine of gravity-defying artists and tear-jerking buffoonery. Enjoy snacks; and visit the sideshow, gamble your chips away!",
+	"prefix": "circus",
+	"main_file": "circus.lua",
+	"priority": 0,
+	"badge_colour": "#eab676",
+	"badge_text_colour": "#2d613c",
+	"version": "1.1.1",
+	"dependencies": [
+		"Steamodded", 
+		"Lovely (>=0.6)"
+    ]
+}

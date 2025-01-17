@@ -5,7 +5,7 @@ local balancing_act = SMODS.Joker {
       name = 'Balancing Act',
       text = {
         "Rounds chips up to the next",
-        "highest multiple of 100."
+        "highest multiple of 100"
       }
     },
     config = {},
@@ -74,7 +74,7 @@ local curtain_puller = SMODS.Joker {
     blueprint_compat = false,
     atlas = 'a_circus_2',
     pos = { x = 1, y = 0 },
-    cost = 3,
+    cost = 2,
     loc_vars = function(self, info_queue, card)
       return { vars = { card.ability.extra.dollar_bonus, card.ability.extra.discard_use } }
     end,
@@ -82,7 +82,8 @@ local curtain_puller = SMODS.Joker {
       if context.discard and not context.blueprint then 
         if G.GAME.current_round.discards_used ~= card.ability.extra.discard_use then
           card.ability.extra.discard_use = G.GAME.current_round.discards_used
-          card.sell_cost = card.sell_cost + card.ability.extra.dollar_bonus
+          card.ability.extra_value = (card.ability.extra_value or 0) + card.ability.extra.dollar_bonus
+          card:set_cost()
           return {
             message = "+$1",
           }
@@ -103,7 +104,7 @@ local entrance_of_the_gladiators = SMODS.Joker {
           "This Joker gains {X:mult,C:white} X#2# {} Mult",
           "every time you buy a {C:attention}Circus joker{}",
           "{C:inactive}(Currently {X:mult,C:white} X#1# {C:inactive} Mult)"
-      } -- add the sound
+      } 
     },
     config = { extra = { xmult = 1.5, xmult_gain = 0.25 } },
     rarity = 1,
@@ -136,6 +137,7 @@ local entrance_of_the_gladiators = SMODS.Joker {
     end
   }
 
+
 local joker_pyramid = SMODS.Joker {
   key = 'joker_pyramid',
   loc_txt = {
@@ -158,16 +160,16 @@ local joker_pyramid = SMODS.Joker {
       card.ability.extra.count_3oaks = card.ability.extra.count_3oaks + 1
       if card.ability.extra.count_3oaks == 1 then
         ease_hands_played(1)
+        card:juice_up()
         return {
           message = "Gained a hand!",
           colour = G.C.MULT,
           card=card
         }
-        -- Add sound a juice
       end
-      if context.end_of_round and not context.game_over and not context.blueprint then
-        card.ability.extra.count_3oaks = 0
-      end
+    end
+    if context.end_of_round and not context.game_over and not context.blueprint then
+      card.ability.extra.count_3oaks = 0
     end
   end
 }
@@ -179,7 +181,7 @@ local knife_thrower = SMODS.Joker {
       name = 'Knife Thrower',
       text = {
         "{C:mult}#1#{} Chips",
-        "Resets on buy and when you sell a joker"
+        "Reroll chips on buy and when you sell a joker"
       }
     },
     config = { extra = { chips = 50 } },
@@ -207,6 +209,7 @@ local knife_thrower = SMODS.Joker {
       card.ability.extra.chips = math.random(1, 100)
     end
   }
+
 
 local mucker = SMODS.Joker {
     key = 'mucker',
@@ -238,6 +241,7 @@ local mucker = SMODS.Joker {
       end
     end
   }
+
 
 local musical_clown = SMODS.Joker {
   key = 'musical_clown',
@@ -272,11 +276,11 @@ local musical_clown = SMODS.Joker {
           chip_mod = card.ability.extra.chips,
           mult_mod = card.ability.extra.mult
           }
-  
       end
     end
   end
 }
+
 
 local sad_clown = SMODS.Joker {
   key = 'sad_clown',
@@ -311,7 +315,6 @@ local sad_clown = SMODS.Joker {
           chip_mod = card.ability.extra.chips,
           mult_mod = card.ability.extra.mult
           }
-  
       end
     end
   end
@@ -351,7 +354,6 @@ local silly_clown = SMODS.Joker {
           chip_mod = card.ability.extra.chips,
           mult_mod = card.ability.extra.mult
           }
- 
       end
     end
   end
@@ -364,7 +366,7 @@ local stilt_walker = SMODS.Joker {
       name = 'Stilt Walker',
       text = {
         "Rounds mult up to the next",
-        "highest multiple of 10."
+        "highest multiple of 10"
       }
     },
     config = {},
@@ -421,20 +423,21 @@ local sword_swallower = SMODS.Joker {
     end
   }
 
+
 local talent_show = SMODS.Joker {
     key = "talent_show",
     loc_txt = {
       name = 'Talent Show',
       text = {
-        "Retrigger all",
-        "played cards with an edition and/or seal"
+        "Retrigger all played cards ",
+        "with an edition and/or seal"
       }
     },
     config = { extra = { repetitions = 1 } },
     rarity = 1,
     atlas = 'a_circus_2',
     pos = { x = 3, y = 2 },
-    cost = 6,
+    cost = 8,
     calculate = function(self, card, context)
       if context.cardarea == G.play and context.repetition and not context.repetition_only then
         if context.other_card.seal or context.other_card.edition then
@@ -447,6 +450,7 @@ local talent_show = SMODS.Joker {
       end
     end
   }
+
 
 local trickster = SMODS.Joker {
     key = 'trickster',
@@ -489,6 +493,7 @@ local trickster = SMODS.Joker {
     end
   }
 
+
 local violent_clown = SMODS.Joker {
   key = 'violent_clown',
   loc_txt = {
@@ -522,7 +527,6 @@ local violent_clown = SMODS.Joker {
           chip_mod = card.ability.extra.chips,
           mult_mod = card.ability.extra.mult
           }
-  
       end
     end
   end

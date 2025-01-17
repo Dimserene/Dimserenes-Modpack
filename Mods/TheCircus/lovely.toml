@@ -114,16 +114,3 @@ pattern="ret = ret +  3"
 match_indent=true
 position="at"
 payload="ret = ret +  3 * (1 + (G.GAME.n_seal_repeat or 0))"
-
-
-[[patches]]
-[patches.pattern]
-target="functions/common_events.lua"
-pattern="G.GAME.hands[hand].chips = math.max(G.GAME.hands[hand].s_chips + G.GAME.hands[hand].l_chips*(G.GAME.hands[hand].level - 1), 0)"
-match_indent=true
-position="after"
-payload="""if G and G.jokers then
-  for i = 1, #G.jokers.cards do
-    G.jokers.cards[i]:calculate_joker({hand_level_up = true, hand = hand, instant = instant, amount = amount})
-  end
-end"""

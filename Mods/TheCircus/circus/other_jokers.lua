@@ -3,7 +3,7 @@ local aerialist_prodigy = SMODS.Joker {
   loc_txt = {
     name = 'Aerialist Prodigy',
     text = {
-      "Whenever a hand is upgraded",
+      "Whenever a Planet is used",
       "gains +Mult equal to the number",
       "of cards in upgraded hand minus 1",
       "{C:inactive}(Currently +#1# Mult){C:inactive}"
@@ -18,18 +18,17 @@ local aerialist_prodigy = SMODS.Joker {
     return { vars = { card.ability.extra.mult } }
   end,
   calculate = function(self, card, context)
-    if context.hand_level_up and G.GAME.blind.name ~= "The Arm" then
-      local hands_size_lk = { ["Straight Flush"] = 5, ["Four of a Kind"] = 4, ["Full House"] = 5, ["Flush"] = 5, 
-      ["Flush House"] = 5, ["Flush Five"] = 5, ["Straight"] = 5, ["Three of a Kind"] = 3, 
-      ["Two Pair"] = 4, ["Pair"] = 2, ["High Card"] = 1 }
-      card.ability.extra.mult = card.ability.extra.mult + hands_size_lk[context.hand] - 1
-
-      G.E_MANAGER:add_event(Event({delay=0, func = function() card:juice_up(0.7, 0.5); return true end }))
-      return {
-        message = "+" .. hands_size_lk[context.hand] .. " Mult",
-        colour = G.C.MULT,
-        card=card
-      }
+    if context.consumeable and context.consumeable.config.center and context.consumeable.config.center.set then
+      if context.consumeable.config.center.set == "Planet" then
+        local hands_size_lk = { ["Straight Flush"] = 5, ["Five of a Kind"] = 5, ["Four of a Kind"] = 4, ["Full House"] = 5, 
+        ["Flush"] = 5, ["Flush House"] = 5, ["Flush Five"] = 5, ["Straight"] = 5, ["Three of a Kind"] = 3, 
+        ["Two Pair"] = 4, ["Pair"] = 2, ["High Card"] = 1 }
+        local hand = context.consumeable.ability.hand_type
+        card.ability.extra.mult = card.ability.extra.mult + hands_size_lk[hand] - 1
+        if hand ~= "High Card" then
+          G.E_MANAGER:add_event(Event({delay=0, func = function() card:juice_up(0.7, 0.5); return true end }))
+        end
+      end
     end
     if context.joker_main and card.ability.extra.mult > 0 then
       return {
@@ -75,6 +74,7 @@ local equestrianarchy = SMODS.Joker {
   end
 }
 
+
 local fire_eater = SMODS.Joker {
   key = "fire_eater",
   loc_txt = {
@@ -117,6 +117,7 @@ local fire_eater = SMODS.Joker {
   end
 }
 
+
 local grand_finale = SMODS.Joker {
   key = "grand_finale",
   loc_txt = {
@@ -139,6 +140,7 @@ local grand_finale = SMODS.Joker {
   remove_from_deck = function(self, card, from_debuff)
     G.GAME.n_seal_repeat = G.GAME.n_seal_repeat - 1
   end
+  -- The rest is in the patch
 }
 
 
@@ -166,7 +168,6 @@ local hooded_visitor = SMODS.Joker{
     G.consumeables.config.card_limit = G.consumeables.config.card_limit - card.ability.extra.slots
   end
 }
-
 
 
 local joker_cannonball = SMODS.Joker{
@@ -212,6 +213,7 @@ local joker_cannonball = SMODS.Joker{
   end
 }
 
+
 local lion_tamer = SMODS.Joker {
   key = "lion_tamer",
   loc_txt = {
@@ -242,6 +244,7 @@ local lion_tamer = SMODS.Joker {
     end
   end
 }
+
 
 local loophole = SMODS.Joker {
   key = "loophole",
@@ -285,6 +288,7 @@ local loophole = SMODS.Joker {
   end,
   add_to_deck = function(self, card, from_debuff)
     card:set_edition({negative = true}, true)
+    G.jokers.config.card_limit = G.jokers.config.card_limit - 1
     for k, v in pairs(G.GAME.probabilities) do 
       G.GAME.probabilities[k] = v*1.1
     end
@@ -296,20 +300,21 @@ local loophole = SMODS.Joker {
   end
 }
 
+
 local palm_reader = SMODS.Joker{
   key = "palm_reader",
   loc_txt = {
     name = "Palm Reader",
     text = {
       "After you use your last discard,",
-      "Creates a {C:tarot}Tarot{} card you need."
+      "Creates a {C:tarot}Tarot{} card you need"
     }
   },
   config = { extra = {has_triggered = false} },
   rarity = 3,
   atlas = "a_circus",
   pos = { x = 4, y = 1 },
-  cost = 6,
+  cost = 5,
   loc_vars = function(self, info_queue, card)
     return { vars = { card.ability.extra.has_triggered } }
   end,
@@ -449,6 +454,7 @@ local palm_reader = SMODS.Joker{
   end 
 }
 
+
 local ringmaster = SMODS.Joker {
   key = "ringmaster",
   loc_txt = {
@@ -456,12 +462,13 @@ local ringmaster = SMODS.Joker {
     text = {
       "Earn {C:money}$1{} at",
       "end of round for each joker, ",
-      "or {C:money}$2{} if it is a Circus joker."
+      "or {C:money}$2{} if it is a Circus joker"
     }
   },
   config = { extra = { money = 1, money_circus = 2 } },
   rarity = 3,
   atlas = "a_circus",
+  cost = 6,
   pos = { x = 3, y = 2 },  
   loc_vars = function(self, info_queue, card)
     return { vars = { card.ability.extra.money } }
@@ -478,6 +485,7 @@ local ringmaster = SMODS.Joker {
     if bonus > 0 then return bonus end
   end
 }
+
 
 local safety_net = SMODS.Joker {
   key = "safety_net",
@@ -509,6 +517,7 @@ local safety_net = SMODS.Joker {
   end
 }
 
+
 local stoic_clown = SMODS.Joker {
   key = "stoic_clown",
   loc_txt = {
@@ -516,7 +525,8 @@ local stoic_clown = SMODS.Joker {
     text = {
       "Gain {C:mult}#1#{} Mult",
       "and {C:chips}#2#{} Chips",
-      "when a scored hand contains 2 or more Stone cards"
+      "when a scored hand contains",
+      "{C:attention}2 or more{} Stone cards"
     }
   },
   config = { extra = { mult = 20, chips = 100 } },
@@ -541,11 +551,11 @@ local stoic_clown = SMODS.Joker {
           chip_mod = card.ability.extra.chips,
           mult_mod = card.ability.extra.mult
           }
-  
       end
     end
   end
 }
+
 
 local strongman = SMODS.Joker {
   key = "strongman",
@@ -554,7 +564,7 @@ local strongman = SMODS.Joker {
     text = {
       "On the last hand of the round,",
       "destroys a consumeable to add",
-      "Steel to a random un-enhanced card."
+      "Steel to a random un-enhanced card"
     }
   },
   config = { },
@@ -634,7 +644,6 @@ local trapezist = SMODS.Joker {
 }
 
 
-  
 -- LEGENDARY
 local oleg_popov = SMODS.Joker {
   key = "oleg_popov",
@@ -660,4 +669,3 @@ local oleg_popov = SMODS.Joker {
     G.hand:change_size(-card.ability.extra.size_before_double)
   end
 }
-  

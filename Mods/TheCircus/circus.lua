@@ -1,20 +1,12 @@
---- STEAMODDED HEADER
---- MOD_NAME: The Circus
---- MOD_ID: VSMODS
---- MOD_AUTHOR: [jrings]
---- MOD_DESCRIPTION: A first mod
---- DEPENDENCIES: [Steamodded>=1.0.0~ALPHA-0812d]
---- BADGE_COLOR: fb8b73
---- PREFIX: circus
-----------------------------------------------
-------------MOD CODE -------------------------
+-- The Circus
+-- Joerg Rings
 
 -- Using sounds from
 -- Strong Man Noises.mp3 by Volvion -- https://freesound.org/s/609795/ -- License: Creative Commons 0
 -- Cannon boom by Quassorr -- https://freesound.org/s/758072/ -- License: Creative Commons 0
 -- Entry of the Gladiators, Op.68 - Julius Fučík - Arranged for Strings by GregorQuendel -- https://freesound.org/s/735154/ -- License: Attribution NonCommercial 4.0
 -- "Horse Whinny, Close, A.wav" by InspectorJ (www.jshaw.co.uk) of Freesound.org
--- Graphics misappropriated: Bear blind graphic from BelenosBear
+-- Graphics appropriated: Bear blind graphic from BelenosBear
 
 
 math.randomseed(os.time())
