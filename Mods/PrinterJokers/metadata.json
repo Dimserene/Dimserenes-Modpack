@@ -1,0 +1,15 @@
+{
+	"id": "PrinterJokers",
+	"name": "Printer Jokers",
+	"display_name": "Printer Jokers",
+	"author": ["CodeRevo"],
+	"description": "Adds some new jokers.",
+	"prefix": "crv",
+	"main_file": "main.lua",
+	"priority": 1,
+	"version": "1.9.0",
+	"dependencies": ["Steamodded (>=1.0.0~ALPHA-1311d)"],
+	"badge_colour": "A01EC8",
+	"badge_text_colour": "FFFFFF"
+
+}
