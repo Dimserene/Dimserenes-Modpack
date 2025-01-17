@@ -85,9 +85,6 @@
 [submodule "Mods/BalatroOlympus"]
 	path = Mods/BalatroOlympus
 	url = https://github.com/lshtech/BalatroOlympus
-[submodule "Mods/Bird-Jokers"]
-	path = Mods/Bird-Jokers
-	url = https://github.com/JustinBanzon/Bird-Jokers
 [submodule "Mods/BetterIllusion"]
 	path = Mods/BetterIllusion
 	url = https://github.com/rileyinman/BetterIllusion
