@@ -343,3 +343,9 @@
 [submodule "Mods/Calling_Cards"]
 	path = Mods/Calling_Cards
 	url = https://github.com/rae-vyn/calling_cards
+[submodule "Mods/Bird-Jokers"]
+	path = Mods/Bird-Jokers
+	url = https://github.com/JustinBanzon/Bird-Jokers
+[submodule "Mods/Strange-Pencil"]
+	path = Mods/Strange-Pencil
+	url = https://github.com/DigitalDetective47/strange-pencil
