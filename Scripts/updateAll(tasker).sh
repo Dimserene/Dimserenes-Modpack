@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define an array of modpack directories
-modpacks=("Dimserenes-Modpack" "Fine-tuned-Pack" "Vanilla-Plus-Pack" "Cruel-Pack" "Experimental-Pack" "Taquin-Paquet")
+modpacks=("Dimserenes-Modpack" "Fine-tuned-Pack" "Vanilla-Plus-Pack" "Cruel-Pack" "Experimental-Pack")
 
 # Base path
 base_path="/sdcard/Modpacks"

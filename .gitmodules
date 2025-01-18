@@ -340,3 +340,6 @@
 [submodule "Mods/Misers_Menagerie"]
 	path = Mods/Misers_Menagerie
 	url = https://github.com/iiiaaa123/Misers_Menagerie
+[submodule "Mods/Calling_Cards"]
+	path = Mods/Calling_Cards
+	url = https://github.com/rae-vyn/calling_cards
