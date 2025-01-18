@@ -343,9 +343,6 @@
 [submodule "Mods/Talisman"]
 	path = Mods/Talisman
 	url = https://github.com/MathIsFun0/Talisman
-[submodule "Mods/7thbeatcards"]
-	path = Mods/7thbeatcards
-	url = https://github.com/Joglacraft/7thbeatcards
 [submodule "Mods/AntonosStakes"]
 	path = Mods/AntonosStakes
 	url = https://github.com/Antonos101/Scaling-Ante-Stakes
@@ -373,3 +370,6 @@
 [submodule "Mods/Strange-Pencil"]
 	path = Mods/Strange-Pencil
 	url = https://github.com/DigitalDetective47/strange-pencil
+[submodule "Mods/7thbeatcards"]
+	path = Mods/7thbeatcards
+	url = https://github.com/Joglacraft/7thbeatcards
