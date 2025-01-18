@@ -340,9 +340,6 @@
 [submodule "Mods/Calling_Cards"]
 	path = Mods/Calling_Cards
 	url = https://github.com/rae-vyn/calling_cards
-[submodule "Mods/Talisman"]
-	path = Mods/Talisman
-	url = https://github.com/MathIsFun0/Talisman
 [submodule "Mods/AntonosStakes"]
 	path = Mods/AntonosStakes
 	url = https://github.com/Antonos101/Scaling-Ante-Stakes
@@ -374,3 +371,6 @@
 	path = Mods/7thbeatcards
 	url = https://github.com/Joglacraft/7thbeatcards
 	branch = beta
+[submodule "Mods/Talisman"]
+	path = Mods/Talisman
+	url = https://github.com/Dimserene/Talisman
