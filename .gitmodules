@@ -340,9 +340,6 @@
 [submodule "Mods/Calling_Cards"]
 	path = Mods/Calling_Cards
 	url = https://github.com/rae-vyn/calling_cards
-[submodule "Mods/AntonosStakes"]
-	path = Mods/AntonosStakes
-	url = https://github.com/Antonos101/Scaling-Ante-Stakes
 [submodule "Mods/Buffoonery"]
 	path = Mods/Buffoonery
 	url = https://github.com/pinkmaggit-hub/Buffoonery
