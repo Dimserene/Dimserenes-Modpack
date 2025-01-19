@@ -7,11 +7,18 @@
 
 --thanks to elial1(discord) for the example mod and youtube tutorials. Really helped me out
 
---HOLY BANANA!!--
+--HOLY BANANA AND PEDRO!!--
 
 SMODS.Atlas{
     key = 'holybanana', 
     path = 'holybanana.png', 
+    px = 71, 
+    py = 95 
+}
+
+SMODS.Atlas{
+    key = 'pedro', 
+    path = 'pedro.png', 
     px = 71, 
     py = 95 
 }
@@ -25,16 +32,24 @@ SMODS.Rarity{
     pools = {}, 
 }
 
+SMODS.Rarity{
+    key = "pedro",
+    badge_colour = G.C.RARITY[3],
+    loc_txt = {
+        name = 'Pedro', 
+    },
+    pools = {}, 
+}
+
 SMODS.Joker {
     key = 'holybanana',
     loc_txt = {
-      name = 'Holy Banana',
+      name = '{C:uncommon}Holy Banana',
       text = {
-        '{X:mult,C:white} X#1# {} Mult',
+        'Gives{X:mult,C:white} X#1# {} Mult',
         'and {C:chips}+#2#{} Chips',
-        'when scored.',
-        '{C:green}#3# in #4#{} chance to go',
-        'Extinct.',
+        '{C:green}#3# in #4#{} chance to get',
+        'Sacrificed to the Divine',
 
       }
     },
@@ -79,6 +94,7 @@ SMODS.Joker {
                   return true
                 end
               }))
+              G.GAME.pool_flags.holybanana_extinct = true
               return {
                 message = 'Sacrificed to the Divine!', 
                 delay(0.6)
@@ -90,6 +106,35 @@ SMODS.Joker {
                 }
     end
 end
+end
+}       
+SMODS.Joker {
+    key = 'pedro',
+    loc_txt = {
+      name = '{C:rare}Pedro',
+      text = {
+        '{C:dark_edition}Rise and shine, sleepyhead',
+        "{C:inactive} (won't go extinct)"
+
+      }
+    },
+    config = { extra = {  xmult = 42831398, chips = 42831398, } },
+    rarity = 'crv_pedro',
+    atlas = 'pedro',
+    blueprint_compat = true,
+    discovered = true,
+    pos = { x = 0, y = 0 },
+    cost = 6,
+    loc_vars = function(self, info_queue, card)
+      return { vars = { card.ability.extra.xmult,card.ability.extra.chips, } }
+    end,
+    calculate = function(self, card, context)
+        if context.joker_main then
+          return {
+            x_mult = card.ability.extra.xmult,
+            chips = card.ability.extra.chips,
+          }
+        end
 end
 }       
 
@@ -1208,7 +1253,10 @@ SMODS.Joker{
           '{C:green}#1# in #2#{} chance to',
           'print {C:attention}Cavendish{} and',
           '{C:green}#1# in #3#{} chance to',
-          'print a{C:attention} Holy Banana'
+          'print a{C:attention} Holy Banana',
+          'if somehow the {C:uncommon}Holy Banana{} gets',
+          'Sacrified to the Divine, spawns {C:rare}Pedro{}',
+          'when blind is selected',
 
         
         },
@@ -1225,7 +1273,7 @@ SMODS.Joker{
     perishable_compat = false, 
     pos = {x = 0, y = 1},
     config = { 
-      extra = { odds = 100, odds2 = 1000
+      extra = { odds = 100, odds2 = 1011
 
       }
     },
@@ -1246,6 +1294,11 @@ SMODS.Joker{
         end
         if context.setting_blind and pseudorandom('grossprinter') < G.GAME.probabilities.normal / card.ability.extra.odds2 then
             local new_card = create_card('Holy Banana', G.jokers, nil,nil,nil,nil,'j_crv_holybanana')
+            new_card:add_to_deck()
+            G.jokers:emplace(new_card)
+    end
+    if G.GAME.pool_flags.holybanana_extinct == true and context.setting_blind and not (#SMODS.find_card('j_crv_pedro') >= 1) then
+            local new_card = create_card('Pedro', G.jokers, nil,nil,nil,nil,'j_crv_pedro')
             new_card:add_to_deck()
             G.jokers:emplace(new_card)
     end
@@ -2439,6 +2492,7 @@ end,
         cost = 10,
         unlocked = true,
         discovered = true,
+        requires = {'v_crv_tup2'}
         }
             
     
@@ -2456,15 +2510,101 @@ end,
         cost = 15,
         unlocked = true,
         discovered = true,
-        requires = 'v_crv_tup'
         }
             
     }    
 
     ---WIP---
+
+    SMODS.Atlas{
+        key = 'gb', 
+        path = 'gb.png', 
+        px = 71, 
+        py = 95 
+    }
   
     
-    
+    SMODS.Joker{
+        key = 'ghostbanana', 
+        loc_txt = { 
+            name = 'Ghost Banana',
+            text = {
+              '{C:chips}+#1# Chips',
+              'Creates {C:dark_edition}Ghost Slices{} when',
+              'blind is selected',
+              '{C:inactive}(Must have room)'
+            },
+            
+        },
+        atlas = 'gb', 
+        rarity = 2, 
+        cost = 4, 
+        unlocked = true, 
+        discovered = true, 
+        blueprint_compat = true,
+        eternal_compat = true, 
+        perishable_compat = true, 
+        pos = {x = 0, y = 0},
+        config = { 
+          extra = { chips = 100
+          }
+        },
+        loc_vars = function(self, info_queue, card)
+            return { vars = { card.ability.extra.chips } }
+          end, 
+        calculate = function(self,card,context)
+            if context.joker_main then
+                return {
+                    chips = card.ability.extra.chips
+                }
+            end
+            if context.setting_blind and #G.jokers.cards < G.jokers.config.card_limit or self.area == G.jokers then
+                local new_card = create_card('Ghost Slices', G.jokers, nil, nil, nil, nil, 'j_crv_ghostslices')
+                new_card:add_to_deck()
+                G.jokers:emplace(new_card)
+            end
+            end,
+        in_pool = function(self,wawa,wawa2)
+            return true
+        end,
+       }
+
+       SMODS.Joker{
+        key = 'ghostslices', 
+        loc_txt = { 
+            name = 'Ghost Slices',
+            text = {
+              '{C:chips}+#1# Chips'
+            },
+            
+        },
+        atlas = 'gb', 
+        rarity = 1, 
+        cost = 1, 
+        unlocked = true, 
+        discovered = true, 
+        blueprint_compat = true,
+        eternal_compat = true, 
+        perishable_compat = true, 
+        pos = {x = 1, y = 0},
+        config = { 
+          extra = { chips = 50
+          }
+        },
+        loc_vars = function(self, info_queue, card)
+            return { vars = {card.ability.extra.chips} }
+          end,
+        calculate = function(self,card,context)
+            if context.joker_main then
+                return {
+                    chips = card.ability.extra.chips
+                }
+            end
+            end,
+        in_pool = function(self,wawa,wawa2)
+            return false
+        end,
+       }
 
   
     
