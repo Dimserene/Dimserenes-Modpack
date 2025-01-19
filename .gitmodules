@@ -175,9 +175,6 @@
 [submodule "Mods/MystBlinds"]
 	path = Mods/MystBlinds
 	url = https://github.com/Mysthaps/MystBlinds
-[submodule "Mods/Multipack"]
-	path = Mods/Multipack
-	url = https://github.com/snowylight/Multipack
 [submodule "Mods/Multi-Jokers"]
 	path = Mods/Multi-Jokers
 	url = https://github.com/lshtech/multi-jokers
@@ -223,9 +220,6 @@
 [submodule "Mods/SynthDeck"]
 	path = Mods/SynthDeck
 	url = https://github.com/Eman-3600/SynthDeck
-[submodule "Mods/TagPreview"]
-	path = Mods/TagPreview
-	url = https://github.com/lshtech/BalatroTagPreview
 [submodule "Mods/TatteredDecks"]
 	path = Mods/TatteredDecks
 	url = https://github.com/Cheesy-Brik/TatteredDecks
@@ -371,3 +365,6 @@
 [submodule "Mods/Talisman"]
 	path = Mods/Talisman
 	url = https://github.com/Dimserene/Talisman
+[submodule "Mods/PrinterJokers"]
+	path = Mods/PrinterJokers
+	url = https://github.com/Cdrvo/PrinterJokers---Balatro-Mod
