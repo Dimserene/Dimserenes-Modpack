@@ -800,8 +800,13 @@ update_modpack() {
     # Check the status of the script execution
     if [[ ${PIPESTATUS[0]} -eq 0 ]]; then
         kill "$spinner_pid"
-        echo -e "\n\033[0;32m$modpack: SUCCESS\033[0m"  # Success in green
-        log_status "$modpack" "SUCCESS"
+        
+        # Fetch the updated version string
+        local updated_version
+        updated_version=$(fetch_updated_version "$modpack_path")
+        
+        echo -e "\n\033[0;32m$modpack: SUCCESS ($updated_version)\033[0m"  # Success in green
+        log_status "$modpack" "SUCCESS ($updated_version)"
     else
         kill "$spinner_pid"
         echo -e "\n\033[0;31m$modpack: FAILED (Check autoversion.sh output for details)\033[0m"  # Failure in red
@@ -855,6 +860,21 @@ validate_input() {
     fi
     return 0
 }
+
+# Function to fetch updated version
+fetch_updated_version() {
+    local modpack_path="$1"
+    local version_file="$modpack_path/CurrentVersion.txt"
+
+    if [[ -f "$version_file" ]]; then
+        local updated_version
+        updated_version=$(<"$version_file")
+        echo "$updated_version"
+    else
+        echo "Unknown (version file not found)"
+    fi
+}
+
 
 # Function to select modpacks
 select_modpacks() {
@@ -1014,13 +1034,12 @@ for modpack in "${selected_modpacks[@]}"; do
     update_modpack "$modpack"
 done
 
-# Display summary of results
+# Display summary of results (Updated to avoid redundant logging)
 echo ""
 echo "================================="
 echo "Update Summary:"
 for summary in "${execution_summaries[@]}"; do
     echo "$summary"
-    log_status "Update Summary" "$summary"
 done
 echo "================================="
 
