@@ -728,26 +728,47 @@ NC='\033[0m'  # No color
 log_status() {
     local modpack=$1
     local status=$2
+    local color
+    local display_status
+
+    # Determine color based on status
+    case "$status" in
+        *"SUCCESS"*)
+            color=$GREEN
+            display_status="SUCCESS"
+            ;;
+        *"FAILED"*)
+            color=$RED
+            display_status="FAILED"
+            ;;
+        *"SKIPPED"*)
+            color=$YELLOW
+            display_status="SKIPPED"
+            ;;
+        *)
+            color=$NC
+            display_status="$status"
+            ;;
+    esac
+
     local timestamp=$(date +"%Y-%m-%d %H:%M:%S")
-    local message="[$timestamp] ${modpack} update: ${status}"
+    local message="[$timestamp] ${modpack} update: ${display_status}"
 
-    # Print the message to the console
-    echo -e "${message}"
-
-    # Log the message to the log file
+    # Print the message to the console with color
+    echo -e "${color}${message}${NC}"
+    
+    # Log the message to the log file without color
     echo "$message" >> "$log_file"
-
-    # Avoid redundant logging in the summary
-    execution_summaries["$modpack"]="$status"
+    
+    # Add the message to the execution summary
+    execution_summaries+=("$modpack: $display_status")
 }
-
 
 # ANSI color codes
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 NC='\033[0m'  # No Color
 
-# Update Modpack Function
 update_modpack() {
     local modpack=$1
     local modpack_path="$base_path/$modpack"
@@ -757,44 +778,35 @@ update_modpack() {
         return 1
     fi
 
-    # Progress indicator
-    show_progress "Updating $modpack" &
+    # Choose a consistent phrase for the update
+    local phrase="Updating"
+    show_progress "$phrase" &
     spinner_pid=$!
 
     if [[ ! -f "$modpack_path/autoversion.sh" ]]; then
-        kill "$spinner_pid"
         log_status "$modpack" "FAILED (autoversion.sh not found)"
+        kill "$spinner_pid"
         return 1
     fi
 
     cd "$modpack_path" || exit
 
-    # Run the update script
-    sh "$modpack_path/autoversion.sh" > /dev/null 2>&1
-    local update_result=$?
+    # Run the update script and capture the output step-by-step
+    echo -e "\n\033[0;36mRunning autoversion.sh for $modpack...\033[0m"
+    sh "$modpack_path/autoversion.sh" 2>&1 | while IFS= read -r line; do
+        echo -e "\033[0;34m$line\033[0m"  # Output each line in blue color for clarity
+    done
 
-    kill "$spinner_pid"
-
-    if [[ $update_result -eq 0 ]]; then
-        local updated_version
-        updated_version=$(fetch_updated_version "$modpack_path")
-        log_status "$modpack" "SUCCESS (Version: $updated_version)"
+    # Check the status of the script execution
+    if [[ ${PIPESTATUS[0]} -eq 0 ]]; then
+        kill "$spinner_pid"
+        echo -e "\n\033[0;32m$modpack: SUCCESS\033[0m"  # Success in green
+        log_status "$modpack" "SUCCESS"
     else
-        log_status "$modpack" "FAILED (Error during update)"
-    fi
-}
-
-# Function to fetch updated version
-fetch_updated_version() {
-    local modpack_path="$1"
-    local version_file="$modpack_path/CurrentVersion.txt"
-
-    if [[ -f "$version_file" ]]; then
-        local updated_version
-        updated_version=$(<"$version_file")
-        echo "$updated_version"
-    else
-        echo "Unknown (version file not found)"
+        kill "$spinner_pid"
+        echo -e "\n\033[0;31m$modpack: FAILED (Check autoversion.sh output for details)\033[0m"  # Failure in red
+        log_status "$modpack" "FAILED (Check autoversion.sh output for details)"
+        return 1
     fi
 }
 
@@ -1002,35 +1014,23 @@ for modpack in "${selected_modpacks[@]}"; do
     update_modpack "$modpack"
 done
 
-# Display Summary
-display_summary() {
-    echo ""
-    echo "================================="
-    echo "Update Summary:"
-    for modpack in "${!execution_summaries[@]}"; do
-        echo "$modpack: ${execution_summaries[$modpack]}"
-    done
-    echo "================================="
-}
-
-# Main Execution
-declare -A execution_summaries
-greet_user
-select_modpacks
-
-for modpack in "${selected_modpacks[@]}"; do
-    update_message
-    update_modpack "$modpack"
+# Display summary of results
+echo ""
+echo "================================="
+echo "Update Summary:"
+for summary in "${execution_summaries[@]}"; do
+    echo "$summary"
+    log_status "Update Summary" "$summary"
 done
+echo "================================="
 
-# Display Summary
-display_summary
-
-# Final Script Completion Log
+# Final script completion log
 log_status "Script Execution" "Completed successfully."
 
-# Exit Message
+# Display a random exit message
 exit_message
+
+# Prompt user to press enter to exit
 echo ""
 echo "Press enter to exit..."
-read -r
+read -r  # Changed to wait for enter key
