@@ -368,3 +368,6 @@
 [submodule "Mods/PrinterJokers"]
 	path = Mods/PrinterJokers
 	url = https://github.com/Cdrvo/PrinterJokers---Balatro-Mod
+[submodule "Mods/AntonosStakes"]
+	path = Mods/AntonosStakes
+	url = https://github.com/lshtech/Scaling-Ante-Stakes
