@@ -3,13 +3,21 @@
 --- MOD_ID: Modpack_Util
 --- MOD_AUTHOR: [Dimserene]
 --- MOD_DESCRIPTION: Dimserene's Modpack Utility
---- PRIORITY: -999999999999999999999999
+--- PRIORITY: 1e10000
 ----------------------------------------------
 ------------MOD CODE -------------------------
 
 local lovely = require("lovely")
 local nativefs = require("nativefs")
 local splash_screenRef = Game.splash_screen
+local modCount = 0
+
+for _, mod in pairs(SMODS.Mods) do
+    if mod.can_load and (not mod.meta_mod or mod.lovely_only) then
+        modCount = modCount + 1
+    end
+end
+
 
 if SMODS.Atlas then
   SMODS.Atlas({
@@ -36,6 +44,9 @@ function Game:main_menu(change_context)
 							{n = G.UIT.T, config = {scale = 0.3, text = "Current Version: " .. ModpackVersion, align = "cr", colour = G.C.UI.TEXT_LIGHT}}}},
 						{n= G.UIT.R, config = {align = "cr", padding = 0.05}, nodes = {
 							{n = G.UIT.T, config = {scale = 0.3, text = "(UTC) " .. ModpackUpdate, align = "cr", colour = G.C.UI.TEXT_LIGHT}}}},
+						{n= G.UIT.R, config = {align = "cr", padding = 0.05}, nodes = {
+							{n = G.UIT.T, config = {scale = 0.3, text = modCount .. " mods installed", align = "cr", colour = G.C.UI.TEXT_LIGHT}}}},
+
 					}},
 		config = {
 			align = "tri",
