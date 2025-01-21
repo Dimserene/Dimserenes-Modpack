@@ -368,3 +368,15 @@
 [submodule "Mods/PrinterJokers"]
 	path = Mods/PrinterJokers
 	url = https://github.com/Cdrvo/PrinterJokers---Balatro-Mod
+[submodule "Mods/CustomSuitOrder"]
+	path = Mods/CustomSuitOrder
+	url = https://github.com/DigitalDetective47/suit-order
+[submodule "Mods/Planet-Card-Cash-Out"]
+	path = Mods/Planet-Card-Cash-Out
+	url = https://github.com/antler5/Balatro-Planet-Card-Cash-Out-Mod
+[submodule "Mods/DnDJ"]
+	path = Mods/DnDJ
+	url = https://github.com/AuraGunner/dndj-mod
+[submodule "Mods/Pauper-Deck"]
+	path = Mods/Pauper-Deck
+	url = https://github.com/AiksiLotl/Pauper-Deck
