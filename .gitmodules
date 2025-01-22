@@ -121,9 +121,6 @@
 [submodule "Mods/FasterAnteScaling"]
 	path = Mods/FasterAnteScaling
 	url = https://github.com/castleCodr/FasterAnteScaling
-[submodule "Mods/FloundersJokers"]
-	path = Mods/FloundersJokers
-	url = https://github.com/Flounderlul/FloundersJokers
 [submodule "Mods/Fusion-Jokers"]
 	path = Mods/Fusion-Jokers
 	url = https://github.com/lshtech/Fusion-Jokers
@@ -253,9 +250,6 @@
 [submodule "Mods/YART"]
 	path = Mods/YART
 	url = https://github.com/DigitalDetective47/yart
-[submodule "Mods/Your-Only-Move-Is-GAMBLE"]
-	path = Mods/Your-Only-Move-Is-GAMBLE
-	url = https://github.com/ddf9795/balatro-yomi-gamble
 [submodule "Mods/Balatro-Draft"]
 	path = Mods/Balatro-Draft
 	url = https://github.com/spire-winder/Balatro-Draft
@@ -283,9 +277,6 @@
 [submodule "Mods/Reverie"]
 	path = Mods/Reverie
 	url = https://github.com/jumbocarrot0/reverie
-[submodule "Mods/Alices_Annum"]
-	path = Mods/Alices_Annum
-	url = https://github.com/ThreeCubed273/alices_annum_balatro_mod
 [submodule "Mods/Cruel-Blinds"]
 	path = Mods/Cruel-Blinds
 	url = https://github.com/Dimserene/Cruel-Blinds
@@ -316,9 +307,6 @@
 [submodule "Mods/H1DROmod"]
 	path = Mods/H1DROmod
 	url = https://github.com/hidro0091/H1DROmod-balatro
-[submodule "Mods/YuGiOh-Cards"]
-	path = Mods/YuGiOh-Cards
-	url = https://github.com/VaporeonMega-git/Balatro-YuGiOh-Cards
 [submodule "Mods/Magic-the-Jokering"]
 	path = Mods/Magic-the-Jokering
 	url = https://github.com/spire-winder/Magic-the-Jokering
@@ -349,9 +337,6 @@
 [submodule "Mods/TOGAPackBalatro"]
 	path = Mods/TOGAPackBalatro
 	url = https://github.com/TheOneGoofAli/TOGAPackBalatro
-[submodule "Mods/Zone-Balatro"]
-	path = Mods/Zone-Balatro
-	url = https://github.com/Me-rn-rbh/Zone-Balatro
 [submodule "Mods/Strange-Pencil"]
 	path = Mods/Strange-Pencil
 	url = https://github.com/DigitalDetective47/strange-pencil
