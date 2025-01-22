@@ -190,9 +190,6 @@
 [submodule "Mods/RuinaDecks"]
 	path = Mods/RuinaDecks
 	url = https://github.com/someone23832/RuinaDecks
-[submodule "Mods/SDM_0-s-Stuff"]
-	path = Mods/SDM_0-s-Stuff
-	url = https://github.com/SDM0/SDM_0-s-Stuff
 [submodule "Mods/Seven-Deadly-Sins"]
 	path = Mods/Seven-Deadly-Sins
 	url = https://github.com/lshtech/sevendeadlysins
@@ -229,9 +226,6 @@
 [submodule "Mods/TheTrickster"]
 	path = Mods/TheTrickster
 	url = https://github.com/cerloCasa/TheTrickster
-[submodule "Mods/Themed_Jokers"]
-	path = Mods/Themed_Jokers
-	url = https://github.com/cerloCasa/Themed-Jokers
 [submodule "Mods/Tsunami"]
 	path = Mods/Tsunami
 	url = https://github.com/Maratby/Tsunami
