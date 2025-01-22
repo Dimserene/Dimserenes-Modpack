@@ -250,9 +250,6 @@
 [submodule "Mods/YART"]
 	path = Mods/YART
 	url = https://github.com/DigitalDetective47/yart
-[submodule "Mods/Your-Only-Move-Is-GAMBLE"]
-	path = Mods/Your-Only-Move-Is-GAMBLE
-	url = https://github.com/ddf9795/balatro-yomi-gamble
 [submodule "Mods/Balatro-Draft"]
 	path = Mods/Balatro-Draft
 	url = https://github.com/spire-winder/Balatro-Draft
@@ -313,9 +310,6 @@
 [submodule "Mods/H1DROmod"]
 	path = Mods/H1DROmod
 	url = https://github.com/hidro0091/H1DROmod-balatro
-[submodule "Mods/YuGiOh-Cards"]
-	path = Mods/YuGiOh-Cards
-	url = https://github.com/VaporeonMega-git/Balatro-YuGiOh-Cards
 [submodule "Mods/Magic-the-Jokering"]
 	path = Mods/Magic-the-Jokering
 	url = https://github.com/spire-winder/Magic-the-Jokering
