@@ -380,3 +380,7 @@
 [submodule "Mods/Pauper-Deck"]
 	path = Mods/Pauper-Deck
 	url = https://github.com/AiksiLotl/Pauper-Deck
+[submodule "Mods/Cryptid"]
+	path = Mods/Cryptid
+	url = https://github.com/MathIsFun0/Cryptid
+	branch = refactor
