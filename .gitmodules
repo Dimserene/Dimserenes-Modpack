@@ -283,9 +283,6 @@
 [submodule "Mods/Alices_Annum"]
 	path = Mods/Alices_Annum
 	url = https://github.com/ThreeCubed273/alices_annum_balatro_mod
-[submodule "Mods/KCVanilla"]
-	path = Mods/KCVanilla
-	url = https://github.com/jumbocarrot0/kcvanilla/
 [submodule "Mods/Cruel-Blinds"]
 	path = Mods/Cruel-Blinds
 	url = https://github.com/Dimserene/Cruel-Blinds
@@ -352,3 +349,6 @@
 [submodule "Mods/CustomSuitOrder"]
 	path = Mods/CustomSuitOrder
 	url = https://github.com/DigitalDetective47/suit-order
+[submodule "Mods/KCVanilla"]
+	path = Mods/KCVanilla
+	url = https://github.com/kcgidw/kcvanilla
