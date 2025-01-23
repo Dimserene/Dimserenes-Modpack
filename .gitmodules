@@ -363,3 +363,6 @@
 [submodule "Mods/KCVanilla"]
 	path = Mods/KCVanilla
 	url = https://github.com/kcgidw/kcvanilla
+[submodule "Mods/ArtOfTheDeal"]
+	path = Mods/ArtOfTheDeal
+	url = https://github.com/radbanker/Art-of-the-Deal.The-peoples-card-collection
