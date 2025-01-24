@@ -363,3 +363,6 @@
 [submodule "Mods/ArtOfTheDeal"]
 	path = Mods/ArtOfTheDeal
 	url = https://github.com/radbanker/Art-of-the-Deal.The-peoples-card-collection
+[submodule "Mods/SDM_0-s-Stuff"]
+	path = Mods/SDM_0-s-Stuff
+	url = https://github.com/SDM0/SDM_0-s-Stuff/
