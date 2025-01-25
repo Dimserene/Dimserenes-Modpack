@@ -97,9 +97,6 @@
 [submodule "Mods/BossJokers"]
 	path = Mods/BossJokers
 	url = https://github.com/KilledByLava/BossJokers
-[submodule "Mods/Bunco"]
-	path = Mods/Bunco
-	url = https://github.com/Firch/Bunco
 [submodule "Mods/CommunityPack"]
 	path = Mods/CommunityPack
 	url = https://github.com/lshtech/Balatro-CommunityPack
@@ -349,3 +346,6 @@
 [submodule "Mods/ArtOfTheDeal"]
 	path = Mods/ArtOfTheDeal
 	url = https://github.com/radbanker/Art-of-the-Deal.The-peoples-card-collection
+[submodule "Mods/Bunco"]
+	path = Mods/Bunco
+	url = https://github.com/Dimserene/Bunco
