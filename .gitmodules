@@ -49,18 +49,9 @@
 [submodule "Mods/CardSleeves"]
 	path = Mods/CardSleeves
 	url = https://github.com/larswijn/CardSleeves
-[submodule "Mods/BlackSeal"]
-	path = Mods/BlackSeal
-	url = https://github.com/lshtech/BlackSeal
-[submodule "Mods/SilverSeal"]
-	path = Mods/SilverSeal
-	url = https://github.com/lshtech/SilverSeal
 [submodule "Mods/NeowBlessings"]
 	path = Mods/NeowBlessings
 	url = https://github.com/lshtech/NeowBlessings
-[submodule "Mods/Dice-Seals"]
-	path = Mods/Dice-Seals
-	url = https://github.com/lshtech/Dice-Seals
 [submodule "Mods/5CEBalatro"]
 	path = Mods/5CEBalatro
 	url = https://github.com/lshtech/5CEBalatro
@@ -169,9 +160,6 @@
 [submodule "Mods/Multi-Jokers"]
 	path = Mods/Multi-Jokers
 	url = https://github.com/lshtech/multi-jokers
-[submodule "Mods/Morjokers"]
-	path = Mods/Morjokers
-	url = https://github.com/lshtech/morjokers
 [submodule "Mods/MoreJokerPacks"]
 	path = Mods/MoreJokerPacks
 	url = https://github.com/Samario1/MoreJokerPacks
@@ -202,9 +190,6 @@
 [submodule "Mods/SpicyJokers"]
 	path = Mods/SpicyJokers
 	url = https://github.com/lshtech/SpicyJokers
-[submodule "Mods/SylviesSilliness"]
-	path = Mods/SylviesSilliness
-	url = https://github.com/lshtech/SylvieSilly
 [submodule "Mods/SynthDeck"]
 	path = Mods/SynthDeck
 	url = https://github.com/Eman-3600/SynthDeck
@@ -298,9 +283,6 @@
 [submodule "Mods/Magic-the-Jokering"]
 	path = Mods/Magic-the-Jokering
 	url = https://github.com/spire-winder/Magic-the-Jokering
-[submodule "Mods/MintysSillyMod"]
-	path = Mods/MintysSillyMod
-	url = https://github.com/wingedcatgirl/MintysSillyMod
 [submodule "Mods/Calling_Cards"]
 	path = Mods/Calling_Cards
 	url = https://github.com/rae-vyn/calling_cards
