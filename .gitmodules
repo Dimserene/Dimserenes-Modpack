@@ -351,3 +351,9 @@
 [submodule "Mods/DeckSkinsLite"]
 	path = Mods/DeckSkinsLite
 	url = https://github.com/Dimserene/DeckSkinsLite
+[submodule "Mods/JokerSellValue"]
+	path = Mods/JokerSellValue
+	url = https://github.com/OppositeWolf770/JokerSellValue
+[submodule "Mods/MetroCard"]
+	path = Mods/MetroCard
+	url = https://github.com/JegMetroCard/MetroCard
