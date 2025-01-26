@@ -103,9 +103,6 @@
 [submodule "Mods/CrashAvoider"]
 	path = Mods/CrashAvoider
 	url = https://github.com/WilsontheWolf/CrashAvoider
-[submodule "Mods/DX-Tarots"]
-	path = Mods/DX-Tarots
-	url = https://github.com/lshtech/DX-Tarots
 [submodule "Mods/ExtendedBlueprint"]
 	path = Mods/ExtendedBlueprint
 	url = https://github.com/Toneblock/balatro-ExtendedBlueprint
