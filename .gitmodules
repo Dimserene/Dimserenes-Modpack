@@ -357,3 +357,6 @@
 [submodule "Mods/MetroCard"]
 	path = Mods/MetroCard
 	url = https://github.com/JegMetroCard/MetroCard
+[submodule "Mods/Fortlatro"]
+	path = Mods/Fortlatro
+	url = https://github.com/Dimserene/Fortlatro
