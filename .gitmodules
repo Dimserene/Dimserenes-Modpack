@@ -202,9 +202,6 @@
 [submodule "Mods/TatteredDecks"]
 	path = Mods/TatteredDecks
 	url = https://github.com/Cheesy-Brik/TatteredDecks
-[submodule "Mods/Tetrapak"]
-	path = Mods/Tetrapak
-	url = https://github.com/lshtech/Tetrapak
 [submodule "Mods/The-Buffoon-Pack"]
 	path = Mods/The-Buffoon-Pack
 	url = https://github.com/lshtech/The-Buffoon-Pack
