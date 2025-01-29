@@ -337,3 +337,9 @@
 [submodule "Mods/JokerSellValue"]
 	path = Mods/JokerSellValue
 	url = https://github.com/OppositeWolf770/JokerSellValue
+[submodule "Mods/AutumnMoodMechanics"]
+	path = Mods/AutumnMoodMechanics
+	url = https://github.com/AutumnMood924/AutumnMoodMechanics
+[submodule "Mods/TheAutumnCircus"]
+	path = Mods/TheAutumnCircus
+	url = https://github.com/Dimserene/TheAutumnCircus
