@@ -357,3 +357,12 @@
 [submodule "Mods/Fortlatro"]
 	path = Mods/Fortlatro
 	url = https://github.com/Dimserene/Fortlatro
+[submodule "Mods/Balatro-Plus"]
+	path = Mods/Balatro-Plus
+	url = https://github.com/SomeCoder99/balatro-plus
+[submodule "Mods/Tesseract"]
+	path = Mods/Tesseract
+	url = https://github.com/hyperxwastaken/Tesseract
+[submodule "Mods/YuGiOh-Cards"]
+	path = Mods/YuGiOh-Cards
+	url = https://github.com/VaporeonMega-git/Balatro-YuGiOh-Cards
