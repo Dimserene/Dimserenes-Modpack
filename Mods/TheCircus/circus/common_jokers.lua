@@ -41,6 +41,7 @@ local candy_butcher = SMODS.Joker {
     config = { extra = { mult = 10 } },
     rarity = 1,
     atlas = 'a_circus',
+    blueprint_compat = true,
     pos = { x = 3, y = 1 },
     cost = 4,
     loc_vars = function(self, info_queue, card)
@@ -114,6 +115,7 @@ local entrance_of_the_gladiators = SMODS.Joker {
     loc_vars = function(self, info_queue, card)
       return { vars = { card.ability.extra.xmult, card.ability.extra.xmult_gain } }
     end,
+    blueprint_compat = true,
     calculate = function(self, card, context)
       if context.buying_card and not context.blueprint and not (context.card == card) then
         if string.find(context.card.config.center.key, "j_circus_") then
@@ -192,6 +194,7 @@ local knife_thrower = SMODS.Joker {
     loc_vars = function(self, info_queue, card)
       return { vars = { card.ability.extra.chips } }
     end,
+    blueprint_compat = true,
     calculate = function(self, card, context)
       if context.joker_main then
         return { chip_mod = card.ability.extra.chips,
@@ -228,6 +231,7 @@ local mucker = SMODS.Joker {
     loc_vars = function(self, info_queue, card)
       return { vars = { card.ability.extra.xmult } }
     end,
+    blueprint_compat = true,
     calculate = function(self, card, context)
       if context.joker_main then
         if G.jokers.cards and card == G.jokers.cards[1] then
@@ -258,6 +262,7 @@ local musical_clown = SMODS.Joker {
   atlas = 'a_circus_2',
   pos = { x = 2, y = 0 },
   cost = 1,
+  blueprint_compat = true,
   loc_vars = function(self, info_queue, card)
     return { vars = { card.ability.extra.mult, card.ability.extra.chips } }
   end,
@@ -297,6 +302,7 @@ local sad_clown = SMODS.Joker {
   atlas = 'a_circus_2',
   pos = { x = 3, y = 0 },
   cost = 1,
+  blueprint_compat = true,
   loc_vars = function(self, info_queue, card)
     return { vars = { card.ability.extra.mult, card.ability.extra.chips } }
   end,
@@ -336,6 +342,7 @@ local silly_clown = SMODS.Joker {
   atlas = 'a_circus_2',
   pos = { x = 0, y = 1 },
   cost = 1,
+  blueprint_compat = true,
   loc_vars = function(self, info_queue, card)
     return { vars = { card.ability.extra.mult, card.ability.extra.chips } }
   end,
@@ -408,6 +415,7 @@ local sword_swallower = SMODS.Joker {
     loc_vars = function(self, info_queue, card)
       return { vars = { card.ability.extra.mult } }
     end,
+    blueprint_compat = true,
     calculate = function(self, card, context)
       if context.buying_card and not context.blueprint and (context.card == card) then
         card.ability.extra.mult = 25
@@ -438,6 +446,7 @@ local talent_show = SMODS.Joker {
     atlas = 'a_circus_2',
     pos = { x = 3, y = 2 },
     cost = 8,
+    blueprint_compat = true,
     calculate = function(self, card, context)
       if context.cardarea == G.play and context.repetition and not context.repetition_only then
         if context.other_card.seal or context.other_card.edition then
@@ -468,11 +477,12 @@ local trickster = SMODS.Joker {
     eternal_compat = false,
     pos = { x = 1, y = 0 },
     cost = 3,
+    blueprint_compat = true,
     loc_vars = function(self, info_queue, card)
       return { vars = { card.ability.extra.chips, card.ability.extra.mult } }
     end,
     calculate = function(self, card, context)
-      if context.selling_self then
+      if context.selling_self and not context.blueprint then
         local ccard = create_card('Joker', G.jokers, nil, 0, nil, nil, nil, 'trik')
   
         ccard.sell_cost = -1
@@ -509,6 +519,7 @@ local violent_clown = SMODS.Joker {
   atlas = 'a_circus_2',
   pos = { x = 4, y = 0 },
   cost = 1,
+  blueprint_compat = true,
   loc_vars = function(self, info_queue, card)
     return { vars = { card.ability.extra.mult, card.ability.extra.chips } }
   end,
