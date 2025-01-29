@@ -17,8 +17,9 @@ local aerialist_prodigy = SMODS.Joker {
   loc_vars = function(self, info_queue, card)
     return { vars = { card.ability.extra.mult } }
   end,
+  blueprint_compat = true,
   calculate = function(self, card, context)
-    if context.consumeable and context.consumeable.config.center and context.consumeable.config.center.set then
+    if context.consumeable and context.consumeable.config.center and context.consumeable.config.center.set and not context.blueprint then
       if context.consumeable.config.center.set == "Planet" then
         local hands_size_lk = { ["Straight Flush"] = 5, ["Five of a Kind"] = 5, ["Four of a Kind"] = 4, ["Full House"] = 5, 
         ["Flush"] = 5, ["Flush House"] = 5, ["Flush Five"] = 5, ["Straight"] = 5, ["Three of a Kind"] = 3, 
@@ -94,6 +95,7 @@ local fire_eater = SMODS.Joker {
   loc_vars = function(self, info_queue, card)
     return { vars = { card.ability.extra.chips, card.ability.extra.chip_gain } }
   end,
+  blueprint_compat = true,
   calculate = function(self, card, context)
     if context.joker_main then
       return {chip_mod = card.ability.extra.chips,
@@ -131,6 +133,7 @@ local grand_finale = SMODS.Joker {
   atlas = "a_circus_2",
   pos = { x = 2, y = 2 },
   cost = 5,
+  blueprint_compat = true,
   add_to_deck = function(self, card, from_debuff)
     if not G.GAME.n_seal_repeat then
       G.GAME.n_seal_repeat = 0
@@ -158,6 +161,7 @@ local hooded_visitor = SMODS.Joker{
   atlas = "a_circus_2",
   pos = { x = 4, y = 1 },
   cost = 4,
+  blueprint_compat = true,
   loc_vars = function(self, info_queue, card)
     return { vars = { card.ability.extra.slots } }
   end,
@@ -229,6 +233,7 @@ local lion_tamer = SMODS.Joker {
   atlas = "a_circus_2",
   pos = { x = 0, y = 0 },
   cost = 6,
+  blueprint_compat = true,
   calculate = function(self, card, context)
     if context.consumeable and #G.hand.cards > 0 and not context.open_booster then -- during a round
       G.FUNCS.draw_from_deck_to_hand(3)
@@ -260,6 +265,7 @@ local loophole = SMODS.Joker {
   atlas = "a_circus",
   pos = { x = 3, y = 0 },
   cost = 4,
+  blueprint_compat = true,
   calculate = function(self, card, context)
     if context.joker_main and context.scoring_name == "Four of a Kind" then
       local other_joker_ret = {}
@@ -318,6 +324,7 @@ local palm_reader = SMODS.Joker{
   loc_vars = function(self, info_queue, card)
     return { vars = { card.ability.extra.has_triggered } }
   end,
+  blueprint_compat = true,
   calculate = function(self, card, context)
     if context.discard  and G.GAME.current_round.discards_left == 1 then  
       if not card.ability.extra.has_triggered then
@@ -534,6 +541,7 @@ local stoic_clown = SMODS.Joker {
   atlas = "a_circus_2",
   pos = { x = 2, y = 1 },
   cost = 1,
+  blueprint_compat = true,
   loc_vars = function(self, info_queue, card)
     return { vars = { card.ability.extra.mult, card.ability.extra.chips } }
   end,
@@ -617,6 +625,7 @@ local trapezist = SMODS.Joker {
   atlas = "a_circus",
   pos = { x = 0, y = 0 },
   cost = 6,
+  blueprint_compat = true,
   loc_vars = function(self, info_queue, card)
     return { vars = { card.ability.extra.mult, card.ability.extra.mult_gain } }
   end,
@@ -659,6 +668,7 @@ local oleg_popov = SMODS.Joker {
   pos = { x = 0, y = 3 },
   soul_pos = { x = 4, y = 3 },
   cost = 20,
+  blueprint_compat = true,
   add_to_deck = function(self, card, from_debuff)
     card.ability.extra.size_before_double = G.hand.config.card_limit
     G.hand:change_size(card.ability.extra.size_before_double)

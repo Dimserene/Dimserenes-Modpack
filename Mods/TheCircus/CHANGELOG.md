@@ -11,4 +11,8 @@
 
 ## 2025-01-14
 
-* Fixed Attorney Loophole given an extra joker slot when becoming negative
+* Fixed Attorney Loophole given an extra joker slot when becoming negativing 
+
+## 2025-01-28
+
+* Added compatibility with Blueprint
