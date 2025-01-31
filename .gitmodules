@@ -331,3 +331,6 @@
 [submodule "Mods/YuGiOh-Cards"]
 	path = Mods/YuGiOh-Cards
 	url = https://github.com/VaporeonMega-git/Balatro-YuGiOh-Cards
+[submodule "Mods/FlushHotkeys"]
+	path = Mods/FlushHotkeys
+	url = https://github.com/Dimserene/FlushHotkeys
