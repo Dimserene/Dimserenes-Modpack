@@ -127,9 +127,6 @@
 [submodule "Mods/LushMod"]
 	path = Mods/LushMod
 	url = https://github.com/lshtech/LushMod
-[submodule "Mods/Matchbox"]
-	path = Mods/Matchbox
-	url = https://github.com/lshtech/Matchbox
 [submodule "Mods/MixedPotion"]
 	path = Mods/MixedPotion
 	url = https://github.com/snowylight/MixedPotion
@@ -265,9 +262,6 @@
 [submodule "Mods/CelesteCardCollection"]
 	path = Mods/CelesteCardCollection
 	url = https://github.com/AuroraKy/CelesteCardCollection
-[submodule "Mods/Aikoyoris-Shenanigans"]
-	path = Mods/Aikoyoris-Shenanigans
-	url = https://github.com/Aikoyori/Balatro-Aikoyoris-Shenanigans
 [submodule "Mods/Maximus"]
 	path = Mods/Maximus
 	url = https://github.com/the-Astra/Maximus
