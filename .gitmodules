@@ -262,9 +262,6 @@
 [submodule "Mods/Betmma_mods"]
 	path = Mods/Betmma_mods
 	url = https://github.com/betmma/my_balatro_mods
-[submodule "Mods/Taikomochi"]
-	path = Mods/Taikomochi
-	url = https://github.com/Amvoled/Taikomochi
 [submodule "Mods/CelesteCardCollection"]
 	path = Mods/CelesteCardCollection
 	url = https://github.com/AuroraKy/CelesteCardCollection
