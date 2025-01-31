@@ -274,9 +274,6 @@
 [submodule "Mods/Betmma_mods"]
 	path = Mods/Betmma_mods
 	url = https://github.com/betmma/my_balatro_mods
-[submodule "Mods/Taikomochi"]
-	path = Mods/Taikomochi
-	url = https://github.com/Amvoled/Taikomochi
 [submodule "Mods/CelesteCardCollection"]
 	path = Mods/CelesteCardCollection
 	url = https://github.com/AuroraKy/CelesteCardCollection
@@ -307,9 +304,6 @@
 [submodule "Mods/Pauper-Deck"]
 	path = Mods/Pauper-Deck
 	url = https://github.com/AiksiLotl/Pauper-Deck
-[submodule "Mods/DnDJ"]
-	path = Mods/DnDJ
-	url = https://github.com/AuraGunner/dndj-mod
 [submodule "Mods/Planet-Card-Cash-Out"]
 	path = Mods/Planet-Card-Cash-Out
 	url = https://github.com/antler5/Balatro-Planet-Card-Cash-Out-Mod
