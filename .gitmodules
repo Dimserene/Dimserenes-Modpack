@@ -259,9 +259,6 @@
 [submodule "Mods/JimboRecords"]
 	path = Mods/JimboRecords
 	url = https://github.com/TherkLe/JimboRecords
-[submodule "Mods/Dungeon"]
-	path = Mods/Dungeon
-	url = https://github.com/Mathguy23/Dungeon
 [submodule "Mods/Betmma_mods"]
 	path = Mods/Betmma_mods
 	url = https://github.com/betmma/my_balatro_mods
