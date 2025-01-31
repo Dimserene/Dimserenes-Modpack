@@ -97,9 +97,6 @@
 [submodule "Mods/CrashAvoider"]
 	path = Mods/CrashAvoider
 	url = https://github.com/WilsontheWolf/CrashAvoider
-[submodule "Mods/DX-Tarots"]
-	path = Mods/DX-Tarots
-	url = https://github.com/lshtech/DX-Tarots
 [submodule "Mods/ExtendedBlueprint"]
 	path = Mods/ExtendedBlueprint
 	url = https://github.com/Toneblock/balatro-ExtendedBlueprint
@@ -181,9 +178,6 @@
 [submodule "Mods/Seven-Deadly-Decks"]
 	path = Mods/Seven-Deadly-Decks
 	url = https://github.com/AstroLightz/Balatro-7DeadlyDecks
-[submodule "Mods/ShenanigansMod"]
-	path = Mods/ShenanigansMod
-	url = https://github.com/lshtech/balatro-shenanigans-mod
 [submodule "Mods/SnoresvillesTurbulentJokers"]
 	path = Mods/SnoresvillesTurbulentJokers
 	url = https://github.com/Snoresville/snoresville_turbulent_jokers
