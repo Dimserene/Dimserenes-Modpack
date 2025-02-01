@@ -217,9 +217,6 @@
 [submodule "Mods/Balatro-Draft"]
 	path = Mods/Balatro-Draft
 	url = https://github.com/spire-winder/Balatro-Draft
-[submodule "Mods/Aure-Spectral"]
-	path = Mods/Aure-Spectral
-	url = https://github.com/SDM0/Aure-Spectral
 [submodule "Mods/Joker-Evolution"]
 	path = Mods/Joker-Evolution
 	url = https://github.com/SDM0/Joker-Evolution
@@ -411,3 +408,6 @@
 [submodule "Mods/Aikoyoris-Shenanigans"]
 	path = Mods/Aikoyoris-Shenanigans
 	url = https://github.com/Aikoyori/Balatro-Aikoyoris-Shenanigans
+[submodule "Mods/Aure-Spectral"]
+	path = Mods/Aure-Spectral
+	url = https://github.com/Eremel/Aure-Spectral/
