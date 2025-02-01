@@ -391,3 +391,15 @@
 [submodule "Mods/Aure-Spectral"]
 	path = Mods/Aure-Spectral
 	url = https://github.com/Eremel/Aure-Spectral/
+[submodule "Mods/TheCircus"]
+	path = Mods/TheCircus
+	url = https://gitlab.com/infinite_jesters/circus
+[submodule "Mods/Lock-The-Deal"]
+	path = Mods/Lock-The-Deal
+	url = https://gitlab.com/lnxfca-dev/balatro-mods/lock-the-deal
+[submodule "Mods/First-Round-Joker"]
+	path = Mods/First-Round-Joker
+	url = https://gitlab.com/lnxfca-dev/balatro-mods/first-round-joker
+[submodule "Mods/LnxFCA-Shared"]
+	path = Mods/LnxFCA-Shared
+	url = https://gitlab.com/lnxfca-dev/balatro-mods/lnxfca-shared
