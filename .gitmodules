@@ -423,3 +423,12 @@
 [submodule "Mods/TheCircus"]
 	path = Mods/TheCircus
 	url = https://gitlab.com/infinite_jesters/circus
+[submodule "Mods/EvaJokers"]
+	path = Mods/EvaJokers
+	url = https://github.com/Toringen/EvaJokers
+[submodule "Mods/Celestial-Funk"]
+	path = Mods/Celestial-Funk
+	url = https://github.com/LimeEffy/Celestial-Funk
+[submodule "Mods/Hyperfixation"]
+	path = Mods/Hyperfixation
+	url = https://github.com/tomatoseandcrying/hyperfixation
