@@ -429,3 +429,12 @@
 [submodule "Mods/Hyperfixation"]
 	path = Mods/Hyperfixation
 	url = https://github.com/tomatoseandcrying/hyperfixation
+[submodule "Mods/Order"]
+	path = Mods/Order
+	url = https://github.com/pinkmaggit-hub/Order/
+[submodule "Mods/Redux-Arcanum"]
+	path = Mods/Redux-Arcanum
+	url = https://github.com/jumbocarrot0/Redux-Arcanum
+[submodule "Mods/Maxines-Joker-Pack"]
+	path = Mods/Maxines-Joker-Pack
+	url = https://github.com/MaxIsJoe/maxine-balatro-mod
