@@ -360,9 +360,6 @@
 [submodule "Mods/Leapfrog-Balatro-Deck"]
 	path = Mods/Leapfrog-Balatro-Deck
 	url = https://github.com/superdotaplaya/Leapfrog-Balatro-Deck
-[submodule "Mods/Pokermon"]
-	path = Mods/Pokermon
-	url = https://github.com/InertSteak/Pokermon
 [submodule "Mods/Malverk"]
 	path = Mods/Malverk
 	url = https://github.com/Eremel/Malverk/
