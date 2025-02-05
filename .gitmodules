@@ -409,3 +409,12 @@
 [submodule "Mods/Pokermon"]
 	path = Mods/Pokermon
 	url = https://github.com/Dimserene/Pokermon/
+[submodule "Mods/Redux-Arcanum"]
+	path = Mods/Redux-Arcanum
+	url = https://github.com/jumbocarrot0/Redux-Arcanum
+[submodule "Mods/Maxines-Joker-Pack"]
+	path = Mods/Maxines-Joker-Pack
+	url = https://github.com/MaxIsJoe/maxine-balatro-mod
+[submodule "Mods/Order"]
+	path = Mods/Order
+	url = https://github.com/pinkmaggit-hub/Order/
