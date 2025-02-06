@@ -91,9 +91,6 @@
 [submodule "Mods/Cosmos"]
 	path = Mods/Cosmos
 	url = https://github.com/neatoqueen/Cosmos
-[submodule "Mods/CrashAvoider"]
-	path = Mods/CrashAvoider
-	url = https://github.com/WilsontheWolf/CrashAvoider
 [submodule "Mods/ExtendedBlueprint"]
 	path = Mods/ExtendedBlueprint
 	url = https://github.com/Toneblock/balatro-ExtendedBlueprint
@@ -321,9 +318,6 @@
 [submodule "Mods/SDM_0-s-Stuff"]
 	path = Mods/SDM_0-s-Stuff
 	url = https://github.com/SDM0/SDM_0-s-Stuff/
-[submodule "Mods/Misers_Menagerie"]
-	path = Mods/Misers_Menagerie
-	url = https://github.com/Dimserene/Misers_Menagerie
 [submodule "Mods/AntonosStakes"]
 	path = Mods/AntonosStakes
 	url = https://github.com/lshtech/Scaling-Ante-Stakes
