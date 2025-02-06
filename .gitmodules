@@ -94,9 +94,6 @@
 [submodule "Mods/Cosmos"]
 	path = Mods/Cosmos
 	url = https://github.com/neatoqueen/Cosmos
-[submodule "Mods/CrashAvoider"]
-	path = Mods/CrashAvoider
-	url = https://github.com/WilsontheWolf/CrashAvoider
 [submodule "Mods/ExtendedBlueprint"]
 	path = Mods/ExtendedBlueprint
 	url = https://github.com/Toneblock/balatro-ExtendedBlueprint
@@ -298,9 +295,6 @@
 [submodule "Mods/Bunco"]
 	path = Mods/Bunco
 	url = https://github.com/Dimserene/Bunco
-[submodule "Mods/Misers_Menagerie"]
-	path = Mods/Misers_Menagerie
-	url = https://github.com/Dimserene/Misers_Menagerie
 [submodule "Mods/DeckSkinsLite"]
 	path = Mods/DeckSkinsLite
 	url = https://github.com/Dimserene/DeckSkinsLite
