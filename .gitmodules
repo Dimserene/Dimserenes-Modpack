@@ -280,9 +280,6 @@
 [submodule "Mods/TOGAPackBalatro"]
 	path = Mods/TOGAPackBalatro
 	url = https://github.com/TheOneGoofAli/TOGAPackBalatro
-[submodule "Mods/Strange-Pencil"]
-	path = Mods/Strange-Pencil
-	url = https://github.com/DigitalDetective47/strange-pencil
 [submodule "Mods/7thbeatcards"]
 	path = Mods/7thbeatcards
 	url = https://github.com/Joglacraft/7thbeatcards
@@ -429,3 +426,6 @@
 [submodule "Mods/Revos-Vault"]
 	path = Mods/Revos-Vault
 	url = https://github.com/Cdrvo/Revos-Vault---Balatro-Mod
+[submodule "Mods/Strange-Pencil"]
+	path = Mods/Strange-Pencil
+	url = https://github.com/DigitalDetective47/strange-pencil
