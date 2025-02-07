@@ -274,9 +274,6 @@
 [submodule "Mods/Bird-Jokers"]
 	path = Mods/Bird-Jokers
 	url = https://github.com/JustinBanzon/Bird-Jokers
-[submodule "Mods/PrinterJokers"]
-	path = Mods/PrinterJokers
-	url = https://github.com/Cdrvo/PrinterJokers---Balatro-Mod
 [submodule "Mods/Pauper-Deck"]
 	path = Mods/Pauper-Deck
 	url = https://github.com/AiksiLotl/Pauper-Deck
@@ -412,3 +409,6 @@
 [submodule "Mods/Order"]
 	path = Mods/Order
 	url = https://github.com/pinkmaggit-hub/Order/
+[submodule "Mods/Revos-Vault"]
+	path = Mods/Revos-Vault
+	url = https://github.com/Cdrvo/Revos-Vault---Balatro-Mod
