@@ -290,9 +290,6 @@
 [submodule "Mods/Talisman"]
 	path = Mods/Talisman
 	url = https://github.com/Dimserene/Talisman
-[submodule "Mods/PrinterJokers"]
-	path = Mods/PrinterJokers
-	url = https://github.com/Cdrvo/PrinterJokers---Balatro-Mod
 [submodule "Mods/CustomSuitOrder"]
 	path = Mods/CustomSuitOrder
 	url = https://github.com/DigitalDetective47/suit-order
@@ -429,3 +426,6 @@
 [submodule "Mods/Maxines-Joker-Pack"]
 	path = Mods/Maxines-Joker-Pack
 	url = https://github.com/MaxIsJoe/maxine-balatro-mod
+[submodule "Mods/Revos-Vault"]
+	path = Mods/Revos-Vault
+	url = https://github.com/Cdrvo/Revos-Vault---Balatro-Mod
