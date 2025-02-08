@@ -321,9 +321,6 @@
 [submodule "Mods/MetroCard"]
 	path = Mods/MetroCard
 	url = https://github.com/JegMetroCard/MetroCard
-[submodule "Mods/Fortlatro"]
-	path = Mods/Fortlatro
-	url = https://github.com/Dimserene/Fortlatro
 [submodule "Mods/Balatro-Plus"]
 	path = Mods/Balatro-Plus
 	url = https://github.com/SomeCoder99/balatro-plus
@@ -435,3 +432,6 @@
 [submodule "Mods/YACBM"]
 	path = Mods/YACBM
 	url = https://github.com/Trif3ctal/YACBM
+[submodule "Mods/Fortlatro"]
+	path = Mods/Fortlatro
+	url = https://github.com/EricTheToon/Fortlatro
