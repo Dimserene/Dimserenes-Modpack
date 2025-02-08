@@ -172,9 +172,6 @@
 [submodule "Mods/Seven-Deadly-Decks"]
 	path = Mods/Seven-Deadly-Decks
 	url = https://github.com/AstroLightz/Balatro-7DeadlyDecks
-[submodule "Mods/SnoresvillesTurbulentJokers"]
-	path = Mods/SnoresvillesTurbulentJokers
-	url = https://github.com/Snoresville/snoresville_turbulent_jokers
 [submodule "Mods/SoulDeck"]
 	path = Mods/SoulDeck
 	url = https://github.com/schoodst/Schoodst-SoulDeck
@@ -339,9 +336,6 @@
 [submodule "Mods/FlushHotkeys"]
 	path = Mods/FlushHotkeys
 	url = https://github.com/Dimserene/FlushHotkeys
-[submodule "Mods/Fools-Gambit"]
-	path = Mods/Fools-Gambit
-	url = https://github.com/jenkuuuuuu/Fools-Gambit
 [submodule "Mods/Kaboomers"]
 	path = Mods/Kaboomers
 	url = https://github.com/29cmb/Kaboomers
