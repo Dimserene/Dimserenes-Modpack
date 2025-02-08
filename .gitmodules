@@ -429,3 +429,15 @@
 [submodule "Mods/Strange-Pencil"]
 	path = Mods/Strange-Pencil
 	url = https://github.com/DigitalDetective47/strange-pencil
+[submodule "Mods/Slotmachine"]
+	path = Mods/Slotmachine
+	url = https://github.com/boldboldness/slotmachine
+[submodule "Mods/SystemClock"]
+	path = Mods/SystemClock
+	url = https://github.com/Breezebuilder/SystemClock
+[submodule "Mods/NeatoJokers"]
+	path = Mods/NeatoJokers
+	url = https://github.com/neatoqueen/NeatoJokers
+[submodule "Mods/YACBM"]
+	path = Mods/YACBM
+	url = https://github.com/Trif3ctal/YACBM
