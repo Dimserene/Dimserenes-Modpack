@@ -405,9 +405,6 @@
 [submodule "Mods/Celestial-Funk"]
 	path = Mods/Celestial-Funk
 	url = https://github.com/LimeEffy/Celestial-Funk
-[submodule "Mods/Hyperfixation"]
-	path = Mods/Hyperfixation
-	url = https://github.com/tomatoseandcrying/hyperfixation
 [submodule "Mods/Order"]
 	path = Mods/Order
 	url = https://github.com/pinkmaggit-hub/Order/
