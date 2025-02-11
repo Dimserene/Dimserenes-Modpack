@@ -298,12 +298,6 @@
 [submodule "Mods/JokerSellValue"]
 	path = Mods/JokerSellValue
 	url = https://github.com/OppositeWolf770/JokerSellValue
-[submodule "Mods/AutumnMoodMechanics"]
-	path = Mods/AutumnMoodMechanics
-	url = https://github.com/AutumnMood924/AutumnMoodMechanics
-[submodule "Mods/TheAutumnCircus"]
-	path = Mods/TheAutumnCircus
-	url = https://github.com/Dimserene/TheAutumnCircus
 [submodule "Mods/Balatro-Plus"]
 	path = Mods/Balatro-Plus
 	url = https://github.com/SomeCoder99/balatro-plus
@@ -382,18 +376,12 @@
 [submodule "Mods/LnxFCA-Shared"]
 	path = Mods/LnxFCA-Shared
 	url = https://gitlab.com/lnxfca-dev/balatro-mods/lnxfca-shared
-[submodule "Mods/Hyperfixation"]
-	path = Mods/Hyperfixation
-	url = https://github.com/tomatoseandcrying/hyperfixation
 [submodule "Mods/Celestial-Funk"]
 	path = Mods/Celestial-Funk
 	url = https://github.com/LimeEffy/Celestial-Funk
 [submodule "Mods/EvaJokers"]
 	path = Mods/EvaJokers
 	url = https://github.com/Toringen/EvaJokers
-[submodule "Mods/Pokermon"]
-	path = Mods/Pokermon
-	url = https://github.com/Dimserene/Pokermon/
 [submodule "Mods/Redux-Arcanum"]
 	path = Mods/Redux-Arcanum
 	url = https://github.com/jumbocarrot0/Redux-Arcanum
