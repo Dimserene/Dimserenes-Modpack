@@ -7,9 +7,6 @@
 [submodule "Mods/JamMod"]
 	path = Mods/JamMod
 	url = https://github.com/WilsontheWolf/JamMod
-[submodule "Mods/JokerDisplay"]
-	path = Mods/JokerDisplay
-	url = https://github.com/nh6574/JokerDisplay
 [submodule "Mods/Cartomancer"]
 	path = Mods/Cartomancer
 	url = https://github.com/stupxd/Cartomancer
@@ -305,10 +302,6 @@
 [submodule "Mods/Pauper-Deck"]
 	path = Mods/Pauper-Deck
 	url = https://github.com/AiksiLotl/Pauper-Deck
-[submodule "Mods/Cryptid"]
-	path = Mods/Cryptid
-	url = https://github.com/MathIsFun0/Cryptid
-	branch = refactor
 [submodule "Mods/KCVanilla"]
 	path = Mods/KCVanilla
 	url = https://github.com/kcgidw/kcvanilla
@@ -501,3 +494,10 @@
 [submodule "Mods/Reverie"]
 	path = Mods/Reverie
 	url = https://github.com/jumbocarrot0/reverie
+[submodule "Mods/Cryptid"]
+	path = Mods/Cryptid
+	url = https://github.com/MathIsFun0/Cryptid
+	branch = refactor
+[submodule "Mods/JokerDisplay"]
+	path = Mods/JokerDisplay
+	url = https://github.com/nh6574/JokerDisplay
