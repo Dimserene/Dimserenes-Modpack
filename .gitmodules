@@ -226,9 +226,6 @@
 [submodule "Mods/AdAbsurdum"]
 	path = Mods/AdAbsurdum
 	url = https://github.com/7f-galaxii/AdAbsurdum
-[submodule "Mods/Reverie"]
-	path = Mods/Reverie
-	url = https://github.com/jumbocarrot0/reverie<
 [submodule "Mods/Alices_Annum"]
 	path = Mods/Alices_Annum
 	url = https://github.com/ThreeCubed273/alices_annum_balatro_mod
@@ -501,3 +498,6 @@
 [submodule "Mods/Ortalab-DEMO"]
 	path = Mods/Ortalab-DEMO
 	url = https://github.com/Eremel/Ortalab-Demo
+[submodule "Mods/Reverie"]
+	path = Mods/Reverie
+	url = https://github.com/jumbocarrot0/reverie
