@@ -383,9 +383,6 @@
 [submodule "Mods/ColorblindSeals"]
 	path = Mods/ColorblindSeals
 	url = https://github.com/martinkauppinen/colorblind-seals
-[submodule "Mods/Finn-Pokemon-Jokers"]
-	path = Mods/Finn-Pokemon-Jokers
-	url = https://github.com/Finnaware/Finn-Pokemon-Jokers/
 [submodule "Mods/MarvelMidnightSuns"]
 	path = Mods/MarvelMidnightSuns
 	url = https://github.com/Staegloth/BalatroMarvelMidnightSuns/
@@ -425,9 +422,6 @@
 [submodule "Mods/Maxines-Joker-Pack"]
 	path = Mods/Maxines-Joker-Pack
 	url = https://github.com/MaxIsJoe/maxine-balatro-mod
-[submodule "Mods/Order"]
-	path = Mods/Order
-	url = https://github.com/pinkmaggit-hub/Order/
 [submodule "Mods/Revos-Vault"]
 	path = Mods/Revos-Vault
 	url = https://github.com/Cdrvo/Revos-Vault---Balatro-Mod
@@ -461,9 +455,6 @@
 [submodule "Mods/Celestial-Funk"]
 	path = Mods/Celestial-Funk
 	url = https://github.com/LimeEffy/Celestial-Funk
-[submodule "Mods/Order"]
-	path = Mods/Order
-	url = https://github.com/pinkmaggit-hub/Order/
 [submodule "Mods/Maxines-Joker-Pack"]
 	path = Mods/Maxines-Joker-Pack
 	url = https://github.com/MaxIsJoe/maxine-balatro-mod
