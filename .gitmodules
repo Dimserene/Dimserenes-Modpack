@@ -412,3 +412,6 @@
 [submodule "Mods/Slotmachine"]
 	path = Mods/Slotmachine
 	url = https://github.com/boldboldness/slotmachine
+[submodule "Mods/Strange-Library"]
+	path = Mods/Strange-Library
+	url = https://github.com/DigitalDetective47/strange-library
