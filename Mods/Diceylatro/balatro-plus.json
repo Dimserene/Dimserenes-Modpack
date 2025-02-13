@@ -1,0 +1,13 @@
+{
+	"id": "diceylatro",
+	"name": "Diceylatro",
+	"display_name": "Diceylatro",
+	"author": ["NRIO!!!"],
+	"description": "Diceylatro.",
+	"prefix": "dd",
+	"main_file": "src/init.lua",
+	"priority": 0,
+	"badge_colour": "FB7B24",
+	"version": "1.0.2-a",
+	"dependencies": []
+}
