@@ -1,0 +1,84 @@
+[manifest]
+version = "1.0.0"
+dump_lua = true
+priority = 0
+
+[[patches]]
+[patches.pattern]
+target = "card.lua"
+pattern = "function Card:set_debuff(should_debuff)"
+position = "after"
+match_indent = true
+payload = """
+if next(find_joker("j_dd_dust_cloud")) and (self.debuff == true or should_debuff == true) then
+	ref_self_debuff = self.debuff
+	ref_should_debuff = should_debuff 
+	self.debuff = false
+	should_debuff = false
+	if not self:is_face() and self.config then
+	    	self.debuff = ref_self_debuff
+		should_debuff = ref_should_debuff
+	end
+end
+"""
+
+
+[[patches]]
+[patches.pattern]
+target = "card.lua"
+pattern = "function Card:update(dt)"
+position = "after"
+match_indent = true
+payload = """
+if self.sprite_facing == 'back' then
+	if next(find_joker('j_dd_dust_cloud')) and self:is_face() and self.area and self.area == G.hand then
+		self:flip()
+	end
+end
+if self.area and self.area == G.jokers and  G.STAGE == G.STAGES.RUN and self.config.center.key == "j_dd_lament" then 
+	self.ability.extra.cur_aces = 0
+	for k, v in pairs(G.playing_cards) do
+		if v:get_id() == 14 then self.ability.extra.cur_aces = self.ability.extra.cur_aces+1 end
+	end
+	while (self.ability.extra.cur_aces - self.ability.extra.aces * self.ability.extra.cur_tags) >= self.ability.extra.aces do
+		self.ability.extra.cur_tags = self.ability.extra.cur_tags + self.ability.extra.tags
+		local available_tags = get_current_pool('Tag')
+		local selected_tags = {}
+		for i = 1, self.ability.extra.tags do
+			local tag = pseudorandom_element(available_tags, pseudoseed('mystery_soda'))
+			while tag == 'UNAVAILABLE' do
+				tag = pseudorandom_element(available_tags, pseudoseed('mystery_soda_reroll'))
+			end
+			selected_tags[i] = tag
+		end
+		G.E_MANAGER:add_event(Event({
+			func = (function()
+                    		for _, tag in pairs(selected_tags) do
+                        		add_tag(Tag(tag, false, 'Big'))
+                    		end
+               			play_sound('generic1', 0.9 + math.random()*0.1, 0.8)
+                    		play_sound('holo1', 1.2 + math.random()*0.1, 0.4)
+                    		return true
+                	end)
+            	}))
+	end
+end
+"""
+
+
+[[patches]]
+[patches.pattern]
+target = "functions/state_events.lua"
+pattern = "G.FUNCS.draw_from_deck_to_hand = function(e)"
+position = "after"
+match_indent = true
+payload = """
+for _, v in ipairs(G.jokers.cards) do
+         if G.STATE == G.STATES.DRAW_TO_HAND then
+         		if v.config.center.key == "j_dd_venus_fly_trap" and v.ability.extra.draw > 0 then
+                     		for i = 1, v.ability.extra.draw do draw_card(G.deck, G.hand, i*100/2, 'up', true) end
+				v.ability.extra.draw = 0
+                 	end
+         end
+end
+"""
