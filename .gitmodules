@@ -373,9 +373,6 @@
 [submodule "Mods/SarcPot"]
 	path = Mods/SarcPot
 	url = https://github.com/SarcPot/sarcpot-mod
-[submodule "Mods/Baliatro"]
-	path = Mods/Baliatro
-	url = https://github.com/baliame/Baliatro
 [submodule "Mods/Bakery"]
 	path = Mods/Bakery
 	url = https://github.com/BakersDozenBagels/BalatroBakery
