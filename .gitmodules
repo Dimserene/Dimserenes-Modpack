@@ -229,9 +229,6 @@
 [submodule "Mods/Betmma_mods"]
 	path = Mods/Betmma_mods
 	url = https://github.com/betmma/my_balatro_mods
-[submodule "Mods/CelesteCardCollection"]
-	path = Mods/CelesteCardCollection
-	url = https://github.com/AuroraKy/CelesteCardCollection
 [submodule "Mods/Maximus"]
 	path = Mods/Maximus
 	url = https://github.com/the-Astra/Maximus
@@ -265,9 +262,6 @@
 [submodule "Mods/Emporium"]
 	path = Mods/Emporium
 	url = https://github.com/krokshut/Emporium
-[submodule "Mods/Familiar"]
-	path = Mods/Familiar
-	url = https://github.com/RattlingSnow353/Familiar
 [submodule "Mods/Gemstones"]
 	path = Mods/Gemstones
 	url = https://github.com/0fficialHalo/Gemstones
@@ -341,9 +335,6 @@
 [submodule "Mods/Holotro"]
 	path = Mods/Holotro
 	url = https://github.com/RivFalcon/Holotro
-[submodule "Mods/Unsorted"]
-	path = Mods/Unsorted
-	url = https://github.com/Telbone/Unsorted
 [submodule "Mods/Aikoyoris-Shenanigans"]
 	path = Mods/Aikoyoris-Shenanigans
 	url = https://github.com/Aikoyori/Balatro-Aikoyoris-Shenanigans
@@ -419,9 +410,6 @@
 [submodule "Mods/YACBM"]
 	path = Mods/YACBM
 	url = https://github.com/Trif3ctal/YACBM
-[submodule "Mods/Fortlatro"]
-	path = Mods/Fortlatro
-	url = https://github.com/Dimserene/Fortlatro
 [submodule "Mods/Ortalab-DEMO"]
 	path = Mods/Ortalab-DEMO
 	url = https://github.com/Eremel/Ortalab-Demo
@@ -456,3 +444,6 @@
 [submodule "Mods/Order"]
 	path = Mods/Order
 	url = https://github.com/pinkmaggit-hub/Order/
+[submodule "Mods/Fortlatro"]
+	path = Mods/Fortlatro
+	url = https://github.com/Dimserene/Fortlatro
