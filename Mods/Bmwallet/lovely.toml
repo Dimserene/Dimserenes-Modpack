@@ -143,9 +143,9 @@ local raw_contents_buttons = t.nodes[1].nodes[1].nodes[5].nodes[1].nodes
 local raw_run_info = raw_contents_buttons[1].nodes[1]
 local raw_options = raw_contents_buttons[1].nodes[2]
 local raw_contents_buttons_in = raw_contents_buttons[1].nodes
-raw_run_info.config.minh = 1.5
+raw_run_info.config.minh = 1.1
 raw_options.config.minh = 1.1
-raw_contents_buttons_in[#raw_contents_buttons_in + 1] = {n=G.UIT.R, config={align = "cm", minh = 0.8, minw = 1.5,padding = 0.05, r = 0.1, hover = true, colour = G.C.BLUE, button = "set_exchange", shadow = true}, nodes={
+raw_contents_buttons_in[#raw_contents_buttons_in + 1] = {n=G.UIT.R, config={align = "cm", minh = 0.4, minw = 1.5,padding = 0.05, r = 0.1, hover = true, colour = G.C.BLUE, button = "set_exchange", shadow = true}, nodes={
     {n=G.UIT.C, config={align = "cm", maxw = 1.4, focus_args = {button = 'start', orientation = 'bm'}, func = 'set_button_pip'}, nodes={
         {n=G.UIT.T, config={text = localize('b_switch'), scale = 0.4, colour = G.C.UI.TEXT_LIGHT, shadow = true}}
     }},

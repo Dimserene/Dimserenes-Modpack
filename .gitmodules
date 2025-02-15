@@ -217,9 +217,6 @@
 [submodule "Mods/Joker-Evolution"]
 	path = Mods/Joker-Evolution
 	url = https://github.com/SDM0/Joker-Evolution
-[submodule "Mods/Grim"]
-	path = Mods/Grim
-	url = https://github.com/Mathguy23/Grim
 [submodule "Mods/Jestobiology"]
 	path = Mods/Jestobiology
 	url = https://github.com/lshtech/Jestobiology
@@ -235,9 +232,6 @@
 [submodule "Mods/Reverie"]
 	path = Mods/Reverie
 	url = https://github.com/jumbocarrot0/reverie
-[submodule "Mods/Alices_Annum"]
-	path = Mods/Alices_Annum
-	url = https://github.com/ThreeCubed273/alices_annum_balatro_mod
 [submodule "Mods/Cruel-Blinds"]
 	path = Mods/Cruel-Blinds
 	url = https://github.com/Dimserene/Cruel-Blinds
@@ -397,3 +391,9 @@
 [submodule "Mods/Order"]
 	path = Mods/Order
 	url = https://github.com/pinkmaggit-hub/Order/
+[submodule "Mods/Grim"]
+	path = Mods/Grim
+	url = https://github.com/Dimserene/Grim
+[submodule "Mods/Alices_Annum"]
+	path = Mods/Alices_Annum
+	url = https://github.com/Dimserene/Alices_Annum
