@@ -28,9 +28,6 @@
 [submodule "Mods/Blueprint"]
 	path = Mods/Blueprint
 	url = https://github.com/stupxd/Blueprint
-[submodule "Mods/DebugPlus"]
-	path = Mods/DebugPlus
-	url = https://github.com/WilsontheWolf/DebugPlus
 [submodule "Mods/FoldButton"]
 	path = Mods/FoldButton
 	url = https://github.com/happinyz/BalatroFoldButton
@@ -447,3 +444,6 @@
 [submodule "Mods/Grim"]
 	path = Mods/Grim
 	url = https://github.com/Dimserene/Grim
+[submodule "Mods/DebugPlus"]
+	path = Mods/DebugPlus
+	url = https://github.com/Dimserene/DebugPlus
