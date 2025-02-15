@@ -205,9 +205,6 @@
 [submodule "Mods/Joker-Evolution"]
 	path = Mods/Joker-Evolution
 	url = https://github.com/SDM0/Joker-Evolution
-[submodule "Mods/Grim"]
-	path = Mods/Grim
-	url = https://github.com/Mathguy23/Grim
 [submodule "Mods/Jestobiology"]
 	path = Mods/Jestobiology
 	url = https://github.com/lshtech/Jestobiology
@@ -447,3 +444,6 @@
 [submodule "Mods/Fortlatro"]
 	path = Mods/Fortlatro
 	url = https://github.com/Dimserene/Fortlatro
+[submodule "Mods/Grim"]
+	path = Mods/Grim
+	url = https://github.com/Dimserene/Grim
