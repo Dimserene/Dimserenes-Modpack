@@ -291,46 +291,6 @@ end
 }
 
 SMODS.Joker {
-  key = 'fortuitous_joker',
-  loc_txt = {
-    name = 'Fortuitous Joker',
-    text = {
-      "{C:green}#1# in #2#{} chance for each",
-      "played {C:attention}7{} to become a",
-      "{C:attention}Lucky{} card when scored",
-    }
-  },
-  config = { extra = { odds = 2 } },
-  loc_vars = function(self, info_queue, card)
-    return { vars = { (G.GAME and G.GAME.probabilities.normal or 1), card.ability.extra.odds } }
-  end,
-  rarity = 1,
-  atlas = 'ChipsStuff',
-  pos = { x = 2, y = 1 },
-  cost = 7,
-  eternal_compat = true,
-  blueprint_compat = false,
-  brainstorm_compat = false,
-  calculate = function(self, card, context)
-    if context.cardarea == G.play and not context.repetition then
-      if (context.other_card:get_id() == 7) and pseudorandom('fortuitous_joker') < G.GAME.probabilities.normal / card.ability.extra.odds then
-       G.GAME.consumeable_buffer = G.GAME.consumeable_buffer + 1
-         return {
-           card = context.other_card,
-           context.other_card:set_ability(G.P_CENTERS.m_lucky, nil, true),
-           G.E_MANAGER:add_event(Event({
-             func = function()
-               context.other_card:juice_up()
-               return true
-             end})),
-           card_eval_status_text(context.other_card, "extra", nil, nil, nil, { message = "Lucky", colour = G.C.MONEY })
-         }
-    end
-  end
-end
-}
-
-SMODS.Joker {
   key = 'frying_pan',
   loc_txt = {
     name = 'Frying Pan',

@@ -82,9 +82,6 @@
 [submodule "Mods/BossJokers"]
 	path = Mods/BossJokers
 	url = https://github.com/KilledByLava/BossJokers
-[submodule "Mods/CommunityPack"]
-	path = Mods/CommunityPack
-	url = https://github.com/lshtech/Balatro-CommunityPack
 [submodule "Mods/Cosmos"]
 	path = Mods/Cosmos
 	url = https://github.com/neatoqueen/Cosmos
@@ -172,9 +169,6 @@
 [submodule "Mods/SoulDeck"]
 	path = Mods/SoulDeck
 	url = https://github.com/schoodst/Schoodst-SoulDeck
-[submodule "Mods/SpicyJokers"]
-	path = Mods/SpicyJokers
-	url = https://github.com/lshtech/SpicyJokers
 [submodule "Mods/SynthDeck"]
 	path = Mods/SynthDeck
 	url = https://github.com/Eman-3600/SynthDeck
@@ -184,9 +178,6 @@
 [submodule "Mods/The-Buffoon-Pack"]
 	path = Mods/The-Buffoon-Pack
 	url = https://github.com/lshtech/The-Buffoon-Pack
-[submodule "Mods/TheTrickster"]
-	path = Mods/TheTrickster
-	url = https://github.com/cerloCasa/TheTrickster
 [submodule "Mods/Themed_Jokers"]
 	path = Mods/Themed_Jokers
 	url = https://github.com/cerloCasa/Themed-Jokers
@@ -289,9 +280,6 @@
 [submodule "Mods/TheAutumnCircus"]
 	path = Mods/TheAutumnCircus
 	url = https://github.com/Dimserene/TheAutumnCircus
-[submodule "Mods/Balatro-Plus"]
-	path = Mods/Balatro-Plus
-	url = https://github.com/SomeCoder99/balatro-plus
 [submodule "Mods/Tesseract"]
 	path = Mods/Tesseract
 	url = https://github.com/hyperxwastaken/Tesseract
@@ -397,3 +385,6 @@
 [submodule "Mods/DebugPlus"]
 	path = Mods/DebugPlus
 	url = https://github.com/Dimserene/DebugPlus
+[submodule "Mods/Balatro-Plus"]
+	path = Mods/Balatro-Plus
+	url = https://github.com/Dimserene/Balatro-Plus
