@@ -76,9 +76,6 @@
 [submodule "Mods/BossJokers"]
 	path = Mods/BossJokers
 	url = https://github.com/KilledByLava/BossJokers
-[submodule "Mods/CommunityPack"]
-	path = Mods/CommunityPack
-	url = https://github.com/lshtech/Balatro-CommunityPack
 [submodule "Mods/Cosmos"]
 	path = Mods/Cosmos
 	url = https://github.com/neatoqueen/Cosmos
@@ -130,9 +127,6 @@
 [submodule "Mods/NotJustYet"]
 	path = Mods/NotJustYet
 	url = https://github.com/Toneblock/balatro-NotJustYet
-[submodule "Mods/No-Laughing-Matter"]
-	path = Mods/No-Laughing-Matter
-	url = https://github.com/Minirebel/no-laughing-matter
 [submodule "Mods/MystesOpenJokers"]
 	path = Mods/MystesOpenJokers
 	url = https://github.com/lshtech/MystesOpenJokers
@@ -163,9 +157,6 @@
 [submodule "Mods/SoulDeck"]
 	path = Mods/SoulDeck
 	url = https://github.com/schoodst/Schoodst-SoulDeck
-[submodule "Mods/SpicyJokers"]
-	path = Mods/SpicyJokers
-	url = https://github.com/lshtech/SpicyJokers
 [submodule "Mods/SynthDeck"]
 	path = Mods/SynthDeck
 	url = https://github.com/Eman-3600/SynthDeck
@@ -175,9 +166,6 @@
 [submodule "Mods/The-Buffoon-Pack"]
 	path = Mods/The-Buffoon-Pack
 	url = https://github.com/lshtech/The-Buffoon-Pack
-[submodule "Mods/TheTrickster"]
-	path = Mods/TheTrickster
-	url = https://github.com/cerloCasa/TheTrickster
 [submodule "Mods/Tsunami"]
 	path = Mods/Tsunami
 	url = https://github.com/Maratby/Tsunami
@@ -308,9 +296,6 @@
 [submodule "Mods/MetroCard"]
 	path = Mods/MetroCard
 	url = https://github.com/JegMetroCard/MetroCard
-[submodule "Mods/Balatro-Plus"]
-	path = Mods/Balatro-Plus
-	url = https://github.com/SomeCoder99/balatro-plus
 [submodule "Mods/Tesseract"]
 	path = Mods/Tesseract
 	url = https://github.com/hyperxwastaken/Tesseract
@@ -447,3 +432,6 @@
 [submodule "Mods/DebugPlus"]
 	path = Mods/DebugPlus
 	url = https://github.com/Dimserene/DebugPlus
+[submodule "Mods/Balatro-Plus"]
+	path = Mods/Balatro-Plus
+	url = https://github.com/Dimserene/Balatro-Plus
