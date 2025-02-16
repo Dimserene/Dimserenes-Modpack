@@ -1,0 +1,12 @@
+{
+    "id": "skpac_circus",
+    "name": "Circus",
+    "author": ["skpacman"],
+    "description": "Adds Circus Deck and Clown Car Joker",
+    "prefix": "skpac_circus",
+    "main_file": "skpac_circus.lua",
+    "badge_colour": "c7638f",
+    "dependencies": "",
+    "version": "0.0.2",
+	"priority": "50"
+}
