@@ -435,3 +435,24 @@
 [submodule "Mods/Balatro-Plus"]
 	path = Mods/Balatro-Plus
 	url = https://github.com/Dimserene/Balatro-Plus
+[submodule "Mods/BalatroGoesKino"]
+	path = Mods/BalatroGoesKino
+	url = https://github.com/icyethics/Kino
+[submodule "Mods/Zeros-Assortment"]
+	path = Mods/Zeros-Assortment
+	url = https://github.com/Zero4793/Zeros-Assortment
+[submodule "Mods/Hit"]
+	path = Mods/Hit
+	url = https://github.com/Mathguy23/Hit
+[submodule "Mods/The-Binding-Of-Jimbo"]
+	path = Mods/The-Binding-Of-Jimbo
+	url = https://github.com/h3llo-wor1d/The-Binding-Of-Jimbo
+[submodule "Mods/Pestrica"]
+	path = Mods/Pestrica
+	url = https://github.com/marinaposting/PesJkr
+[submodule "Mods/JoyousSpring"]
+	path = Mods/JoyousSpring
+	url = https://github.com/nh6574/JoyousSpring
+[submodule "Mods/CelesteCardCollection"]
+	path = Mods/CelesteCardCollection
+	url = https://github.com/AuroraKy/CelesteCardCollection

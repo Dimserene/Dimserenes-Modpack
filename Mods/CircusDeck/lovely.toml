@@ -1,0 +1,21 @@
+[manifest]
+version = "1.0.0"
+dump_lua = true
+priority = 0
+
+# Context for when you Cash out
+[[patches]]
+[patches.pattern]
+target = "game.lua"
+pattern = '''
+                end
+            }))
+          G.STATE_COMPLETE = true
+'''
+position = "after"
+payload = '''
+    for i = 1, #G.jokers.cards do
+        SMODS.calculate_context({entering_shop = true})
+    end
+'''
+match_indent = true
