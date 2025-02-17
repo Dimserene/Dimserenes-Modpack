@@ -1,0 +1,14 @@
+{
+	"id": "braptro",
+	"name": "Braptro",
+	"display_name": "Braptro",
+	"author": ["The Braptro Team"],
+	"description": "An expantion to balatro",
+	"prefix": "brap",
+	"main_file": "braptro.lua",
+	"priority": 0,
+	"badge_colour": "",
+	"badge_text_colour": "",
+	"version": "0.0.1~a",
+	"dependencies": ["Steamodded (>=1.*)",],
+}

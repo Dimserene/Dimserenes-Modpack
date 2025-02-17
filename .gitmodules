@@ -406,3 +406,15 @@
 [submodule "Mods/Buffoonery"]
 	path = Mods/Buffoonery
 	url = https://github.com/pinkmaggit-hub/Buffoonery
+[submodule "Mods/Fortune"]
+	path = Mods/Fortune
+	url = https://github.com/Maratby/Fortune
+[submodule "Mods/Mistigris"]
+	path = Mods/Mistigris
+	url = https://github.com/astrapboy/Mistigris
+[submodule "Mods/JokeRefactor"]
+	path = Mods/JokeRefactor
+	url = https://github.com/AiksiLotl/JokeRefactor
+[submodule "Mods/Showdown"]
+	path = Mods/Showdown
+	url = https://github.com/Mistyk1/Showdown
