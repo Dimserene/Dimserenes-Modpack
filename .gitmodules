@@ -70,9 +70,6 @@
 [submodule "Mods/BalatroOlympus"]
 	path = Mods/BalatroOlympus
 	url = https://github.com/lshtech/BalatroOlympus
-[submodule "Mods/BetterIllusion"]
-	path = Mods/BetterIllusion
-	url = https://github.com/rileyinman/BetterIllusion
 [submodule "Mods/BlindEditions"]
 	path = Mods/BlindEditions
 	url = https://github.com/Mathguy23/BlindEditions
