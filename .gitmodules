@@ -208,9 +208,6 @@
 [submodule "Mods/Betmma_mods"]
 	path = Mods/Betmma_mods
 	url = https://github.com/betmma/my_balatro_mods
-[submodule "Mods/Maximus"]
-	path = Mods/Maximus
-	url = https://github.com/the-Astra/Maximus
 [submodule "Mods/H1DROmod"]
 	path = Mods/H1DROmod
 	url = https://github.com/hidro0091/H1DROmod-balatro
