@@ -400,15 +400,12 @@
 [submodule "Mods/Fortune"]
 	path = Mods/Fortune
 	url = https://github.com/Maratby/Fortune
-[submodule "Mods/Mistigris"]
-	path = Mods/Mistigris
-	url = https://github.com/astrapboy/Mistigris
-[submodule "Mods/JokeRefactor"]
-	path = Mods/JokeRefactor
-	url = https://github.com/AiksiLotl/JokeRefactor
 [submodule "Mods/Showdown"]
 	path = Mods/Showdown
 	url = https://github.com/Mistyk1/Showdown
 [submodule "Mods/Holotro"]
 	path = Mods/Holotro
 	url = https://github.com/Dimserene/Holotro
+[submodule "Mods/Jestobiology"]
+	path = Mods/Jestobiology
+	url = https://github.com/lshtech/Jestobiology
