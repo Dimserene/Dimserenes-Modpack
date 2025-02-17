@@ -199,9 +199,6 @@
 [submodule "Mods/AdAbsurdum"]
 	path = Mods/AdAbsurdum
 	url = https://github.com/7f-galaxii/AdAbsurdum
-[submodule "Mods/Isaactro"]
-	path = Mods/Isaactro
-	url = https://github.com/WilliamFlinchbaugh/Isaactro
 [submodule "Mods/JimboRecords"]
 	path = Mods/JimboRecords
 	url = https://github.com/TherkLe/JimboRecords
@@ -305,9 +302,6 @@
 [submodule "Mods/Leapfrog-Balatro-Deck"]
 	path = Mods/Leapfrog-Balatro-Deck
 	url = https://github.com/superdotaplaya/Leapfrog-Balatro-Deck
-[submodule "Mods/Holotro"]
-	path = Mods/Holotro
-	url = https://github.com/RivFalcon/Holotro
 [submodule "Mods/Aikoyoris-Shenanigans"]
 	path = Mods/Aikoyoris-Shenanigans
 	url = https://github.com/Aikoyori/Balatro-Aikoyoris-Shenanigans
@@ -450,3 +444,12 @@
 [submodule "Mods/CelesteCardCollection"]
 	path = Mods/CelesteCardCollection
 	url = https://github.com/AuroraKy/CelesteCardCollection
+[submodule "Mods/Holotro"]
+	path = Mods/Holotro
+	url = https://github.com/Dimserene/Holotro
+[submodule "Mods/Fortune"]
+	path = Mods/Fortune
+	url = https://github.com/Maratby/Fortune
+[submodule "Mods/Showdown"]
+	path = Mods/Showdown
+	url = https://github.com/Mistyk1/Showdown
