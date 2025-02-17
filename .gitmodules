@@ -409,3 +409,6 @@
 [submodule "Mods/Jestobiology"]
 	path = Mods/Jestobiology
 	url = https://github.com/lshtech/Jestobiology
+[submodule "Mods/Isaactro"]
+	path = Mods/Isaactro
+	url = https://github.com/WilliamFlinchbaugh/Isaactro
