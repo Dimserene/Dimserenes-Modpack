@@ -202,9 +202,6 @@
 [submodule "Mods/Joker-Evolution"]
 	path = Mods/Joker-Evolution
 	url = https://github.com/SDM0/Joker-Evolution
-[submodule "Mods/Jestobiology"]
-	path = Mods/Jestobiology
-	url = https://github.com/lshtech/Jestobiology
 [submodule "Mods/ModPackFixes"]
 	path = Mods/ModPackFixes
 	url = https://github.com/lshtech/ModPackFixes
@@ -220,9 +217,6 @@
 [submodule "Mods/Cruel-Blinds"]
 	path = Mods/Cruel-Blinds
 	url = https://github.com/Dimserene/Cruel-Blinds
-[submodule "Mods/Isaactro"]
-	path = Mods/Isaactro
-	url = https://github.com/WilliamFlinchbaugh/Isaactro
 [submodule "Mods/JimboRecords"]
 	path = Mods/JimboRecords
 	url = https://github.com/TherkLe/JimboRecords
@@ -289,9 +283,6 @@
 [submodule "Mods/Leapfrog-Balatro-Deck"]
 	path = Mods/Leapfrog-Balatro-Deck
 	url = https://github.com/superdotaplaya/Leapfrog-Balatro-Deck
-[submodule "Mods/Holotro"]
-	path = Mods/Holotro
-	url = https://github.com/RivFalcon/Holotro
 [submodule "Mods/Unsorted"]
 	path = Mods/Unsorted
 	url = https://github.com/Telbone/Unsorted
@@ -418,3 +409,6 @@
 [submodule "Mods/Showdown"]
 	path = Mods/Showdown
 	url = https://github.com/Mistyk1/Showdown
+[submodule "Mods/Holotro"]
+	path = Mods/Holotro
+	url = https://github.com/Dimserene/Holotro
