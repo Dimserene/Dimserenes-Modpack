@@ -450,9 +450,6 @@
 [submodule "Mods/Fortune"]
 	path = Mods/Fortune
 	url = https://github.com/Maratby/Fortune
-[submodule "Mods/Showdown"]
-	path = Mods/Showdown
-	url = https://github.com/Mistyk1/Showdown
 [submodule "Mods/Isaactro"]
 	path = Mods/Isaactro
 	url = https://github.com/WilliamFlinchbaugh/Isaactro
