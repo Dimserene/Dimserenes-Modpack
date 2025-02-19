@@ -302,9 +302,6 @@
 [submodule "Mods/Leapfrog-Balatro-Deck"]
 	path = Mods/Leapfrog-Balatro-Deck
 	url = https://github.com/superdotaplaya/Leapfrog-Balatro-Deck
-[submodule "Mods/Aikoyoris-Shenanigans"]
-	path = Mods/Aikoyoris-Shenanigans
-	url = https://github.com/Aikoyori/Balatro-Aikoyoris-Shenanigans
 [submodule "Mods/TheCircus"]
 	path = Mods/TheCircus
 	url = https://gitlab.com/infinite_jesters/circus
@@ -423,18 +420,9 @@
 [submodule "Mods/Balatro-Plus"]
 	path = Mods/Balatro-Plus
 	url = https://github.com/Dimserene/Balatro-Plus
-[submodule "Mods/BalatroGoesKino"]
-	path = Mods/BalatroGoesKino
-	url = https://github.com/icyethics/Kino
 [submodule "Mods/Zeros-Assortment"]
 	path = Mods/Zeros-Assortment
 	url = https://github.com/Zero4793/Zeros-Assortment
-[submodule "Mods/Hit"]
-	path = Mods/Hit
-	url = https://github.com/Mathguy23/Hit
-[submodule "Mods/The-Binding-Of-Jimbo"]
-	path = Mods/The-Binding-Of-Jimbo
-	url = https://github.com/h3llo-wor1d/The-Binding-Of-Jimbo
 [submodule "Mods/Pestrica"]
 	path = Mods/Pestrica
 	url = https://github.com/marinaposting/PesJkr
