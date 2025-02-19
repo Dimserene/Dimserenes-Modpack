@@ -262,12 +262,6 @@
 [submodule "Mods/JokerSellValue"]
 	path = Mods/JokerSellValue
 	url = https://github.com/OppositeWolf770/JokerSellValue
-[submodule "Mods/AutumnMoodMechanics"]
-	path = Mods/AutumnMoodMechanics
-	url = https://github.com/AutumnMood924/AutumnMoodMechanics
-[submodule "Mods/TheAutumnCircus"]
-	path = Mods/TheAutumnCircus
-	url = https://github.com/Dimserene/TheAutumnCircus
 [submodule "Mods/Tesseract"]
 	path = Mods/Tesseract
 	url = https://github.com/hyperxwastaken/Tesseract
@@ -286,9 +280,6 @@
 [submodule "Mods/Unsorted"]
 	path = Mods/Unsorted
 	url = https://github.com/Telbone/Unsorted
-[submodule "Mods/Aikoyoris-Shenanigans"]
-	path = Mods/Aikoyoris-Shenanigans
-	url = https://github.com/Aikoyori/Balatro-Aikoyoris-Shenanigans
 [submodule "Mods/TheCircus"]
 	path = Mods/TheCircus
 	url = https://gitlab.com/infinite_jesters/circus
@@ -379,12 +370,6 @@
 [submodule "Mods/Pestrica"]
 	path = Mods/Pestrica
 	url = https://github.com/marinaposting/PesJkr
-[submodule "Mods/The-Binding-Of-Jimbo"]
-	path = Mods/The-Binding-Of-Jimbo
-	url = https://github.com/h3llo-wor1d/The-Binding-Of-Jimbo
-[submodule "Mods/Hit"]
-	path = Mods/Hit
-	url = https://github.com/Mathguy23/Hit
 [submodule "Mods/Zeros-Assortment"]
 	path = Mods/Zeros-Assortment
 	url = https://github.com/Zero4793/Zeros-Assortment
@@ -412,3 +397,18 @@
 [submodule "Mods/Isaactro"]
 	path = Mods/Isaactro
 	url = https://github.com/WilliamFlinchbaugh/Isaactro
+[submodule "Mods/Mossed"]
+	path = Mods/Mossed
+	url = https://github.com/ScribbleIsError/Mossed
+[submodule "Mods/AzzysJokers"]
+	path = Mods/AzzysJokers
+	url = https://github.com/AstrumNativus/AzzysJokers
+[submodule "Mods/Join-The-Crowd"]
+	path = Mods/Join-The-Crowd
+	url = https://github.com/MilkyQeue/join-the-crowd-mod/
+[submodule "Mods/Vicsmod"]
+	path = Mods/Vicsmod
+	url = https://github.com/vicentun/Vicsmod
+[submodule "Mods/Plantain"]
+	path = Mods/Plantain
+	url = https://github.com/IcebergLettuce0/Plantain
