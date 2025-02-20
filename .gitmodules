@@ -459,3 +459,15 @@
 [submodule "Mods/Maximus"]
 	path = Mods/Maximus
 	url = https://github.com/the-Astra/Maximus
+[submodule "Mods/Familiar"]
+	path = Mods/Familiar
+	url = https://github.com/RattlingSnow353/Familiar
+[submodule "Mods/Unsorted"]
+	path = Mods/Unsorted
+	url = https://github.com/Telbone/Unsorted
+[submodule "Mods/Snow-s-Mods"]
+	path = Mods/Snow-s-Mods
+	url = https://github.com/RattlingSnow353/Snow-s-Mods
+[submodule "Mods/Aikoyoris-Shenanigans"]
+	path = Mods/Aikoyoris-Shenanigans
+	url = https://github.com/Aikoyori/Balatro-Aikoyoris-Shenanigans
