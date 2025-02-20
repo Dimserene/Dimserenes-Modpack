@@ -441,3 +441,18 @@
 [submodule "Mods/Isaactro"]
 	path = Mods/Isaactro
 	url = https://github.com/WilliamFlinchbaugh/Isaactro
+[submodule "Mods/Mossed"]
+	path = Mods/Mossed
+	url = https://github.com/ScribbleIsError/Mossed
+[submodule "Mods/AzzysJokers"]
+	path = Mods/AzzysJokers
+	url = https://github.com/AstrumNativus/AzzysJokers
+[submodule "Mods/Join-The-Crowd"]
+	path = Mods/Join-The-Crowd
+	url = https://github.com/MilkyQeue/join-the-crowd-mod/
+[submodule "Mods/Vicsmod"]
+	path = Mods/Vicsmod
+	url = https://github.com/vicentun/Vicsmod
+[submodule "Mods/Plantain"]
+	path = Mods/Plantain
+	url = https://github.com/IcebergLettuce0/Plantain
