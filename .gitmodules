@@ -471,3 +471,6 @@
 [submodule "Mods/Aikoyoris-Shenanigans"]
 	path = Mods/Aikoyoris-Shenanigans
 	url = https://github.com/Aikoyori/Balatro-Aikoyoris-Shenanigans
+[submodule "Mods/DeckStickerShowEverywhere"]
+	path = Mods/DeckStickerShowEverywhere
+	url = https://github.com/qwerty9118/DeckStickerShowEverywhere
