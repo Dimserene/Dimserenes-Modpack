@@ -418,9 +418,6 @@
 [submodule "Mods/Snow-s-Mods"]
 	path = Mods/Snow-s-Mods
 	url = https://github.com/RattlingSnow353/Snow-s-Mods
-[submodule "Mods/Maximus"]
-	path = Mods/Maximus
-	url = https://github.com/the-Astra/Maximus
 [submodule "Mods/DeckStickerShowEverywhere"]
 	path = Mods/DeckStickerShowEverywhere
 	url = https://github.com/qwerty9118/DeckStickerShowEverywhere
