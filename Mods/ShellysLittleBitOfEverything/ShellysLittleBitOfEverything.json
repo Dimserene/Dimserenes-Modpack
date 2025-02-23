@@ -1,0 +1,17 @@
+{
+	"id": "slbe",
+	"name": "Shellular's Little Bit of Everything",
+	"display_name": "Bit of Everything",
+	"author": ["Shellular"],
+	"description": "A collection of stuff that aim to feel relatively \"vanilla.\" Please message @shellular on discord for any questions!",
+	"prefix": "slbe",
+	"main_file": "main.lua",
+	"priority": 6,
+	"badge_colour": "6A63EC",
+	"badge_text_colour": "FFFFFF",
+	"version": "0.4.0",
+	"dependencies": [
+		"Lovely (>=0.6)",
+		"JenLib (>=0.3.4)"
+	]
+}
