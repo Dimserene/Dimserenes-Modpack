@@ -1,0 +1,2 @@
+main purple: #6A63EC
+main green: #62E0B5

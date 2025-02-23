@@ -380,10 +380,6 @@
 [submodule "Mods/Reverie"]
 	path = Mods/Reverie
 	url = https://github.com/jumbocarrot0/reverie
-[submodule "Mods/Cryptid"]
-	path = Mods/Cryptid
-	url = https://github.com/MathIsFun0/Cryptid
-	branch = refactor
 [submodule "Mods/JokerDisplay"]
 	path = Mods/JokerDisplay
 	url = https://github.com/nh6574/JokerDisplay
@@ -474,3 +470,6 @@
 [submodule "Mods/DeckStickerShowEverywhere"]
 	path = Mods/DeckStickerShowEverywhere
 	url = https://github.com/qwerty9118/DeckStickerShowEverywhere
+[submodule "Mods/Cryptid"]
+	path = Mods/Cryptid
+	url = https://github.com/MathIsFun0/Cryptid
