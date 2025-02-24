@@ -4,9 +4,6 @@
 [submodule "Mods/CollectorsCards"]
 	path = Mods/CollectorsCards
 	url = https://github.com/Mathguy23/CollectorsCards
-[submodule "Mods/JamMod"]
-	path = Mods/JamMod
-	url = https://github.com/WilsontheWolf/JamMod
 [submodule "Mods/Cartomancer"]
 	path = Mods/Cartomancer
 	url = https://github.com/stupxd/Cartomancer
