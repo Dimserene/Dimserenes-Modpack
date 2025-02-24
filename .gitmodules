@@ -7,9 +7,6 @@
 [submodule "Mods/Ortalab-DEMO"]
 	path = Mods/Ortalab-DEMO
 	url = https://github.com/Eremel/Ortalab-Demo
-[submodule "Mods/JamMod"]
-	path = Mods/JamMod
-	url = https://github.com/WilsontheWolf/JamMod
 [submodule "Mods/JokerDisplay"]
 	path = Mods/JokerDisplay
 	url = https://github.com/nh6574/JokerDisplay
