@@ -403,9 +403,6 @@
 [submodule "Mods/Plantain"]
 	path = Mods/Plantain
 	url = https://github.com/IcebergLettuce0/Plantain
-[submodule "Mods/Aikoyoris-Shenanigans"]
-	path = Mods/Aikoyoris-Shenanigans
-	url = https://github.com/Aikoyori/Balatro-Aikoyoris-Shenanigans
 [submodule "Mods/Snow-s-Mods"]
 	path = Mods/Snow-s-Mods
 	url = https://github.com/RattlingSnow353/Snow-s-Mods
