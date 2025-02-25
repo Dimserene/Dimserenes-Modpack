@@ -112,9 +112,6 @@
 [submodule "Mods/ModpackDecks"]
 	path = Mods/ModpackDecks
 	url = https://github.com/Dimserene/ModpackDecks
-[submodule "Mods/Paperback"]
-	path = Mods/Paperback
-	url = https://github.com/GitNether/Paperback
 [submodule "Mods/PampaJokerPack"]
 	path = Mods/PampaJokerPack
 	url = https://github.com/lshtech/balatro-pampa-joker-pack
@@ -470,3 +467,6 @@
 [submodule "Mods/Cryptid"]
 	path = Mods/Cryptid
 	url = https://github.com/MathIsFun0/Cryptid
+[submodule "Mods/Paperback"]
+	path = Mods/Paperback
+	url = https://github.com/Balatro-Paperback/paperback
