@@ -2,29 +2,24 @@
 
 # Repositories to check
 repos=("Dimserene/Dimserenes-Modpack" "Dimserene/Fine-tuned-Pack" "Dimserene/Vanilla-Plus-Pack" "Dimserene/Cruel-Pack" "Dimserene/Experimental-Pack")
-branch="Talisman"
 
-# Function to fetch the latest commit message from a GitHub repository
+# Function to fetch the latest commit message from a GitHub repository branch
 get_latest_commit_message() {
-  repo=$1
-  branch=$2
-  if [[ -n "$branch" ]]; then
-    api_url="https://api.github.com/repos/$repo/commits?sha=$branch"
-  else
-    api_url="https://api.github.com/repos/$repo/commits"
-  fi
+  local repo=$1
+  local branch=$2
 
+  api_url="https://api.github.com/repos/$repo/commits?sha=$branch"
   response=$(curl -s "$api_url")
 
   # Check if curl request was successful
   if [[ $? -ne 0 ]]; then
-    echo "Error: Failed to fetch data for $repo"
+    echo "Error: Failed to fetch commit data for $repo ($branch)"
     return
   fi
 
-  # Check if the response is an array
+  # Check if the response is a valid JSON array
   if ! echo "$response" | jq -e 'type == "array"' > /dev/null; then
-    echo "Error: Expected an array but got something else for $repo"
+    echo "Error: Unexpected response format for $repo ($branch)"
     echo "Response: $response"
     return
   fi
@@ -35,12 +30,12 @@ get_latest_commit_message() {
   commit_date=$(echo "$response" | jq -r '.[0].commit.committer.date')
 
   # Convert UTC date to Taiwanese time format (YYYY/MM/DD HH:MM:SS)
-  commit_date_taiwan=$(TZ=Asia/Taipei date -d "$commit_date" +"%Y/%m/%d %H:%M:%S")
+  commit_date_taiwan=$(TZ=Asia/Taipei date -d "$commit_date" +"%Y/%m/%d %H:%M:%S" 2>/dev/null)
 
-  if [[ -z "$latest_commit" ]]; then
-    echo "$repo (Branch: $branch): No commits found or failed to parse commit data."
+  if [[ -z "$latest_commit" || "$latest_commit" == "null" ]]; then
+    echo "$repo ($branch): No commits found or failed to parse commit data."
   else
-    echo "$repo (Branch: $branch):"
+    echo "$repo ($branch):"
     echo "Message: $latest_commit"
     echo "Committed by: $committer"
     echo "Date: $commit_date_taiwan"
@@ -48,15 +43,36 @@ get_latest_commit_message() {
   fi
 }
 
-# Process each repository sequentially to ensure correct output order
-for repo in "${repos[@]}"; do
-  # Fetch the latest commit from the default branch
-  get_latest_commit_message "$repo"
+# Function to fetch all branches of a repository
+get_all_branches() {
+  local repo=$1
+  branch_url="https://api.github.com/repos/$repo/branches"
 
-  # Fetch the latest commit from the Talisman branch for Dimserenes-Modpack
-  if [[ "$repo" == "Dimserene/Dimserenes-Modpack" ]]; then
-    get_latest_commit_message "$repo" "$branch"
+  branches=$(curl -s "$branch_url" | jq -r '.[].name')
+
+  if [[ -z "$branches" || "$branches" == "null" ]]; then
+    echo "Error: Failed to fetch branches for $repo"
+    return
   fi
+
+  echo "$branches"
+}
+
+# Process each repository
+for repo in "${repos[@]}"; do
+  
+  # Fetch all branches
+  branches=$(get_all_branches "$repo")
+
+  if [[ -z "$branches" ]]; then
+    echo "Skipping $repo due to missing branch data."
+    continue
+  fi
+
+  # Loop through each branch and fetch the latest commit
+  while read -r branch; do
+    get_latest_commit_message "$repo" "$branch"
+  done <<< "$branches"
 done
 
 # Pause and wait for the user to press Enter before exiting

@@ -117,6 +117,23 @@ else
     update_time_status="FAILED"
 fi
 
+# Analyze mod changes
+mods_added=$(git status --porcelain Mods/ | grep "^A" | awk '{print $2}')
+mods_removed=$(git status --porcelain Mods/ | grep "^D" | awk '{print $2}')
+mods_updated=$(git status --porcelain Mods/ | grep "^M" | awk '{print $2}')
+
+# Format mod changes summary
+summary=""
+if [ -n "$mods_added" ]; then
+    summary+="\nAdded Mods:\n$(echo "$mods_added" | sed 's/^/  - /')"
+fi
+if [ -n "$mods_removed" ]; then
+    summary+="\nRemoved Mods:\n$(echo "$mods_removed" | sed 's/^/  - /')"
+fi
+if [ -n "$mods_updated" ]; then
+    summary+="\nUpdated Mods:\n$(echo "$mods_updated" | sed 's/^/  - /')"
+fi
+
 # Stage all changes in the current directory for commit
 if git add .; then
     echo "Changes staged successfully."
@@ -126,14 +143,13 @@ else
     stage_status="FAILED"
 fi
 
-# Commit the staged changes
-commit_message=$(cat ./CurrentVersion.txt)
+# Commit changes with detailed message (Title: version, Description: summary)
+commit_title="$new_version_string"
+commit_description="$summary"
 
-if git commit -m "$commit_message"; then
-    echo "Changes committed successfully."
+if git commit -m "$commit_title" -m "$commit_description"; then
     commit_status="SUCCESS"
 else
-    echo "Failed to commit changes."
     commit_status="FAILED"
 fi
 
