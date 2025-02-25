@@ -415,3 +415,19 @@
 [submodule "Mods/Paperback"]
 	path = Mods/Paperback
 	url = https://github.com/Balatro-Paperback/paperback
+[submodule "Mods/Donuts-Mod"]
+	path = Mods/Donuts-Mod
+	url = https://github.com/BDonutGLXY/Balatro-Donuts-Mod
+[submodule "Mods/MathBlinds"]
+	path = Mods/MathBlinds
+	url = https://github.com/Bazinga9000/MathBlinds
+[submodule "Mods/BargainBin"]
+	path = Mods/BargainBin
+	url = https://github.com/BeepSterr/Balataro-BargainBin
+[submodule "Mods/Victins-Collection"]
+	path = Mods/Victins-Collection
+	url = https://github.com/VictinZero/balatro-victins-collection
+	branch = alpha
+[submodule "Mods/Reverse_Tarots"]
+	path = Mods/Reverse_Tarots
+	url = https://github.com/Dimserene/Reverse_Tarots
