@@ -247,9 +247,6 @@
 [submodule "Mods/ArtOfTheDeal"]
 	path = Mods/ArtOfTheDeal
 	url = https://github.com/radbanker/Art-of-the-Deal.The-peoples-card-collection
-[submodule "Mods/Bunco"]
-	path = Mods/Bunco
-	url = https://github.com/Dimserene/Bunco
 [submodule "Mods/MetroCard"]
 	path = Mods/MetroCard
 	url = https://github.com/JegMetroCard/MetroCard
