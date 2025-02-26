@@ -339,3 +339,5 @@ end
 to_big = to_big or function(x)
     return num
 end
+
+--add deckskins later (i'm too lazy to make this in an organized fashion)
