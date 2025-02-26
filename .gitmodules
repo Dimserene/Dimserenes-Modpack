@@ -412,9 +412,6 @@
 [submodule "Mods/Paperback"]
 	path = Mods/Paperback
 	url = https://github.com/Balatro-Paperback/paperback
-[submodule "Mods/Donuts-Mod"]
-	path = Mods/Donuts-Mod
-	url = https://github.com/BDonutGLXY/Balatro-Donuts-Mod
 [submodule "Mods/MathBlinds"]
 	path = Mods/MathBlinds
 	url = https://github.com/Bazinga9000/MathBlinds
@@ -428,3 +425,6 @@
 [submodule "Mods/Reverse_Tarots"]
 	path = Mods/Reverse_Tarots
 	url = https://github.com/Dimserene/Reverse_Tarots
+[submodule "Mods/Donuts-Mod"]
+	path = Mods/Donuts-Mod
+	url = https://github.com/Dimserene/Donuts-Mod
