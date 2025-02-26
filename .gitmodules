@@ -64,9 +64,6 @@
 [submodule "Mods/BlindEditions"]
 	path = Mods/BlindEditions
 	url = https://github.com/Mathguy23/BlindEditions
-[submodule "Mods/BonusBlinds"]
-	path = Mods/BonusBlinds
-	url = https://github.com/Mathguy23/BonusBlinds
 [submodule "Mods/BossJokers"]
 	path = Mods/BossJokers
 	url = https://github.com/KilledByLava/BossJokers
@@ -446,9 +443,6 @@
 [submodule "Mods/Plantain"]
 	path = Mods/Plantain
 	url = https://github.com/IcebergLettuce0/Plantain
-[submodule "Mods/Maximus"]
-	path = Mods/Maximus
-	url = https://github.com/the-Astra/Maximus
 [submodule "Mods/Familiar"]
 	path = Mods/Familiar
 	url = https://github.com/RattlingSnow353/Familiar
