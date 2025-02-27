@@ -1,9 +1,6 @@
 [submodule "Mods/Steamodded"]
 	path = Mods/Steamodded
 	url = https://github.com/Steamodded/smods
-[submodule "Mods/CollectorsCards"]
-	path = Mods/CollectorsCards
-	url = https://github.com/Mathguy23/CollectorsCards
 [submodule "Mods/Cartomancer"]
 	path = Mods/Cartomancer
 	url = https://github.com/stupxd/Cartomancer
@@ -43,9 +40,6 @@
 [submodule "Mods/5CEBalatro"]
 	path = Mods/5CEBalatro
 	url = https://github.com/lshtech/5CEBalatro
-[submodule "Mods/Actions"]
-	path = Mods/Actions
-	url = https://github.com/Mathguy23/Actions
 [submodule "Mods/BBBalatro"]
 	path = Mods/BBBalatro
 	url = https://github.com/BBBalatroMod/BBBalatro
@@ -293,9 +287,6 @@
 [submodule "Mods/Leapfrog-Balatro-Deck"]
 	path = Mods/Leapfrog-Balatro-Deck
 	url = https://github.com/superdotaplaya/Leapfrog-Balatro-Deck
-[submodule "Mods/TheCircus"]
-	path = Mods/TheCircus
-	url = https://gitlab.com/infinite_jesters/circus
 [submodule "Mods/Lock-The-Deal"]
 	path = Mods/Lock-The-Deal
 	url = https://gitlab.com/lnxfca-dev/balatro-mods/lock-the-deal
@@ -338,9 +329,6 @@
 [submodule "Mods/Lock-The-Deal"]
 	path = Mods/Lock-The-Deal
 	url = https://gitlab.com/lnxfca-dev/balatro-mods/lock-the-deal
-[submodule "Mods/TheCircus"]
-	path = Mods/TheCircus
-	url = https://gitlab.com/infinite_jesters/circus
 [submodule "Mods/EvaJokers"]
 	path = Mods/EvaJokers
 	url = https://github.com/Toringen/EvaJokers
@@ -413,9 +401,6 @@
 [submodule "Mods/Pestrica"]
 	path = Mods/Pestrica
 	url = https://github.com/marinaposting/PesJkr
-[submodule "Mods/JoyousSpring"]
-	path = Mods/JoyousSpring
-	url = https://github.com/nh6574/JoyousSpring
 [submodule "Mods/CelesteCardCollection"]
 	path = Mods/CelesteCardCollection
 	url = https://github.com/AuroraKy/CelesteCardCollection
@@ -477,3 +462,9 @@
 [submodule "Mods/Donuts-Mod"]
 	path = Mods/Donuts-Mod
 	url = https://github.com/Dimserene/Donuts-Mod
+[submodule "Mods/CollectorsCards"]
+	path = Mods/CollectorsCards
+	url = https://github.com/Mathguy23/CollectorsCards
+[submodule "Mods/PMCSBalatro"]
+	path = Mods/PMCSBalatro
+	url = https://github.com/Dimserene/PMCSBalatro
