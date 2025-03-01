@@ -277,9 +277,6 @@
 [submodule "Mods/EvaJokers"]
 	path = Mods/EvaJokers
 	url = https://github.com/Toringen/EvaJokers
-[submodule "Mods/Pokermon"]
-	path = Mods/Pokermon
-	url = https://github.com/Dimserene/Pokermon/
 [submodule "Mods/Redux-Arcanum"]
 	path = Mods/Redux-Arcanum
 	url = https://github.com/jumbocarrot0/Redux-Arcanum
