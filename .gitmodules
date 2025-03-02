@@ -230,9 +230,6 @@
 	path = Mods/7thbeatcards
 	url = https://github.com/Joglacraft/7thbeatcards
 	branch = beta
-[submodule "Mods/Talisman"]
-	path = Mods/Talisman
-	url = https://github.com/Dimserene/Talisman
 [submodule "Mods/CustomSuitOrder"]
 	path = Mods/CustomSuitOrder
 	url = https://github.com/DigitalDetective47/suit-order
@@ -468,3 +465,9 @@
 [submodule "Mods/PMCSBalatro"]
 	path = Mods/PMCSBalatro
 	url = https://github.com/Dimserene/PMCSBalatro
+[submodule "Mods/Talisman"]
+	path = Mods/Talisman
+	url = https://github.com/Dimserene/Talisman
+[submodule "Mods/Themed_Jokers"]
+	path = Mods/Themed_Jokers
+	url = https://github.com/cerloCasa/Themed-Jokers
