@@ -28,9 +28,6 @@
 [submodule "Mods/Blueprint"]
 	path = Mods/Blueprint
 	url = https://github.com/stupxd/Blueprint
-[submodule "Mods/FoldButton"]
-	path = Mods/FoldButton
-	url = https://github.com/happinyz/BalatroFoldButton
 [submodule "Mods/Handy"]
 	path = Mods/Handy
 	url = https://github.com/SleepyG11/HandyBalatro
@@ -422,3 +419,42 @@
 [submodule "Mods/YART"]
 	path = Mods/YART
 	url = https://github.com/DigitalDetective47/yart
+[submodule "Mods/AutumnMoodMechanics"]
+	path = Mods/AutumnMoodMechanics
+	url = https://github.com/AutumnMood924/AutumnMoodMechanics
+[submodule "Mods/TheAutumnCircus"]
+	path = Mods/TheAutumnCircus
+	url = https://github.com/Dimserene/TheAutumnCircus
+[submodule "Mods/Jimbos_Metrics"]
+	path = Mods/Jimbos_Metrics
+	url = https://gitlab.com/CraftedCart/jimbos_metrics/
+[submodule "Mods/Prism"]
+	path = Mods/Prism
+	url = https://github.com/blazingulag/Prism
+[submodule "Mods/JamMod"]
+	path = Mods/JamMod
+	url = https://github.com/WilsontheWolf/JamMod
+[submodule "Mods/SharrisMod"]
+	path = Mods/SharrisMod
+	url = https://github.com/itsSharri/SharrisMod
+[submodule "Mods/LuckyLegends"]
+	path = Mods/LuckyLegends
+	url = https://github.com/Dimserene/LuckyLegends
+[submodule "Mods/RandomAF"]
+	path = Mods/RandomAF
+	url = https://github.com/sp7n0/RandomAF_Balatro-mod
+[submodule "Mods/GARBSHIT"]
+	path = Mods/GARBSHIT
+	url = https://github.com/Gainumki/GARBSHIT
+[submodule "Mods/Fools-Gambit"]
+	path = Mods/Fools-Gambit
+	url = https://github.com/jenkuuuuuu/Fools-Gambit
+[submodule "Mods/BFDI"]
+	path = Mods/BFDI
+	url = https://github.com/GhostSalt/BFDI
+[submodule "Mods/Sticker-Sheet"]
+	path = Mods/Sticker-Sheet
+	url = https://github.com/Dimserene/Sticker-Sheet
+[submodule "Mods/SyltStickers"]
+	path = Mods/SyltStickers
+	url = https://github.com/Dimserene/SyltStickers
