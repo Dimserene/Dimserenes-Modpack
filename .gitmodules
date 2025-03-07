@@ -202,9 +202,6 @@
 [submodule "Mods/JimboRecords"]
 	path = Mods/JimboRecords
 	url = https://github.com/TherkLe/JimboRecords
-[submodule "Mods/Betmma_mods"]
-	path = Mods/Betmma_mods
-	url = https://github.com/betmma/my_balatro_mods
 [submodule "Mods/CelesteCardCollection"]
 	path = Mods/CelesteCardCollection
 	url = https://github.com/AuroraKy/CelesteCardCollection
@@ -416,9 +413,6 @@
 [submodule "Mods/YART"]
 	path = Mods/YART
 	url = https://github.com/DigitalDetective47/yart
-[submodule "Mods/AutumnMoodMechanics"]
-	path = Mods/AutumnMoodMechanics
-	url = https://github.com/AutumnMood924/AutumnMoodMechanics
 [submodule "Mods/Jimbos_Metrics"]
 	path = Mods/Jimbos_Metrics
 	url = https://gitlab.com/CraftedCart/jimbos_metrics/
@@ -452,9 +446,6 @@
 [submodule "Mods/SyltStickers"]
 	path = Mods/SyltStickers
 	url = https://github.com/Dimserene/SyltStickers
-[submodule "Mods/TheAutumnCircus"]
-	path = Mods/TheAutumnCircus
-	url = https://github.com/Dimserene/TheAutumnCircus
 [submodule "Mods/Baliatro"]
 	path = Mods/Baliatro
 	url = https://github.com/baliame/Baliatro
@@ -491,3 +482,6 @@
 [submodule "Mods/Mistigris"]
 	path = Mods/Mistigris
 	url = https://github.com/astrapboy/Mistigris
+[submodule "Mods/Betmma_mods"]
+	path = Mods/Betmma_mods
+	url = https://github.com/Dimserene/Betmma_mods
