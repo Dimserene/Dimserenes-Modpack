@@ -410,9 +410,6 @@
 [submodule "Mods/YART"]
 	path = Mods/YART
 	url = https://github.com/DigitalDetective47/yart
-[submodule "Mods/AutumnMoodMechanics"]
-	path = Mods/AutumnMoodMechanics
-	url = https://github.com/AutumnMood924/AutumnMoodMechanics
 [submodule "Mods/Jimbos_Metrics"]
 	path = Mods/Jimbos_Metrics
 	url = https://gitlab.com/CraftedCart/jimbos_metrics/
@@ -446,9 +443,6 @@
 [submodule "Mods/SyltStickers"]
 	path = Mods/SyltStickers
 	url = https://github.com/Dimserene/SyltStickers
-[submodule "Mods/TheAutumnCircus"]
-	path = Mods/TheAutumnCircus
-	url = https://github.com/Dimserene/TheAutumnCircus
 [submodule "Mods/ArtOfTheDeal"]
 	path = Mods/ArtOfTheDeal
 	url = https://github.com/radbanker/Art-of-the-Deal.The-peoples-card-collection
