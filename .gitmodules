@@ -232,9 +232,6 @@
 [submodule "Mods/KCVanilla"]
 	path = Mods/KCVanilla
 	url = https://github.com/kcgidw/kcvanilla
-[submodule "Mods/ArtOfTheDeal"]
-	path = Mods/ArtOfTheDeal
-	url = https://github.com/radbanker/Art-of-the-Deal.The-peoples-card-collection
 [submodule "Mods/MetroCard"]
 	path = Mods/MetroCard
 	url = https://github.com/JegMetroCard/MetroCard
@@ -413,9 +410,6 @@
 [submodule "Mods/Aikoyoris-Shenanigans"]
 	path = Mods/Aikoyoris-Shenanigans
 	url = https://github.com/Aikoyori/Balatro-Aikoyoris-Shenanigans
-[submodule "Mods/CollectorsCards"]
-	path = Mods/CollectorsCards
-	url = https://github.com/Mathguy23/CollectorsCards
 [submodule "Mods/YART"]
 	path = Mods/YART
 	url = https://github.com/DigitalDetective47/yart
@@ -458,3 +452,7 @@
 [submodule "Mods/TheAutumnCircus"]
 	path = Mods/TheAutumnCircus
 	url = https://github.com/Dimserene/TheAutumnCircus
+[submodule "Mods/ArtOfTheDeal"]
+	path = Mods/ArtOfTheDeal
+	url = https://github.com/radbanker/Art-of-the-Deal.The-peoples-card-collection
+	branch = Decks-Preview
