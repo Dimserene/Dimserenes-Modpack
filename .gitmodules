@@ -242,9 +242,6 @@
 [submodule "Mods/KCVanilla"]
 	path = Mods/KCVanilla
 	url = https://github.com/kcgidw/kcvanilla
-[submodule "Mods/ArtOfTheDeal"]
-	path = Mods/ArtOfTheDeal
-	url = https://github.com/radbanker/Art-of-the-Deal.The-peoples-card-collection
 [submodule "Mods/Bunco"]
 	path = Mods/Bunco
 	url = https://github.com/Dimserene/Bunco
@@ -456,9 +453,6 @@
 [submodule "Mods/Donuts-Mod"]
 	path = Mods/Donuts-Mod
 	url = https://github.com/Dimserene/Donuts-Mod
-[submodule "Mods/CollectorsCards"]
-	path = Mods/CollectorsCards
-	url = https://github.com/Mathguy23/CollectorsCards
 [submodule "Mods/PMCSBalatro"]
 	path = Mods/PMCSBalatro
 	url = https://github.com/Dimserene/PMCSBalatro
@@ -501,3 +495,7 @@
 [submodule "Mods/Jimbos_Metrics"]
 	path = Mods/Jimbos_Metrics
 	url = https://gitlab.com/CraftedCart/jimbos_metrics/
+[submodule "Mods/ArtOfTheDeal"]
+	path = Mods/ArtOfTheDeal
+	url = https://github.com/radbanker/Art-of-the-Deal.The-peoples-card-collection
+	branch = Decks-Preview
