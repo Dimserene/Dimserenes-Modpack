@@ -1,0 +1,13 @@
+{
+  "id": "RoyalDeck",
+  "name": "Royal Deck",
+  "display_name": "Royal Deck",
+  "author": ["UnknownEternity", "jlwoolf"],
+  "description": "Adds 1 deck (Royal Deck): It contains only enhanced Aces, face cards, and 10s.",
+  "prefix": "royal",
+  "main_file": "index.lua",
+  "badge_colour": "",
+  "badge_text_colour": "",
+  "version": "1.0.0",
+  "dependencies": ["Steamodded (>=1.*)", "Lovely (>=0.6)"]
+}

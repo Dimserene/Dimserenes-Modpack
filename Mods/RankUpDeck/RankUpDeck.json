@@ -1,0 +1,13 @@
+{
+  "id": "RankUpDeck",
+  "name": "Rank Up Deck",
+  "display_name": "Rank Up Deck",
+  "author": ["jlwoolf"],
+  "description": "Adds the Rank Up Deck where cards rank up every round.",
+  "prefix": "rank_up",
+  "main_file": "index.lua",
+  "badge_colour": "",
+  "badge_text_colour": "",
+  "version": "1.0.0",
+  "dependencies": ["Steamodded (>=1.*)", "Lovely (>=0.6)"]
+}

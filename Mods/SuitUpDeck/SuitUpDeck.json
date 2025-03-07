@@ -1,0 +1,13 @@
+{
+  "id": "SuitUpDeck",
+  "name": "Suit Up Deck",
+  "display_name": "Suit Up Deck",
+  "author": ["jlwoolf"],
+  "description": "Adds the Suit Up Deck where cards suits rotate every round.",
+  "prefix": "suit_up",
+  "main_file": "index.lua",
+  "badge_colour": "",
+  "badge_text_colour": "",
+  "version": "1.0.0",
+  "dependencies": ["Steamodded (>=1.*)", "Lovely (>=0.6)"]
+}

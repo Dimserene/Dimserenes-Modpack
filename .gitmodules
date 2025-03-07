@@ -455,3 +455,39 @@
 [submodule "Mods/TheAutumnCircus"]
 	path = Mods/TheAutumnCircus
 	url = https://github.com/Dimserene/TheAutumnCircus
+[submodule "Mods/Baliatro"]
+	path = Mods/Baliatro
+	url = https://github.com/baliame/Baliatro
+[submodule "Mods/Chudjoker"]
+	path = Mods/Chudjoker
+	url = https://github.com/xastrodyke/Chudjoker
+[submodule "Mods/DeckCreator"]
+	path = Mods/DeckCreator
+	url = https://github.com/adambennett/Balatro-DeckCreator
+[submodule "Mods/Blackjacked"]
+	path = Mods/Blackjacked
+	url = https://github.com/TERRAKIRA/Blackjacked-A-Balatro-Mod
+[submodule "Mods/FinalBosses"]
+	path = Mods/FinalBosses
+	url = https://github.com/KotetsuRedwood/FinalBosses
+[submodule "Mods/DNASplice"]
+	path = Mods/DNASplice
+	url = https://github.com/jlwoolf/DNASplice
+[submodule "Mods/FearBeyondDeath"]
+	path = Mods/FearBeyondDeath
+	url = https://github.com/Aluminumroadlion/FearBeyondDeath
+[submodule "Mods/SeveredBalatro"]
+	path = Mods/SeveredBalatro
+	url = https://github.com/frogzsj/SeveredBalatro
+[submodule "Mods/Wombats-Obscure-Jokers"]
+	path = Mods/Wombats-Obscure-Jokers
+	url = https://github.com/wombatCountry/wombats-obscure-jokers
+[submodule "Mods/YippieMod"]
+	path = Mods/YippieMod
+	url = https://github.com/Coo29/YippieMod
+[submodule "Mods/BlueAtro"]
+	path = Mods/BlueAtro
+	url = https://github.com/voidumbrella/BlueAtro
+[submodule "Mods/Mistigris"]
+	path = Mods/Mistigris
+	url = https://github.com/astrapboy/Mistigris
