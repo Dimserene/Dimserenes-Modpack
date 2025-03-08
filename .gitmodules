@@ -485,3 +485,9 @@
 [submodule "Mods/Aikoyoris-Shenanigans"]
 	path = Mods/Aikoyoris-Shenanigans
 	url = https://github.com/Aikoyori/Balatro-Aikoyoris-Shenanigans
+[submodule "Mods/TooManyDecks"]
+	path = Mods/TooManyDecks
+	url = https://github.com/Squidguset/TooManyDecks
+[submodule "Mods/Handsome-Devils"]
+	path = Mods/Handsome-Devils
+	url = https://github.com/AlexanderAndersonAmenAmen/Handsome-Devils-Vanilla-mod-
