@@ -449,24 +449,15 @@
 [submodule "Mods/Chudjoker"]
 	path = Mods/Chudjoker
 	url = https://github.com/xastrodyke/Chudjoker
-[submodule "Mods/DeckCreator"]
-	path = Mods/DeckCreator
-	url = https://github.com/adambennett/Balatro-DeckCreator
 [submodule "Mods/Blackjacked"]
 	path = Mods/Blackjacked
 	url = https://github.com/TERRAKIRA/Blackjacked-A-Balatro-Mod
 [submodule "Mods/FinalBosses"]
 	path = Mods/FinalBosses
 	url = https://github.com/KotetsuRedwood/FinalBosses
-[submodule "Mods/DNASplice"]
-	path = Mods/DNASplice
-	url = https://github.com/jlwoolf/DNASplice
 [submodule "Mods/FearBeyondDeath"]
 	path = Mods/FearBeyondDeath
 	url = https://github.com/Aluminumroadlion/FearBeyondDeath
-[submodule "Mods/SeveredBalatro"]
-	path = Mods/SeveredBalatro
-	url = https://github.com/frogzsj/SeveredBalatro
 [submodule "Mods/Wombats-Obscure-Jokers"]
 	path = Mods/Wombats-Obscure-Jokers
 	url = https://github.com/wombatCountry/wombats-obscure-jokers
@@ -494,6 +485,9 @@
 [submodule "Mods/SauKhongHuDecks"]
 	path = Mods/SauKhongHuDecks
 	url = https://github.com/HuyTheKiller/SauKhongHuDecks/
-[submodule "Mods/Jlwoolfs-Loader-API"]
-	path = Mods/Jlwoolfs-Loader-API
-	url = https://github.com/jlwoolf/balatro-loader-api
+[submodule "Mods/Severed"]
+	path = Mods/Severed
+	url = https://github.com/frogzsj/SeveredBalatro
+[submodule "Mods/TheKorczakPack"]
+	path = Mods/TheKorczakPack
+	url = https://github.com/flypotato123/TheKorczakPack
