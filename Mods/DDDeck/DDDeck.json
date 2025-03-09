@@ -1,0 +1,13 @@
+{
+  "id": "DDDDeck",
+  "name": "Dealer's Discount Deck",
+  "display_name": "Dealer's Discount Deck",
+  "author": ["Neon24", "jlwoolf"],
+  "description": "Adds a Deck that starts with the Clearance Sale voucher.",
+  "prefix": "ddd",
+  "main_file": "index.lua",
+  "badge_colour": "",
+  "badge_text_colour": "",
+  "version": "1.0.0",
+  "dependencies": ["Steamodded (>=1.*)", "Lovely (>=0.6)"]
+}
