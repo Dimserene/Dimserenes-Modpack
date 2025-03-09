@@ -499,3 +499,45 @@
 [submodule "Mods/MoreFluff"]
 	path = Mods/MoreFluff
 	url = https://github.com/Dimserene/MoreFluff
+[submodule "Mods/YippieMod"]
+	path = Mods/YippieMod
+	url = https://github.com/Coo29/YippieMod
+[submodule "Mods/Wombats-Obscure-Jokers"]
+	path = Mods/Wombats-Obscure-Jokers
+	url = https://github.com/wombatCountry/wombats-obscure-jokers
+[submodule "Mods/TooManyDecks"]
+	path = Mods/TooManyDecks
+	url = https://github.com/Squidguset/TooManyDecks
+[submodule "Mods/TheKorczakPack"]
+	path = Mods/TheKorczakPack
+	url = https://github.com/flypotato123/TheKorczakPack
+[submodule "Mods/Severed"]
+	path = Mods/Severed
+	url = https://github.com/frogzsj/SeveredBalatro
+[submodule "Mods/SauKhongHuDecks"]
+	path = Mods/SauKhongHuDecks
+	url = https://github.com/HuyTheKiller/SauKhongHuDecks/
+[submodule "Mods/Mistigris"]
+	path = Mods/Mistigris
+	url = https://github.com/astrapboy/Mistigris
+[submodule "Mods/Handsome-Devils"]
+	path = Mods/Handsome-Devils
+	url = https://github.com/AlexanderAndersonAmenAmen/Handsome-Devils-Vanilla-mod-
+[submodule "Mods/FinalBosses"]
+	path = Mods/FinalBosses
+	url = https://github.com/KotetsuRedwood/FinalBosses
+[submodule "Mods/FearBeyondDeath"]
+	path = Mods/FearBeyondDeath
+	url = https://github.com/Aluminumroadlion/FearBeyondDeath
+[submodule "Mods/Chudjoker"]
+	path = Mods/Chudjoker
+	url = https://github.com/xastrodyke/Chudjoker
+[submodule "Mods/BlueAtro"]
+	path = Mods/BlueAtro
+	url = https://github.com/voidumbrella/BlueAtro
+[submodule "Mods/Blackjacked"]
+	path = Mods/Blackjacked
+	url = https://github.com/TERRAKIRA/Blackjacked-A-Balatro-Mod
+[submodule "Mods/Baliatro"]
+	path = Mods/Baliatro
+	url = https://github.com/baliame/Baliatro
