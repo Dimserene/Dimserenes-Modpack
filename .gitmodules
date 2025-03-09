@@ -444,9 +444,6 @@
 [submodule "Mods/MathBlinds"]
 	path = Mods/MathBlinds
 	url = https://github.com/Bazinga9000/MathBlinds
-[submodule "Mods/MoreFluff"]
-	path = Mods/MoreFluff
-	url = https://github.com/notmario/MoreFluff
 [submodule "Mods/Donuts-Mod"]
 	path = Mods/Donuts-Mod
 	url = https://github.com/Dimserene/Donuts-Mod
@@ -499,3 +496,6 @@
 [submodule "Mods/Betmma_mods"]
 	path = Mods/Betmma_mods
 	url = https://github.com/Dimserene/Betmma_mods
+[submodule "Mods/MoreFluff"]
+	path = Mods/MoreFluff
+	url = https://github.com/Dimserene/MoreFluff
