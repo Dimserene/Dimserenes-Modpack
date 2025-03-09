@@ -491,3 +491,9 @@
 [submodule "Mods/Handsome-Devils"]
 	path = Mods/Handsome-Devils
 	url = https://github.com/AlexanderAndersonAmenAmen/Handsome-Devils-Vanilla-mod-
+[submodule "Mods/SauKhongHuDecks"]
+	path = Mods/SauKhongHuDecks
+	url = https://github.com/HuyTheKiller/SauKhongHuDecks/
+[submodule "Mods/Jlwoolfs-Loader-API"]
+	path = Mods/Jlwoolfs-Loader-API
+	url = https://github.com/jlwoolf/balatro-loader-api
