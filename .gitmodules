@@ -163,9 +163,6 @@
 [submodule "Mods/Themed_Jokers"]
 	path = Mods/Themed_Jokers
 	url = https://github.com/cerloCasa/Themed-Jokers
-[submodule "Mods/Tsunami"]
-	path = Mods/Tsunami
-	url = https://github.com/Maratby/Tsunami
 [submodule "Mods/UnStable"]
 	path = Mods/UnStable
 	url = https://github.com/kirbio/UnStable
@@ -492,3 +489,7 @@
 [submodule "Mods/YippieMod"]
 	path = Mods/YippieMod
 	url = https://github.com/Coo29/YippieMod
+[submodule "Mods/Tsunami"]
+	path = Mods/Tsunami
+	url = https://github.com/Maratby/Tsunami
+	branch = dev
