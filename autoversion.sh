@@ -56,7 +56,7 @@ else
 fi
 
 # Update all submodules to their latest commit from the remote repository and merge them
-if git submodule update --remote --recursive --merge; then
+if git submodule update --remote --recursive; then
     submodule_status="SUCCESS"
 else
     submodule_status="FAILED"
