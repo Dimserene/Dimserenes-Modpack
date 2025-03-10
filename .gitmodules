@@ -145,9 +145,6 @@
 [submodule "Mods/The-Buffoon-Pack"]
 	path = Mods/The-Buffoon-Pack
 	url = https://github.com/lshtech/The-Buffoon-Pack
-[submodule "Mods/Tsunami"]
-	path = Mods/Tsunami
-	url = https://github.com/Maratby/Tsunami
 [submodule "Mods/UnStable"]
 	path = Mods/UnStable
 	url = https://github.com/kirbio/UnStable
@@ -541,3 +538,7 @@
 [submodule "Mods/Baliatro"]
 	path = Mods/Baliatro
 	url = https://github.com/baliame/Baliatro
+[submodule "Mods/Tsunami"]
+	path = Mods/Tsunami
+	url = https://github.com/Maratby/Tsunami
+	branch = dev
