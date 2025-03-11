@@ -346,9 +346,6 @@
 [submodule "Mods/Fortune"]
 	path = Mods/Fortune
 	url = https://github.com/Maratby/Fortune
-[submodule "Mods/Showdown"]
-	path = Mods/Showdown
-	url = https://github.com/Mistyk1/Showdown
 [submodule "Mods/Holotro"]
 	path = Mods/Holotro
 	url = https://github.com/Dimserene/Holotro
