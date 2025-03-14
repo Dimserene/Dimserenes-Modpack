@@ -235,9 +235,6 @@
 [submodule "Mods/Tesseract"]
 	path = Mods/Tesseract
 	url = https://github.com/hyperxwastaken/Tesseract
-[submodule "Mods/YuGiOh-Cards"]
-	path = Mods/YuGiOh-Cards
-	url = https://github.com/VaporeonMega-git/Balatro-YuGiOh-Cards
 [submodule "Mods/FlushHotkeys"]
 	path = Mods/FlushHotkeys
 	url = https://github.com/Dimserene/FlushHotkeys
@@ -422,12 +419,6 @@
 [submodule "Mods/RandomAF"]
 	path = Mods/RandomAF
 	url = https://github.com/sp7n0/RandomAF_Balatro-mod
-[submodule "Mods/GARBSHIT"]
-	path = Mods/GARBSHIT
-	url = https://github.com/Gainumki/GARBSHIT
-[submodule "Mods/Fools-Gambit"]
-	path = Mods/Fools-Gambit
-	url = https://github.com/jenkuuuuuu/Fools-Gambit
 [submodule "Mods/BFDI"]
 	path = Mods/BFDI
 	url = https://github.com/GhostSalt/BFDI
@@ -490,3 +481,36 @@
 	path = Mods/Tsunami
 	url = https://github.com/Maratby/Tsunami
 	branch = dev
+[submodule "Mods/TOGAs-Stuff"]
+	path = Mods/TOGAs-Stuff
+	url = https://github.com/TheOneGoofAli/TOGAPackBalatro
+[submodule "Mods/Splatro"]
+	path = Mods/Splatro
+	url = https://github.com/Maratby/Splatro/
+[submodule "Mods/Magpy-s-Oddities"]
+	path = Mods/Magpy-s-Oddities
+	url = https://github.com/magpyfeather/Magpy-s-Oddities
+[submodule "Mods/Pi_cubeds_Jokers"]
+	path = Mods/Pi_cubeds_Jokers
+	url = https://github.com/pi-cubed-cat/pi_cubeds_jokers
+[submodule "Mods/SilksongCopium"]
+	path = Mods/SilksongCopium
+	url = https://github.com/AetherSky-arch/SkongBalatro
+[submodule "Mods/RiftRaft"]
+	path = Mods/RiftRaft
+	url = https://github.com/vitellaryjr/RiftRaft
+[submodule "Mods/PumpkinJokesters"]
+	path = Mods/PumpkinJokesters
+	url = https://github.com/PumpkinHook/PumpkinJokesters
+[submodule "Mods/KLGB76-s-Joker-Pack"]
+	path = Mods/KLGB76-s-Joker-Pack
+	url = https://github.com/KLGB76/KLGB76-s-Balatro-Joker-Pack
+[submodule "Mods/GARBSHIT"]
+	path = Mods/GARBSHIT
+	url = https://github.com/Dimserene/GARBSHIT/
+[submodule "Mods/Fools-Gambit"]
+	path = Mods/Fools-Gambit
+	url = https://github.com/jenkuuuuuu/Fools-Gambit/
+[submodule "Mods/Opandoras-Box"]
+	path = Mods/Opandoras-Box
+	url = https://github.com/ohpahn/opandoras-box/
