@@ -496,9 +496,6 @@
 [submodule "Mods/SilksongCopium"]
 	path = Mods/SilksongCopium
 	url = https://github.com/AetherSky-arch/SkongBalatro
-[submodule "Mods/RiftRaft"]
-	path = Mods/RiftRaft
-	url = https://github.com/vitellaryjr/RiftRaft
 [submodule "Mods/PumpkinJokesters"]
 	path = Mods/PumpkinJokesters
 	url = https://github.com/PumpkinHook/PumpkinJokesters
