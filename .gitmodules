@@ -514,3 +514,6 @@
 [submodule "Mods/Opandoras-Box"]
 	path = Mods/Opandoras-Box
 	url = https://github.com/ohpahn/opandoras-box/
+[submodule "Mods/Panley-Joker"]
+	path = Mods/Panley-Joker
+	url = https://github.com/RedrcknRbn/Panley-Joker
