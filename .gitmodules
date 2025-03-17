@@ -61,9 +61,6 @@
 [submodule "Mods/BlindEditions"]
 	path = Mods/BlindEditions
 	url = https://github.com/Mathguy23/BlindEditions
-[submodule "Mods/BonusBlinds"]
-	path = Mods/BonusBlinds
-	url = https://github.com/Mathguy23/BonusBlinds
 [submodule "Mods/BossJokers"]
 	path = Mods/BossJokers
 	url = https://github.com/KilledByLava/BossJokers
@@ -523,3 +520,9 @@
 [submodule "Mods/Galaxia"]
 	path = Mods/Galaxia
 	url = https://github.com/Orion107/Galaxia
+[submodule "Mods/RiftRaft"]
+	path = Mods/RiftRaft
+	url = https://github.com/vitellaryjr/RiftRaft
+[submodule "Mods/Next-Ante-Preview"]
+	path = Mods/Next-Ante-Preview
+	url = https://github.com/DigitalDetective47/next-ante-preview/
