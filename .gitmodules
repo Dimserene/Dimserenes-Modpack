@@ -514,3 +514,12 @@
 [submodule "Mods/Panley-Joker"]
 	path = Mods/Panley-Joker
 	url = https://github.com/RedrcknRbn/Panley-Joker
+[submodule "Mods/DRCAABM"]
+	path = Mods/DRCAABM
+	url = https://github.com/a-memer/Deliriums-Really-Cool-And-Awsome-Balatro-Mod
+[submodule "Mods/Miku-Friends"]
+	path = Mods/Miku-Friends
+	url = https://github.com/misenrol/MIku-Friends-BalatroMod
+[submodule "Mods/Galaxia"]
+	path = Mods/Galaxia
+	url = https://github.com/Orion107/Galaxia
