@@ -529,3 +529,6 @@
 [submodule "Mods/PowerCreep"]
 	path = Mods/PowerCreep
 	url = https://github.com/Lpazos1/PowerCreep/
+[submodule "Mods/Balatro-Hevven"]
+	path = Mods/Balatro-Hevven
+	url = https://github.com/TheAlternateDoctor/Balatro-Hevven
