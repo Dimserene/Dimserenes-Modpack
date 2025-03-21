@@ -31,9 +31,6 @@
 [submodule "Mods/Handy"]
 	path = Mods/Handy
 	url = https://github.com/SleepyG11/HandyBalatro
-[submodule "Mods/Item-Remover"]
-	path = Mods/Item-Remover
-	url = https://github.com/art-muncher/Item-Remover
 [submodule "Mods/CardSleeves"]
 	path = Mods/CardSleeves
 	url = https://github.com/larswijn/CardSleeves
@@ -193,9 +190,6 @@
 [submodule "Mods/Cruel-Blinds"]
 	path = Mods/Cruel-Blinds
 	url = https://github.com/Dimserene/Cruel-Blinds
-[submodule "Mods/JimboRecords"]
-	path = Mods/JimboRecords
-	url = https://github.com/TherkLe/JimboRecords
 [submodule "Mods/CelesteCardCollection"]
 	path = Mods/CelesteCardCollection
 	url = https://github.com/AuroraKy/CelesteCardCollection
@@ -355,9 +349,6 @@
 [submodule "Mods/AzzysJokers"]
 	path = Mods/AzzysJokers
 	url = https://github.com/AstrumNativus/AzzysJokers
-[submodule "Mods/Join-The-Crowd"]
-	path = Mods/Join-The-Crowd
-	url = https://github.com/MilkyQeue/join-the-crowd-mod/
 [submodule "Mods/Vicsmod"]
 	path = Mods/Vicsmod
 	url = https://github.com/vicentun/Vicsmod
@@ -432,15 +423,9 @@
 [submodule "Mods/Betmma_mods"]
 	path = Mods/Betmma_mods
 	url = https://github.com/Dimserene/Betmma_mods
-[submodule "Mods/Baliatro"]
-	path = Mods/Baliatro
-	url = https://github.com/baliame/Baliatro
 [submodule "Mods/Blackjacked"]
 	path = Mods/Blackjacked
 	url = https://github.com/TERRAKIRA/Blackjacked-A-Balatro-Mod
-[submodule "Mods/BlueAtro"]
-	path = Mods/BlueAtro
-	url = https://github.com/voidumbrella/BlueAtro
 [submodule "Mods/Chudjoker"]
 	path = Mods/Chudjoker
 	url = https://github.com/xastrodyke/Chudjoker
@@ -465,9 +450,6 @@
 [submodule "Mods/TheKorczakPack"]
 	path = Mods/TheKorczakPack
 	url = https://github.com/flypotato123/TheKorczakPack
-[submodule "Mods/TooManyDecks"]
-	path = Mods/TooManyDecks
-	url = https://github.com/Squidguset/TooManyDecks
 [submodule "Mods/Wombats-Obscure-Jokers"]
 	path = Mods/Wombats-Obscure-Jokers
 	url = https://github.com/wombatCountry/wombats-obscure-jokers
@@ -517,9 +499,6 @@
 [submodule "Mods/Miku-Friends"]
 	path = Mods/Miku-Friends
 	url = https://github.com/misenrol/MIku-Friends-BalatroMod
-[submodule "Mods/Galaxia"]
-	path = Mods/Galaxia
-	url = https://github.com/Orion107/Galaxia
 [submodule "Mods/RiftRaft"]
 	path = Mods/RiftRaft
 	url = https://github.com/vitellaryjr/RiftRaft
@@ -529,3 +508,6 @@
 [submodule "Mods/Balatro-Hevven"]
 	path = Mods/Balatro-Hevven
 	url = https://github.com/TheAlternateDoctor/Balatro-Hevven
+[submodule "Mods/Banner"]
+	path = Mods/Banner
+	url = https://github.com/SylviBlossom/Banner
