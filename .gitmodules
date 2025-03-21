@@ -25,9 +25,6 @@
 [submodule "Mods/Handy"]
 	path = Mods/Handy
 	url = https://github.com/SleepyG11/HandyBalatro
-[submodule "Mods/Item-Remover"]
-	path = Mods/Item-Remover
-	url = https://github.com/art-muncher/Item-Remover
 [submodule "Mods/CardSleeves"]
 	path = Mods/CardSleeves
 	url = https://github.com/larswijn/CardSleeves
@@ -491,3 +488,6 @@
 	path = Mods/Tsunami
 	url = https://github.com/Maratby/Tsunami
 	branch = dev
+[submodule "Mods/Banner"]
+	path = Mods/Banner
+	url = https://github.com/SylviBlossom/Banner
