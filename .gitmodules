@@ -205,9 +205,6 @@
 [submodule "Mods/Buffoonery"]
 	path = Mods/Buffoonery
 	url = https://github.com/pinkmaggit-hub/Buffoonery
-[submodule "Mods/Bird-Jokers"]
-	path = Mods/Bird-Jokers
-	url = https://github.com/JustinBanzon/Bird-Jokers
 [submodule "Mods/Emporium"]
 	path = Mods/Emporium
 	url = https://github.com/krokshut/Emporium
@@ -221,18 +218,9 @@
 	path = Mods/7thbeatcards
 	url = https://github.com/Joglacraft/7thbeatcards
 	branch = beta
-[submodule "Mods/CustomSuitOrder"]
-	path = Mods/CustomSuitOrder
-	url = https://github.com/DigitalDetective47/suit-order
-[submodule "Mods/Planet-Card-Cash-Out"]
-	path = Mods/Planet-Card-Cash-Out
-	url = https://github.com/antler5/Balatro-Planet-Card-Cash-Out-Mod
 [submodule "Mods/DnDJ"]
 	path = Mods/DnDJ
 	url = https://github.com/AuraGunner/dndj-mod
-[submodule "Mods/Pauper-Deck"]
-	path = Mods/Pauper-Deck
-	url = https://github.com/AiksiLotl/Pauper-Deck
 [submodule "Mods/KCVanilla"]
 	path = Mods/KCVanilla
 	url = https://github.com/kcgidw/kcvanilla
@@ -251,12 +239,6 @@
 [submodule "Mods/AntonosStakes"]
 	path = Mods/AntonosStakes
 	url = https://github.com/lshtech/Scaling-Ante-Stakes
-[submodule "Mods/JokerSellValue"]
-	path = Mods/JokerSellValue
-	url = https://github.com/OppositeWolf770/JokerSellValue
-[submodule "Mods/MetroCard"]
-	path = Mods/MetroCard
-	url = https://github.com/JegMetroCard/MetroCard
 [submodule "Mods/Tesseract"]
 	path = Mods/Tesseract
 	url = https://github.com/hyperxwastaken/Tesseract
@@ -305,39 +287,9 @@
 [submodule "Mods/Slotmachine"]
 	path = Mods/Slotmachine
 	url = https://github.com/boldboldness/slotmachine
-[submodule "Mods/LnxFCA-Shared"]
-	path = Mods/LnxFCA-Shared
-	url = https://gitlab.com/lnxfca-dev/balatro-mods/lnxfca-shared
-[submodule "Mods/First-Round-Joker"]
-	path = Mods/First-Round-Joker
-	url = https://gitlab.com/lnxfca-dev/balatro-mods/first-round-joker
-[submodule "Mods/Lock-The-Deal"]
-	path = Mods/Lock-The-Deal
-	url = https://gitlab.com/lnxfca-dev/balatro-mods/lock-the-deal
-[submodule "Mods/EvaJokers"]
-	path = Mods/EvaJokers
-	url = https://github.com/Toringen/EvaJokers
-[submodule "Mods/Maxines-Joker-Pack"]
-	path = Mods/Maxines-Joker-Pack
-	url = https://github.com/MaxIsJoe/maxine-balatro-mod
-[submodule "Mods/Revos-Vault"]
-	path = Mods/Revos-Vault
-	url = https://github.com/Cdrvo/Revos-Vault---Balatro-Mod
 [submodule "Mods/Strange-Pencil"]
 	path = Mods/Strange-Pencil
 	url = https://github.com/DigitalDetective47/strange-pencil
-[submodule "Mods/Slotmachine"]
-	path = Mods/Slotmachine
-	url = https://github.com/boldboldness/slotmachine
-[submodule "Mods/SystemClock"]
-	path = Mods/SystemClock
-	url = https://github.com/Breezebuilder/SystemClock
-[submodule "Mods/NeatoJokers"]
-	path = Mods/NeatoJokers
-	url = https://github.com/neatoqueen/NeatoJokers
-[submodule "Mods/YACBM"]
-	path = Mods/YACBM
-	url = https://github.com/Trif3ctal/YACBM
 [submodule "Mods/Ortalab-DEMO"]
 	path = Mods/Ortalab-DEMO
 	url = https://github.com/Eremel/Ortalab-Demo
@@ -462,9 +414,6 @@
 [submodule "Mods/BFDI"]
 	path = Mods/BFDI
 	url = https://github.com/GhostSalt/BFDI
-[submodule "Mods/Fools-Gambit"]
-	path = Mods/Fools-Gambit
-	url = https://github.com/jenkuuuuuu/Fools-Gambit
 [submodule "Mods/GARBSHIT"]
 	path = Mods/GARBSHIT
 	url = https://github.com/Gainumki/GARBSHIT
