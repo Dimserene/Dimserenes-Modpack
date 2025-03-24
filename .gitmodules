@@ -229,9 +229,6 @@
 [submodule "Mods/FlushHotkeys"]
 	path = Mods/FlushHotkeys
 	url = https://github.com/Dimserene/FlushHotkeys
-[submodule "Mods/Kaboomers"]
-	path = Mods/Kaboomers
-	url = https://github.com/29cmb/Kaboomers
 [submodule "Mods/Leapfrog-Balatro-Deck"]
 	path = Mods/Leapfrog-Balatro-Deck
 	url = https://github.com/superdotaplaya/Leapfrog-Balatro-Deck
@@ -383,9 +380,6 @@
 [submodule "Mods/Bunco"]
 	path = Mods/Bunco
 	url = https://github.com/Dimserene/Bunco
-[submodule "Mods/Aikoyoris-Shenanigans"]
-	path = Mods/Aikoyoris-Shenanigans
-	url = https://github.com/Aikoyori/Balatro-Aikoyoris-Shenanigans
 [submodule "Mods/YART"]
 	path = Mods/YART
 	url = https://github.com/DigitalDetective47/yart
@@ -484,9 +478,6 @@
 [submodule "Mods/GARBSHIT"]
 	path = Mods/GARBSHIT
 	url = https://github.com/Dimserene/GARBSHIT/
-[submodule "Mods/Fools-Gambit"]
-	path = Mods/Fools-Gambit
-	url = https://github.com/jenkuuuuuu/Fools-Gambit/
 [submodule "Mods/Opandoras-Box"]
 	path = Mods/Opandoras-Box
 	url = https://github.com/ohpahn/opandoras-box/
