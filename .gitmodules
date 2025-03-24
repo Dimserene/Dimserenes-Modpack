@@ -94,9 +94,6 @@
 [submodule "Mods/LushMod"]
 	path = Mods/LushMod
 	url = https://github.com/lshtech/LushMod
-[submodule "Mods/MixedPotion"]
-	path = Mods/MixedPotion
-	url = https://github.com/snowylight/MixedPotion
 [submodule "Mods/MOARJokers"]
 	path = Mods/MOARJokers
 	url = https://github.com/MrSmoothieHuman1/MOARJokers
@@ -154,9 +151,6 @@
 [submodule "Mods/The-Buffoon-Pack"]
 	path = Mods/The-Buffoon-Pack
 	url = https://github.com/lshtech/The-Buffoon-Pack
-[submodule "Mods/Themed_Jokers"]
-	path = Mods/Themed_Jokers
-	url = https://github.com/cerloCasa/Themed-Jokers
 [submodule "Mods/UnStable"]
 	path = Mods/UnStable
 	url = https://github.com/kirbio/UnStable
@@ -175,9 +169,6 @@
 [submodule "Mods/Joker-Evolution"]
 	path = Mods/Joker-Evolution
 	url = https://github.com/SDM0/Joker-Evolution
-[submodule "Mods/ModPackFixes"]
-	path = Mods/ModPackFixes
-	url = https://github.com/lshtech/ModPackFixes
 [submodule "Mods/NoFantasy"]
 	path = Mods/NoFantasy
 	url = https://github.com/fantasygone/nofantasyJokers/
@@ -196,9 +187,6 @@
 [submodule "Mods/H1DROmod"]
 	path = Mods/H1DROmod
 	url = https://github.com/hidro0091/H1DROmod-balatro
-[submodule "Mods/Magic-the-Jokering"]
-	path = Mods/Magic-the-Jokering
-	url = https://github.com/spire-winder/Magic-the-Jokering
 [submodule "Mods/Calling_Cards"]
 	path = Mods/Calling_Cards
 	url = https://github.com/rae-vyn/calling_cards
@@ -229,9 +217,6 @@
 [submodule "Mods/FlushHotkeys"]
 	path = Mods/FlushHotkeys
 	url = https://github.com/Dimserene/FlushHotkeys
-[submodule "Mods/Kaboomers"]
-	path = Mods/Kaboomers
-	url = https://github.com/29cmb/Kaboomers
 [submodule "Mods/Leapfrog-Balatro-Deck"]
 	path = Mods/Leapfrog-Balatro-Deck
 	url = https://github.com/superdotaplaya/Leapfrog-Balatro-Deck
@@ -280,9 +265,6 @@
 [submodule "Mods/SarcPot"]
 	path = Mods/SarcPot
 	url = https://github.com/SarcPot/sarcpot-mod
-[submodule "Mods/Bakery"]
-	path = Mods/Bakery
-	url = https://github.com/BakersDozenBagels/BalatroBakery
 [submodule "Mods/LuckyJimbos"]
 	path = Mods/LuckyJimbos
 	url = https://github.com/MamiKeRiko/luckyjimbos
@@ -313,18 +295,12 @@
 [submodule "Mods/DebugPlus"]
 	path = Mods/DebugPlus
 	url = https://github.com/Dimserene/DebugPlus
-[submodule "Mods/Balatro-Plus"]
-	path = Mods/Balatro-Plus
-	url = https://github.com/Dimserene/Balatro-Plus
 [submodule "Mods/Pestrica"]
 	path = Mods/Pestrica
 	url = https://github.com/marinaposting/PesJkr
 [submodule "Mods/Zeros-Assortment"]
 	path = Mods/Zeros-Assortment
 	url = https://github.com/Zero4793/Zeros-Assortment
-[submodule "Mods/BalatroGoesKino"]
-	path = Mods/BalatroGoesKino
-	url = https://github.com/icyethics/Kino
 [submodule "Mods/JokerHub"]
 	path = Mods/JokerHub
 	url = https://github.com/sup3p/JokerHub
@@ -383,9 +359,6 @@
 [submodule "Mods/Bunco"]
 	path = Mods/Bunco
 	url = https://github.com/Dimserene/Bunco
-[submodule "Mods/Aikoyoris-Shenanigans"]
-	path = Mods/Aikoyoris-Shenanigans
-	url = https://github.com/Aikoyori/Balatro-Aikoyoris-Shenanigans
 [submodule "Mods/YART"]
 	path = Mods/YART
 	url = https://github.com/DigitalDetective47/yart
@@ -484,9 +457,6 @@
 [submodule "Mods/GARBSHIT"]
 	path = Mods/GARBSHIT
 	url = https://github.com/Dimserene/GARBSHIT/
-[submodule "Mods/Fools-Gambit"]
-	path = Mods/Fools-Gambit
-	url = https://github.com/jenkuuuuuu/Fools-Gambit/
 [submodule "Mods/Opandoras-Box"]
 	path = Mods/Opandoras-Box
 	url = https://github.com/ohpahn/opandoras-box/
@@ -511,3 +481,9 @@
 [submodule "Mods/Banner"]
 	path = Mods/Banner
 	url = https://github.com/SylviBlossom/Banner
+[submodule "Mods/Bakery"]
+	path = Mods/Bakery
+	url = https://github.com/BakersDozenBagels/BalatroBakery
+[submodule "Mods/BalatroGoesKino"]
+	path = Mods/BalatroGoesKino
+	url = https://github.com/icyethics/Kino
