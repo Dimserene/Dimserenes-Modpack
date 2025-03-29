@@ -520,9 +520,9 @@
 [submodule "Mods/TerraPotions"]
 	path = Mods/TerraPotions
 	url = https://github.com/Row-set-te/BalatroTerraPotions
-[submodule "Mods/Glue-For-Modpacks"]
-	path = Mods/Glue-For-Modpacks
-	url = https://github.com/icyethics/Glue-For-Modpacks
 [submodule "Mods/TerrariaXBalatro"]
 	path = Mods/TerrariaXBalatro
 	url = https://github.com/misenrol/TerrariaXBalatro
+[submodule "Mods/Glue-For-Modpacks"]
+	path = Mods/Glue-For-Modpacks
+	url = https://github.com/Dimserene/Glue-For-Modpacks
