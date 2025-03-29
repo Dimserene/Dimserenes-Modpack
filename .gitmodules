@@ -88,9 +88,6 @@
 [submodule "Mods/LushMod"]
 	path = Mods/LushMod
 	url = https://github.com/lshtech/LushMod
-[submodule "Mods/MixedPotion"]
-	path = Mods/MixedPotion
-	url = https://github.com/snowylight/MixedPotion
 [submodule "Mods/MOARJokers"]
 	path = Mods/MOARJokers
 	url = https://github.com/MrSmoothieHuman1/MOARJokers
@@ -166,24 +163,15 @@
 [submodule "Mods/Jestobiology"]
 	path = Mods/Jestobiology
 	url = https://github.com/lshtech/Jestobiology
-[submodule "Mods/ModPackFixes"]
-	path = Mods/ModPackFixes
-	url = https://github.com/lshtech/ModPackFixes
 [submodule "Mods/NoFantasy"]
 	path = Mods/NoFantasy
 	url = https://github.com/fantasygone/nofantasyJokers/
 [submodule "Mods/AdAbsurdum"]
 	path = Mods/AdAbsurdum
 	url = https://github.com/7f-galaxii/AdAbsurdum
-[submodule "Mods/JimboRecords"]
-	path = Mods/JimboRecords
-	url = https://github.com/TherkLe/JimboRecords
 [submodule "Mods/H1DROmod"]
 	path = Mods/H1DROmod
 	url = https://github.com/hidro0091/H1DROmod-balatro
-[submodule "Mods/Magic-the-Jokering"]
-	path = Mods/Magic-the-Jokering
-	url = https://github.com/spire-winder/Magic-the-Jokering
 [submodule "Mods/Calling_Cards"]
 	path = Mods/Calling_Cards
 	url = https://github.com/rae-vyn/calling_cards
@@ -239,15 +227,9 @@
 [submodule "Mods/Tesseract"]
 	path = Mods/Tesseract
 	url = https://github.com/hyperxwastaken/Tesseract
-[submodule "Mods/YuGiOh-Cards"]
-	path = Mods/YuGiOh-Cards
-	url = https://github.com/VaporeonMega-git/Balatro-YuGiOh-Cards
 [submodule "Mods/FlushHotkeys"]
 	path = Mods/FlushHotkeys
 	url = https://github.com/Dimserene/FlushHotkeys
-[submodule "Mods/Kaboomers"]
-	path = Mods/Kaboomers
-	url = https://github.com/29cmb/Kaboomers
 [submodule "Mods/Leapfrog-Balatro-Deck"]
 	path = Mods/Leapfrog-Balatro-Deck
 	url = https://github.com/superdotaplaya/Leapfrog-Balatro-Deck
@@ -326,9 +308,6 @@
 [submodule "Mods/DebugPlus"]
 	path = Mods/DebugPlus
 	url = https://github.com/Dimserene/DebugPlus
-[submodule "Mods/Balatro-Plus"]
-	path = Mods/Balatro-Plus
-	url = https://github.com/Dimserene/Balatro-Plus
 [submodule "Mods/Zeros-Assortment"]
 	path = Mods/Zeros-Assortment
 	url = https://github.com/Zero4793/Zeros-Assortment
@@ -396,9 +375,6 @@
 [submodule "Mods/Talisman"]
 	path = Mods/Talisman
 	url = https://github.com/Dimserene/Talisman
-[submodule "Mods/Themed_Jokers"]
-	path = Mods/Themed_Jokers
-	url = https://github.com/cerloCasa/Themed-Jokers
 [submodule "Mods/SyltStickers"]
 	path = Mods/SyltStickers
 	url = https://github.com/Dimserene/SyltStickers
