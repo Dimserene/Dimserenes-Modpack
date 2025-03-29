@@ -1,0 +1,12 @@
+{
+    "id": "OopsOops",
+    "name": "Oops! All \"Oops! All 6s\"",
+    "display_name": "Oops!",
+    "author": ["vitellary"],
+    "description": "adds a tag to give a free \"Oops! All 6s\"",
+    "prefix": "oops",
+    "main_file": "main.lua",
+    "badge_colour": "4BC292",
+    "dependencies": ["Steamodded (>=1.*)", "Lovely (>=0.7)"],
+    "version": "1.0.0"
+}

@@ -487,3 +487,42 @@
 [submodule "Mods/BalatroGoesKino"]
 	path = Mods/BalatroGoesKino
 	url = https://github.com/icyethics/Kino
+[submodule "Mods/Baliatro"]
+	path = Mods/Baliatro
+	url = https://github.com/baliame/Baliatro
+[submodule "Mods/Friends-Of-The-Sea"]
+	path = Mods/Friends-Of-The-Sea
+	url = https://github.com/EiraOcemu/Friends-Of-The-Sea
+[submodule "Mods/Nrio-Stuff"]
+	path = Mods/Nrio-Stuff
+	url = https://github.com/NrioModer/Nrio-Stuff
+[submodule "Mods/Wee-Laddies"]
+	path = Mods/Wee-Laddies
+	url = https://github.com/SergantDolt/wee-lads
+[submodule "Mods/No-Stake-Tooltip"]
+	path = Mods/No-Stake-Tooltip
+	url = https://github.com/SDM0/No-Stake-Tooltip
+[submodule "Mods/DevilsDeckbox"]
+	path = Mods/DevilsDeckbox
+	url = https://github.com/nightfreeze9128/DevilsDeckbox
+[submodule "Mods/DreadJokers"]
+	path = Mods/DreadJokers
+	url = https://github.com/LunaAstraCassiopeia/DreadJokers
+[submodule "Mods/View-Deck-Pages"]
+	path = Mods/View-Deck-Pages
+	url = https://github.com/RattlingSnow353/View-Deck-Pages
+[submodule "Mods/AetherJokers"]
+	path = Mods/AetherJokers
+	url = https://github.com/BustyCatbot/AetherJokers
+[submodule "Mods/LuckyWishes"]
+	path = Mods/LuckyWishes
+	url = https://github.com/MamiKeRiko/luckywishes
+[submodule "Mods/Quilombo"]
+	path = Mods/Quilombo
+	url = https://github.com/acetna/Quilombo
+[submodule "Mods/TerraPotions"]
+	path = Mods/TerraPotions
+	url = https://github.com/Row-set-te/BalatroTerraPotions
+[submodule "Mods/Glue-For-Modpacks"]
+	path = Mods/Glue-For-Modpacks
+	url = https://github.com/icyethics/Glue-For-Modpacks
