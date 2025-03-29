@@ -526,3 +526,6 @@
 [submodule "Mods/Glue-For-Modpacks"]
 	path = Mods/Glue-For-Modpacks
 	url = https://github.com/icyethics/Glue-For-Modpacks
+[submodule "Mods/TerrariaXBalatro"]
+	path = Mods/TerrariaXBalatro
+	url = https://github.com/misenrol/TerrariaXBalatro
