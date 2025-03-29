@@ -60,13 +60,5 @@ function Game:main_menu(change_context)
 	})
 end
 
-local gcp = get_current_pool
-function get_current_pool(t, r, l, a)
-  print("Type: "..t)
-  local p, pk = gcp(t, r, l, a)
-  print("Pool: "..#p)
-  return p, pk
-end
-
 ----------------------------------------------
 ------------MOD CODE END----------------------
