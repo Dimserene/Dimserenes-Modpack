@@ -505,9 +505,6 @@
 [submodule "Mods/DevilsDeckbox"]
 	path = Mods/DevilsDeckbox
 	url = https://github.com/nightfreeze9128/DevilsDeckbox
-[submodule "Mods/DreadJokers"]
-	path = Mods/DreadJokers
-	url = https://github.com/LunaAstraCassiopeia/DreadJokers
 [submodule "Mods/View-Deck-Pages"]
 	path = Mods/View-Deck-Pages
 	url = https://github.com/RattlingSnow353/View-Deck-Pages
